@@ -32,6 +32,12 @@ public class cirle : MonoBehaviour
         {
             ready_click = false;
             Debug.Log("Miss!");
+            CircleSpawner spawner = FindObjectOfType<CircleSpawner>();
+            if (spawner != null) {
+                spawner.SpawnCircle();
+            }
+
+            Destroy(gameObject);
         }
 
     }
@@ -57,6 +63,12 @@ public class cirle : MonoBehaviour
         }
 
         ready_click = false;
+
+        CircleSpawner spawner = FindObjectOfType<CircleSpawner>();
+            if (spawner != null) {
+                spawner.SpawnCircle();
+            }
+
         Destroy(gameObject);
     }
     

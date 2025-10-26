@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class cirle : MonoBehaviour
 {
-    public float growTime = 2f;
+    public float growTime = 1.33f;
     private float timer = 0f;
     private bool ready_click = true;
     private bool player_touch = false;

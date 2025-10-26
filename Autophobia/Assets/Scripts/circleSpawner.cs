@@ -3,6 +3,7 @@ using UnityEngine;
 public class CircleSpawner : MonoBehaviour
 {
     public GameObject circlePrefab;
+    public Transform spawnPoint;
     public float minX = -6f;
     public float maxX = 6f;
     public float minY = -3f;
@@ -15,8 +16,8 @@ public class CircleSpawner : MonoBehaviour
 
     public void SpawnCircle()
     {
-        Vector2 randomPos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
-        //copy the circle prefab
-        Instantiate(circlePrefab, randomPos, Quaternion.identity);
+        if (spawnPoint != null) {
+            Instantiate(circlePrefab, spawnPoint.position, Quaternion.identity);
+        }
     }
 }

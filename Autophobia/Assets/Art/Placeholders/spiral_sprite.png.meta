@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spiral_sprite_0: 2997574211337546158
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

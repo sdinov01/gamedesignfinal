@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6341584266671740362
+--- !u!1 &1050674813743625381
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,31 +8,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4761278216150827087}
+  - component: {fileID: 4080762791711530647}
   m_Layer: 0
-  m_Name: Petal Prefab
+  m_Name: circlePoint (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4761278216150827087
+--- !u!4 &4080762791711530647
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6341584266671740362}
+  m_GameObject: {fileID: 1050674813743625381}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.1934092, y: -0.35857, z: -0.004851209}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.43692952, w: 0.8994958}
+  m_LocalPosition: {x: 3.03, y: 7.69, z: 0.046083912}
+  m_LocalScale: {x: 1.4600341, y: 1.5332386, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6852323097203416985}
-  m_Father: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 2281835191683361042}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &8684342298315121424
+--- !u!1 &2071807100088718641
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,8 +39,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6852323097203416985}
-  - component: {fileID: 6954197418869250774}
+  - component: {fileID: 7575924137154523090}
+  - component: {fileID: 4103780244661392977}
   m_Layer: 0
   m_Name: FlowerPetal_Art_0
   m_TagString: Untagged
@@ -49,28 +48,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6852323097203416985
+--- !u!4 &7575924137154523090
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8684342298315121424}
+  m_GameObject: {fileID: 2071807100088718641}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.09043444, w: 0.9959024}
   m_LocalPosition: {x: 1.7, y: 6.34, z: 0.060126595}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4761278216150827087}
+  m_Father: {fileID: 2281835191683361042}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 7.903}
---- !u!212 &6954197418869250774
+--- !u!212 &4103780244661392977
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8684342298315121424}
+  m_GameObject: {fileID: 2071807100088718641}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -119,3 +118,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &7040016684396657590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2281835191683361042}
+  m_Layer: 0
+  m_Name: petal5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2281835191683361042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7040016684396657590}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.258819, w: 0.9659259}
+  m_LocalPosition: {x: -1.74, y: -3.63, z: -0.004851209}
+  m_LocalScale: {x: 1.1590565, y: 1.2764895, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7575924137154523090}
+  - {fileID: 4080762791711530647}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30}

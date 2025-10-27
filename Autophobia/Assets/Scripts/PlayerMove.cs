@@ -22,7 +22,12 @@ public class PlayerMove : MonoBehaviour {
       void Update(){
         //NOTE: Horizontal axis: [a] / left arrow is -1, [d] / right arrow is 1
         hMove = new Vector3(Input.GetAxis("Horizontal"), 0.0f, 0.0f);
-        vMove = new Vector3(0f, Input.GetAxis("Vertical"), 0f);
+
+        // if (Input.GetKeyDown("Space")){
+        //     Vector3 jumpForce = new Vector3(0f, 5f, 0f);
+        // }
+
+        // vMove = new Vector3(0f, Input.GetAxis("Vertical"), 0f);
 
         if (isAlive == true){
             Vector3 moveDir = hMove + vMove;

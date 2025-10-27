@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class CircleSpawner : MonoBehaviour
 {
@@ -14,10 +15,10 @@ public class CircleSpawner : MonoBehaviour
 
     public void SpawnCircle()
     {
-        if (currentCircle != null)
-        {
-            Destroy(currentCircle);
-        }
+        // if (currentCircle != null)
+        // {
+        //     Destroy(currentCircle);
+        // }
 
         // randomly choose one petal
         int index = Random.Range(0, spawnPoints.Length);

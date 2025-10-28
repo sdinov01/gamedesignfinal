@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class cirle : MonoBehaviour
 {
-    public float growTime = 1.33f;
+    public float growTime = 2f;
     private float timer = 0f;
     private bool ready_click = true;
     private bool player_touch = false;
@@ -31,6 +31,7 @@ public class cirle : MonoBehaviour
         if (timer > growTime + 1f && ready_click)
         {
             ready_click = false;
+            FindObjectOfType<GameHandler>().ShowResult("Miss!");
             Debug.Log("Miss!");
             CircleSpawner spawner = FindObjectOfType<CircleSpawner>();
             if (spawner != null) {
@@ -50,16 +51,19 @@ public class cirle : MonoBehaviour
         if (clickTime <= 0.5f)
         {
             //GameHandler.Instance.AddScore(1f);
-            Debug.Log("Perfect!");
+            FindObjectOfType<GameHandler>().ShowResult("Perfect");
+            Debug.Log("Perfect");
         }
         else if (clickTime <= 1f)
         {
             //GameHandler.Instance.AddScore(0.5f);
-            Debug.Log("Good!");
+            FindObjectOfType<GameHandler>().ShowResult("Good");
+            Debug.Log("Good");
         }
         else
         {
-            Debug.Log("Too late!");
+            FindObjectOfType<GameHandler>().ShowResult("Too Late");
+            Debug.Log("Too Late");
         }
 
         ready_click = false;

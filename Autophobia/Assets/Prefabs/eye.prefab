@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2875232378881396817}
   - component: {fileID: 6314765146420433382}
   - component: {fileID: 7504708150370036}
-  - component: {fileID: 5907843557348385507}
+  - component: {fileID: 7308897988128049824}
   m_Layer: 0
   m_Name: eye
   m_TagString: Untagged
@@ -111,7 +111,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5907843557348385507
+--- !u!114 &7308897988128049824
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

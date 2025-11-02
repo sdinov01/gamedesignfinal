@@ -1,53 +1,42 @@
 using UnityEngine;
 
-public class cirle : MonoBehaviour
+public class circle : MonoBehaviour
 {
     public float growTime = 2f;
     private float timer = 0f;
     private bool ready_click = true;
     private bool player_touch = false;
-    // private Vector3 initialScale;
-    // public Vector3 targetScale = new Vector3(2, 2, 2);
+    public AudioSource musicSource;
+    public float spawnTime;
 
     void Start(){
-        // initialScale = transform.localScale;
     }
 
     void Update(){
-        timer += Time.deltaTime;
-        // if (timer < growTime) {
-        //     float t = timer / growTime; //calculate the percentage
-        //     //between initialScale and targetScale, it grows with the growing percentage t
-        //     transform.localScale = Vector3.Lerp(initialScale, targetScale, t);
-        // }
+        float songTime = musicSource.time; // current time in music
+        float delta = songTime - spawnTime; // 
         if (Input.GetKeyDown(KeyCode.Space) && ready_click && player_touch){
-            OnClick();
+            OnClick(delta);
         }
-        if (timer > growTime + 1f && ready_click){
+        if (delta > growTime + 1f && ready_click){
             ready_click = false;
             FindObjectOfType<GameHandler>().ShowResult("Miss!"); //function in gamehandler.cs
             Debug.Log("Miss!");
-
-            CircleSpawner spawner = FindObjectOfType<CircleSpawner>();
-            if (spawner != null) {
-                spawner.SpawnCircle();//use spawner to generate
-            }
 
             Destroy(gameObject);
         }
 
     }
 
-    void OnClick() {
-        float clickTime = timer - growTime;
-        if (clickTime < 0) return; //not ready
+    void OnClick(float delta) {
+        if (delta < 0) return; //not ready
 
-        if (clickTime <= 0.5f) {
+        if (delta <= 0.5f) {
             //GameHandler.Instance.AddScore(1f);
             FindObjectOfType<GameHandler>().ShowResult("Perfect");
             Debug.Log("Perfect");
         }
-        else if (clickTime <= 1f) {
+        else if (delta <= 1f) {
             //GameHandler.Instance.AddScore(0.5f);
             FindObjectOfType<GameHandler>().ShowResult("Good");
             Debug.Log("Good");
@@ -58,11 +47,6 @@ public class cirle : MonoBehaviour
         }
 
         ready_click = false;
-
-        CircleSpawner spawner = FindObjectOfType<CircleSpawner>();
-            if (spawner != null) {
-                spawner.SpawnCircle();
-            }
 
         Destroy(gameObject);
     }

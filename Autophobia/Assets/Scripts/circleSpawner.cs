@@ -56,6 +56,8 @@ public class CircleSpawner : MonoBehaviour {
 
     public void SpawnCircle(float targetTime) {
         // randomly choose one petal
+        Debug.Log("Hi");
+
         int index = Random.Range(0, spawnPoints.Length);
         Transform chosenPoint = spawnPoints[index];
 
@@ -71,5 +73,6 @@ public class CircleSpawner : MonoBehaviour {
 
     public void ColorChange() {
         Color first = camera.backgroundColor;
+        
     }
 }

@@ -242,6 +242,10 @@ PrefabInstance:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 5091833238897183249, guid: 7a0e4becc30504c84b11b93d9e17bdb1, type: 3}
+      propertyPath: m_Name
+      value: circlePoint 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6459949549792943353, guid: 7a0e4becc30504c84b11b93d9e17bdb1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.1999
@@ -1137,6 +1141,10 @@ PrefabInstance:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 6343280072313088625, guid: 94855b701e3ed444c81221c242bb0743, type: 3}
+      propertyPath: m_Name
+      value: circlePoints 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7983350546148329574, guid: 94855b701e3ed444c81221c242bb0743, type: 3}
       propertyPath: m_Icon
       value: 
@@ -1254,6 +1262,10 @@ PrefabInstance:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 7131146716272481490, guid: 11404d34d31fc41aba7d5627afa0ebe6, type: 3}
+      propertyPath: m_Name
+      value: circlePoint 4
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 709183254744734882, guid: 11404d34d31fc41aba7d5627afa0ebe6, type: 3}
     m_RemovedGameObjects: []
@@ -1291,6 +1303,10 @@ PrefabInstance:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 1050674813743625381, guid: 9892ec0db337f4800a748a3a7c5307ca, type: 3}
+      propertyPath: m_Name
+      value: circlePoint 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2281835191683361042, guid: 9892ec0db337f4800a748a3a7c5307ca, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.93
@@ -1770,6 +1786,10 @@ PrefabInstance:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 5454305043883013801, guid: 5a61fee6e9c5e4b9094f8e2d2ba89565, type: 3}
+      propertyPath: m_Name
+      value: circlePoint 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8144765072296032340, guid: 5a61fee6e9c5e4b9094f8e2d2ba89565, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.89
@@ -1929,6 +1949,10 @@ PrefabInstance:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 6925137736282606653, guid: f75432e352f5d45eea424565c0ac11e7, type: 3}
+      propertyPath: m_Name
+      value: circlePoint 6
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -6532387022567021006, guid: f75432e352f5d45eea424565c0ac11e7, type: 3}
     m_RemovedGameObjects: []
@@ -2267,6 +2291,10 @@ PrefabInstance:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4057110263308369517, guid: f2cc4fc7cb7e149bb90d8379b5cd7be4, type: 3}
+      propertyPath: m_Name
+      value: circlePoint 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5635393143927989086, guid: f2cc4fc7cb7e149bb90d8379b5cd7be4, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.222521
@@ -2503,7 +2531,6 @@ GameObject:
   - component: {fileID: 2048004988}
   - component: {fileID: 2048004987}
   - component: {fileID: 2048004986}
-  - component: {fileID: 2048004985}
   - component: {fileID: 2048004990}
   m_Layer: 0
   m_Name: Player
@@ -2512,21 +2539,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2048004985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048004984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6593bbae059ba46a59c2f586dadd036c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb2D: {fileID: 0}
-  startSpeed: 10
-  isAlive: 1
 --- !u!50 &2048004986
 Rigidbody2D:
   serializedVersion: 5
@@ -2536,7 +2548,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048004984}
   m_BodyType: 0
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -2584,12 +2596,12 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -2}
-  m_Radius: 1
+  m_Offset: {x: -2.2771795, y: 1.4781787}
+  m_Radius: 1.8539429
 --- !u!61 &2048004988
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2645,8 +2657,8 @@ Transform:
   m_GameObject: {fileID: 2048004984}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.1499, y: -3.4672, z: 10}
-  m_LocalScale: {x: 0.25162312, y: 0.20857553, z: 1}
+  m_LocalPosition: {x: -5.2825, y: -1.98, z: 10}
+  m_LocalScale: {x: 0.1729909, y: 0.1160894, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1027084066}

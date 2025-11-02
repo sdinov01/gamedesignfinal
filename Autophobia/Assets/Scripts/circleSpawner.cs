@@ -3,24 +3,24 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class CircleSpawner : MonoBehaviour {
-
     public GameObject circlePrefab; 
+
     public Camera camera;
+
     public float bpm;
     public float beatsPerMeasure;
 
     public int doubletime;
     public int everybeat;
-    const float offset = 1.6f;
+    const float offset = 0.08f;
     private float secondsPerBeat;
     public Transform[] spawnPoints;
     private Color[] colors = {Color.red, Color.green, Color.blue};
     private GameObject currentCircle;  
     public AudioSource musicSource;
-    private List<float> spawnTimes = new List<float>();
+    public List<float> spawnTimes = new List<float>();
     private int nextIndex = 0;
     private int currColorIndex;
-
 
     void Start() {
         currColorIndex = -1;
@@ -29,18 +29,18 @@ public class CircleSpawner : MonoBehaviour {
         for (int i = 1; i < 50; i++)
         {
             float st = (i * secondsPerMeasure);
-            spawnTimes.Add(st - offset);
+            spawnTimes.Add(st);
             if ((i > doubletime) && (i <= everybeat))
             {
                 float sh = st + (secondsPerMeasure / 2);
-                spawnTimes.Add(sh - offset);
+                spawnTimes.Add(sh);
             }
             else if ((i > everybeat))
             {
                 for (int j = 1; j < beatsPerMeasure; j++)
                 {
                     st = st + secondsPerBeat;
-                    spawnTimes.Add(st - offset);
+                    spawnTimes.Add(st);
                 }
             }
 
@@ -48,29 +48,16 @@ public class CircleSpawner : MonoBehaviour {
     }
 
     void Update() {
-        if((musicSource.time + offset) == spawnTimes[nextIndex]) {
-            ColorChange();
-        }
-
         if(nextIndex < spawnTimes.Count && musicSource.time >= spawnTimes[nextIndex]) {
             SpawnCircle(spawnTimes[nextIndex]);
             nextIndex++;
         }
     }
 
-    public void ColorChange() {
-        Color first = camera.backgroundColor;
-        int index = -1;
-        while (index == currColorIndex)
-        {
-            index = Random.Range(0, colors.Length);
-        }
-        currColorIndex = index;
-        camera.backgroundColor = Color.Lerp(first, colors[currColorIndex], 0.1f);
-    }
-
     public void SpawnCircle(float targetTime) {
         // randomly choose one petal
+        Debug.Log("Hi");
+
         int index = Random.Range(0, spawnPoints.Length);
         Transform chosenPoint = spawnPoints[index];
 
@@ -82,14 +69,16 @@ public class CircleSpawner : MonoBehaviour {
         circle c = currentCircle.GetComponent<circle>();
         c.spawnTime = targetTime;
         c.musicSource = musicSource;
-
-        StartCoroutine(cchange());
     }
 
-    IEnumerator cchange() {
-        yield return new WaitForSeconds(offset);
-        ColorChange();
+    public void ColorChange() {
+        Color first = camera.backgroundColor;
+        int index = 0;
+        while (index == currColorIndex)
+        {
+            index = Random.Range(0, colors.Length);
+        }
+        currColorIndex = index;
+
     }
-
-
 }

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class circle : MonoBehaviour
 {
+    public Animator animator;
     public float growTime = 2f;
     private float timer = 0f;
     private bool ready_click = true;
@@ -31,6 +32,7 @@ public class circle : MonoBehaviour
         }
         if (delta > 2.1f && ready_click){
             ready_click = false;
+            animator.SetBool("miss", true);
             FindObjectOfType<GameHandler>().ShowResult("Miss!"); //function in gamehandler.cs
             Debug.Log("Miss!");
             Destroy(gameObject);
@@ -41,11 +43,13 @@ public class circle : MonoBehaviour
     void OnClick(float delta) {
         if (Mathf.Abs(delta - growTime) <= 0.5f) {
             //GameHandler.Instance.AddScore(1f);
+            animator.SetBool("hit", true);
             FindObjectOfType<GameHandler>().ShowResult("Perfect");
             Debug.Log("Perfect");
         }
         else if (Mathf.Abs(delta - growTime) <= 1f) {
             //GameHandler.Instance.AddScore(0.5f);
+            animator.SetBool("hit", true);
             FindObjectOfType<GameHandler>().ShowResult("Good");
             Debug.Log("Good");
         }

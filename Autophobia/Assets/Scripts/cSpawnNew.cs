@@ -3,89 +3,50 @@ using System.Collections;
 
 public class cSpawnNew : MonoBehaviour
 {
-    const int tempomarker = 45;
-    const int   permeasure = 4;
+    const int bpm = 80;
+    const int beatsPerMeasure = 4;
 
-    public GameObject circlePrefab;      // circle prefab
-    public Transform[] spawnPoints;     
-
-    private GameObject currentCircle;  
-
-    private int beat;
-    private bool onbeat;
-
-    private int measure;
-
-    private int index;
-
+    const float offset = 0.1f;  // Offset in seconds (adjust as needed)
+    
+    public GameObject circlePrefab;
+    public Transform[] spawnPoints;
+    public AudioSource audio;
+    
+    private GameObject currentCircle;
+    private int currentMeasure = -1;
+    
     void Start()
     {
-        // SpawnCircle();
-        beat = 0;
-        measure = 0;
-        index = 0;
+        currentMeasure = -1;
     }
-
+    
     public void SpawnCircle()
     {
-        index = Random.Range(0, spawnPoints.Length);
+        int index = Random.Range(0, spawnPoints.Length);
         Transform chosenPoint = spawnPoints[index];
-
-            // generate circle at chosen position and set certain pertal as parent
         currentCircle = Instantiate(circlePrefab, chosenPoint);
-        currentCircle.transform.localPosition = Vector3.zero; 
-
+        currentCircle.transform.localPosition = Vector3.zero;
     }
-
+    
     void Update()
     {
-        int beatframe = (int)(tempomarker * 16);
-        onbeat = (Time.frameCount % beatframe == 0);
-        measure = Time.frameCount / (beatframe * 4);
-
+        // Calculate seconds per beat
+        float secondsPerBeat = 60f / bpm;
         
+        // Calculate seconds per measure
+        float secondsPerMeasure = secondsPerBeat * beatsPerMeasure;
+        
+        // Calculate which measure we're currently in
+        int measureNumber = Mathf.FloorToInt(audio.time / secondsPerMeasure);
 
-
-
-        if (onbeat == true)
+        float adjustedTime = audio.time - offset;
+        
+        // If we've entered a new measure, spawn a circle
+        if (measureNumber > currentMeasure)
         {
 
-            if (measure < 2) {
-                
-            } else if (measure < 16) {
-                if ((beat == 0))
-                {
-                    SpawnCircle();
-                }
-            }
-            
-            // else if (measure < 18) {
-            //     if (((beat == 1) || (beat == 3))) 
-            //     {
-            //         SpawnCircle();
-            //         // int index = Random.Range(0, spawnPoints.Length);
-            //         // Transform chosenPoint = spawnPoints[index];
-
-            //         //     // generate circle at chosen position and set certain pertal as parent
-            //         // currentCircle = Instantiate(circlePrefab, chosenPoint);
-            //         // currentCircle.transform.localPosition = Vector3.zero; 
-            //     }
-            // }
-            beat = (beat + 1) % (permeasure * 2);
-
-
-            // int index = Random.Range(0, spawnPoints.Length);
-            // Transform chosenPoint = spawnPoints[index];
-
-            // // generate circle at chosen position and set certain pertal as parent
-            // currentCircle = Instantiate(circlePrefab, chosenPoint);
-            // currentCircle.transform.localPosition = Vector3.zero; 
-            
+            currentMeasure = measureNumber;
+            SpawnCircle();
         }
-        
     }
-
-    
-
-
 }

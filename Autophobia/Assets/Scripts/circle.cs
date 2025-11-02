@@ -18,7 +18,7 @@ public class circle : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && ready_click && player_touch){
             OnClick(delta);
         }
-        if (delta > growTime + 1f && ready_click){
+        if (delta > 2.1f && ready_click){
             ready_click = false;
             FindObjectOfType<GameHandler>().ShowResult("Miss!"); //function in gamehandler.cs
             Debug.Log("Miss!");

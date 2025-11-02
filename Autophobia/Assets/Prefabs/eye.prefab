@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6314765146420433382}
   - component: {fileID: 7504708150370036}
   - component: {fileID: 7308897988128049824}
+  - component: {fileID: -419075258634432612}
   m_Layer: 0
   m_Name: eye
   m_TagString: Untagged
@@ -143,3 +144,39 @@ MonoBehaviour:
   - {fileID: -622647745, guid: 6bff853217da54d80863eda41386981e, type: 3}
   - {fileID: 868339186, guid: 6bff853217da54d80863eda41386981e, type: 3}
   - {fileID: -274421452, guid: 6bff853217da54d80863eda41386981e, type: 3}
+--- !u!58 &-419075258634432612
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6439132859630361528}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 2.49

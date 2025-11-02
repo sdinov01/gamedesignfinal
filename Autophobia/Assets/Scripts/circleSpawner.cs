@@ -9,7 +9,6 @@ public class CircleSpawner : MonoBehaviour {
 
     public float bpm;
     public float beatsPerMeasure;
-
     public int doubletime;
     public int everybeat;
     const float offset = 0.08f;

@@ -434,7 +434,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sleepynotext_0: 187191544700657596
+      sleepynotext_1: 4017288614458079685
+      sleepynotext_10: -7352821465900803529
+      sleepynotext_11: -8877447817011356573
+      sleepynotext_12: -5955430617090644654
+      sleepynotext_2: 2375320719843290462
+      sleepynotext_3: 549595473794806610
+      sleepynotext_4: 7737258183080332554
+      sleepynotext_5: 2391221044574094305
+      sleepynotext_6: 7418109140173681831
+      sleepynotext_7: 6808089265978973718
+      sleepynotext_8: -46409737950466680
+      sleepynotext_9: 4935614981602854458
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

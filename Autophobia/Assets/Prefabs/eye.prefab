@@ -123,9 +123,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 334dc090edecb4f148f63287736531a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 7504708150370036}
   growTime: 2
   musicSource: {fileID: 3747546472440603548, guid: 53d100b9e9bf44543b970dce3d1e1103, type: 3}
   spawnTime: 0
+  targetTime: 0
   spriteRenderer: {fileID: 6314765146420433382}
   eyeSprites:
   - {fileID: -1168669060, guid: 6bff853217da54d80863eda41386981e, type: 3}

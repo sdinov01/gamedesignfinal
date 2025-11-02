@@ -124,3 +124,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growTime: 2
+  musicSource: {fileID: 3747546472440603548, guid: 53d100b9e9bf44543b970dce3d1e1103, type: 3}
+  spawnTime: 0
+  spriteRenderer: {fileID: 6314765146420433382}
+  eyeSprites:
+  - {fileID: -1168669060, guid: 6bff853217da54d80863eda41386981e, type: 3}
+  - {fileID: 2061743676, guid: 6bff853217da54d80863eda41386981e, type: 3}
+  - {fileID: -1316017044, guid: 6bff853217da54d80863eda41386981e, type: 3}
+  - {fileID: 1542708910, guid: 6bff853217da54d80863eda41386981e, type: 3}
+  - {fileID: -1034015136, guid: 6bff853217da54d80863eda41386981e, type: 3}
+  - {fileID: 404296382, guid: 6bff853217da54d80863eda41386981e, type: 3}
+  - {fileID: -2115059496, guid: 6bff853217da54d80863eda41386981e, type: 3}
+  - {fileID: -1770832467, guid: 6bff853217da54d80863eda41386981e, type: 3}
+  - {fileID: -869315155, guid: 6bff853217da54d80863eda41386981e, type: 3}
+  - {fileID: -409619046, guid: 6bff853217da54d80863eda41386981e, type: 3}
+  - {fileID: -622647745, guid: 6bff853217da54d80863eda41386981e, type: 3}
+  - {fileID: 868339186, guid: 6bff853217da54d80863eda41386981e, type: 3}
+  - {fileID: -274421452, guid: 6bff853217da54d80863eda41386981e, type: 3}

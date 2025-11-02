@@ -12,18 +12,18 @@ public class CircleSpawner : MonoBehaviour {
 
     public int doubletime;
     public int everybeat;
-
     const float offset = 0.08f;
-
     private float secondsPerBeat;
-
     public Transform[] spawnPoints;
+    private Color[] colors = {Color.red, Color.green, Color.blue};
     private GameObject currentCircle;  
     public AudioSource musicSource;
     public List<float> spawnTimes = new List<float>();
     private int nextIndex = 0;
+    private int currColorIndex;
 
     void Start() {
+        currColorIndex = -1;
         secondsPerBeat = 60f / bpm;
         float secondsPerMeasure = secondsPerBeat * beatsPerMeasure;
         for (int i = 1; i < 50; i++)
@@ -73,6 +73,12 @@ public class CircleSpawner : MonoBehaviour {
 
     public void ColorChange() {
         Color first = camera.backgroundColor;
-        
+        int index;
+        while (index == currColorIndex)
+        {
+            index = Random.Range(0, colors.Length);
+        }
+        currColorIndex = index;
+
     }
 }

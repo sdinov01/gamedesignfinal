@@ -1,22 +1,27 @@
 using UnityEngine;
+using System.Collections;
 
 public class cirle : MonoBehaviour
 {
     public float growTime = 2f;
-    private float timer = 0f;
     private bool ready_click = true;
     private bool player_touch = false;
     private Vector3 initialScale;
     public Vector3 targetScale = new Vector3(2, 2, 2);
+    private float lifeStart;
 
     void Start()
     {
         initialScale = transform.localScale;
+        lifeStart = 0f;
     }
+
 
     void Update()
     {
-        timer += Time.deltaTime;
+        lifeStart += Time.deltaTime;
+
+        float timer = Time.time;
         if (timer < growTime)
         {
             float t = timer / growTime; //calculate the percentage
@@ -28,15 +33,15 @@ public class cirle : MonoBehaviour
             OnClick();
         }
 
-        if (timer > growTime + 1f && ready_click)
+        if (lifeStart > 3f)
         {
-            ready_click = false;
-            FindObjectOfType<GameHandler>().ShowResult("Miss!");
-            Debug.Log("Miss!");
-            CircleSpawner spawner = FindObjectOfType<CircleSpawner>();
-            if (spawner != null) {
-                spawner.SpawnCircle();
-            }
+            // ready_click = false;
+            // FindObjectOfType<GameHandler>().ShowResult("Miss!");
+            // Debug.Log("Miss!");
+            // CircleSpawner spawner = FindObjectOfType<CircleSpawner>();
+            // if (spawner != null) {
+            //     spawner.SpawnCircle();
+            // }
 
             Destroy(gameObject);
         }
@@ -45,7 +50,7 @@ public class cirle : MonoBehaviour
 
     void OnClick()
     {
-        float clickTime = timer - growTime;
+        float clickTime = Time.time - growTime;
         if (clickTime < 0) return; //not ready
 
         if (clickTime <= 0.5f)

@@ -26,7 +26,6 @@ public class cSpawnNew : MonoBehaviour
         index = (index + 1) % 6;
         Transform chosenPoint = spawnPoints[index];
         currentCircle = Instantiate(circlePrefab, chosenPoint);
-        currentCircle = 
         currentCircle.transform.localPosition = Vector3.zero;
     }
     
@@ -48,7 +47,7 @@ public class cSpawnNew : MonoBehaviour
         // If we've entered a new measure, spawn a circle
         if (measureNumber > currentMeasure)
         {
-            SpawnOnMeasure();
+            // SpawnOnMeasure();
             currentMeasure = measureNumber;
             SpawnCircle();
         }

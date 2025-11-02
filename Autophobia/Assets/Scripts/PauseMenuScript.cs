@@ -10,16 +10,15 @@ public class PauseMenuHandler : MonoBehaviour {
 
         public static bool GameisPaused = false;
         public GameObject pauseMenuUI;
-        //public AudioMixer mixer;
+        public AudioSource audio;
         public static float volumeLevel = 1.0f;
-        private Slider sliderVolumeCtrl;
+        public Slider sliderVolumeCtrl;
 
         void Awake(){
-                SetLevel (volumeLevel);
-                GameObject sliderTemp = GameObject.FindWithTag("PauseMenuSlider");
-                if (sliderTemp != null){
-                        sliderVolumeCtrl = sliderTemp.GetComponent<Slider>();
-                        sliderVolumeCtrl.value = volumeLevel;
+                SetVolume (volumeLevel);
+                if (sliderVolumeCtrl != null && audio != null) {
+                        sliderVolumeCtrl.value = audio.volume;
+                        sliderVolumeCtrl.onValueChanged.AddListener(SetVolume);
                 }
         }
 
@@ -39,6 +38,7 @@ public class PauseMenuHandler : MonoBehaviour {
                 if (!GameisPaused){
                         pauseMenuUI.SetActive(true);
                         Time.timeScale = 0f;
+                        AudioListener.pause = true;
                         GameisPaused = true;}
              else { Resume (); }
              //NOTE: This function is for the pause button
@@ -48,12 +48,16 @@ public class PauseMenuHandler : MonoBehaviour {
                 Debug.Log("Clicked resume button");
                 pauseMenuUI.SetActive(false);
                 Time.timeScale = 1f;
+                AudioListener.pause = false;
                 GameisPaused = false;
         }
 
-        public void SetLevel (float sliderValue){
-                //mixer.SetFloat("MusicVolume", Mathf.Log10 (sliderValue) * 20);
-                volumeLevel = sliderValue;
+        public void SetVolume (float sliderValue){
+                if (audio != null) {
+                        volumeLevel = sliderValue;
+                        audio.volume = sliderValue;
+                }
+                Debug.Log(sliderValue);
         }
 
         public void RestartGame(){

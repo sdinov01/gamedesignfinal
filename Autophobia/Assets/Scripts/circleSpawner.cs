@@ -1,25 +1,16 @@
 using UnityEngine;
 using System.Collections;
 
-public class CircleSpawner : MonoBehaviour
-{
-    public GameObject circlePrefab;      // circle prefab
-    public Transform[] spawnPoints;     
-
+public class CircleSpawner : MonoBehaviour {
+    public GameObject circlePrefab; 
+    public Transform[] spawnPoints;    
     private GameObject currentCircle;  
 
-    void Start()
-    {
+    void Start() {
         SpawnCircle();
     }
 
-    public void SpawnCircle()
-    {
-        // if (currentCircle != null)
-        // {
-        //     Destroy(currentCircle);
-        // }
-
+    public void SpawnCircle() {
         // randomly choose one petal
         int index = Random.Range(0, spawnPoints.Length);
         Transform chosenPoint = spawnPoints[index];

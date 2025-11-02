@@ -73,7 +73,7 @@ public class CircleSpawner : MonoBehaviour {
 
     public void ColorChange() {
         Color first = camera.backgroundColor;
-        int index;
+        int index = 0;
         while (index == currColorIndex)
         {
             index = Random.Range(0, colors.Length);

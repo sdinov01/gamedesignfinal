@@ -3,13 +3,17 @@ using TMPro;
 
 public class GameHandler : MonoBehaviour
 {
-    public TMP_Text resultText; 
+    public TMP_Text resultText;
+    /* Added score text */
+    public TMP_Text scoreText;
+
     public float displayTime = 1.0f;
 
     private float timer = 0f;
 
     void Start() {
         resultText.text = "";
+        scoreText.text = "Score: 100%";
     }
     void Update() {
         //let result disappear
@@ -37,6 +41,16 @@ public class GameHandler : MonoBehaviour
             case "Miss":
                 resultText.color = Color.red;
                 break;
+        }
+    }
+    public void UpdateScore(float score)
+    {
+        if (scoreText != null)
+        {
+            scoreText.text = $"Score: {score:F1}%";
+        } else
+        {
+            Debug.Log("Not assigned\n");
         }
     }
 }

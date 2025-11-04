@@ -1,9 +1,13 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+/* Added for text mesh pro */
+using TMPro;
 
 public class CircleSpawner : MonoBehaviour
 {
+
+    [SerializeField] private TMP_Text resultText;
     public GameObject circlePrefab;
     public Transform[] spawnPoints;
     public AudioSource musicSource;
@@ -16,6 +20,21 @@ public class CircleSpawner : MonoBehaviour
 
     private List<circle> circles = new List<circle>(); 
     public Animator animator;
+
+    /* New variables */
+
+    /* Score given for eahc perfect/good/miss */
+    private float perfect = 10;
+    private float good = 5;
+    private float miss = 0;
+    /* Total possible score and current score */
+    private float currentScore = 0;
+    private float totalScore = 0;
+    /* Score displayed at top of screen as percentage. Starts as 100 */
+    private float score = 100;
+
+
+
     void Start()
     {
         secondsPerBeat = 60f / bpm;
@@ -56,6 +75,15 @@ public class CircleSpawner : MonoBehaviour
             Debug.Log("beat!");
             nextIndex++;
         }
+
+        /* Update score */
+        if (totalScore > 0)
+        {
+            score = (currentScore / totalScore) * 100f;
+            
+            FindObjectOfType<GameHandler>().UpdateScore(score);
+            
+        }
     }
 
     void TriggerBeat()
@@ -63,7 +91,18 @@ public class CircleSpawner : MonoBehaviour
         int index = Random.Range(0, circles.Count);
         circle chosen = circles[index];
         Debug.Log("beat2");
+        /* Add to totalSCore */
+        totalScore += perfect;
         chosen.TriggerBeat();
+        /* Check what the text is displayed on ResulTtext */
+
+        if (resultText.text == "Perfect")
+        {
+            currentScore += perfect;
+        }else if (resultText.text == "Good")
+        {
+            currentScore += good;
+        }
 
     }
 }

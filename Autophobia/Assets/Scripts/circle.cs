@@ -18,6 +18,8 @@ public class circle : MonoBehaviour
     private bool hasBeatStarted = false;
     private bool hasResult = false;  // avoid repeating hit/miss
 
+  
+
     void Start()
     {
         if (animator == null)
@@ -55,19 +57,24 @@ public class circle : MonoBehaviour
             animator.SetTrigger("hit");
             FindObjectOfType<GameHandler>().ShowResult("Perfect");
             Debug.Log("Perfect");
+
         }
         else if (Mathf.Abs(delta - growTime) <= 0.6f)
         {
             animator.SetTrigger("hit");
             FindObjectOfType<GameHandler>().ShowResult("Good");
             Debug.Log("Good");
+
         }
         else
         {
             animator.SetTrigger("miss");
             FindObjectOfType<GameHandler>().ShowResult("Miss");
             Debug.Log("Late");
+
         }
+
+        
 
         // go back go idle state
         StartCoroutine(ResetToIdle());
@@ -108,6 +115,8 @@ public class circle : MonoBehaviour
             animator.SetBool("beat", true);
             spawnTime = musicSource.time;
             Debug.Log("BEAT!");
+            
+            
             StartCoroutine(WaitForMiss());
         }
     }

@@ -4,6 +4,8 @@ public class circle : MonoBehaviour
 {
     public Animator animator;
     public float growTime = 2f;
+
+    public float lifespan = 2.1f;
     private float timer = 0f;
     private bool ready_click = true;
     private bool player_touch = false;
@@ -20,6 +22,7 @@ public class circle : MonoBehaviour
     void Update(){
         float songTime = musicSource.time; // current time in music
         float delta = songTime - spawnTime;
+        lifespan -= Time.deltaTime;
 
         // control eye animation
         float t = Mathf.Clamp01(delta / growTime);
@@ -30,7 +33,7 @@ public class circle : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && ready_click && player_touch){
             OnClick(delta);
         }
-        if (delta > 2.1f && ready_click){
+        if (lifespan <= 0f){
             ready_click = false;
             animator.SetBool("miss", true);
             FindObjectOfType<GameHandler>().ShowResult("Miss!"); //function in gamehandler.cs

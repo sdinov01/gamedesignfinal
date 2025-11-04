@@ -605,6 +605,10 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 8387692797506968841, guid: d948623efa6c541eaa94b92b79ac7968, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 521459257}
+    - target: {fileID: 8387692797506968841, guid: d948623efa6c541eaa94b92b79ac7968, type: 3}
       propertyPath: musicSource
       value: 
       objectReference: {fileID: 2967411}

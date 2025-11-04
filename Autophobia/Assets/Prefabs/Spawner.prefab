@@ -45,11 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circlePrefab: {fileID: 6439132859630361528, guid: 30b882d0775c54ed88cc97bb0966d4bc, type: 3}
-  camera: {fileID: 0}
-  bpm: 80
-  beatsPerMeasure: 4
-  doubletime: 8
-  everybeat: 16
   spawnPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -59,4 +54,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   musicSource: {fileID: 0}
+  bpm: 80
+  beatsPerMeasure: 4
   spawnTimes: []
+  animator: {fileID: 0}

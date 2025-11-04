@@ -45,5 +45,8 @@ TagManager:
   - name: Boss
     uniqueID: 952424591
     locked: 0
+  - name: eyes
+    uniqueID: 3977266473
+    locked: 0
   m_RenderingLayers:
   - Default

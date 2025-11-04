@@ -4,16 +4,17 @@ public class circle : MonoBehaviour
 {
     public Animator animator;
     public float growTime = 2f;
-    private float timer = 0f;
-    private bool ready_click = false;  
-    private bool player_touch = false;
 
+    public float lifespan = 2.1f;
+    private float timer = 0f;
+    private bool ready_click = true;
+    private bool player_touch = false;
     public AudioSource musicSource;
-    public float spawnTime; 
-    public float targetTime;
+    public float spawnTime; //time to appear
+    public float targetTime; //time to hit
 
     public SpriteRenderer spriteRenderer;
-    public Sprite[] eyeSprites;
+    public Sprite[] eyeSprites; //fully open, close, half open
 
     private bool hasBeatStarted = false;
     private bool hasResult = false;  // avoid repeating hit/miss
@@ -31,37 +32,41 @@ public class circle : MonoBehaviour
         animator.SetBool("beat", false);
     }
 
-    void Update()
-    {
-        float songTime = musicSource.time; 
+    void Update(){
+        float songTime = musicSource.time; // current time in music
         float delta = songTime - spawnTime;
+        lifespan -= Time.deltaTime;
 
+        // control eye animation
         float t = Mathf.Clamp01(delta / growTime);
         int frameCount = eyeSprites.Length;
         int frameIndex = Mathf.Clamp(Mathf.FloorToInt(t * frameCount), 0, frameCount - 1);
         spriteRenderer.sprite = eyeSprites[frameIndex];
 
-        if (Input.GetKeyDown(KeyCode.Space) && ready_click && player_touch && !hasResult)
-        {
+        if (Input.GetKeyDown(KeyCode.Space) && ready_click && player_touch){
             OnClick(delta);
         }
+        if (lifespan <= 0f){
+            ready_click = false;
+            animator.SetBool("miss", true);
+            FindObjectOfType<GameHandler>().ShowResult("Miss!"); //function in gamehandler.cs
+            Debug.Log("Miss!");
+            Destroy(gameObject);
+        }
+
     }
 
-    void OnClick(float delta)
-    {
-        hasResult = true;
-        ready_click = false;
-
-        if (Mathf.Abs(delta - growTime) <= 0.3f)
-        {
-            animator.SetTrigger("hit");
+    void OnClick(float delta) {
+        if (Mathf.Abs(delta - growTime) <= 0.5f) {
+            //GameHandler.Instance.AddScore(1f);
+            animator.SetBool("hit", true);
             FindObjectOfType<GameHandler>().ShowResult("Perfect");
             Debug.Log("Perfect");
 
         }
-        else if (Mathf.Abs(delta - growTime) <= 0.6f)
-        {
-            animator.SetTrigger("hit");
+        else if (Mathf.Abs(delta - growTime) <= 1f) {
+            //GameHandler.Instance.AddScore(0.5f);
+            animator.SetBool("hit", true);
             FindObjectOfType<GameHandler>().ShowResult("Good");
             Debug.Log("Good");
 
@@ -87,21 +92,19 @@ public class circle : MonoBehaviour
         hasBeatStarted = false;
         hasResult = false;
         ready_click = false;
-    }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
+        Destroy(gameObject);
+    }
+    
+    void OnTriggerEnter2D(Collider2D other) {
+        if (other.CompareTag("Player")) 
         {
             player_touch = true;
-                
+            Debug.Log("Player entered range!");
         }
     }
-
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
+    void OnTriggerExit2D(Collider2D other) {
+        if (other.CompareTag("Player")) {
             player_touch = false;
             Debug.Log("Player left range!");
         }

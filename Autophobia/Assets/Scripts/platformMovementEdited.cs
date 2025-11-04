@@ -17,6 +17,8 @@ public class platformMovementEdited : MonoBehaviour
 
         platforms = new NewPlatform[platformObjects.Length];
         currPosition = 0;
+        GameObject platform = platformObjects[0];
+        player.transform.position = new Vector3(platform.transform.position.x, platform.transform.position.y, player.transform.position.z);
         for (int i = 0; i < platformObjects.Length; i++)
         {
             /* Retrieve NewPlatform objects and put into platforms array */

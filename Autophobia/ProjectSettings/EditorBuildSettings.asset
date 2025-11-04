@@ -4,6 +4,9 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Sloth_Test.unity
+    guid: 34eabbe89fb4a48748cb42746cfa552c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -13,13 +13,7 @@ public class NewPlatform : MonoBehaviour
     [SerializeField] public NewPlatform[] up;
     [SerializeField] public NewPlatform[] down;
 
-    /* Constructor */
-    //public void Initialize(bool isAvailable, GameObject platform)
-    //{
-    //    this.isAvailable = isAvailable;
-    //    this.platform = platform;
-    //    platform.SetActive(true);
-    //}
+
 
     public void setAvailability(bool availability)
     {

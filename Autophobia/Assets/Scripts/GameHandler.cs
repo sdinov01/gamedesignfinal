@@ -3,7 +3,9 @@ using TMPro;
 
 public class GameHandler : MonoBehaviour
 {
-    public TMP_Text resultText; 
+    public TMP_Text resultText;
+    /* TMP variable for score textbox */
+    public TMP_Text scoreText;
     public float displayTime = 1.0f;
 
     private float timer = 0f;
@@ -38,5 +40,11 @@ public class GameHandler : MonoBehaviour
                 resultText.color = Color.red;
                 break;
         }
+    }
+    /* Update score textmeshpro to reflect player's current score */
+    public void UpdateScore(float score)
+    {
+        /* Display score on screen */
+        scoreText.text = $"Score: {score:F1}%";
     }
 }

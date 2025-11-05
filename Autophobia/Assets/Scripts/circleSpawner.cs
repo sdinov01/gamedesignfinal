@@ -18,6 +18,16 @@ public class CircleSpawner : MonoBehaviour
     private List<circle> circles = new List<circle>();
     public Animator animator;
     public TMP_Text beatHintText;
+
+    /* Variables for Score */
+    private int perfect = 10;
+    private int good = 5;
+    /* totalPossibleScore is how many points the player could've gotten, and currScore is what the player has */
+    private int totalPossibleScore = 0;
+    private int currScore = 0;
+    /* Percentage starts at 100 */
+    private float score = 100f; 
+
     void Start()
     {
         secondsPerBeat = 60f / bpm;
@@ -59,6 +69,12 @@ public class CircleSpawner : MonoBehaviour
             Debug.Log("beat!");
             nextIndex++;
         }
+        /* Always update score */
+        if (totalPossibleScore != 0)
+        {
+            score = currScore / totalPossibleScore;
+        }
+        FindObjectOfType<GameHandler>().UpdateScore(score);
     }
 
     void TriggerBeat()
@@ -66,7 +82,19 @@ public class CircleSpawner : MonoBehaviour
         int index = Random.Range(0, circles.Count);
         circle chosen = circles[index];
         Debug.Log("beat2");
+        /* Update total score */
+        totalPossibleScore += perfect;
         chosen.TriggerBeat();
+        /* Retrieve player's hit accuracy */
+
+        string text = FindObjectOfType<GameHandler>().resultText.text;
+        if (text == "Perfect")
+        {
+            currScore += perfect;
+        } else if (text == "Good")
+        {
+            currScore += good;
+        }
 
     }
     void ShowBeatHint()

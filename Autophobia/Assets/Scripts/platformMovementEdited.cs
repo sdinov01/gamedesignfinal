@@ -10,6 +10,7 @@ public class platformMovementEdited : MonoBehaviour
     [SerializeField] GameObject player;
     private NewPlatform[] platforms;
     private int currPosition;
+    private float offset = 1f;
     /* Make the platforms into NewPlatforms */
     void Start()
     {
@@ -103,6 +104,12 @@ public class platformMovementEdited : MonoBehaviour
                 currPosition = System.Array.IndexOf(platforms, returned);
                 Debug.Log("currPosition" + currPosition);
             }
+        } else
+        {
+            /* Maintain current position on platform */
+            GameObject currPlatform = platforms[currPosition].getPlatform();
+            Vector3 newPos = new Vector3(currPlatform.transform.position.x, currPlatform.transform.position.y + offset, player.transform.position.z);
+            player.transform.position = newPos;
         }
     }
 }

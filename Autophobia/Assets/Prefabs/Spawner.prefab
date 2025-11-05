@@ -52,9 +52,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   musicSource: {fileID: 0}
-  bpm: 80
+  bpm: 90
   beatsPerMeasure: 4
   spawnTimes: []
   animator: {fileID: 0}
+  beatHintText: {fileID: 0}

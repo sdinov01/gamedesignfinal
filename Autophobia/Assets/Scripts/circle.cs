@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class circle : MonoBehaviour
@@ -50,17 +51,11 @@ public class circle : MonoBehaviour
         hasResult = true;
         ready_click = false;
 
-        if (Mathf.Abs(delta - growTime) <= 0.3f)
+        if (Mathf.Abs(delta - growTime) <= 0.6f)
         {
             animator.SetTrigger("hit");
             FindObjectOfType<GameHandler>().ShowResult("Perfect");
             Debug.Log("Perfect");
-        }
-        else if (Mathf.Abs(delta - growTime) <= 0.6f)
-        {
-            animator.SetTrigger("hit");
-            FindObjectOfType<GameHandler>().ShowResult("Good");
-            Debug.Log("Good");
         }
         else
         {
@@ -114,7 +109,7 @@ public class circle : MonoBehaviour
 
     private System.Collections.IEnumerator WaitForMiss()
     {
-        yield return new WaitForSeconds(growTime + 0.5f); 
+        yield return new WaitForSeconds(growTime + 0.8f); 
         if (!hasResult)  //does not hit
         {
             animator.SetTrigger("miss");

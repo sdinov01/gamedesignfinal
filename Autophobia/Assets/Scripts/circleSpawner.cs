@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 
 public class CircleSpawner : MonoBehaviour
 {
@@ -14,8 +15,9 @@ public class CircleSpawner : MonoBehaviour
     public List<float> spawnTimes = new List<float>();
     private int nextIndex = 0;
 
-    private List<circle> circles = new List<circle>(); 
+    private List<circle> circles = new List<circle>();
     public Animator animator;
+    public TMP_Text beatHintText;
     void Start()
     {
         secondsPerBeat = 60f / bpm;
@@ -53,6 +55,7 @@ public class CircleSpawner : MonoBehaviour
         if (nextIndex < spawnTimes.Count && musicSource.time >= spawnTimes[nextIndex])
         {
             TriggerBeat();
+            ShowBeatHint();
             Debug.Log("beat!");
             nextIndex++;
         }
@@ -66,7 +69,19 @@ public class CircleSpawner : MonoBehaviour
         chosen.TriggerBeat();
 
     }
+    void ShowBeatHint()
+    {
+        StartCoroutine(FlashHint());
+    }
+
+    IEnumerator FlashHint()
+    {
+        beatHintText.text = "TAP!"; 
+        yield return new WaitForSeconds(0.2f); // 显示 0.2 秒
+        beatHintText.text = "";
+    }
 }
+
 // using UnityEngine;
 // using System.Collections;
 // using System.Collections.Generic;

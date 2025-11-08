@@ -7,19 +7,32 @@ public class GameHandler : MonoBehaviour
     public float displayTime = 1.0f;
 
     private float timer = 0f;
+    private circle currentCircle;
+    public void SetCurrentCircle(circle c)
+    {
+        currentCircle = c;
+    } 
 
     void Start() {
         resultText.text = "";
     }
-    void Update() {
+    void Update()
+    {
+        if (currentCircle != null && currentCircle.CanBeClicked()){
+            currentCircle.OnClick();
+        }
+        
         //let result disappear
-        if (timer > 0) {
+        if (timer > 0)
+        {
             timer -= Time.deltaTime;
-            if (timer <= 0){
+            if (timer <= 0)
+            {
                 resultText.text = "";
             }
         }
-    }
+    }  
+    
     public void ShowResult(string result)
     {
         resultText.text = result;

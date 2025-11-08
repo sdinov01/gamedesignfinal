@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7504708150370036}
   - component: {fileID: 7308897988128049824}
   - component: {fileID: -419075258634432612}
+  - component: {fileID: 8818205714103607946}
   m_Layer: 0
   m_Name: eye
   m_TagString: Untagged
@@ -119,7 +120,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6439132859630361528}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 334dc090edecb4f148f63287736531a7, type: 3}
   m_Name: 
@@ -144,6 +145,7 @@ MonoBehaviour:
   - {fileID: -622647745, guid: 6bff853217da54d80863eda41386981e, type: 3}
   - {fileID: 868339186, guid: 6bff853217da54d80863eda41386981e, type: 3}
   - {fileID: -274421452, guid: 6bff853217da54d80863eda41386981e, type: 3}
+  handler: {fileID: 0}
 --- !u!58 &-419075258634432612
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -180,3 +182,23 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 2.49
+--- !u!114 &8818205714103607946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6439132859630361528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334dc090edecb4f148f63287736531a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  growTime: 2
+  musicSource: {fileID: 3747546472440603548, guid: 53d100b9e9bf44543b970dce3d1e1103, type: 3}
+  spawnTime: 0
+  targetTime: 0
+  spriteRenderer: {fileID: 0}
+  eyeSprites: []
+  handler: {fileID: 0}

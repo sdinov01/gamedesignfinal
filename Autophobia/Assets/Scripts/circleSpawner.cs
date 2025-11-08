@@ -18,6 +18,7 @@ public class CircleSpawner : MonoBehaviour
     private List<circle> circles = new List<circle>();
     public Animator animator;
     public TMP_Text beatHintText;
+    private int currentCircleIndex = 0;//for test, can be changed to random
     void Start()
     {
         secondsPerBeat = 60f / bpm;
@@ -31,6 +32,7 @@ public class CircleSpawner : MonoBehaviour
             newCircle.transform.localRotation = Quaternion.identity;
 
             circle c = newCircle.GetComponent<circle>();
+            c.musicSource = musicSource;
             circles.Add(c);
 
             Animator anim = newCircle.GetComponent<Animator>();
@@ -55,7 +57,6 @@ public class CircleSpawner : MonoBehaviour
         if (nextIndex < spawnTimes.Count && musicSource.time >= spawnTimes[nextIndex])
         {
             TriggerBeat();
-            ShowBeatHint();
             Debug.Log("beat!");
             nextIndex++;
         }
@@ -63,25 +64,17 @@ public class CircleSpawner : MonoBehaviour
 
     void TriggerBeat()
     {
-        int index = Random.Range(0, circles.Count);
-        circle chosen = circles[index];
+        //int index = Random.Range(0, circles.Count);
+        circle chosen = circles[currentCircleIndex];
         Debug.Log("beat2");
         chosen.TriggerBeat();
+        // tell gamehandler which one should be beaten
+        FindObjectOfType<GameHandler>().SetCurrentCircle(chosen);
+        currentCircleIndex = (currentCircleIndex + 1) % 6;
 
     }
-    void ShowBeatHint()
-    {
-        StartCoroutine(FlashHint());
-    }
 
-    IEnumerator FlashHint()
-    {
-        beatHintText.text = "TAP!"; 
-        yield return new WaitForSeconds(0.2f); // 显示 0.2 秒
-        beatHintText.text = "";
-    }
 }
-
 // using UnityEngine;
 // using System.Collections;
 // using System.Collections.Generic;

@@ -4,7 +4,7 @@ using UnityEngine;
 public class circle : MonoBehaviour
 {
     public Animator animator;
-    public float growTime = 2f;
+    public float growTime = 1.1f;
     private float timer = 0f;
     private bool ready_click = false;  
     private bool player_touch = false;
@@ -19,6 +19,7 @@ public class circle : MonoBehaviour
     private bool hasBeatStarted = false;
     private bool hasResult = false;  // avoid repeating hit/miss
 
+
     void Start()
     {
         if (animator == null)
@@ -28,31 +29,24 @@ public class circle : MonoBehaviour
             animator.runtimeAnimatorController = Instantiate(animator.runtimeAnimatorController);
         }
         animator.SetBool("beat", false);
-    }
+    } 
 
     void Update()
     {
-        float songTime = musicSource.time; 
-        float delta = songTime - spawnTime;
-
-        float t = Mathf.Clamp01(delta / growTime);
-        int frameCount = eyeSprites.Length;
-        int frameIndex = Mathf.Clamp(Mathf.FloorToInt(t * frameCount), 0, frameCount - 1);
-        spriteRenderer.sprite = eyeSprites[frameIndex];
-
-        if (Input.GetKeyDown(KeyCode.Space) && ready_click && player_touch && !hasResult)
-        {
-            OnClick(delta);
-        }
+       
     }
 
-    void OnClick(float delta)
+    public void OnClick()
     {
+        Debug.Log($"{gameObject.name} clicked! songTime={musicSource.time}, growTime = {growTime}, spawnTime={spawnTime}, delta={musicSource.time - spawnTime}");
+        float songTime = musicSource.time;
+        float delta = songTime - (spawnTime + growTime);
+        Debug.Log("click, delta = " + delta);
         hasResult = true;
         ready_click = false;
-
-        if (Mathf.Abs(delta - growTime) <= 0.6f)
-        {
+        Debug.Log("real_delta");
+        if (Mathf.Abs(delta) <= 1f)
+        {   
             animator.SetTrigger("hit");
             FindObjectOfType<GameHandler>().ShowResult("Perfect");
             Debug.Log("Perfect");
@@ -82,6 +76,7 @@ public class circle : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             player_touch = true;
+            Debug.Log("Player left range!");
                 
         }
     }
@@ -103,21 +98,25 @@ public class circle : MonoBehaviour
             animator.SetBool("beat", true);
             spawnTime = musicSource.time;
             Debug.Log("BEAT!");
-            StartCoroutine(WaitForMiss());
+            //StartCoroutine(WaitForMiss());
         }
     }
 
-    private System.Collections.IEnumerator WaitForMiss()
+    // private System.Collections.IEnumerator WaitForMiss()
+    // {
+    //     yield return new WaitForSeconds(growTime + 1.2f);
+    //     if (!hasResult)  //does not hit
+    //     {
+    //         animator.SetTrigger("miss");
+    //         FindObjectOfType<GameHandler>().ShowResult("Miss");
+    //         Debug.Log($"{gameObject.name} Miss triggered!");
+    //         hasResult = true;
+    //         StartCoroutine(ResetToIdle());
+    //     }
+    // }
+    public bool CanBeClicked()
     {
-        yield return new WaitForSeconds(growTime + 0.8f); 
-        if (!hasResult)  //does not hit
-        {
-            animator.SetTrigger("miss");
-            FindObjectOfType<GameHandler>().ShowResult("Miss");
-            Debug.Log($"{gameObject.name} Miss triggered!");
-            hasResult = true;
-            StartCoroutine(ResetToIdle());
-        }
+        return ready_click && player_touch && !hasResult;
     }
 }
 

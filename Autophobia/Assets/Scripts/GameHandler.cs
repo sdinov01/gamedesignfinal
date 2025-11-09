@@ -18,8 +18,14 @@ public class GameHandler : MonoBehaviour
     }
     void Update()
     {
-        if (currentCircle != null && currentCircle.CanBeClicked()){
-            currentCircle.OnClick();
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Current circle parent: " + currentCircle.transform.parent.name);
+            if (currentCircle != null && currentCircle.CanBeClicked())
+            {
+                Debug.Log("clickfunction");
+                currentCircle.OnClick();
+            }
         }
         
         //let result disappear

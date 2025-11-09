@@ -6,8 +6,9 @@ public class circle : MonoBehaviour
     public Animator animator;
     public float growTime = 1.1f;
     private float timer = 0f;
-    private bool ready_click = false;  
+    private bool ready_click = false;
     private bool player_touch = false;
+    private bool hasResult = false;  // avoid repeating hit/miss
 
     public AudioSource musicSource;
     public float spawnTime; 
@@ -17,7 +18,9 @@ public class circle : MonoBehaviour
     public Sprite[] eyeSprites;
 
     private bool hasBeatStarted = false;
-    private bool hasResult = false;  // avoid repeating hit/miss
+
+    // public float waitTime;
+    // public float checkTime;
 
 
     void Start()
@@ -38,14 +41,13 @@ public class circle : MonoBehaviour
 
     public void OnClick()
     {
-        Debug.Log($"{gameObject.name} clicked! songTime={musicSource.time}, growTime = {growTime}, spawnTime={spawnTime}, delta={musicSource.time - spawnTime}");
         float songTime = musicSource.time;
         float delta = songTime - (spawnTime + growTime);
-        Debug.Log("click, delta = " + delta);
+        Debug.Log($"{gameObject.name} clicked! songTime={musicSource.time}, growTime = {growTime}, spawnTime={spawnTime}, delta={musicSource.time - spawnTime}");
         hasResult = true;
         ready_click = false;
         Debug.Log("real_delta");
-        if (Mathf.Abs(delta) <= 1f)
+        if (Mathf.Abs(delta) <= 0.6f)
         {   
             animator.SetTrigger("hit");
             FindObjectOfType<GameHandler>().ShowResult("Perfect");
@@ -64,7 +66,7 @@ public class circle : MonoBehaviour
 
     System.Collections.IEnumerator ResetToIdle()
     {
-        yield return new WaitForSeconds(1.0f); // wait until the animation has finished
+        yield return new WaitForSeconds(0.6f); // wait until the animation has finished
         animator.SetBool("beat", false);
         hasBeatStarted = false;
         hasResult = false;
@@ -97,14 +99,14 @@ public class circle : MonoBehaviour
             ready_click = true;
             animator.SetBool("beat", true);
             spawnTime = musicSource.time;
-            Debug.Log("BEAT!");
+            Debug.Log("Spawned circle at " + spawnTime);
             //StartCoroutine(WaitForMiss());
         }
     }
 
     // private System.Collections.IEnumerator WaitForMiss()
     // {
-    //     yield return new WaitForSeconds(growTime + 1.2f);
+    //     yield return new WaitForSeconds(growTime + waitTime);
     //     if (!hasResult)  //does not hit
     //     {
     //         animator.SetTrigger("miss");
@@ -116,7 +118,8 @@ public class circle : MonoBehaviour
     // }
     public bool CanBeClicked()
     {
-        return ready_click && player_touch && !hasResult;
+        Debug.Log("CanbeClicked!" + (ready_click && player_touch));
+        return ready_click && player_touch;
     }
 }
 

@@ -1,5 +1,9 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour
 {
@@ -57,5 +61,28 @@ public class GameHandler : MonoBehaviour
                 resultText.color = Color.red;
                 break;
         }
+    }
+
+    public void PlayGame(){
+        SceneManager.LoadScene("Sloth_Test");
+        // Please also reset all static variables here, for new games!
+    }
+
+    public void RestartGame(){
+        SceneManager.LoadScene("Menu_Scene");
+        // Please also reset all static variables here, for new games!
+    }
+
+    public void CreditsScene(){
+        SceneManager.LoadScene("Credits_Scene");
+        // Please also reset all static variables here, for new games!
+    }
+
+    public void QuitGame(){
+            #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+            #else
+            Application.Quit();
+            #endif
     }
 }

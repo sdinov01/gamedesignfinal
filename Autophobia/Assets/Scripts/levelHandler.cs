@@ -13,12 +13,13 @@ public class levelHandler : MonoBehaviour
     [SerializeField] private Button lustButton;
     void Start()
     {
-        prideButton.interactable = false;
-        slothButton.interactable = false;
-        envyButton.interactable = false;
-        greedButton.interactable = false;
-        gluttonyButton.interactable = false;
-        lustButton.interactable = false;
+        /* For now, keep all levels interactable */
+        //prideButton.interactable = false;
+        //slothButton.interactable = false;
+        //envyButton.interactable = false;
+        //greedButton.interactable = false;
+        //gluttonyButton.interactable = false;
+        //lustButton.interactable = false;
     }
 
     void Update()

@@ -861,6 +861,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60c19d076f3f2c540a43a4d96880a12c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wrathButton: {fileID: 1633043322}
+  prideButton: {fileID: 112570849}
+  slothButton: {fileID: 902491772}
+  envyButton: {fileID: 1130495353}
+  greedButton: {fileID: 861816460}
+  gluttonyButton: {fileID: 460119045}
+  lustButton: {fileID: 764089868}
 --- !u!1001 &742068856
 PrefabInstance:
   m_ObjectHideFlags: 0

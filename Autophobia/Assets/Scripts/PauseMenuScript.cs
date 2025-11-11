@@ -8,16 +8,16 @@ using UnityEngine.Audio;
 
 public class PauseMenuHandler : MonoBehaviour {
 
-        public static bool GameisPaused = false;
+        public bool GameisPaused = false;
         public GameObject pauseMenuUI;
-        public AudioSource audio;
-        public static float volumeLevel = 1.0f;
+        public AudioSource musicSource;
+        public float volumeLevel = 1.0f;
         public Slider sliderVolumeCtrl;
 
         void Awake(){
                 SetVolume (volumeLevel);
-                if (sliderVolumeCtrl != null && audio != null) {
-                        sliderVolumeCtrl.value = audio.volume;
+                if (sliderVolumeCtrl != null && musicSource != null) {
+                        sliderVolumeCtrl.value = musicSource.volume;
                         sliderVolumeCtrl.onValueChanged.AddListener(SetVolume);
                 }
         }
@@ -53,20 +53,23 @@ public class PauseMenuHandler : MonoBehaviour {
         }
 
         public void SetVolume (float sliderValue){
-                if (audio != null) {
+                if (musicSource != null) {
                         volumeLevel = sliderValue;
-                        audio.volume = sliderValue;
+                        musicSource.volume = sliderValue;
+                        Debug.Log("audio changed");
                 }
                 Debug.Log(sliderValue);
         }
 
         public void RestartGame(){
+                Debug.Log("Clicked restart button");
                 Time.timeScale = 1f;
-                SceneManager.LoadScene("MainMenu");
+                SceneManager.LoadScene("Menu_Scene");
                 // Please also reset all static variables here, for new games!
         }
 
         public void QuitGame(){
+                Debug.Log("Clicked quit button");
                 #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
                 #else

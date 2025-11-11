@@ -4,10 +4,11 @@ using UnityEngine;
 public class circle : MonoBehaviour
 {
     public Animator animator;
-    public float growTime = 2f;
+    public float growTime = 1.1f;
     private float timer = 0f;
-    private bool ready_click = false;  
+    private bool ready_click = false;
     private bool player_touch = false;
+    private bool hasResult = false;  // avoid repeating hit/miss
 
     public AudioSource musicSource;
     public float spawnTime; 
@@ -17,7 +18,10 @@ public class circle : MonoBehaviour
     public Sprite[] eyeSprites;
 
     private bool hasBeatStarted = false;
-    private bool hasResult = false;  // avoid repeating hit/miss
+
+    // public float waitTime;
+    // public float checkTime;
+
 
     void Start()
     {
@@ -28,31 +32,23 @@ public class circle : MonoBehaviour
             animator.runtimeAnimatorController = Instantiate(animator.runtimeAnimatorController);
         }
         animator.SetBool("beat", false);
-    }
+    } 
 
     void Update()
     {
-        float songTime = musicSource.time; 
-        float delta = songTime - spawnTime;
-
-        float t = Mathf.Clamp01(delta / growTime);
-        int frameCount = eyeSprites.Length;
-        int frameIndex = Mathf.Clamp(Mathf.FloorToInt(t * frameCount), 0, frameCount - 1);
-        spriteRenderer.sprite = eyeSprites[frameIndex];
-
-        if (Input.GetKeyDown(KeyCode.Space) && ready_click && player_touch && !hasResult)
-        {
-            OnClick(delta);
-        }
+       
     }
 
-    void OnClick(float delta)
+    public void OnClick()
     {
+        float songTime = musicSource.time;
+        float delta = songTime - (spawnTime + growTime);
+        Debug.Log($"{gameObject.name} clicked! songTime={musicSource.time}, growTime = {growTime}, spawnTime={spawnTime}, delta={musicSource.time - spawnTime}");
         hasResult = true;
         ready_click = false;
-
-        if (Mathf.Abs(delta - growTime) <= 0.6f)
-        {
+        Debug.Log("real_delta");
+        if (Mathf.Abs(delta) <= 0.6f)
+        {   
             animator.SetTrigger("hit");
             FindObjectOfType<GameHandler>().ShowResult("Perfect");
             Debug.Log("Perfect");
@@ -70,7 +66,7 @@ public class circle : MonoBehaviour
 
     System.Collections.IEnumerator ResetToIdle()
     {
-        yield return new WaitForSeconds(1.0f); // wait until the animation has finished
+        yield return new WaitForSeconds(0.6f); // wait until the animation has finished
         animator.SetBool("beat", false);
         hasBeatStarted = false;
         hasResult = false;
@@ -82,6 +78,7 @@ public class circle : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             player_touch = true;
+            Debug.Log("Player left range!");
                 
         }
     }
@@ -102,22 +99,27 @@ public class circle : MonoBehaviour
             ready_click = true;
             animator.SetBool("beat", true);
             spawnTime = musicSource.time;
-            Debug.Log("BEAT!");
-            StartCoroutine(WaitForMiss());
+            Debug.Log("Spawned circle at " + spawnTime);
+            //StartCoroutine(WaitForMiss());
         }
     }
 
-    private System.Collections.IEnumerator WaitForMiss()
+    // private System.Collections.IEnumerator WaitForMiss()
+    // {
+    //     yield return new WaitForSeconds(growTime + waitTime);
+    //     if (!hasResult)  //does not hit
+    //     {
+    //         animator.SetTrigger("miss");
+    //         FindObjectOfType<GameHandler>().ShowResult("Miss");
+    //         Debug.Log($"{gameObject.name} Miss triggered!");
+    //         hasResult = true;
+    //         StartCoroutine(ResetToIdle());
+    //     }
+    // }
+    public bool CanBeClicked()
     {
-        yield return new WaitForSeconds(growTime + 0.8f); 
-        if (!hasResult)  //does not hit
-        {
-            animator.SetTrigger("miss");
-            FindObjectOfType<GameHandler>().ShowResult("Miss");
-            Debug.Log($"{gameObject.name} Miss triggered!");
-            hasResult = true;
-            StartCoroutine(ResetToIdle());
-        }
+        Debug.Log("CanbeClicked!" + (ready_click && player_touch));
+        return ready_click && player_touch;
     }
 }
 

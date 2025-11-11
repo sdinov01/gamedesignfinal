@@ -18,16 +18,7 @@ public class CircleSpawner : MonoBehaviour
     private List<circle> circles = new List<circle>();
     public Animator animator;
     public TMP_Text beatHintText;
-
-    /* Variables for Score */
-    private int perfect = 10;
-    private int good = 5;
-    /* totalPossibleScore is how many points the player could've gotten, and currScore is what the player has */
-    private int totalPossibleScore = 0;
-    private int currScore = 0;
-    /* Percentage starts at 100 */
-    private float score = 100f; 
-
+    private int currentCircleIndex = 0;//for test, can be changed to random
     void Start()
     {
         secondsPerBeat = 60f / bpm;
@@ -41,6 +32,7 @@ public class CircleSpawner : MonoBehaviour
             newCircle.transform.localRotation = Quaternion.identity;
 
             circle c = newCircle.GetComponent<circle>();
+            c.musicSource = musicSource;
             circles.Add(c);
 
             Animator anim = newCircle.GetComponent<Animator>();
@@ -65,7 +57,6 @@ public class CircleSpawner : MonoBehaviour
         if (nextIndex < spawnTimes.Count && musicSource.time >= spawnTimes[nextIndex])
         {
             TriggerBeat();
-            ShowBeatHint();
             Debug.Log("beat!");
             nextIndex++;
         }
@@ -79,37 +70,19 @@ public class CircleSpawner : MonoBehaviour
 
     void TriggerBeat()
     {
-        int index = Random.Range(0, circles.Count);
-        circle chosen = circles[index];
+        //int index = Random.Range(0, circles.Count);
+        circle chosen = circles[currentCircleIndex];
         Debug.Log("beat2");
         /* Update total score */
         totalPossibleScore += perfect;
         chosen.TriggerBeat();
-        /* Retrieve player's hit accuracy */
-
-        string text = FindObjectOfType<GameHandler>().resultText.text;
-        if (text == "Perfect")
-        {
-            currScore += perfect;
-        } else if (text == "Good")
-        {
-            currScore += good;
-        }
+        // tell gamehandler which one should be beaten
+        FindObjectOfType<GameHandler>().SetCurrentCircle(chosen);
+        currentCircleIndex = (currentCircleIndex + 1) % 6;
 
     }
-    void ShowBeatHint()
-    {
-        StartCoroutine(FlashHint());
-    }
 
-    IEnumerator FlashHint()
-    {
-        beatHintText.text = "TAP!"; 
-        yield return new WaitForSeconds(0.2f); // 显示 0.2 秒
-        beatHintText.text = "";
-    }
 }
-
 // using UnityEngine;
 // using System.Collections;
 // using System.Collections.Generic;

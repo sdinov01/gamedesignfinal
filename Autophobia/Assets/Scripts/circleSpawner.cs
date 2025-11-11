@@ -19,6 +19,14 @@ public class CircleSpawner : MonoBehaviour
     public Animator animator;
     public TMP_Text beatHintText;
     private int currentCircleIndex = 0;//for test, can be changed to random
+
+    /* Variables for score */
+    private int perfect = 10;
+    private int good = 5;
+
+    private int totalPossibleScore = 0;
+    private int currScore = 0;
+    private float displayedScore = 100f;
     void Start()
     {
         secondsPerBeat = 60f / bpm;
@@ -63,9 +71,9 @@ public class CircleSpawner : MonoBehaviour
         /* Always update score */
         if (totalPossibleScore != 0)
         {
-            score = currScore / totalPossibleScore;
+            displayedScore = currScore / totalPossibleScore;
         }
-        FindObjectOfType<GameHandler>().UpdateScore(score);
+        FindObjectOfType<GameHandler>().UpdateScore(displayedScore);
     }
 
     void TriggerBeat()

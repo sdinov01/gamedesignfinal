@@ -87,4 +87,9 @@ public class GameHandler : MonoBehaviour
             Application.Quit();
             #endif
     }
+
+    public void UpdateScore(float score)
+    {
+        scoreText.text = $"Score: {score:F1}%";
+    }
 }

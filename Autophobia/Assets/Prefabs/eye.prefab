@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7308897988128049824}
   - component: {fileID: -419075258634432612}
   - component: {fileID: 8818205714103607946}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,8 +145,6 @@ MonoBehaviour:
   - {fileID: -622647745, guid: 6bff853217da54d80863eda41386981e, type: 3}
   - {fileID: 868339186, guid: 6bff853217da54d80863eda41386981e, type: 3}
   - {fileID: -274421452, guid: 6bff853217da54d80863eda41386981e, type: 3}
-  waitTime: 0
-  checkTime: 0
 --- !u!58 &-419075258634432612
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -202,5 +200,3 @@ MonoBehaviour:
   targetTime: 0
   spriteRenderer: {fileID: 0}
   eyeSprites: []
-  waitTime: 0.2
-  checkTime: 0.5

@@ -1326,6 +1326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resultText: {fileID: 666886885}
+  scoreText: {fileID: 0}
   displayTime: 1
 --- !u!4 &709120091
 Transform:
@@ -2528,7 +2529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1693046203}
   - component: {fileID: 1693046204}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3264,3 +3265,4 @@ SceneRoots:
   - {fileID: 1719357959}
   - {fileID: 144384066}
   - {fileID: 57119889}
+  - {fileID: 709120091}

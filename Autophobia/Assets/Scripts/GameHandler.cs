@@ -24,14 +24,11 @@ public class GameHandler : MonoBehaviour
     }
     void Update()
     {
+        Debug.Log("update");
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Current circle parent: " + currentCircle.transform.parent.name);
-            if (currentCircle != null && currentCircle.CanBeClicked())
-            {
-                Debug.Log("clickfunction");
-                currentCircle.OnClick();
-            }
+            currentCircle.OnClick();
         }
         
         //let result disappear

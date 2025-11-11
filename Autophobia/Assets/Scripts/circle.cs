@@ -45,9 +45,8 @@ public class circle : MonoBehaviour
         float delta = songTime - (spawnTime + growTime);
         Debug.Log($"{gameObject.name} clicked! songTime={musicSource.time}, growTime = {growTime}, spawnTime={spawnTime}, delta={musicSource.time - spawnTime}");
         hasResult = true;
-        ready_click = false;
-        Debug.Log("real_delta");
-        if (Mathf.Abs(delta) <= 0.6f)
+        Debug.Log("CanBeClicked() = " + CanBeClicked());
+        if (Mathf.Abs(delta) <= 0.6f && CanBeClicked())
         {   
             animator.SetTrigger("hit");
             FindObjectOfType<GameHandler>().ShowResult("Perfect");
@@ -55,6 +54,7 @@ public class circle : MonoBehaviour
         }
         else
         {
+            Debug.Log("inside of the miss condition.");
             animator.SetTrigger("miss");
             FindObjectOfType<GameHandler>().ShowResult("Miss");
             Debug.Log("Late");
@@ -78,7 +78,7 @@ public class circle : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             player_touch = true;
-            Debug.Log("Player left range!");
+            Debug.Log($"{gameObject.name} Player enter range!");
                 
         }
     }
@@ -118,7 +118,7 @@ public class circle : MonoBehaviour
     // }
     public bool CanBeClicked()
     {
-        Debug.Log("CanbeClicked!" + (ready_click && player_touch));
+        Debug.Log("CanBeClicked! ready_click=" + ready_click + ", player_touch=" + player_touch);
         return ready_click && player_touch;
     }
 }

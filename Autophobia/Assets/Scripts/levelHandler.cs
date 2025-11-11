@@ -23,22 +23,23 @@ public class levelHandler : MonoBehaviour
 
     void Update()
     {
-        /* If wrath is complete, sloth and envy are available */
+        /* If wrath is complete, sloth and greed are available */
         if (levelTracker.wrathComplete)
         {
             slothButton.interactable = true;
-            envyButton.interactable = true;
+            greedButton.interactable = true;
         }
-        /* If all three levels are complete, the next levels are playable */
-        if (levelTracker.slothComplete && levelTracker.envyComplete)
+        /* If sloth and greed were completed, then pride, gluttony, and lust are available */
+        if (levelTracker.slothComplete && levelTracker.greedComplete)
         {
             prideButton.interactable = true;
             gluttonyButton.interactable = true;
             lustButton.interactable = true;
         }
+        /* When the previous three are completed, the final boss Envy is available */
         if (levelTracker.prideComplete && levelTracker.gluttonyComplete && levelTracker.lustComplete)
         {
-            greedButton.interactable = true;
+            envyButton.interactable = true;
         }
     }
     /* Load the level with the name sceneName */

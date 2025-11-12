@@ -43,21 +43,21 @@ public class circle : MonoBehaviour
     {
         float songTime = musicSource.time;
         float delta = songTime - (spawnTime + growTime);
-        Debug.Log($"{gameObject.name} clicked! songTime={musicSource.time}, growTime = {growTime}, spawnTime={spawnTime}, delta={musicSource.time - spawnTime}");
+        //Debug.Log($"{gameObject.name} clicked! songTime={musicSource.time}, growTime = {growTime}, spawnTime={spawnTime}, delta={musicSource.time - spawnTime}");
         hasResult = true;
-        Debug.Log("CanBeClicked() = " + CanBeClicked());
+        //Debug.Log("CanBeClicked() = " + CanBeClicked());
         if (Mathf.Abs(delta) <= 0.6f && CanBeClicked())
         {   
             animator.SetTrigger("hit");
             FindObjectOfType<GameHandler>().ShowResult("Perfect");
-            Debug.Log("Perfect");
+          //  Debug.Log("Perfect");
         }
         else
         {
             Debug.Log("inside of the miss condition.");
             animator.SetTrigger("miss");
             FindObjectOfType<GameHandler>().ShowResult("Miss");
-            Debug.Log("Late");
+          //  Debug.Log("Late");
         }
 
         // go back go idle state
@@ -78,7 +78,7 @@ public class circle : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             player_touch = true;
-            Debug.Log($"{gameObject.name} Player enter range!");
+            //Debug.Log($"{gameObject.name} Player enter range!");
                 
         }
     }
@@ -88,7 +88,7 @@ public class circle : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             player_touch = false;
-            Debug.Log("Player left range!");
+            //Debug.Log("Player left range!");
         }
     }
     public void TriggerBeat()
@@ -99,7 +99,7 @@ public class circle : MonoBehaviour
             ready_click = true;
             animator.SetBool("beat", true);
             spawnTime = musicSource.time;
-            Debug.Log("Spawned circle at " + spawnTime);
+          //  Debug.Log("Spawned circle at " + spawnTime);
             //StartCoroutine(WaitForMiss());
         }
     }
@@ -118,7 +118,7 @@ public class circle : MonoBehaviour
     // }
     public bool CanBeClicked()
     {
-        Debug.Log("CanBeClicked! ready_click=" + ready_click + ", player_touch=" + player_touch);
+      //  Debug.Log("CanBeClicked! ready_click=" + ready_click + ", player_touch=" + player_touch);
         return ready_click && player_touch;
     }
 }

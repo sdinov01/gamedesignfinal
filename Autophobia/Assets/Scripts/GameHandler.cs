@@ -24,7 +24,7 @@ public class GameHandler : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log("update");
+        // Debug.Log("update");
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Current circle parent: " + currentCircle.transform.parent.name);

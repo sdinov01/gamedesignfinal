@@ -16,7 +16,7 @@ public class platformMovement: MonoBehaviour
     public AnimationCurve curveMove = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
     private Vector3 tweenOrigin;
     private Vector3 tweenTarget;
-    private float tweenElapsed = 0;
+    public float tweenElapsed = 0;
     private float tweenSpeed = 10f;
     private bool canMove;
 
@@ -115,17 +115,16 @@ public class platformMovement: MonoBehaviour
         if (canMove)
         {
             tweenTarget = platformObjects[currPosition].transform.position;
-            tweenElapsed = Mathf.Clamp01(tweenElapsed);
             tweenElapsed += Time.fixedDeltaTime * tweenSpeed;
             Vector3 destination = platformObjects[currPosition].transform.position;
             tweenTarget = new Vector3(destination.x, destination.y + offset, player.transform.position.z);
 
-            Vector3 originWithHeight = new Vector3(tweenOrigin.x, tweenOrigin.y, tweenOrigin.z);
-            Vector3 targetWithHeight = new Vector3(tweenTarget.x, tweenTarget.y, tweenTarget.z);
-            player.transform.position = Vector3.Lerp(originWithHeight, targetWithHeight, tweenElapsed);
+            Vector3 origin = new Vector3(tweenOrigin.x, tweenOrigin.y, tweenOrigin.z);
+            Vector3 target = new Vector3(tweenTarget.x, tweenTarget.y, tweenTarget.z);
+            player.transform.position = Vector3.Lerp(origin, target, tweenElapsed);
 
-            //restart the tween at the end of the move:
-            if (Vector3.Distance(transform.position, tweenTarget) <= 0.05f)
+            /* Ending the Tween */
+            if (Vector3.Distance(transform.position, tweenTarget) <= 0.025f)
             {
                 canMove = false;
                 tweenElapsed = 0f;

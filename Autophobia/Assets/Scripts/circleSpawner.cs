@@ -16,7 +16,7 @@ public class CircleSpawner : MonoBehaviour
     private int nextIndex = 0;
 
     private List<circle> circles = new List<circle>();
-    public Animator animator;
+    //public Animator animator;
     public TMP_Text beatHintText;
     private int currentCircleIndex = 0;//for test, can be changed to random
 
@@ -65,7 +65,7 @@ public class CircleSpawner : MonoBehaviour
         if (nextIndex < spawnTimes.Count && musicSource.time >= spawnTimes[nextIndex])
         {
             TriggerBeat();
-            Debug.Log("beat!");
+            //Debug.Log("beat!");
             nextIndex++;
         }
         /* Always update score */
@@ -80,7 +80,7 @@ public class CircleSpawner : MonoBehaviour
     {
         //int index = Random.Range(0, circles.Count);
         circle chosen = circles[currentCircleIndex];
-        Debug.Log("beat2");
+        //Debug.Log("beat2");
         /* Update total score */
         totalPossibleScore += perfect;
         chosen.TriggerBeat();

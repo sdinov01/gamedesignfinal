@@ -45,7 +45,7 @@ public class PauseMenuHandler : MonoBehaviour {
         }
 
         public void Resume(){
-                Debug.Log("Clicked resume button");
+                //Debug.Log("Clicked resume button");
                 pauseMenuUI.SetActive(false);
                 Time.timeScale = 1f;
                 AudioListener.pause = false;
@@ -56,20 +56,20 @@ public class PauseMenuHandler : MonoBehaviour {
                 if (musicSource != null) {
                         volumeLevel = sliderValue;
                         musicSource.volume = sliderValue;
-                        Debug.Log("audio changed");
+                        //Debug.Log("audio changed");
                 }
-                Debug.Log(sliderValue);
+                //Debug.Log(sliderValue);
         }
 
         public void RestartGame(){
-                Debug.Log("Clicked restart button");
+                //Debug.Log("Clicked restart button");
                 Time.timeScale = 1f;
                 SceneManager.LoadScene("Menu_Scene");
                 // Please also reset all static variables here, for new games!
         }
 
         public void QuitGame(){
-                Debug.Log("Clicked quit button");
+                //Debug.Log("Clicked quit button");
                 #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
                 #else

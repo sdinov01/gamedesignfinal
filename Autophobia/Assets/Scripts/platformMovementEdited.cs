@@ -34,7 +34,7 @@ public class platformMovementEdited : MonoBehaviour
             NewPlatform currPlatform = platformList[i];
             if (currPlatform.getAvailability())
             {
-                Debug.Log("Can reposition to platform " + i);
+                //Debug.Log("Can reposition to platform " + i);
                 Vector3 newPosition = new Vector3(currPlatform.transform.position.x, currPlatform.transform.position.y, player.transform.position.z);
                 player.transform.position = newPosition;
                 return currPlatform;
@@ -53,7 +53,7 @@ public class platformMovementEdited : MonoBehaviour
             NewPlatform returned = UpdatePosition(right);
             if (returned == null)
             {
-                Debug.Log("Could not update position\n");
+                //Debug.Log("Could not update position\n");
             } else
             {
                 currPosition = System.Array.IndexOf(platforms, returned);
@@ -67,12 +67,12 @@ public class platformMovementEdited : MonoBehaviour
             NewPlatform returned = UpdatePosition(left);
             if (returned == null)
             {
-                Debug.Log("Could not update position\n");
+                //Debug.Log("Could not update position\n");
             }
             else
             {
                 currPosition = System.Array.IndexOf(platforms, returned);
-                Debug.Log("currPosition" + currPosition);
+                //Debug.Log("currPosition" + currPosition);
             }
         }
         else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
@@ -82,12 +82,12 @@ public class platformMovementEdited : MonoBehaviour
             NewPlatform returned = UpdatePosition(up);
             if (returned == null)
             {
-                Debug.Log("Could not update position\n");
+                //Debug.Log("Could not update position\n");
             }
             else
             {
                 currPosition = System.Array.IndexOf(platforms, returned);
-                Debug.Log("currPosition" + currPosition);
+                //Debug.Log("currPosition" + currPosition);
             }
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
@@ -97,12 +97,12 @@ public class platformMovementEdited : MonoBehaviour
             NewPlatform returned = UpdatePosition(down);
             if (returned == null)
             {
-                Debug.Log("Could not update position\n");
+                //Debug.Log("Could not update position\n");
             }
             else
             {
                 currPosition = System.Array.IndexOf(platforms, returned);
-                Debug.Log("currPosition" + currPosition);
+                //Debug.Log("currPosition" + currPosition);
             }
         } else
         {

@@ -1,15 +1,19 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class Platform : MonoBehaviour
 {
-    private bool isAvailable;
-    private GameObject platform;
-    /* Constructor for Platform class */
-    public void Initialize(bool isAvailable, GameObject platform)
-    {
-        this.isAvailable = isAvailable;
-        this.platform = platform;
-    }
+    /* Whether the platform can be teleported to */
+    private bool isAvailable = true;
+    /* Current platform */
+    [SerializeField] GameObject platform;
+    /* The platforms that the player can go to from the left/right */
+    [SerializeField] public Platform[] left;
+    [SerializeField] public Platform[] right;
+    [SerializeField] public Platform[] up;
+    [SerializeField] public Platform[] down;
+
+
 
     public void setAvailability(bool availability)
     {
@@ -29,25 +33,8 @@ public class Platform : MonoBehaviour
     /* Change visibility of platform based on availability */
     public void changeVisibility()
     {
-        if (isAvailable)
-        {
-            makeVisible();
-        }
-        else
-        {
-            makeInvisible();
-        }
-    }
-
-    /* Make the platform disappear and the player can no longer teleport to it */
-    private void makeInvisible()
-    {
-        platform.SetActive(false);
-    }
-
-    /* Make the platform reappear and the player can teleport to it */
-    private void makeVisible()
-    {
-        platform.SetActive(true);
+        platform.SetActive(isAvailable);
     }
 }
+
+

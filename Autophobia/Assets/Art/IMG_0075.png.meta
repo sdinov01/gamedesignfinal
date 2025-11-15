@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ec3edce2f7c5dbe4082cb3eec0891006
+guid: bc653798b3ac6449b89e5b432d956d87
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6864735502640791875
-    second: greed_clock_0
+      213: 4564952472980332431
+    second: IMG_0075_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: greed_clock_0
+      name: IMG_0075_0
       rect:
         serializedVersion: 2
-        x: 299
-        y: 2
-        width: 723
-        height: 718
+        x: 0
+        y: 0
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 341cae79190744f50800000000000000
-      internalID: 6864735502640791875
+      spriteID: f8f98888618f95f30800000000000000
+      internalID: 4564952472980332431
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      greed_clock_0: 6864735502640791875
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

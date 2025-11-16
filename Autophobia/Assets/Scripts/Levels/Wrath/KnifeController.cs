@@ -18,15 +18,15 @@ public class KnifeController : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        // 假设 player 有 tag "Player"
-        if (other.CompareTag("Player"))
-        {
-            active = false;
-            OnHit?.Invoke(this);
-            // play hit animation
-            Destroy(gameObject);
-        }
-    }
+    // void OnTriggerEnter2D(Collider2D other)
+    // {
+    //     // 假设 player 有 tag "Player"
+    //     if (other.CompareTag("Player"))
+    //     {
+    //         active = false;
+    //         OnHit?.Invoke(this);
+    //         // play hit animation
+    //         Destroy(gameObject);
+    //     }
+    // }
 }

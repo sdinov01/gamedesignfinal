@@ -48,5 +48,8 @@ TagManager:
   - name: Boss
     uniqueID: 952424591
     locked: 0
+  - name: Glow
+    uniqueID: 3029397339
+    locked: 0
   m_RenderingLayers:
   - Default

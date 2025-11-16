@@ -15,9 +15,18 @@ public class TutorialManager : MonoBehaviour
    public float fadeDuration = 1f;
 
    [Header("Step 1 Move to the flashlight")]
-   public GameObject[] glowObjects;  
+    public GameObject[] glowObjects;  
     public GlowFlasher[] highlighters;
     int currentStep = 0;
+
+    [Header("Step 2 Rhythm Dodge")]
+    public CanvasGroup canvasGroup2;
+
+    [Header("Music")]
+    public AudioSource audioSource;
+    // private AudioSource audioSource;
+
+
 
 
    void Start() {
@@ -35,10 +44,12 @@ public class TutorialManager : MonoBehaviour
     startButton.onClick.AddListener(ButtonClicked);
 
     StartCoroutine(FadeInCanvas());
+
     }
 
     IEnumerator FadeInCanvas()
     {
+        canvasGroup2.gameObject.SetActive(false);
         float elapsed = 0f;
 
         while (elapsed < fadeDuration)
@@ -72,6 +83,7 @@ public class TutorialManager : MonoBehaviour
         highlighters[step].StopFlashing();
 
         currentStep++;
+        Debug.Log("currentStep:" + currentStep);
 
         if (currentStep < highlighters.Length){
             glowObjects[currentStep].SetActive(true);
@@ -80,24 +92,31 @@ public class TutorialManager : MonoBehaviour
 
         else
         {
+            canvasGroup2.gameObject.SetActive(true);
             StartCoroutine(FadeInCanvasAfterStep()); //show next canvas
         }
     }
 
+
+    /*STEP 2*/
     IEnumerator FadeInCanvasAfterStep()
     {
-        canvasGroup.alpha = 0;
-        canvasGroup.gameObject.SetActive(true);
+        AudioSource audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
+        canvasGroup2.alpha = 0;
+        canvasGroup2.gameObject.SetActive(true);
 
         float elapsed = 0f;
         while (elapsed < fadeDuration)
         {
             elapsed += Time.deltaTime;
-            canvasGroup.alpha = Mathf.Clamp01(elapsed / fadeDuration);
+            canvasGroup2.alpha = Mathf.Clamp01(elapsed / fadeDuration);
             yield return null;
         }
 
-        canvasGroup.interactable = true;
-        canvasGroup.blocksRaycasts = true;
+        canvasGroup2.interactable = true;
+        canvasGroup2.blocksRaycasts = true;
+
+        //StartStep2(); // Step 2 开始
     }
 }

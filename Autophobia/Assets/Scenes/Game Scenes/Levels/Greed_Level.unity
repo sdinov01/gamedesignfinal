@@ -911,6 +911,7 @@ GameObject:
   m_Component:
   - component: {fileID: 498690603}
   - component: {fileID: 498690602}
+  - component: {fileID: 498690604}
   m_Layer: 0
   m_Name: greed_clock_1_0
   m_TagString: Untagged
@@ -988,6 +989,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1274170621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &498690604
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498690601}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.1165584, y: -1.6582705}
+  - {x: 1.2410173, y: 0.68209517}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &557008288
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,7 +1261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7476217572517339139, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8119446119730540978, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
@@ -1650,6 +1694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1142959081}
   - component: {fileID: 1142959080}
+  - component: {fileID: 1142959082}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -1685,6 +1730,7 @@ MonoBehaviour:
   - {r: 1, g: 0.90736187, b: 0, a: 0.4627451}
   - {r: 0.9685534, g: 0.52665734, b: 0, a: 0.4509804}
   - {r: 1, g: 0, b: 0, a: 0.5411765}
+  - {r: 1, g: 1, b: 1, a: 1}
   minuteHand: {fileID: 1584120212}
   rotationTime: 0.5
 --- !u!4 &1142959081
@@ -1702,6 +1748,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1142959082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142959079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab86d1ecb7c5b3f499f75771d2de1f0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 1330991106}
 --- !u!1 &1204054401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,6 +1979,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5086492732952015457, guid: 9994e71111315964aa1accec3dbda8d5, type: 3}
   m_PrefabInstance: {fileID: 6222274539252396322}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1330991106 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4189397477639443584, guid: 9994e71111315964aa1accec3dbda8d5, type: 3}
+  m_PrefabInstance: {fileID: 6222274539252396322}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62f748ef22f6eb84c8b18a4c9fa7e1af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1407782588
 GameObject:
   m_ObjectHideFlags: 0

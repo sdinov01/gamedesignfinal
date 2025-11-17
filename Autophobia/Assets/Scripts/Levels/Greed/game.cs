@@ -54,10 +54,12 @@ public class game : MonoBehaviour
     {
         Renderer colorRenderer = area.GetComponent<Renderer>();
         yield return new WaitForSeconds(0.5f);
-        colorRenderer.material.SetColor("_Color", colors[0]);
+        colorRenderer.material.SetColor("_Color", colors[0]); // warning color
         yield return new WaitForSeconds(3f);
-        colorRenderer.material.SetColor("_Color", colors[1]);
+        colorRenderer.material.SetColor("_Color", colors[1]); // about to turn
         yield return new WaitForSeconds(3f);
-        colorRenderer.material.SetColor("_Color", colors[2]);
+        colorRenderer.material.SetColor("_Color", colors[2]); // avoid
+        yield return new WaitForSeconds(5f);
+        colorRenderer.material.SetColor("_Color", colors[3]); // reset
     }
 }

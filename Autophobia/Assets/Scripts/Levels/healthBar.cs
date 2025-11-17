@@ -11,6 +11,11 @@ public class healthBar : MonoBehaviour
         health = 100f;
     }
 
+    void Update()
+    {
+  
+    }
+
     public void setTotalHealth(float totalHealth)
     {
         health = totalHealth;

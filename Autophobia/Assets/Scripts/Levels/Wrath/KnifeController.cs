@@ -1,32 +1,52 @@
 using UnityEngine;
+using System.Collections;
 
 public class KnifeController : MonoBehaviour
 {
-    public float fallSpeed = 3f;
-    public float destroyY = -5f;
-    public System.Action<KnifeController> OnHit; // 被命中回调（可选）
+    public float attackDistance = 0.5f;
+    public float attackSpeed = 8f;
+    public float returnSpeed = 8f;
+    public bool canStart = false;
 
-    bool active = true;
+    private Vector3 basePos;
+    private bool isAttacking = false;
 
-    void Update()
+    void Awake()
     {
-        if (!active) return;
-        transform.position += Vector3.down * fallSpeed * Time.deltaTime;
-        if (transform.position.y < destroyY) 
-        {
-            Destroy(gameObject);
-        }
+        basePos = transform.position;
     }
 
-    // void OnTriggerEnter2D(Collider2D other)
-    // {
-    //     // 假设 player 有 tag "Player"
-    //     if (other.CompareTag("Player"))
-    //     {
-    //         active = false;
-    //         OnHit?.Invoke(this);
-    //         // play hit animation
-    //         Destroy(gameObject);
-    //     }
-    // }
+    public void TriggerAttack()
+    {
+        if (!canStart || isAttacking) return;
+        StartCoroutine(DoAttack());
+    }
+
+    IEnumerator DoAttack()
+    {
+        Debug.Log("attack.");
+        isAttacking = true;
+        
+        Vector3 dir = transform.up; 
+        Vector3 target = basePos + dir * attackDistance;
+        Debug.Log("basePos: " + basePos + ", target: " + target);
+
+
+        // 刺出去
+        while (Vector3.Distance(transform.position, target) > 0.01f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, target, attackSpeed * Time.deltaTime);
+            Debug.Log("Moving to target: " + transform.position);
+            yield return null;
+        }
+
+        // 回来
+        while (Vector3.Distance(transform.position, basePos) > 0.01f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, basePos, returnSpeed * Time.deltaTime);
+            yield return null;
+        }
+
+        isAttacking = false;
+    }
 }

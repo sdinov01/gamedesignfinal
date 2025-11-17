@@ -175,8 +175,12 @@ MonoBehaviour:
   - {fileID: 1253458011}
   - {fileID: 1652464522}
   - {fileID: 1092530923}
-  fireAllLanesEveryBeat: 0
   lanePattern: 00000000010000000200000003000000
+  projectileLifetimes:
+  - 7
+  - 6
+  - 5
+  - 4.5
 --- !u!1 &44026119
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,13 +297,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 61204883}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.9819011, w: 0.18939431}
-  m_LocalPosition: {x: -6.32, y: -1.37, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.97396606, w: 0.22669372}
+  m_LocalPosition: {x: -5.88, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1994410145}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -158.165}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -153.795}
 --- !u!1 &153420269
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,13 +534,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 465176906}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.99988914, w: 0.014896563}
-  m_LocalPosition: {x: -5.83, y: -0.22, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.999373, w: 0.03540624}
+  m_LocalPosition: {x: -5.83, y: -0.38999987, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1994410145}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -178.293}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -175.942}
 --- !u!1 &473113863
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,13 +565,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 473113863}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.96403193, w: 0.2657864}
-  m_LocalPosition: {x: -6.4, y: -2.07, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.9499577, w: 0.31237844}
+  m_LocalPosition: {x: -5.92, y: -1.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1994410145}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -149.173}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -143.595}
 --- !u!1 &875178464
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,8 +1275,12 @@ MonoBehaviour:
   - {fileID: 1251387287}
   - {fileID: 61204884}
   - {fileID: 473113864}
-  fireAllLanesEveryBeat: 0
   lanePattern: 00000000010000000200000003000000
+  projectileLifetimes:
+  - 6.5
+  - 7
+  - 7.5
+  - 8
 --- !u!1 &2092702845
 GameObject:
   m_ObjectHideFlags: 0

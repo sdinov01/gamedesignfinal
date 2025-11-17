@@ -1,5 +1,6 @@
 /* Handle rotations corresponding to music */
 using UnityEngine;
+using System.Collections;
 
 public class game : MonoBehaviour
 {
@@ -10,7 +11,9 @@ public class game : MonoBehaviour
     /* The rotation */
     [SerializeField] private float[] rotations;
     /* The area of the clock to change color */
-    [SerializeField] private int[] area;
+    [SerializeField] private GameObject[] area;
+    /* Colors */
+    [SerializeField] private Color[] colors;
 
     /* The minute hand to rotate */
     [SerializeField] private GameObject minuteHand;
@@ -38,7 +41,7 @@ public class game : MonoBehaviour
                 /* Performs rotation */
                 minuteHandMovement.PerformRotation(rotations[currRotation], rotationTime);
                 /* Starts changing color of clock areas */
-                ChangeColor(area[currRotation]);
+                StartCoroutine(ChangeColor(area[currRotation]));
                 /* Move on to next rotation */
                 currRotation = currRotation + 1;
             }
@@ -46,8 +49,14 @@ public class game : MonoBehaviour
     }
 
     /* Changes the color of an area of the clock */
-    void ChangeColor(int area)
+    private IEnumerator ChangeColor(GameObject area)
     {
-
+        Renderer colorRenderer = area.GetComponent<Renderer>();
+        yield return new WaitForSeconds(0.5f);
+        colorRenderer.material.SetColor("_Color", colors[0]);
+        yield return new WaitForSeconds(3f);
+        colorRenderer.material.SetColor("_Color", colors[1]);
+        yield return new WaitForSeconds(3f);
+        colorRenderer.material.SetColor("_Color", colors[2]);
     }
 }

@@ -12,8 +12,9 @@ public class game : MonoBehaviour
     [SerializeField] private float[] rotations;
     /* The area of the clock to change color */
     [SerializeField] private GameObject[] area;
-    /* Colors */
+    /* Colors for changing the clock slices */
     [SerializeField] private Color[] colors;
+    /* Range for each area that the player cannot be in */
 
     /* The minute hand to rotate */
     [SerializeField] private GameObject minuteHand;

@@ -48,11 +48,6 @@ public class game : MonoBehaviour
                     {
                         rotationTime = timeStamps[currRotation + 1] - timeStamps[currRotation];
                     }
-                    //else
-                    //{
-                    //    /* If the next rotation isn't soon, do the same speed as previous rotation */
-                    //    rotationTime = 0.5f;
-                    //}
                 } else
                 {
                     /* If there is no next rotation, it is 2 seconds */
@@ -70,9 +65,9 @@ public class game : MonoBehaviour
     /* Changes the color of an area of the clock */
     private IEnumerator ChangeColor(GameObject area)
     {
+        // get color component
         Renderer colorRenderer = area.GetComponent<Renderer>();
-        Debug.Log("ROTATION TIME: " + rotationTime);
-        yield return new WaitForSeconds(rotationTime);
+        yield return new WaitForSeconds(rotationTime); // wait until the hour hand reaches the slice before turning color
         colorRenderer.material.SetColor("_Color", colors[0]); // warning color
         yield return new WaitForSeconds(3f);
         colorRenderer.material.SetColor("_Color", colors[1]); // about to turn

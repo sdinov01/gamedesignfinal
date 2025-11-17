@@ -804,6 +804,7 @@ MonoBehaviour:
   - 30
   - -120
   - 150
+  area: 040000000800000003000000
   minuteHand: {fileID: 1584120212}
   rotationTime: 0.5
 --- !u!4 &1142959081

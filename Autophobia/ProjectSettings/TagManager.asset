@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - PauseMenuSlider
+  - Platform
   layers:
   - Default
   - TransparentFX

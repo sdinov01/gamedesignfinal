@@ -19,13 +19,11 @@ public class restrictMovement : MonoBehaviour
         if (slice.material.GetColor("_Color") == red)
         {
             takeDamage = true;
-            Debug.Log("DANGER on " + collision.gameObject.name);
 
         }
         else
         {
             takeDamage = false;
-            Debug.Log("Safe on " + collision.gameObject.name);
         }
     }
 
@@ -36,12 +34,10 @@ public class restrictMovement : MonoBehaviour
         if (slice.material.GetColor("_Color") == red)
         {
             takeDamage = true;
-            Debug.Log("DANGER on " + collision.gameObject.name);
 
         } else
         {
             takeDamage = false;
-            Debug.Log("Safe on " + collision.gameObject.name);
         }
     }
 

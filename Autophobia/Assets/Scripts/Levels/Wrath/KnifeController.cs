@@ -24,29 +24,39 @@ public class KnifeController : MonoBehaviour
 
     IEnumerator DoAttack()
     {
-        Debug.Log("attack.");
         isAttacking = true;
         
         Vector3 dir = -transform.up; 
         Vector3 target = basePos - dir * attackDistance;
-        Debug.Log("basePos: " + basePos + ", target: " + target);
 
 
         // 刺出去
         while (Vector3.Distance(transform.position, target) > 0.01f)
         {
             transform.position = Vector3.MoveTowards(transform.position, target, attackSpeed * Time.deltaTime);
-            Debug.Log("Moving to target: " + transform.position);
             yield return null;
         }
 
-        // 回来
+        // return
         while (Vector3.Distance(transform.position, basePos) > 0.01f)
         {
             transform.position = Vector3.MoveTowards(transform.position, basePos, returnSpeed * Time.deltaTime);
             yield return null;
         }
-
+        ResetCollider();
         isAttacking = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!other.CompareTag("Player")) return;
+        Debug.Log("Ouch");
+    }
+
+    void ResetCollider()
+    {
+        Collider2D col = GetComponent<Collider2D>();
+        col.enabled = false;
+        col.enabled = true; 
     }
 }

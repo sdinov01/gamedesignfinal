@@ -10,6 +10,7 @@ public class KnifeController : MonoBehaviour
 
     private Vector3 basePos;
     private bool isAttacking = false;
+    [SerializeField] private healthBar healthObject;
 
     void Awake()
     {
@@ -51,6 +52,13 @@ public class KnifeController : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
         Debug.Log("Ouch");
+        healthBar health = healthObject.GetComponent<healthBar>();
+        Debug.Log(health == null);
+        if (health != null)
+        {
+            Debug.Log("take damage"); 
+            health.takeDamage(10); 
+        }
     }
 
     void ResetCollider()

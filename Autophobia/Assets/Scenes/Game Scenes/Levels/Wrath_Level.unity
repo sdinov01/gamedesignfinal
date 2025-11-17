@@ -215,7 +215,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1293681102}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22697ad938e864f9a9685157cc2eff01, type: 3}
   m_Name: 
@@ -364,6 +364,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: attackDistance
       value: 1.2
@@ -516,7 +520,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 7253798494901733087}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22697ad938e864f9a9685157cc2eff01, type: 3}
   m_Name: 
@@ -684,7 +688,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1076406711}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22697ad938e864f9a9685157cc2eff01, type: 3}
   m_Name: 
@@ -845,7 +849,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1296272316}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22697ad938e864f9a9685157cc2eff01, type: 3}
   m_Name: 
@@ -1284,6 +1288,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: attackDistance
       value: 1.2
       objectReference: {fileID: 0}
@@ -1716,6 +1724,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: attackDistance
       value: 1.2
       objectReference: {fileID: 0}
@@ -1784,6 +1796,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: attackDistance
       value: 1.2
@@ -2005,7 +2021,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 473051493}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22697ad938e864f9a9685157cc2eff01, type: 3}
   m_Name: 
@@ -2933,6 +2949,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: attackDistance
       value: 1.2
       objectReference: {fileID: 0}
@@ -3774,7 +3794,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1720577538}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22697ad938e864f9a9685157cc2eff01, type: 3}
   m_Name: 
@@ -4193,6 +4213,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: attackDistance
       value: 1.2

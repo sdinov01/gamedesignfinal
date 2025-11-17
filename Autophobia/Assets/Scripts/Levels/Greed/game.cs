@@ -36,11 +36,29 @@ public class game : MonoBehaviour
         time += Time.deltaTime;
         if (currRotation < timeStamps.Length && currRotation < rotations.Length)
         {
-            /* A rotation must be performed if this is true */
+            /* Time to perform a rotation */
             if (time >= timeStamps[currRotation])
             {
-                /* Performs rotation */
-                minuteHandMovement.PerformRotation(rotations[currRotation], rotationTime);
+
+                /* If there is another rotation after this one: */
+                if (currRotation + 1 < timeStamps.Length)
+                {
+                    /* and the rotation is soon, rotation time will be the difference */
+                    if (timeStamps[currRotation + 1] - timeStamps[currRotation] < 1f)
+                    {
+                        rotationTime = timeStamps[currRotation + 1] - timeStamps[currRotation];
+                    }
+                    //else
+                    //{
+                    //    /* If the next rotation isn't soon, do the same speed as previous rotation */
+                    //    rotationTime = 0.5f;
+                    //}
+                } else
+                {
+                    /* If there is no next rotation, it is 2 seconds */
+                    rotationTime = 2f;
+                }
+                    minuteHandMovement.PerformRotation(rotations[currRotation], rotationTime);
                 /* Starts changing color of clock areas */
                 StartCoroutine(ChangeColor(area[currRotation]));
                 /* Move on to next rotation */
@@ -53,7 +71,8 @@ public class game : MonoBehaviour
     private IEnumerator ChangeColor(GameObject area)
     {
         Renderer colorRenderer = area.GetComponent<Renderer>();
-        yield return new WaitForSeconds(0.5f);
+        Debug.Log("ROTATION TIME: " + rotationTime);
+        yield return new WaitForSeconds(rotationTime);
         colorRenderer.material.SetColor("_Color", colors[0]); // warning color
         yield return new WaitForSeconds(3f);
         colorRenderer.material.SetColor("_Color", colors[1]); // about to turn

@@ -303,6 +303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 99674990}
   - component: {fileID: 99674989}
+  - component: {fileID: 99674991}
   m_Layer: 0
   m_Name: greed_clock_4_0
   m_TagString: Untagged
@@ -374,12 +375,58 @@ Transform:
   m_GameObject: {fileID: 99674988}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: 0.38202333, y: -2.9435146, z: 0.14596915}
+  m_LocalPosition: {x: 0.43, y: -2.96, z: 0.14596915}
   m_LocalScale: {x: 1.31, y: 1.31, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1274170621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &99674991
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99674988}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.98298055, y: 0.51418936}
+  - {x: -0.45165616, y: 0.9002806}
+  - {x: 0.7476798, y: 0.5365808}
+  - {x: -0.14627437, y: -0.35451573}
+  - {x: -0.952371, y: 0.5141892}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &114758391
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,6 +437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 114758393}
   - component: {fileID: 114758392}
+  - component: {fileID: 114758394}
   m_Layer: 0
   m_Name: greed_clock_6_0
   m_TagString: Untagged
@@ -461,12 +509,58 @@ Transform:
   m_GameObject: {fileID: 114758391}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: -2.0348349, y: -2.5296357, z: 0.14596915}
+  m_LocalPosition: {x: -2.01, y: -2.49, z: 0.14596915}
   m_LocalScale: {x: 1.31, y: 1.31, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1274170621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &114758394
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114758391}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.6086316, y: -0.41420788}
+  - {x: 0.5725894, y: -0.28477132}
+  - {x: 0.7150543, y: -0.8568365}
+  - {x: -0.70012414, y: -0.8768257}
+  - {x: -0.61970925, y: -0.4142082}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &156381208
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,6 +694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 206873196}
   - component: {fileID: 206873195}
+  - component: {fileID: 206873197}
   m_Layer: 0
   m_Name: greed_clock_3_0
   m_TagString: Untagged
@@ -671,12 +766,58 @@ Transform:
   m_GameObject: {fileID: 206873194}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: 1.3979082, y: -1.5439508, z: 0.14596915}
+  m_LocalPosition: {x: 1.39, y: -1.58, z: 0.14596915}
   m_LocalScale: {x: 1.31, y: 1.31, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1274170621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &206873197
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206873194}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.6087724, y: -0.30708516}
+  - {x: -0.5639186, y: 0.27017885}
+  - {x: 0.4534199, y: 0.535048}
+  - {x: 0.42805183, y: -0.6050788}
+  - {x: -0.5910027, y: -0.2928028}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &218539909
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,6 +828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 218539911}
   - component: {fileID: 218539910}
+  - component: {fileID: 218539912}
   m_Layer: 0
   m_Name: greed_clock_8_0
   m_TagString: Untagged
@@ -758,12 +900,58 @@ Transform:
   m_GameObject: {fileID: 218539909}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: -3.63, y: -0.6, z: 0.14596915}
+  m_LocalPosition: {x: -3.65, y: -0.6, z: 0.14596915}
   m_LocalScale: {x: 1.31, y: 1.31, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1274170621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &218539912
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218539909}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.8929991, y: 0.5284727}
+  - {x: -0.015606247, y: 0.750515}
+  - {x: 0.47582075, y: 0.033237904}
+  - {x: -0.2799095, y: -0.73404264}
+  - {x: -0.92094594, y: 0.52133083}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &256854829
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +962,9 @@ GameObject:
   m_Component:
   - component: {fileID: 256854830}
   - component: {fileID: 256854831}
+  - component: {fileID: 256854833}
+  - component: {fileID: 256854832}
+  - component: {fileID: 256854834}
   m_Layer: 0
   m_Name: Minute Hand
   m_TagString: Untagged
@@ -811,6 +1002,93 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationAmount: 150
+--- !u!114 &256854832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256854829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab86d1ecb7c5b3f499f75771d2de1f0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 1330991106}
+  red: {r: 1, g: 0, b: 0, a: 0.5411765}
+--- !u!61 &256854833
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256854829}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.05321066, y: 3.14045}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.073996395, y: 0.15867901}
+  m_EdgeRadius: 0
+--- !u!50 &256854834
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256854829}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &307577696
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,7 +1261,7 @@ Transform:
   m_GameObject: {fileID: 498690601}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: 1.9653509, y: 0.8188884, z: 0.14596915}
+  m_LocalPosition: {x: 1.91, y: 0.85, z: 0.14596915}
   m_LocalScale: {x: 1.31, y: 1.31, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1026,8 +1304,11 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -1.1165584, y: -1.6582705}
-  - {x: 1.2410173, y: 0.68209517}
+  - {x: -0.585839, y: 0.56418014}
+  - {x: -0.8419179, y: -0.30952173}
+  - {x: -0.1378848, y: -0.6152771}
+  - {x: 0.5966215, y: 0.20534661}
+  - {x: -0.5425207, y: 0.5927458}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -1042,6 +1323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 557008290}
   - component: {fileID: 557008289}
+  - component: {fileID: 557008291}
   m_Layer: 0
   m_Name: greed_clock_9_0
   m_TagString: Untagged
@@ -1113,12 +1395,58 @@ Transform:
   m_GameObject: {fileID: 557008288}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: -2.8546355, y: 0.830428, z: 0.14596915}
+  m_LocalPosition: {x: -2.91, y: 0.92, z: 0.14596915}
   m_LocalScale: {x: 1.31, y: 1.31, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1274170621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &557008291
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557008288}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.03745079, y: -0.43563235}
+  - {x: -0.9598731, y: -0.6291819}
+  - {x: -0.80635935, y: 0.6555769}
+  - {x: 0.04731646, y: 0.40706652}
+  - {x: 0.0017436743, y: -0.4070665}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1001 &618338338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1289,6 +1617,7 @@ GameObject:
   m_Component:
   - component: {fileID: 850020799}
   - component: {fileID: 850020798}
+  - component: {fileID: 850020800}
   m_Layer: 0
   m_Name: greed_clock_2_0
   m_TagString: Untagged
@@ -1366,6 +1695,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1274170621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &850020800
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850020797}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.49093282, y: -0.04999044}
+  - {x: 0.06796634, y: 0.5391754}
+  - {x: 0.73407394, y: -0.61300415}
+  - {x: -0.18456554, y: -0.76886016}
+  - {x: -0.4945972, y: -0.07141587}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &945987452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1376,6 +1751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 945987454}
   - component: {fileID: 945987453}
+  - component: {fileID: 945987455}
   m_Layer: 0
   m_Name: greed_clock_12_0
   m_TagString: Untagged
@@ -1447,12 +1823,58 @@ Transform:
   m_GameObject: {fileID: 945987452}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: 0.49944758, y: 1.6998693, z: 0.14596915}
+  m_LocalPosition: {x: 0.5, y: 1.81, z: 0.14596915}
   m_LocalScale: {x: 1.31, y: 1.31, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1274170621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &945987455
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945987452}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.5386411, y: 0.6141706}
+  - {x: 0.55841863, y: 0.51936364}
+  - {x: 0.3278802, y: -0.29959512}
+  - {x: -0.3243234, y: -0.37336493}
+  - {x: -0.49687877, y: 0.56418}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1001 &948511894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1520,6 +1942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1030900170}
   - component: {fileID: 1030900169}
+  - component: {fileID: 1030900171}
   m_Layer: 0
   m_Name: greed_clock_5_0
   m_TagString: Untagged
@@ -1591,12 +2014,58 @@ Transform:
   m_GameObject: {fileID: 1030900168}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: -0.5049124, y: -3.2397318, z: 0.14596915}
+  m_LocalPosition: {x: -0.51, y: -3.17, z: 0.14596915}
   m_LocalScale: {x: 1.31, y: 1.31, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1274170621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1030900171
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030900168}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.0043304, y: 0.7927087}
+  - {x: -0.55380213, y: 0.95832217}
+  - {x: 0.64966583, y: -0.28509605}
+  - {x: -0.52323395, y: -0.64322954}
+  - {x: -0.9595877, y: 0.7927086}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1036531646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1607,6 +2076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1036531648}
   - component: {fileID: 1036531647}
+  - component: {fileID: 1036531649}
   m_Layer: 0
   m_Name: greed_clock_11_0
   m_TagString: Untagged
@@ -1678,12 +2148,58 @@ Transform:
   m_GameObject: {fileID: 1036531646}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: -1.0041354, y: 2.4755874, z: 0.14596915}
+  m_LocalPosition: {x: -1.04, y: 2.52, z: 0.14596915}
   m_LocalScale: {x: 1.31, y: 1.31, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1274170621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1036531649
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036531646}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.4422915, y: 0.021424588}
+  - {x: 0.21642904, y: -0.588519}
+  - {x: 0.8269942, y: -0.28874725}
+  - {x: 0.6029643, y: 0.5688939}
+  - {x: -0.46468115, y: 0.07141502}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1142959079
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,7 +2210,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1142959081}
   - component: {fileID: 1142959080}
-  - component: {fileID: 1142959082}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -1718,14 +2233,51 @@ MonoBehaviour:
   - 3
   - 3.5
   - 4
+  - 12
+  - 12.5
+  - 15.5
+  - 16
+  - 16.5
+  - 17
+  - 18
+  - 22
+  - 22.25
+  - 22.5
+  - 22.75
+  - 23
+  - 24
   rotations:
   - 30
   - -120
   - 150
+  - 90
+  - -30
+  - 210
+  - 30
+  - 30
+  - 30
+  - 30
+  - 90
+  - 90
+  - -30
+  - -30
+  - 90
   area:
   - {fileID: 99674988}
   - {fileID: 218539909}
   - {fileID: 206873194}
+  - {fileID: 945987452}
+  - {fileID: 498690601}
+  - {fileID: 114758391}
+  - {fileID: 1030900168}
+  - {fileID: 99674988}
+  - {fileID: 206873194}
+  - {fileID: 850020797}
+  - {fileID: 1036531646}
+  - {fileID: 218539909}
+  - {fileID: 557008288}
+  - {fileID: 1708285869}
+  - {fileID: 1905198172}
   colors:
   - {r: 1, g: 0.90736187, b: 0, a: 0.4627451}
   - {r: 0.9685534, g: 0.52665734, b: 0, a: 0.4509804}
@@ -1748,19 +2300,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1142959082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142959079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab86d1ecb7c5b3f499f75771d2de1f0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: {fileID: 1330991106}
 --- !u!1 &1204054401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,6 +2310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1204054402}
   - component: {fileID: 1204054403}
+  - component: {fileID: 1204054404}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1816,6 +2356,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!50 &1204054404
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204054401}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
 --- !u!224 &1210609637 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2576638760144512333, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
@@ -2167,6 +2734,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1708285871}
   - component: {fileID: 1708285870}
+  - component: {fileID: 1708285872}
   m_Layer: 0
   m_Name: greed_clock_10_0
   m_TagString: Untagged
@@ -2238,12 +2806,58 @@ Transform:
   m_GameObject: {fileID: 1708285869}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: -1.9183916, y: 2.172049, z: 0.14596915}
+  m_LocalPosition: {x: -1.97, y: 2.31, z: 0.14596915}
   m_LocalScale: {x: 1.31, y: 1.31, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1274170621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1708285872
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708285869}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.10671556, y: 0.51418954}
+  - {x: -0.89511055, y: -0.51418906}
+  - {x: 0.11259785, y: -0.82950497}
+  - {x: 0.6188118, y: -0.1513829}
+  - {x: -0.107530355, y: 0.5284724}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1905198172
 GameObject:
   m_ObjectHideFlags: 0
@@ -2254,6 +2868,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1905198174}
   - component: {fileID: 1905198173}
+  - component: {fileID: 1905198175}
   m_Layer: 0
   m_Name: greed_clock_7_0
   m_TagString: Untagged
@@ -2325,12 +2940,58 @@ Transform:
   m_GameObject: {fileID: 1905198172}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: -3.39, y: -1.6, z: 0.14596915}
+  m_LocalPosition: {x: -3.41, y: -1.52, z: 0.14596915}
   m_LocalScale: {x: 1.31, y: 1.31, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1274170621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1905198175
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905198172}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.13759613, y: 0.67130286}
+  - {x: -0.7014549, y: -0.21945316}
+  - {x: 0.5442978, y: -0.70210385}
+  - {x: 0.81627893, y: 0.34362996}
+  - {x: 0.1409235, y: 0.6570198}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1001 &6222274539252396322
 PrefabInstance:
   m_ObjectHideFlags: 0

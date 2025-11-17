@@ -21,10 +21,11 @@ public class TutorialManager : MonoBehaviour
 
     [Header("Step 2 Rhythm Dodge")]
     public CanvasGroup canvasGroup2;
+    public Button step2Button;
 
     [Header("Music")]
     public AudioSource audioSource;
-    // private AudioSource audioSource;
+    public KnifeController[] knives;
 
 
 
@@ -42,6 +43,7 @@ public class TutorialManager : MonoBehaviour
     canvasGroup.blocksRaycasts = false;
 
     startButton.onClick.AddListener(ButtonClicked);
+    step2Button.onClick.AddListener(CloseStep2Canvas);
 
     StartCoroutine(FadeInCanvas());
 
@@ -101,8 +103,6 @@ public class TutorialManager : MonoBehaviour
     /*STEP 2*/
     IEnumerator FadeInCanvasAfterStep()
     {
-        AudioSource audioSource = GetComponent<AudioSource>();
-        audioSource.Play();
         canvasGroup2.alpha = 0;
         canvasGroup2.gameObject.SetActive(true);
 
@@ -117,6 +117,21 @@ public class TutorialManager : MonoBehaviour
         canvasGroup2.interactable = true;
         canvasGroup2.blocksRaycasts = true;
 
-        //StartStep2(); // Step 2 开始
+        StartStep2(); // Step 2 开始
+    }
+
+    public void StartStep2()
+    {
+        audioSource.Play();
+        foreach (var k in knives)
+        {
+            k.canStart = true;
+        }
+
+    }
+
+    public void CloseStep2Canvas()
+    {
+        canvasGroup2.gameObject.SetActive(false);
     }
 }

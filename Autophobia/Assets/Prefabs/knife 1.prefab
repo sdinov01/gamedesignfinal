@@ -147,5 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22697ad938e864f9a9685157cc2eff01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallSpeed: 3
-  destroyY: -5
+  attackDistance: 0.6
+  attackSpeed: 5
+  returnSpeed: 5
+  canStart: 0

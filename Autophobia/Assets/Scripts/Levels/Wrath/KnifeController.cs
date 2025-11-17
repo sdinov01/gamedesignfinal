@@ -3,7 +3,7 @@ using System.Collections;
 
 public class KnifeController : MonoBehaviour
 {
-    public float attackDistance = 0.5f;
+    public float attackDistance = 1.2f;
     public float attackSpeed = 8f;
     public float returnSpeed = 8f;
     public bool canStart = false;
@@ -18,7 +18,7 @@ public class KnifeController : MonoBehaviour
 
     public void TriggerAttack()
     {
-        if (!canStart || isAttacking) return;
+        if (!canStart) return;
         StartCoroutine(DoAttack());
     }
 
@@ -27,8 +27,8 @@ public class KnifeController : MonoBehaviour
         Debug.Log("attack.");
         isAttacking = true;
         
-        Vector3 dir = transform.up; 
-        Vector3 target = basePos + dir * attackDistance;
+        Vector3 dir = -transform.up; 
+        Vector3 target = basePos - dir * attackDistance;
         Debug.Log("basePos: " + basePos + ", target: " + target);
 
 

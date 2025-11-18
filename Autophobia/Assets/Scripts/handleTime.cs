@@ -1,15 +1,17 @@
 using UnityEngine;
+using System;
 using System.Collections;
 
 
 public class handleTime : MonoBehaviour
 {
-    const int tempomarker = 45;
-    const int   permeasure = 4;
+    public float tempo;
+    public int beatspermeasure;
+
+    public static event Action OnFrameInterval;
 
     private int beat;
     private bool onbeat;
-
     private int measure;
 
     void Start()
@@ -22,48 +24,9 @@ public class handleTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int beatframe = (int)(tempomarker * 16);
+        int beatframe = (int)(tempo * 16);
         onbeat = (Time.frameCount % beatframe == 0);
         measure = Time.frameCount / (beatframe * 4);
 
-        
-
-
-
-        // if (onbeat == true)
-        // {
-
-        //     if (measure < 2) {
-                
-        //     } else if (measure < 16) {
-        //         if ((beat == 0))
-        //         {
-        //             SpawnCircle();
-        //         }
-        //     }
-            
-        //     // else if (measure < 18) {
-        //     //     if (((beat == 1) || (beat == 3))) 
-        //     //     {
-        //     //         SpawnCircle();
-        //     //         // int index = Random.Range(0, spawnPoints.Length);
-        //     //         // Transform chosenPoint = spawnPoints[index];
-
-        //     //         //     // generate circle at chosen position and set certain pertal as parent
-        //     //         // currentCircle = Instantiate(circlePrefab, chosenPoint);
-        //     //         // currentCircle.transform.localPosition = Vector3.zero; 
-        //     //     }
-        //     // }
-        //     beat = (beat + 1) % (permeasure * 2);
-
-
-        //     // int index = Random.Range(0, spawnPoints.Length);
-        //     // Transform chosenPoint = spawnPoints[index];
-
-        //     // // generate circle at chosen position and set certain pertal as parent
-        //     // currentCircle = Instantiate(circlePrefab, chosenPoint);
-        //     // currentCircle.transform.localPosition = Vector3.zero; 
-            
-        // }
     }
 }

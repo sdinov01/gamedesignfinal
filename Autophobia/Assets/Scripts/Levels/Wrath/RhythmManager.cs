@@ -30,7 +30,7 @@ public class RhythmManager : MonoBehaviour
 
     void HandleBeat(int beat)
     {
-        int beatInBar = ((beat - 1) % 4) + 1; // 1~4 循环 拍号
+        int beatInBar = ((beat - 1) % 4) + 1; // 1~4 循环 4/4
 
         if (beat <= 4)
         {
@@ -51,7 +51,7 @@ public class RhythmManager : MonoBehaviour
         if (knives.Length == 0) return;
 
         KnifeController k = knives[nextKnifeIndex];
-        Debug.Log($"Trigger knife {nextKnifeIndex}");
+        //Debug.Log($"Trigger knife {nextKnifeIndex}");
         k.TriggerAttack();
 
         // 往下轮

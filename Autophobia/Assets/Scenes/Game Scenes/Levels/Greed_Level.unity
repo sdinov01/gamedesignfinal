@@ -2286,8 +2286,8 @@ MonoBehaviour:
   - {r: 0.9685534, g: 0.52665734, b: 0, a: 0.4509804}
   - {r: 1, g: 0, b: 0, a: 0.5411765}
   - {r: 1, g: 1, b: 1, a: 1}
+  health: {fileID: 1330991106}
   minuteHand: {fileID: 1584120212}
-  rotationTime: 0.5
 --- !u!4 &1142959081
 Transform:
   m_ObjectHideFlags: 0
@@ -2589,9 +2589,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 50305942}
   - {fileID: 1274170621}
   - {fileID: 1584120214}
-  - {fileID: 50305942}
   - {fileID: 256854830}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -26,4 +26,9 @@ public class healthBar : MonoBehaviour
         health -= damage;
         healthImage.fillAmount = health / 100f;
     }
+
+    public float healthLeft()
+    {
+        return health;
+    }
 }

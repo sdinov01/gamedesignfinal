@@ -20,7 +20,10 @@ public class GameHandler : MonoBehaviour
     } 
 
     void Start() {
-        resultText.text = "";
+        if (resultText != null)
+        {
+            resultText.text = "";
+        }
     }
     void Update()
     {
@@ -63,7 +66,7 @@ public class GameHandler : MonoBehaviour
     }
 
     public void PlayGame(){
-        SceneManager.LoadScene("Sloth_Test");
+        SceneManager.LoadScene("Level_Select_Scene");
         // Please also reset all static variables here, for new games!
     }
 

@@ -13,7 +13,7 @@ public class LerpToTarget : MonoBehaviour
     {
         if (dest == null)
         {
-            Debug.LogError("Ball got NULL destination!", this);
+            //Debug.LogError("Ball got NULL destination!", this);
             return;
         }
 

@@ -39,18 +39,37 @@ public class platformMovement: MonoBehaviour
         }
     }
 
-    Platform UpdatePosition(Platform[] platformList)
+    // Platform UpdatePosition(Platform[] platformList)
+    // {
+    //     for (int i = 0; i < platformList.Length; i++)
+    //     {
+    //         Platform currPlatform = platformList[i];
+    //         if (currPlatform.getAvailability())
+    //         {
+    //             return currPlatform;
+    //         }
+    //     }
+    //     /* Could not teleport */
+    //     return null;
+    // }
+
+    Platform GetTargetPlatform(Platform[] platformList)
     {
-        for (int i = 0; i < platformList.Length; i++)
-        {
-            Platform currPlatform = platformList[i];
-            if (currPlatform.getAvailability())
-            {
-                return currPlatform;
-            }
-        }
-        /* Could not teleport */
+    if (platformList == null || platformList.Length == 0)
+    {
         return null;
+    }
+    
+    for (int i = 0; i < platformList.Length; i++)
+    {
+        Platform currPlatform = platformList[i];
+        if (currPlatform != null && currPlatform.getAvailability())
+        {
+            return currPlatform;
+        }
+    }
+    /* Could not find available platform */
+    return null;
     }
 
     void Update()
@@ -58,7 +77,8 @@ public class platformMovement: MonoBehaviour
         if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
             /* The origin Tween position should be the current platform the player is situated on */
-            Platform target = UpdatePosition(platforms[currPosition].right);
+            Platform target = GetTargetPlatform(platforms[currPosition].right);
+            // Platform target = UpdatePosition(platforms[currPosition].right);
             if (target != null)
             {
                 currPosition = System.Array.IndexOf(platforms, target);
@@ -69,7 +89,8 @@ public class platformMovement: MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
             /* The origin Tween position should be the current platform the player is situated on */
-            Platform target = UpdatePosition(platforms[currPosition].left);
+            // Platform target = UpdatePosition(platforms[currPosition].left);
+            Platform target = GetTargetPlatform(platforms[currPosition].left);
             if (target != null)
             {
                 currPosition = System.Array.IndexOf(platforms, target);
@@ -80,7 +101,7 @@ public class platformMovement: MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
             /* Retrieve array of platforms above */
-            Platform target = UpdatePosition(platforms[currPosition].up);
+            // Platform target = UpdatePosition(platforms[currPosition].up);
             if (target != null)
             {
                 currPosition = System.Array.IndexOf(platforms, target);
@@ -91,7 +112,7 @@ public class platformMovement: MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
             /* Retrieve array of platforms below */
-            Platform target = UpdatePosition(platforms[currPosition].down);
+            // Platform target = UpdatePosition(platforms[currPosition].down);
             if (target != null)
             {
                 currPosition = System.Array.IndexOf(platforms, target);
@@ -99,13 +120,21 @@ public class platformMovement: MonoBehaviour
             }
             tweenOrigin = player.transform.position;
         }
-        else if (!canMove)
+        if (!canMove)
         {
-            /* Maintain current position on platform */
             GameObject currPlatform = platformObjects[currPosition];
-            Vector3 newPos = new Vector3(currPlatform.transform.position.x, currPlatform.transform.position.y + offset, player.transform.position.z);
-            player.transform.position = newPos;
+            Vector3 targetPos = new Vector3(currPlatform.transform.position.x, 
+                                        currPlatform.transform.position.y + offset, 
+                                        player.transform.position.z);
+            player.transform.position = targetPos;
         }
+        // else if (!canMove)
+        // {
+        //     /* Maintain current position on platform */
+        //     GameObject currPlatform = platformObjects[currPosition];
+        //     Vector3 newPos = new Vector3(currPlatform.transform.position.x, currPlatform.transform.position.y + offset, player.transform.position.z);
+        //     player.transform.position = newPos;
+        // }
     }
 
     void FixedUpdate()
@@ -124,7 +153,7 @@ public class platformMovement: MonoBehaviour
             player.transform.position = Vector3.Lerp(origin, target, tweenElapsed);
 
             /* Ending the Tween */
-            if (Vector3.Distance(transform.position, tweenTarget) <= 0.025f)
+            if (Vector3.Distance(player.transform.position, tweenTarget) <= 0.025f)
             {
                 canMove = false;
                 tweenElapsed = 0f;

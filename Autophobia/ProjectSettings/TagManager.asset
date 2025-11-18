@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - PauseMenuSlider
+  - Platform
   layers:
   - Default
   - TransparentFX
@@ -45,14 +46,14 @@ TagManager:
   - name: Background
     uniqueID: 1281012565
     locked: 0
-  - name: Player
-    uniqueID: 815395477
-    locked: 0
   - name: Boss
     uniqueID: 952424591
     locked: 0
   - name: Glow
     uniqueID: 3029397339
+    locked: 0
+  - name: Player
+    uniqueID: 815395477
     locked: 0
   m_RenderingLayers:
   - Default

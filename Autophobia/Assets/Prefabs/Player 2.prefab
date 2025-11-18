@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 1818106815099098706}
   - component: {fileID: 2714064260005046932}
   - component: {fileID: 6007970524268582180}
-  - component: {fileID: 5696750055455654657}
-  - component: {fileID: 8242384013393038602}
   - component: {fileID: 3192987794797845752}
   m_Layer: 0
   m_Name: Player 2
@@ -77,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 952424591
-  m_SortingLayer: 2
+  m_SortingLayerID: 815395477
+  m_SortingLayer: 4
   m_SortingOrder: 50
   m_Sprite: {fileID: 5905681027756182028, guid: a7a9de153fcc290488195ea7987e7655, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -127,78 +125,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 1
---- !u!50 &5696750055455654657
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6039734151891156727}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &8242384013393038602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6039734151891156727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0d9cf098cb6d4c44a2f8786c5cb51e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  platformObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  player: {fileID: 6039734151891156727}
-  curveMove:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.9861145
-      value: 0.0015716553
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  tweenElapsed: 0
 --- !u!95 &3192987794797845752
 Animator:
   serializedVersion: 7

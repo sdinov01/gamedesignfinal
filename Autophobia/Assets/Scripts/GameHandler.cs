@@ -9,7 +9,11 @@ public class GameHandler : MonoBehaviour
 {
     public TMP_Text resultText;
     /* TMP variable for score textbox */
-    public TMP_Text scoreText;
+    //public TMP_Text scoreText;
+    /* By default the total possible score is 100 */
+    private int totalScore = 100;
+    private int currScore = 0;
+    [SerializeField] private Image scoreText;
     public float displayTime = 1.0f;
 
     private float timer = 0f;
@@ -20,7 +24,14 @@ public class GameHandler : MonoBehaviour
     } 
 
     void Start() {
-        resultText.text = "";
+        if (resultText != null)
+        {
+            resultText.text = "";
+        }
+        if (scoreText != null)
+        {
+            scoreText.fillAmount = 0;
+        }
     }
     void Update()
     {
@@ -63,7 +74,7 @@ public class GameHandler : MonoBehaviour
     }
 
     public void PlayGame(){
-        SceneManager.LoadScene("Sloth_Test");
+        SceneManager.LoadScene("Level_Select_Scene");
         // Please also reset all static variables here, for new games!
     }
 
@@ -85,8 +96,16 @@ public class GameHandler : MonoBehaviour
             #endif
     }
 
-    public void UpdateScore(float score)
+    /* Set total possible score */
+    public void SetTotalScore(int score)
     {
-        scoreText.text = $"Score: {score:F1}%";
+        totalScore = score;
+    }
+
+    /* Update current score */
+    public void UpdateScore(int score)
+    {
+        currScore += score;
+        scoreText.fillAmount = (float)currScore / totalScore;
     }
 }

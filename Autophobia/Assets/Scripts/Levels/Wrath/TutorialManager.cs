@@ -27,6 +27,8 @@ public class TutorialManager : MonoBehaviour
     public AudioSource audioSource;
     public KnifeController[] knives;
 
+    public bool step2 = false;
+
 
 
 
@@ -126,6 +128,7 @@ public class TutorialManager : MonoBehaviour
         foreach (var k in knives)
         {
             k.canStart = true;
+            step2 = true;
         }
 
     }

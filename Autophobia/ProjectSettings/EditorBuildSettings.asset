@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu Scenes/Menu_Scene.unity
     guid: d1f853a5e5142af4d8245312b8c4243d
   - enabled: 1
-    path: Assets/Scenes/Sloth_Test.unity
-    guid: 34eabbe89fb4a48748cb42746cfa552c
-  - enabled: 1
     path: Assets/Scenes/Menu Scenes/Credits_Scene.unity
     guid: 108d3320b42c27a4e9c1462f3d19cc4e
   - enabled: 1

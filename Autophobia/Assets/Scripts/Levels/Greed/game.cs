@@ -1,6 +1,7 @@
 /* Handle rotations corresponding to music */
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class game : MonoBehaviour
 {
@@ -14,7 +15,8 @@ public class game : MonoBehaviour
     [SerializeField] private GameObject[] area;
     /* Colors for changing the clock slices */
     [SerializeField] private Color[] colors;
-    /* Range for each area that the player cannot be in */
+    /* Health bar to keep track of whether the player loses */
+    [SerializeField] private healthBar health;
 
     /* The minute hand to rotate */
     [SerializeField] private GameObject minuteHand;
@@ -22,7 +24,7 @@ public class game : MonoBehaviour
     /* Next rotation to perform */
     private int currRotation = 0;
     /* Time of rotations is the same */
-    public float rotationTime = 2f;
+    private float rotationTime = 0.5f;
 
     void Start()
     {
@@ -59,7 +61,12 @@ public class game : MonoBehaviour
                 /* Move on to next rotation */
                 currRotation = currRotation + 1;
             }
-        }  
+        } else
+        {
+            /* We finished rotations */
+            StartCoroutine(endGame(15f));
+
+        } 
     }
 
     /* Changes the color of an area of the clock */
@@ -75,5 +82,12 @@ public class game : MonoBehaviour
         colorRenderer.material.SetColor("_Color", colors[2]); // avoid
         yield return new WaitForSeconds(5f);
         colorRenderer.material.SetColor("_Color", colors[3]); // reset
+    }
+
+    /* When the level is complete, go to Level_Select scene */
+    private IEnumerator endGame(float time)
+    {
+        yield return new WaitForSeconds(time);
+        SceneManager.LoadScene("Level_Select_Scene");
     }
 }

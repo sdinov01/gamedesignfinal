@@ -3,6 +3,7 @@ using System.Collections;
 
 public class KnifeController : MonoBehaviour
 {
+    public int sectorIndex;
     public float attackDistance = 1.2f;
     public float attackSpeed = 8f;
     public float returnSpeed = 8f;
@@ -11,6 +12,7 @@ public class KnifeController : MonoBehaviour
     private Vector3 basePos;
     private bool isAttacking = false;
     [SerializeField] private healthBar healthObject;
+    private float lastHitTime = -999f;
 
     void Awake()
     {
@@ -51,14 +53,10 @@ public class KnifeController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
-        Debug.Log("Ouch");
-        healthBar health = healthObject.GetComponent<healthBar>();
-        Debug.Log(health == null);
-        if (health != null)
-        {
-            Debug.Log("take damage"); 
-            health.takeDamage(10); 
-        }
+        if (Time.time - lastHitTime < 0.6f) return;
+        lastHitTime = Time.time;
+        Debug.Log("take damage"); 
+        healthObject.takeDamage(10f);
     }
 
     void ResetCollider()

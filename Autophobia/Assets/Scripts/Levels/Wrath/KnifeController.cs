@@ -3,6 +3,7 @@ using System.Collections;
 
 public class KnifeController : MonoBehaviour
 {
+    public int sectorIndex;
     public float attackDistance = 1.2f;
     public float attackSpeed = 8f;
     public float returnSpeed = 8f;

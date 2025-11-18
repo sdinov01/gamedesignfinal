@@ -34,10 +34,6 @@ public class game : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (health.healthLeft() <= 0)
-        {
-            SceneManager.LoadScene("GameOver_Scene");
-        }
         /* Keep track of time */
         time += Time.deltaTime;
         if (currRotation < timeStamps.Length && currRotation < rotations.Length)

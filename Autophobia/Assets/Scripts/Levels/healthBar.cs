@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class healthBar : MonoBehaviour
 {
     private float health;
@@ -13,7 +14,11 @@ public class healthBar : MonoBehaviour
 
     void Update()
     {
-  
+        /* If the player is dead, go to Game Over scene */
+        if (health <= 0)
+        {
+            SceneManager.LoadScene("GameOver_Scene");
+        }
     }
 
     public void setTotalHealth(float totalHealth)

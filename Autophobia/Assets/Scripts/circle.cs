@@ -22,6 +22,9 @@ public class circle : MonoBehaviour
     // public float waitTime;
     // public float checkTime;
 
+    /* Variables for score */
+    int perfect = 10;
+
 
     void Start()
     {
@@ -50,14 +53,16 @@ public class circle : MonoBehaviour
         {   
             animator.SetTrigger("hit");
             FindObjectOfType<GameHandler>().ShowResult("Perfect");
-          //  Debug.Log("Perfect");
+            FindObjectOfType<GameHandler>().UpdateScore(perfect);
+            Debug.Log("PERFECT\n");
+            //  Debug.Log("Perfect");
         }
         else
         {
             Debug.Log("inside of the miss condition.");
             animator.SetTrigger("miss");
             FindObjectOfType<GameHandler>().ShowResult("Miss");
-          //  Debug.Log("Late");
+            Debug.Log("Late");
         }
 
         // go back go idle state

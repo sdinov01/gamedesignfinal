@@ -24,9 +24,6 @@ public class CircleSpawner : MonoBehaviour
     private int perfect = 10;
     private int good = 5;
 
-    private int totalPossibleScore = 0;
-    private int currScore = 0;
-    private float displayedScore = 100f;
     void Start()
     {
         secondsPerBeat = 60f / bpm;
@@ -52,7 +49,7 @@ public class CircleSpawner : MonoBehaviour
                 anim.SetBool("beat", false);
             }
         }
-
+        
         for (int i = 1; i <= 50; i++)
         {
             float st = i * secondsPerMeasure;
@@ -68,12 +65,6 @@ public class CircleSpawner : MonoBehaviour
             //Debug.Log("beat!");
             nextIndex++;
         }
-        /* Always update score */
-        if (totalPossibleScore != 0)
-        {
-            displayedScore = currScore / totalPossibleScore;
-        }
-        FindObjectOfType<GameHandler>().UpdateScore(displayedScore);
     }
 
     void TriggerBeat()
@@ -81,8 +72,6 @@ public class CircleSpawner : MonoBehaviour
         //int index = Random.Range(0, circles.Count);
         circle chosen = circles[currentCircleIndex];
         //Debug.Log("beat2");
-        /* Update total score */
-        totalPossibleScore += perfect;
         chosen.TriggerBeat();
         // tell gamehandler which one should be beaten
         FindObjectOfType<GameHandler>().SetCurrentCircle(chosen);

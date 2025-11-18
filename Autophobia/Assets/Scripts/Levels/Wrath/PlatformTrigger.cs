@@ -8,6 +8,7 @@ public class PlatformTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("collide?");
         if (!other.CompareTag("Player")) return;
         Debug.Log("Player entered platform: " + stepIndex);
         manager.PlayerReachedPlatform(stepIndex);

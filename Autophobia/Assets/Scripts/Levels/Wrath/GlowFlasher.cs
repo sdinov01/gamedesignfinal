@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GlowFlasher : MonoBehaviour
 {
-    public SpriteRenderer sr;          // 拖入 SpriteRenderer
+    public SpriteRenderer sr;        
     public float pulseSpeed = 2f;      //bigger ->faster
     public float minAlpha = 0.1f;      // darkest alpha
     public float maxAlpha = 0.9f;      // lightest alpha
@@ -52,18 +52,4 @@ public class GlowFlasher : MonoBehaviour
         c.a = Mathf.Clamp01(a);
         sr.color = c;
     }
-
-    // （可选）编辑器里也看到效果
-    // #if UNITY_EDITOR
-    // void OnValidate()
-    // {
-    //     if (sr != null)
-    //     {
-    //         Color c = sr.color;
-    //         c.a = minAlpha;
-    //         sr.color = c;
-    //         transform.localScale = Vector3.one * minScale;
-    //     }
-    // }
-    //#endif
 }

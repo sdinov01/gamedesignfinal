@@ -1,53 +1,50 @@
 using UnityEngine;
+using System.Collections;
 
 public class restrictMovement : MonoBehaviour
 {
     [SerializeField] private healthBar health;
     [SerializeField] private Color red;
-    private bool takeDamage = false;
+    [SerializeField] private cameraShake camShake;
+    private bool inRed = false;
+    private bool takeDamage = true;
 
     void OnCollisionStay2D(Collision2D collision)
     {
         /* If we are already taking damage, return so we don't take additional damage. */
-        if (takeDamage)
-        {
-            return;
-        }
+        
 
         /* If the slice the player is inside is red, take damage */
         Renderer slice = collision.gameObject.GetComponent<Renderer>();
-        if (slice.material.GetColor("_Color") == red)
-        {
-            takeDamage = true;
-
-        }
-        else
-        {
-            takeDamage = false;
-        }
+        inRed = (slice.material.GetColor("_Color") == red);
+        
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         /* If the player is in a red slice, take damage */
         Renderer slice = collision.gameObject.GetComponent<Renderer>();
-        if (slice.material.GetColor("_Color") == red)
-        {
-            takeDamage = true;
+        inRed = (slice.material.GetColor("_Color") == red);
+        
+    }
 
-        } else
+    void FixedUpdate()
+    {
+        /* Take damage when this is true */
+        if (takeDamage && inRed)
         {
-            takeDamage = false;
+            StartCoroutine(damage());
         }
     }
 
-    void Update()
+    private IEnumerator damage()
     {
-        /* Take damage when this is true */
-        if (takeDamage)
-        {
-            health.takeDamage(0.05f);
-        }
+        takeDamage = false;
+        camShake.SetShake(true);
+        yield return new WaitForSeconds(0.25f);
+        health.takeDamage(5f);
+        yield return new WaitForSeconds(0.5f);
+        takeDamage = true;
     }
 
 

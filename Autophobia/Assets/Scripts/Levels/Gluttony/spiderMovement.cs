@@ -7,25 +7,31 @@ public class spiderMovement : MonoBehaviour
     private Transform origin;
 
     /* Decides whether the spider can move */
-    private bool canMove = false;
-    private bool canTakeDamage = false;
+    private static bool canMove = true;
+    private static bool canTakeDamage = false;
     public float pulseDuration;
     public float speed;
+    private int currentTime = 0;
+    private float timeElapsed;
+    private bool isPulsing = false;
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
+        timeElapsed = 0f;
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
     // Update is called once per frame
     void Update()
     {
+        
+        /* Move if the pulse is over */
         if (canMove)
         {
             move();
-        } else
+        } else if (!isPulsing)
         {
-            /* If it cannot move, pulse and become vulnerable */
-            canTakeDamage = true;
-            StartCoroutine(pulse(pulseDuration));
+            StartCoroutine(pulse());
         }
     }
 
@@ -39,19 +45,28 @@ public class spiderMovement : MonoBehaviour
         }
     }
 
-    private IEnumerator pulse(float pulseDur)
+    private IEnumerator pulse()
     {
+        Color original = spriteRenderer.color;
+        isPulsing = true;
         float elapsed = 0;
-        while (elapsed < pulseDur)
-        {
-            elapsed += Time.deltaTime;
-        }
-        yield return null;
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(pulseDuration);
+        spriteRenderer.color = original;
+        canMove = true;
+
+        canTakeDamage = false;
+        isPulsing = false;
     }
 
     public void UpdateMove(bool move)
     {
         canMove = move;
+    }
+
+    public bool CanMove()
+    {
+        return canMove;
     }
 
     public void SetOriginAndDestination(Transform origin, Transform destination)
@@ -61,3 +76,4 @@ public class spiderMovement : MonoBehaviour
         transform.position = new Vector3(origin.position.x, origin.position.y, 0f);
     }
 }
+

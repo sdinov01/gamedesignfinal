@@ -17,9 +17,14 @@ public class spiderSpawner : MonoBehaviour
     [SerializeField] private Transform dest4;
 
     [SerializeField] private AudioSource audioSource;
+    private float timeElapsed;
+    /* When the spider pauses movement */
+    [SerializeField] private float[] timeStamps;
+    private int currentTime = 0;
 
     private void Start()
     {
+        timeElapsed = 0f;
         StartCoroutine(SpawnWhileAudioPlaying());
     }
 
@@ -30,6 +35,7 @@ public class spiderSpawner : MonoBehaviour
 
         while (audioSource.isPlaying)
         {
+            yield return new WaitUntil(() => spiderPrefab.GetComponent<spiderMovement>().CanMove());
             SpawnSpider(spawn1, dest1);
             SpawnSpider(spawn2, dest2);
             SpawnSpider(spawn3, dest3);
@@ -41,16 +47,38 @@ public class spiderSpawner : MonoBehaviour
 
     private void SpawnSpider(Transform origin, Transform destination)
     {
-        // 1. Instantiate a NEW spider
+        // new spider
         GameObject newSpider = Instantiate(spiderPrefab, origin.position, Quaternion.identity);
 
-        // 2. Get its movement script
+        // retrieve script
         spiderMovement move = newSpider.GetComponent<spiderMovement>();
 
-        // 3. Initialize origin + destination for THAT spider
+        // initialize origin and destination
         move.SetOriginAndDestination(origin, destination);
 
-        // 4. Tell it to move
+        // allow it to move
         move.UpdateMove(true);
     }
+
+    void Update()
+    {
+        /* If there are no more time stamps, then spiders can move */
+        if (currentTime > timeStamps.Length - 1)
+        {
+            //spiderPrefab.GetComponent<spiderMovement>().UpdateMove(true);
+            return;
+        }
+        timeElapsed += Time.deltaTime;
+        /* Time to do pulse */
+        if (timeElapsed >= timeStamps[currentTime])
+        {
+            /* Make it so spiders can't move and pulse occurs */
+            spiderPrefab.GetComponent<spiderMovement>().UpdateMove(false);
+            /* If spiders can move, then update currentTime */
+            currentTime++;
+        }
+       
+        
+    }
+
 }

@@ -100,5 +100,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beeff714832eaaa4380361d0db1e94b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pulseDuration: 0
+  pulseDuration: 1
   speed: 2

@@ -1475,6 +1475,13 @@ MonoBehaviour:
   dest3: {fileID: 1221105695}
   dest4: {fileID: 1492540235}
   audioSource: {fileID: 1908021268}
+  timeStamps:
+  - 16.7
+  - 18.7
+  - 20.7
+  - 24.7
+  - 26.7
+  - 28.7
 --- !u!1 &1762975430
 GameObject:
   m_ObjectHideFlags: 0

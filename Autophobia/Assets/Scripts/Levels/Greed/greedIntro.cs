@@ -9,6 +9,7 @@ public class greedIntro : MonoBehaviour
     [SerializeField] private AudioSource audio;
     [SerializeField] private TMP_Text tutorial;
     [SerializeField] private TMP_Text goodLuck;
+    [SerializeField] private TimeBar timeBar;
 
     /* Default time will be 14.5 seconds after the scene is opened */
     private float beginTime = 14.5f;
@@ -21,12 +22,25 @@ public class greedIntro : MonoBehaviour
     {
         /* Set the audio source to play at the beginning time */
         audio.PlayDelayed(beginTime);
+        /* Set duration */
+        timeBar.SetDuration(audio.clip.length);
         /* Set the texts and image to be visible or invisible */
         tutorial.enabled = true;
         goodLuck.enabled = false;
         backgroundImage.enabled = true;
         /* Start the tutorial */
         tutorialCoroutine = StartCoroutine(handleTutorial());
+        StartCoroutine(startBar());
+    }
+
+    private IEnumerator startBar()
+    {
+        /* Begin after tutorial/skip */
+        yield return new WaitUntil(() => Time.time >= beginTime);
+
+        /* Begin song Courotine fill bar */
+        timeBar.SetDuration(audio.clip.length);
+        timeBar.BeginTime();
     }
 
     void Update()
@@ -49,6 +63,9 @@ public class greedIntro : MonoBehaviour
 
             /* Update beginning time for time stamps later */
             beginTime = Time.time;
+
+            /* Start progress bar */
+            //timeBar.BeginTime();
         }   
     }
 

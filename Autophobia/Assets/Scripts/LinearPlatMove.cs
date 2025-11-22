@@ -210,4 +210,8 @@ public class linearPlatMove : MonoBehaviour
             tweenElapsed = 0f;
         }
     }
+
+    public int getCurrPosition() {
+        return currPosition;
+    }
 }

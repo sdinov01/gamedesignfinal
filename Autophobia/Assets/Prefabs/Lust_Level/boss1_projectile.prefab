@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 4215444040878119111}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.53, y: 0.67, z: -0.030812616}
+  m_LocalPosition: {x: 5.53, y: 0.67, z: -1}
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -97,6 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2399414209431861747}
   - component: {fileID: 6006434531227868662}
+  - component: {fileID: -6111458335878131475}
   m_Layer: 0
   m_Name: boss1_projectile
   m_TagString: Untagged
@@ -113,7 +114,7 @@ Transform:
   m_GameObject: {fileID: 8218206109086024149}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -134,4 +135,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   lifetime: 5
+  hitWindow: 0.2
   direction: {x: 1, y: 0}
+  travelDistance: 0
+--- !u!58 &-6111458335878131475
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8218206109086024149}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.5

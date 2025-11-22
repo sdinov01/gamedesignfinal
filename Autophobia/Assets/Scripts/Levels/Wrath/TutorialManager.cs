@@ -9,7 +9,7 @@ public class TutorialManager : MonoBehaviour
    public Platform firstPlatform;
    public GameObject TutorialPanel;
    public Button startButton;
-   public platformMovement player;
+   public linearPlatMove player;
    public PlayerController controller;
    public CanvasGroup canvasGroup;
    public float fadeDuration = 1f;
@@ -82,6 +82,7 @@ public class TutorialManager : MonoBehaviour
     /* Second step*/
     public void PlayerReachedPlatform(int step)
     {
+        Debug.Log("reach the plat");
         if (step != currentStep) return; 
 
         highlighters[step].StopFlashing();

@@ -23,6 +23,8 @@ public class spiderMovement : MonoBehaviour
 
     void Update()
     {
+        /* Always moves now */
+        Move();
         // If a global pulse is active
         if (isPulsingGlobal)
         {
@@ -38,9 +40,7 @@ public class spiderMovement : MonoBehaviour
         }
         else
         {
-            // Normal behavior: move
             spriteRenderer.color = originalColor;
-            Move();
         }
     }
 

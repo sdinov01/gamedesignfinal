@@ -4,16 +4,20 @@ using TMPro;
 using System.Collections;
 using System.Collections.Generic;
 
-public class DialogueManager : MonoBehaviour
+[System.Serializable]
+public class Line
 {
-    public Sprite frameA;                
-    public Sprite frameB;                
+    public string line;
+    public Sprite frame;
+}
 
+public class DialogueManager : MonoBehaviour
+{              
     public Image fullFrameImage;         // one Image that swaps A/B
     public TextMeshProUGUI textUI;
 
-    public List<string> lines = new List<string>();
-    public bool autoStart = true;
+    public List<Line> lines = new List<Line>();
+    //public bool autoStart = true;
 
     public float typeDelay = 0.02f;
     public float flipInterval = 0.08f;
@@ -23,18 +27,15 @@ public class DialogueManager : MonoBehaviour
 
     private int index = -1;
     private bool isTyping;
-    private string fullText;
-    private bool currFrame;                 
+    private string fullText;              
 
     void Start()
     {
-        if (fullFrameImage && frameA) {
-            Color c = fullFrameImage.color;
-            c.a = 1f;
-            fullFrameImage.color = c;
-            fullFrameImage.sprite = frameA;
-        }
-        if (autoStart) StartDialogue();
+        Color c = fullFrameImage.color;
+        c.a = 1f;
+        fullFrameImage.color = c;
+
+        StartDialogue();
     }
 
     void Update()
@@ -57,9 +58,7 @@ public class DialogueManager : MonoBehaviour
     {
         StopAllCoroutines();
 
-        index = -1;
-        currFrame = false;
-        ApplyFrame(false);
+        ApplyFrame(0);
 
         ShowNextLine();
     }
@@ -72,11 +71,10 @@ public class DialogueManager : MonoBehaviour
             return; // done
         }
 
-        currFrame = !currFrame;      // swap once per new line
-        ApplyFrame(currFrame);
+        ApplyFrame(index);
 
         StopAllCoroutines();
-        StartCoroutine(TypeLine(lines[index]));
+        StartCoroutine(TypeLine(lines[index].line));
     }
 
     private IEnumerator TypeLine(string s)
@@ -100,9 +98,9 @@ public class DialogueManager : MonoBehaviour
         if (textUI) textUI.text = fullText;
     }
 
-    private void ApplyFrame(bool b)
+    private void ApplyFrame(int currLine)
     {
         if (!fullFrameImage) return;
-        fullFrameImage.sprite = (b && frameB) ? frameB : frameA;
+        fullFrameImage.sprite = lines[currLine].frame;
     }
 }

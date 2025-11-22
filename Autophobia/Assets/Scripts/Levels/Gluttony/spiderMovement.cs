@@ -9,15 +9,22 @@ public class spiderMovement : MonoBehaviour
     /* Decides whether the spider can move */
     private static bool canMove = true;
     private static bool canTakeDamage = false;
-    public float pulseDuration;
+    /* 1 by default */
+    private static float pulseDuration = 1f;
     public float speed;
     private int currentTime = 0;
     private float timeElapsed;
     private bool isPulsing = false;
     private SpriteRenderer spriteRenderer;
+    private GameObject spawner;
 
+    public void SetDuration(float duration)
+    {
+        pulseDuration = duration;
+    }
     void Start()
     {
+        spawner = GameObject.FindWithTag("Spawner");
         timeElapsed = 0f;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
@@ -31,7 +38,7 @@ public class spiderMovement : MonoBehaviour
             move();
         } else if (!isPulsing)
         {
-            StartCoroutine(pulse());
+            StartCoroutine(pulse(pulseDuration));
         }
     }
 
@@ -45,18 +52,22 @@ public class spiderMovement : MonoBehaviour
         }
     }
 
-    private IEnumerator pulse()
+    private IEnumerator pulse(float pulseDur)
     {
         Color original = spriteRenderer.color;
         isPulsing = true;
         float elapsed = 0;
         spriteRenderer.color = Color.red;
-        yield return new WaitForSeconds(pulseDuration);
+        /* If the difference between the next pulse and this pulse < pulseDuration, then do not turn back to origina color until that is
+         * no longer true */
+        yield return new WaitForSeconds(pulseDur);
+
+        /* Wait until the pulse is over */
         spriteRenderer.color = original;
         canMove = true;
-
         canTakeDamage = false;
         isPulsing = false;
+
     }
 
     public void UpdateMove(bool move)

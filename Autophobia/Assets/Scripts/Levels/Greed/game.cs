@@ -17,6 +17,8 @@ public class game : MonoBehaviour
     [SerializeField] private Color[] colors;
     /* Health bar to keep track of whether the player loses */
     [SerializeField] private healthBar health;
+    /* greedIntro to get starting time */
+    [SerializeField] private greedIntro intro;
 
     /* The minute hand to rotate */
     [SerializeField] private GameObject minuteHand;
@@ -25,6 +27,10 @@ public class game : MonoBehaviour
     private int currRotation = 0;
     /* Time of rotations is the same */
     private float rotationTime = 0.5f;
+    /* Default start time */
+    private float startTime = 14.5f;
+    /* Offset */
+    public float offset = 2f;
 
     void Start()
     {
@@ -34,28 +40,35 @@ public class game : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /* Update start time */
+        startTime = intro.StartTime();
+
+
         /* Keep track of time */
-        time += Time.deltaTime;
         if (currRotation < timeStamps.Length && currRotation < rotations.Length)
         {
+            float rotation = calculateToSecond(timeStamps[currRotation]);
+            Debug.Log("Rotation is at second: " + rotation);
             /* Time to perform a rotation */
-            if (time >= timeStamps[currRotation])
+            if (Time.time >= rotation)
             {
 
                 /* If there is another rotation after this one: */
                 if (currRotation + 1 < timeStamps.Length)
                 {
                     /* and the rotation is soon, rotation time will be the difference */
-                    if (timeStamps[currRotation + 1] - timeStamps[currRotation] < 1f)
+                    float nextRotation = calculateToSecond(timeStamps[currRotation + 1]);
+                    Debug.Log("Next rotation is at second: " + nextRotation);
+                    if (nextRotation - rotation < 1f)
                     {
-                        rotationTime = timeStamps[currRotation + 1] - timeStamps[currRotation];
+                        rotationTime = nextRotation - rotation;
                     }
                 } else
                 {
-                    /* If there is no next rotation, it is 2 seconds */
+                    /* If there is no next rotation, the rotation will last 2 seconds */
                     rotationTime = 2f;
                 }
-                    minuteHandMovement.PerformRotation(rotations[currRotation], rotationTime);
+                minuteHandMovement.PerformRotation(rotations[currRotation], rotationTime);
                 /* Starts changing color of clock areas */
                 StartCoroutine(ChangeColor(area[currRotation]));
                 /* Move on to next rotation */
@@ -89,5 +102,14 @@ public class game : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         SceneManager.LoadScene("Level_Select_Scene");
+    }
+
+    private float calculateToSecond(float timeStamp)
+    {
+        /* First add startTime */
+        float second = startTime;
+        /* Then add the second offset to the time stamp in the music */
+        second += (timeStamp + offset);
+        return second;
     }
 }

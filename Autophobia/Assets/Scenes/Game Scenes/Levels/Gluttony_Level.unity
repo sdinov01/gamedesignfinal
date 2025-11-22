@@ -1541,21 +1541,32 @@ MonoBehaviour:
   - 1
   - 1
   spider1Spawn:
+  - 6
   - 8
   - 10
-  - 14
-  spider2Spawn:
-  - 8
-  - 8
-  - 14
-  spider3Spawn:
-  - 8
-  - 10
-  - 14
-  spider4Spawn:
-  - 8
   - 12
   - 14
+  spider2Spawn:
+  - 0
+  - 8
+  - 10
+  - 12
+  - 14
+  - 15
+  - 15.125
+  spider3Spawn:
+  - 2
+  - 10
+  - 12
+  - 14
+  - 14.75
+  spider4Spawn:
+  - 4
+  - 8
+  - 10
+  - 12
+  - 14
+  - 14.5
   offset: 0.18
   timeBar: {fileID: 1550033469}
 --- !u!1 &1762975430

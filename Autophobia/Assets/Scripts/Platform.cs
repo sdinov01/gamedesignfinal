@@ -13,8 +13,6 @@ public class Platform : MonoBehaviour
     [SerializeField] public Platform[] up;
     [SerializeField] public Platform[] down;
 
-
-
     public void setAvailability(bool availability)
     {
         isAvailable = availability;

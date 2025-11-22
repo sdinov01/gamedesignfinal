@@ -257,6 +257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 185623220}
+  - component: {fileID: 185623221}
   m_Layer: 0
   m_Name: SpawnRoutes
   m_TagString: Untagged
@@ -283,6 +284,30 @@ Transform:
   - {fileID: 207422501}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &185623221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185623219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f28a59a6ba1ba4a6b9bdd1458b92f1ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: {fileID: 185623219}
+  ballspawn: {fileID: 6097060542407575438, guid: 0c924e578da6a45aab3a9c1474f6a7be, type: 3}
+  spawnpoints:
+  - {fileID: 1298371884}
+  - {fileID: 727345039}
+  - {fileID: 1410170325}
+  - {fileID: 207422500}
+  destinations:
+  - {fileID: 1182660456}
+  - {fileID: 1920646945}
+  - {fileID: 1517815374}
+  - {fileID: 1999180693}
 --- !u!1 &207422500
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,7 +317,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 207422501}
-  - component: {fileID: 207422502}
   - component: {fileID: 207422503}
   m_Layer: 0
   m_Name: Lane4
@@ -316,20 +340,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 185623220}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &207422502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207422500}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f28a59a6ba1ba4a6b9bdd1458b92f1ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballspawn: {fileID: 6097060542407575438, guid: 0c924e578da6a45aab3a9c1474f6a7be, type: 3}
-  destination: {fileID: 1999180694}
 --- !u!114 &207422503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,6 +354,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 1999180694}
   speed: 4
+  ballchild: {fileID: 0}
+  childcount: 0
 --- !u!224 &335194762 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2576638760144512333, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
@@ -386,6 +398,38 @@ Transform:
   - {fileID: 1725102209}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &615371806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1348311540491034965, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
+  m_PrefabInstance: {fileID: 841297197}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &615371812
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615371806}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &724005351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -472,7 +516,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 727345040}
-  - component: {fileID: 727345041}
   - component: {fileID: 727345042}
   m_Layer: 0
   m_Name: Lane2
@@ -496,20 +539,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 185623220}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &727345041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 727345039}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f28a59a6ba1ba4a6b9bdd1458b92f1ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballspawn: {fileID: 6097060542407575438, guid: 0c924e578da6a45aab3a9c1474f6a7be, type: 3}
-  destination: {fileID: 1920646946}
 --- !u!114 &727345042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -524,6 +553,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 1920646946}
   speed: 4
+  ballchild: {fileID: 0}
+  childcount: 0
 --- !u!1 &804005100
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,6 +615,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4896698686123452952, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
+      propertyPath: m_Radius
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896698686123452952, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896698686123452952, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6658307193134000300, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.68
@@ -627,7 +670,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1348311540491034965, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 615371812}
   m_SourcePrefab: {fileID: 100100000, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
 --- !u!4 &938342099 stripped
 Transform:
@@ -938,7 +984,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1298371885}
-  - component: {fileID: 1298371886}
   - component: {fileID: 1298371887}
   m_Layer: 0
   m_Name: Lane1
@@ -962,20 +1007,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 185623220}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1298371886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1298371884}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f28a59a6ba1ba4a6b9bdd1458b92f1ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballspawn: {fileID: 6097060542407575438, guid: 0c924e578da6a45aab3a9c1474f6a7be, type: 3}
-  destination: {fileID: 1182660457}
 --- !u!114 &1298371887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -989,7 +1020,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {fileID: 1182660457}
-  speed: 4
+  speed: 4.28
+  ballchild: {fileID: 0}
+  childcount: 0
 --- !u!4 &1305508071 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6762272520520487535, guid: 87bfa5bb051854804b597853552aa365, type: 3}
@@ -1004,7 +1037,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1410170326}
-  - component: {fileID: 1410170327}
   - component: {fileID: 1410170328}
   m_Layer: 0
   m_Name: Lane3
@@ -1028,20 +1060,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 185623220}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1410170327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410170325}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f28a59a6ba1ba4a6b9bdd1458b92f1ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballspawn: {fileID: 6097060542407575438, guid: 0c924e578da6a45aab3a9c1474f6a7be, type: 3}
-  destination: {fileID: 1517815375}
 --- !u!114 &1410170328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1056,6 +1074,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 1517815375}
   speed: 4
+  ballchild: {fileID: 0}
+  childcount: 0
 --- !u!1 &1434567722
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,7 +1086,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1434567724}
   - component: {fileID: 1434567725}
-  - component: {fileID: 1434567726}
   m_Layer: 0
   m_Name: PrideHandler
   m_TagString: Untagged
@@ -1104,26 +1123,6 @@ MonoBehaviour:
   music: {fileID: 185541375}
   bpm: 140
   beatsPerMeasure: 4
---- !u!114 &1434567726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434567722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4296088ac7af47b381333048307a9df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballPrefab: {fileID: 6097060542407575438, guid: 0c924e578da6a45aab3a9c1474f6a7be, type: 3}
-  destination: {fileID: 0}
-  spawnpoints:
-  - {fileID: 1298371884}
-  - {fileID: 727345039}
-  - {fileID: 1410170325}
-  - {fileID: 207422500}
-  SpawnParent: {fileID: 185623219}
 --- !u!1001 &1450166440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1508,7 +1507,7 @@ Transform:
   m_GameObject: {fileID: 1780332160}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1, y: 0, z: -1}
+  m_LocalPosition: {x: -0.1, y: 0.1, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

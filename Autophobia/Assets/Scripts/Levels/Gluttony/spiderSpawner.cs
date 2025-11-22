@@ -57,14 +57,51 @@ public class spiderSpawner : MonoBehaviour
         while (audioSource.isPlaying)
         {
             /* Don't spawn if the spiders are currently vulnerable */
-            yield return new WaitUntil(() => spiderPrefab.GetComponent<spiderMovement>().CanMove());
+            //yield return new WaitUntil(() => spiderPrefab.GetComponent<spiderMovement>().CanMove());
+            if (spider1index < spider1Spawn.Length - 1)
+            {
+                float time1 = convertToSecond(spider1Spawn[spider1index]);
+                if (Time.time >= time1)
+                {
+                    SpawnSpider(spawn1, dest1);
+                    spider1index++;
+                }
+            }
+            if (spider2index < spider2Spawn.Length - 1)
+            {
+                float time2 = convertToSecond(spider2Spawn[spider2index]);
+                if (Time.time >= time2)
+                {
+                    SpawnSpider(spawn2, dest2);
+                    spider2index++;
+                }
+            }
+            if (spider3index < spider3Spawn.Length - 1)
+            {
+                float time3 = convertToSecond(spider3Spawn[spider3index]);
+                if (Time.time >= time3)
+                {
+                    SpawnSpider(spawn3, dest3);
+                    spider3index++;
+                }
+            }
+            if (spider4index < spider4Spawn.Length - 1)
+            {
+                float time4 = convertToSecond(spider4Spawn[spider4index]);
+                if (Time.time >= time4)
+                {
+                    SpawnSpider(spawn4, dest4);
+                    spider4index++;
+                }
+            }          
+            yield return null;
 
-            SpawnSpider(spawn1, dest1);
-            SpawnSpider(spawn2, dest2);
-            SpawnSpider(spawn3, dest3);
-            SpawnSpider(spawn4, dest4);
 
-            yield return new WaitForSeconds(spawnCooldown);
+            //SpawnSpider(spawn2, dest2);
+            //SpawnSpider(spawn3, dest3);
+            //SpawnSpider(spawn4, dest4);
+
+            //yield return new WaitForSeconds(spawnCooldown);
         }
     }
 
@@ -80,7 +117,7 @@ public class spiderSpawner : MonoBehaviour
         move.SetOriginAndDestination(origin, destination);
 
         // allow it to move
-        move.UpdateMove(true);
+        //move.UpdateMove(true);
     }
 
     void Update()
@@ -106,9 +143,12 @@ public class spiderSpawner : MonoBehaviour
         if (Time.time >= pulseTime)
         {
             /* Make it so spiders can't move and pulse occurs */
-            spiderPrefab.GetComponent<spiderMovement>().SetDuration(pulseDuration[currentTime]);
-            spiderPrefab.GetComponent<spiderMovement>().UpdateMove(false);
-            /* If spiders can move, then update currentTime */
+            //spiderPrefab.GetComponent<spiderMovement>().SetDuration(pulseDuration[currentTime]);
+            //spiderPrefab.GetComponent<spiderMovement>().UpdateMove(false);
+            ///* If spiders can move, then update currentTime */
+            //currentTime++;
+
+            spiderMovement.TriggerPulse(pulseDuration[currentTime]);
             currentTime++;
         }
        

@@ -59,5 +59,8 @@ TagManager:
   - name: Player
     uniqueID: 815395477
     locked: 0
+  - name: Pause Menu
+    uniqueID: 4142687053
+    locked: 0
   m_RenderingLayers:
   - Default

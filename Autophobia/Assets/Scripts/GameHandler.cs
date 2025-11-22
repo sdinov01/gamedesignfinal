@@ -7,50 +7,28 @@ using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour
 {
+    public static GameHandler Instance;
     public TMP_Text resultText;
     /* TMP variable for score textbox */
     //public TMP_Text scoreText;
     /* By default the total possible score is 100 */
-    private int totalScore = 100;
-    private int currScore = 0;
-    [SerializeField] private Image scoreText;
     public float displayTime = 1.0f;
 
     private float timer = 0f;
-    private circle currentCircle;
-    public void SetCurrentCircle(circle c)
+    private Circle currentCircle;
+    public void SetCurrentCircle(Circle c)
     {
         currentCircle = c;
     } 
 
     void Start() {
-        if (resultText != null)
+        if (Instance == null)
         {
-            resultText.text = "";
-        }
-        if (scoreText != null)
-        {
-            scoreText.fillAmount = 0;
+            Instance = this;
         }
     }
     void Update()
     {
-        // Debug.Log("update");
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("Current circle parent: " + currentCircle.transform.parent.name);
-            currentCircle.OnClick();
-        }
-        
-        //let result disappear
-        if (timer > 0)
-        {
-            timer -= Time.deltaTime;
-            if (timer <= 0)
-            {
-                resultText.text = "";
-            }
-        }
     }  
     
     public void ShowResult(string result)
@@ -96,16 +74,4 @@ public class GameHandler : MonoBehaviour
             #endif
     }
 
-    /* Set total possible score */
-    public void SetTotalScore(int score)
-    {
-        totalScore = score;
-    }
-
-    /* Update current score */
-    public void UpdateScore(int score)
-    {
-        currScore += score;
-        scoreText.fillAmount = (float)currScore / totalScore;
-    }
 }

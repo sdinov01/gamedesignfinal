@@ -670,7 +670,7 @@ PrefabInstance:
       objectReference: {fileID: 2099490865}
     - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: lines.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: lines.Array.data[0].line
@@ -689,6 +689,10 @@ PrefabInstance:
       value: asdasdasda
       objectReference: {fileID: 0}
     - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: lines.Array.data[4].line
+      value: slkjlk
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: lines.Array.data[0].frame
       value: 
       objectReference: {fileID: -2586914994728930197, guid: ea1631b750503104292373ff5a686cf1, type: 3}
@@ -704,6 +708,10 @@ PrefabInstance:
       propertyPath: lines.Array.data[3].frame
       value: 
       objectReference: {fileID: -2586914994728930197, guid: ea1631b750503104292373ff5a686cf1, type: 3}
+    - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: lines.Array.data[4].frame
+      value: 
+      objectReference: {fileID: 671686197075892656, guid: d5a411f143fe00646916aff09040f8ee, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

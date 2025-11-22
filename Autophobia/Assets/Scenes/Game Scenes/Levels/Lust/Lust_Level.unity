@@ -169,11 +169,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   phases:
   - name: 
-    bpm: 120
+    bpm: 130
     beatsBetweenShots: 1
     lanePattern: 00000000010000000200000003000000
     beatsInPhase: 1000
-    projectileSpeed: 10
+    projectileSpeed: 2
   bossProjectile: {fileID: 5651431535328739071, guid: 18cce985a257e954f8d43e3f248ace22, type: 3}
   firePoints:
   - {fileID: 1540660596}
@@ -1330,11 +1330,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   phases:
   - name: 
-    bpm: 100
+    bpm: 130
     beatsBetweenShots: 1
     lanePattern: 00000000010000000200000000000000
     beatsInPhase: 1000
-    projectileSpeed: 5
+    projectileSpeed: 2
   bossProjectile: {fileID: 8218206109086024149, guid: d155b799486f6bf47ad75bd7b748471b, type: 3}
   firePoints:
   - {fileID: 465176907}

@@ -1692,6 +1692,10 @@ PrefabInstance:
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
       objectReference: {fileID: 0}
+    - target: {fileID: 7225490054921102787, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
+      propertyPath: musicSource
+      value: 
+      objectReference: {fileID: 1706556084}
     - target: {fileID: 7281353139758632227, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
       propertyPath: m_SizeDelta.x
       value: 200
@@ -3137,8 +3141,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1e53cd928d7090c48a6bf2364ad893b8, type: 3}
-  m_Resource: {fileID: 8300000, guid: 1e53cd928d7090c48a6bf2364ad893b8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4e54b5d1e4c00fc4bbaac12f4de16d66, type: 3}
+  m_Resource: {fileID: 8300000, guid: 4e54b5d1e4c00fc4bbaac12f4de16d66, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

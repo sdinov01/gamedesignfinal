@@ -6,76 +6,108 @@ using TMPro;
 
 public class TutorialManager : MonoBehaviour
 {
-   public Platform firstPlatform;
-   public GameObject TutorialPanel;
-   public Button startButton;
-   public linearPlatMove player;
-   public PlayerController controller;
-   public CanvasGroup canvasGroup;
-   public float fadeDuration = 1f;
+    [Header("Initialization")]
+    public GameObject playerbody;
+    public Platform firstPlatform;
+    public linearPlatMove player;
+    public PlayerController controller;
+    public float fadeInTime = 2f;
 
-   [Header("Step 1 Move to the flashlight")]
+
+
+    [Header("Tutorial Panel 1")]
+    public GameObject   T1Panel;
+    public CanvasGroup  T1Group;
+    public Button       T1Start;
+
+
+
+    [Header("Tutorial Panel 2")]
+    public GameObject   T2Panel;
+    public CanvasGroup  T2Group;
+    public Button       T2Start;
+    public GameObject audiomanager;
+
+
+
+    [Header("Step 1 Move to the flashlight")]
     public GameObject[] glowObjects;  
     public GlowFlasher[] highlighters;
     int currentStep = 0;
 
-    [Header("Step 2 Rhythm Dodge")]
-    public CanvasGroup canvasGroup2;
-    public Button step2Button;
 
     [Header("Music")]
     public AudioSource audioSource;
     public KnifeController[] knives;
 
     public bool step2 = false;
+    public bool startup = false;
 
+    void Start() {
 
-
-
-   void Start() {
-    foreach (var g in glowObjects)
+        foreach (var g in glowObjects)
         {
             g.SetActive(false);   
         }
-    player.transform.position = firstPlatform.transform.position;
+        player.transform.position = firstPlatform.transform.position;
+        playerbody.SetActive (false);
 
-    //initialize canvasGroup
-    canvasGroup.alpha = 0;
-    canvasGroup.interactable = false;
-    canvasGroup.blocksRaycasts = false;
-
-    startButton.onClick.AddListener(ButtonClicked);
-    step2Button.onClick.AddListener(CloseStep2Canvas);
-
-    StartCoroutine(FadeInCanvas());
-
+        CanvasHandler (T1Panel, T1Group, T1Start, false, false);
     }
 
-    IEnumerator FadeInCanvas()
+    void FirstButtonClicked()
     {
-        canvasGroup2.gameObject.SetActive(false);
-        float elapsed = 0f;
-
-        while (elapsed < fadeDuration)
-        {
-            elapsed += Time.deltaTime;
-            canvasGroup.alpha = Mathf.Clamp01(elapsed / fadeDuration);
-            yield return null;
-        }
-
-        canvasGroup.interactable = true;
-        canvasGroup.blocksRaycasts = true;
-    }
-
-    void ButtonClicked()
-    {
-        //after clicking, canvas disappear
-        TutorialPanel.SetActive(false);
-        //player can move now
+        playerbody.SetActive(true);
         controller.EnableMovement();
-
+        
         glowObjects[0].SetActive(true);
         highlighters[0].StartFlashing();
+        
+        CanvasHandler (T1Panel, T1Group, T1Start, true, false);
+        StartCoroutine (WaitForSeconds(3f));
+        CanvasHandler (T2Panel, T2Group, T2Start, false, true);
+    }
+
+    void SecondButtonClicked()
+    {
+        StartStep2();
+        CanvasHandler (T2Panel, T2Group, T2Start, true, true);
+        StartCoroutine (WaitForSeconds(3f));
+        audiomanager.SetActive(true);
+
+    }
+
+    public IEnumerator WaitForSeconds (float s)
+    {
+        yield return new WaitForSeconds(s);
+    }
+
+    IEnumerator FadeInCanvas (CanvasGroup cg)
+    {
+        float elapsed = 0f;
+        while (elapsed < fadeInTime)
+        {
+            elapsed += Time.deltaTime;
+            cg.alpha = Mathf.Clamp01(elapsed / fadeInTime);
+            yield return null;
+        }
+        cg.interactable = true;
+        cg.blocksRaycasts = true;
+    }
+
+    IEnumerator FadeOutCanvas (CanvasGroup cg)
+    {
+        float elapsed = 0f;
+        float start = cg.alpha;
+
+        while (elapsed < fadeInTime)
+        while (elapsed < fadeInTime)
+        {
+            elapsed += Time.deltaTime;
+            cg.alpha = Mathf.Lerp(start, 0f, elapsed / fadeInTime);
+            yield return null;
+        }
+        MakeInvisible (cg);
     }
 
 
@@ -94,48 +126,55 @@ public class TutorialManager : MonoBehaviour
             glowObjects[currentStep].SetActive(true);
             highlighters[currentStep].StartFlashing();
         }
-
-        else
-        {
-            canvasGroup2.gameObject.SetActive(true);
-            StartCoroutine(FadeInCanvasAfterStep()); //show next canvas
-        }
     }
 
-
-    /*STEP 2*/
-    IEnumerator FadeInCanvasAfterStep()
+    private IEnumerator FadeOutAndDeactivate(GameObject g, CanvasGroup cg)
     {
-        canvasGroup2.alpha = 0;
-        canvasGroup2.gameObject.SetActive(true);
-
-        float elapsed = 0f;
-        while (elapsed < fadeDuration)
-        {
-            elapsed += Time.deltaTime;
-            canvasGroup2.alpha = Mathf.Clamp01(elapsed / fadeDuration);
-            yield return null;
-        }
-
-        canvasGroup2.interactable = true;
-        canvasGroup2.blocksRaycasts = true;
-
-        StartStep2(); // Step 2 开始
+        yield return StartCoroutine(FadeOutCanvas(cg));
+        g.SetActive(false);
     }
 
     public void StartStep2()
     {
-        audioSource.Play();
         foreach (var k in knives)
         {
             k.canStart = true;
-            step2 = true;
         }
 
     }
 
+    private void CanvasHandler (GameObject g, CanvasGroup cg, Button b, bool activate, bool callindex)
+    {
+        if (!activate) 
+        {
+            b.onClick.RemoveAllListeners();
+            if (callindex == false)
+            {
+                b.onClick.AddListener (FirstButtonClicked);
+            } 
+            else
+            {
+                b.onClick.AddListener (SecondButtonClicked);
+            }
+            MakeInvisible (cg);
+            g.SetActive (true);
+            StartCoroutine (FadeInCanvas (cg));
+        }
+        else
+        {
+            StartCoroutine (FadeOutAndDeactivate (g, cg));
+        }
+    }
+
+    private void MakeInvisible (CanvasGroup cg)
+    {
+        cg.alpha = 0;
+        cg.interactable = false;
+        cg.blocksRaycasts = false;
+    }
+
     public void CloseStep2Canvas()
     {
-        canvasGroup2.gameObject.SetActive(false);
+        // TPanel2.gameObject.SetActive(false);
     }
 }

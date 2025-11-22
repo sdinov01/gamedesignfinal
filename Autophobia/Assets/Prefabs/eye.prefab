@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 2875232378881396817}
   - component: {fileID: 6314765146420433382}
   - component: {fileID: 7504708150370036}
-  - component: {fileID: 7308897988128049824}
   - component: {fileID: -419075258634432612}
-  - component: {fileID: 8818205714103607946}
+  - component: {fileID: 3871168113896595417}
   m_Layer: 10
   m_Name: eye
   m_TagString: Untagged
@@ -31,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.3, y: -0.7732, z: 0}
-  m_LocalScale: {x: 0.38744193, y: 0.38744193, z: 0.38744193}
+  m_LocalScale: {x: 0.35221988, y: 0.35221988, z: 0.35221994}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 952424591
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 30
   m_Sprite: {fileID: -1168669060, guid: 6bff853217da54d80863eda41386981e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -113,38 +112,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7308897988128049824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6439132859630361528}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 334dc090edecb4f148f63287736531a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 7504708150370036}
-  growTime: 2
-  musicSource: {fileID: 3747546472440603548, guid: 53d100b9e9bf44543b970dce3d1e1103, type: 3}
-  spawnTime: 0
-  targetTime: 0
-  spriteRenderer: {fileID: 6314765146420433382}
-  eyeSprites:
-  - {fileID: -1168669060, guid: 6bff853217da54d80863eda41386981e, type: 3}
-  - {fileID: 2061743676, guid: 6bff853217da54d80863eda41386981e, type: 3}
-  - {fileID: -1316017044, guid: 6bff853217da54d80863eda41386981e, type: 3}
-  - {fileID: 1542708910, guid: 6bff853217da54d80863eda41386981e, type: 3}
-  - {fileID: -1034015136, guid: 6bff853217da54d80863eda41386981e, type: 3}
-  - {fileID: 404296382, guid: 6bff853217da54d80863eda41386981e, type: 3}
-  - {fileID: -2115059496, guid: 6bff853217da54d80863eda41386981e, type: 3}
-  - {fileID: -1770832467, guid: 6bff853217da54d80863eda41386981e, type: 3}
-  - {fileID: -869315155, guid: 6bff853217da54d80863eda41386981e, type: 3}
-  - {fileID: -409619046, guid: 6bff853217da54d80863eda41386981e, type: 3}
-  - {fileID: -622647745, guid: 6bff853217da54d80863eda41386981e, type: 3}
-  - {fileID: 868339186, guid: 6bff853217da54d80863eda41386981e, type: 3}
-  - {fileID: -274421452, guid: 6bff853217da54d80863eda41386981e, type: 3}
 --- !u!58 &-419075258634432612
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -181,7 +148,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 2.49
---- !u!114 &8818205714103607946
+--- !u!114 &3871168113896595417
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,13 +157,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6439132859630361528}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 334dc090edecb4f148f63287736531a7, type: 3}
+  m_Script: {fileID: 11500000, guid: e7f5ac91bd8284fda83a89db19a34fa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  growTime: 2
-  musicSource: {fileID: 3747546472440603548, guid: 53d100b9e9bf44543b970dce3d1e1103, type: 3}
-  spawnTime: 0
-  targetTime: 0
-  spriteRenderer: {fileID: 0}
-  eyeSprites: []
+  animator: {fileID: 7504708150370036}
+  gameHandler: {fileID: 0}
+  ready: 0
+  playerInside: 0
+  hitWindow: 0.3
+  health: {fileID: 0}

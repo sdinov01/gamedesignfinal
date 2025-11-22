@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour
 
     void Update()
     {
-        if (!music.isPlaying && playerHealth.healthLeft() > 0 && t.step2)
+        if (!music.isPlaying && playerHealth.healthLeft() > 0 && t.step2 && !t.startup)
         {
             levelCompleted = true;
             CompleteLevel();

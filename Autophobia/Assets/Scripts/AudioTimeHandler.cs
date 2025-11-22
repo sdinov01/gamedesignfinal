@@ -3,13 +3,13 @@ using System;
 
 public class BeatSync : MonoBehaviour
 {
-    public static event Action OnBeat;      // every beat
-    public static event Action OnHalfBeat;  // twice per beat
-    public static event Action OnMeasure;   // every 4 beats
+    public static event Action OnBeat;          // Calls every beat (or quarter-measure in 4/4)
+    public static event Action OnHalfBeat;      // Calls every two beats (or half-measure in 4/4)
+    public static event Action OnMeasure;       // Calls every measure
 
-    public AudioSource music;       // assign in Inspector
-    public double bpm;
-    public int beatsPerMeasure; // 4/4 time
+    public AudioSource music;                   
+    public double bpm;                          
+    public int beatsPerMeasure;                 
 
     private double dspStartTime;
     private double beatInterval;         

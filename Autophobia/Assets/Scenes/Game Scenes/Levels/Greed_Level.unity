@@ -2480,11 +2480,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeStamps:
-  - 3
-  - 3.5
-  - 4
+  - 8
+  - 10
   - 12
-  - 12.5
+  - 14
+  - 14.5
   - 15.5
   - 16
   - 16.5
@@ -2536,7 +2536,7 @@ MonoBehaviour:
   health: {fileID: 1330991106}
   intro: {fileID: 1706556086}
   minuteHand: {fileID: 1584120212}
-  offset: 2
+  offset: -0.05
 --- !u!4 &1142959081
 Transform:
   m_ObjectHideFlags: 0

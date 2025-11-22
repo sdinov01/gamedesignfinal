@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class BallLifetime : MonoBehaviour
 {
-    private int beatsRemaining = 4;
-    [SerializeField] private float scaleIncreasePerBeat = 0.1f;
+    private int beatsRemaining = 5;
+    [SerializeField] private float scaleIncreasePerBeat = 0.08f;
     
     private Vector3 initialScale;
     private BallInputHandler inputHandler;
@@ -62,4 +62,6 @@ public class BallLifetime : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+
 }

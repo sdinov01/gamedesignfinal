@@ -30,7 +30,7 @@ public class game : MonoBehaviour
     /* Default start time */
     private float startTime = 14.5f;
     /* Offset */
-    public float offset = 2f;
+    private float offset = -0.05f;
 
     void Start()
     {
@@ -47,27 +47,30 @@ public class game : MonoBehaviour
         /* Keep track of time */
         if (currRotation < timeStamps.Length && currRotation < rotations.Length)
         {
+            /* Rotation has to be done by this time */
             float rotation = calculateToSecond(timeStamps[currRotation]);
-            Debug.Log("Rotation is at second: " + rotation);
+
+            /* Duration of rotation */
+            if (currRotation + 1 < timeStamps.Length)
+            {
+                /* and the rotation is soon, rotation time will be the difference */
+                float nextRotation = calculateToSecond(timeStamps[currRotation + 1]);
+                if (nextRotation - rotation < 1f)
+                {
+                    rotationTime = nextRotation - rotation;
+                }
+            }
+            else
+            {
+                /* If there is no next rotation, the rotation will last 2 seconds */
+                rotationTime = 2f;
+            }
+
             /* Time to perform a rotation */
-            if (Time.time >= rotation)
+            if (Time.time >= rotation - rotationTime)
             {
 
-                /* If there is another rotation after this one: */
-                if (currRotation + 1 < timeStamps.Length)
-                {
-                    /* and the rotation is soon, rotation time will be the difference */
-                    float nextRotation = calculateToSecond(timeStamps[currRotation + 1]);
-                    Debug.Log("Next rotation is at second: " + nextRotation);
-                    if (nextRotation - rotation < 1f)
-                    {
-                        rotationTime = nextRotation - rotation;
-                    }
-                } else
-                {
-                    /* If there is no next rotation, the rotation will last 2 seconds */
-                    rotationTime = 2f;
-                }
+                
                 minuteHandMovement.PerformRotation(rotations[currRotation], rotationTime);
                 /* Starts changing color of clock areas */
                 StartCoroutine(ChangeColor(area[currRotation]));

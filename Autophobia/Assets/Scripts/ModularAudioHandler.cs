@@ -1,4 +1,5 @@
-using UnityEngine;
+using   UnityEngine;
+using   System;
 
 public class ModularAudioHandler : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class ModularAudioHandler : MonoBehaviour
     public double           beat4int;
     public double           measureint;
 
-    void Start()
+    void Awake()
     {
         beatint     = 60.0 / bpm;
         Ebeatint    = beatint / 8.0;
@@ -37,7 +38,6 @@ public class ModularAudioHandler : MonoBehaviour
         beat3int    = beatint * 3.0;
         beat4int    = beatint * 4.0;
         measureint  = beatint * beatspermeasure;
-
     }
 
 }

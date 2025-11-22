@@ -7,7 +7,7 @@ public class Circle : MonoBehaviour
     public GameHandler GameHandler;
     public bool ready = false;        
     public bool playerInside = false;  
-    public float hitWindow = 0.6f;     //time interval for hitting
+    public float hitWindow = 0.7f;     //time interval for hitting
     private bool judged = false;
     public healthBar health;
     private float idealHitTime = -1f;
@@ -18,8 +18,10 @@ public class Circle : MonoBehaviour
         ready = true;  
         judged = false; 
         
-        animator.ResetTrigger("hit");
-        animator.ResetTrigger("miss");
+        // animator.ResetTrigger("hit");
+        // animator.ResetTrigger("miss");
+        animator.Rebind();
+        animator.Update(0f);
         
         animator.Play("eye_animation", -1, 0f);
         // animator.SetBool("beat", true);
@@ -58,7 +60,7 @@ public class Circle : MonoBehaviour
         Debug.Log("ideal: " + idealHitTime);
         float delta = Mathf.Abs(clickTime - idealHitTime); // |delat|
         Debug.Log("delta" + delta);
-        Debug.Log(playerInside);
+        Debug.Log("inside" + playerInside);
         Debug.Log(delta <= hitWindow);
         if (delta <= hitWindow &&  playerInside)
         {
@@ -74,18 +76,18 @@ public class Circle : MonoBehaviour
             health.takeDamage(-10);
         }
         idealHitTime = -1f;
+        playerInside = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        //Debug.Log("playerInside");
         if (other.CompareTag("Player"))
             playerInside = true;
     }
 
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-            playerInside = false;
-    }
+    // void OnTriggerExit2D(Collider2D other)
+    // {
+    //     if (other.CompareTag("Player"))
+    //         playerInside = false;
+    // }
 }

@@ -27,7 +27,8 @@ public class DialogueManager : MonoBehaviour
 
     private int index = -1;
     private bool isTyping;
-    private string fullText;              
+    private string fullText;          
+    public Camera camera;    
 
     void Start()
     {

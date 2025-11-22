@@ -11,7 +11,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - canvas
   - Water
   - UI
   - 
@@ -43,6 +43,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: canvas
+    uniqueID: 3656962807
     locked: 0
   - name: Background
     uniqueID: 1281012565

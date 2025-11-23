@@ -5,6 +5,8 @@ public class handMovement : MonoBehaviour
     private bool isRotating = false;
     private float remainingRotation;   // how many degrees left
     private float speed;               // degrees per second (can be ±)
+    private GameObject currentSlice = null;
+
 
     public void PerformRotation(float targetRotation, float time)
     {
@@ -22,7 +24,10 @@ public class handMovement : MonoBehaviour
 
     void Update()
     {
-        if (!isRotating) return;
+        if (!isRotating)
+        {
+            return;
+        }
 
         float delta = speed * Time.deltaTime;
 
@@ -37,5 +42,15 @@ public class handMovement : MonoBehaviour
             transform.Rotate(0, 0, delta);
             remainingRotation -= delta;
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        currentSlice = collision.gameObject;
+    }
+
+    public GameObject GetCurrentSlice()
+    {
+        return currentSlice;
     }
 }

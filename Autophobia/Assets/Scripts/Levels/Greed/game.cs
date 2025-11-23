@@ -11,14 +11,17 @@ public class game : MonoBehaviour
     [SerializeField] private float[] timeStamps;
     /* The rotation */
     [SerializeField] private float[] rotations;
-    /* The area of the clock to change color */
-    [SerializeField] private GameObject[] area;
     /* Colors for changing the clock slices */
     [SerializeField] private Color[] colors;
     /* Health bar to keep track of whether the player loses */
     [SerializeField] private healthBar health;
     /* greedIntro to get starting time */
     [SerializeField] private greedIntro intro;
+    public float timeBeforeOrange;
+    public float timeBeforeRed;
+    public float timeBeforeReset;
+
+    [SerializeField] private handMovement hourMovement;
 
     /* The minute hand to rotate */
     [SerializeField] private GameObject minuteHand;
@@ -31,6 +34,7 @@ public class game : MonoBehaviour
     private float startTime = 14.5f;
     /* Offset */
     private float offset = -0.05f;
+
 
     void Start()
     {
@@ -55,9 +59,9 @@ public class game : MonoBehaviour
             {
                 /* and the rotation is soon, rotation time will be the difference */
                 float nextRotation = calculateToSecond(timeStamps[currRotation + 1]);
-                if (nextRotation - rotation < 1f)
+                if (nextRotation - rotation < 2f)
                 {
-                    rotationTime = nextRotation - rotation;
+                    rotationTime = (nextRotation - rotation) * 0.7f;
                 }
             }
             else
@@ -73,7 +77,9 @@ public class game : MonoBehaviour
                 
                 minuteHandMovement.PerformRotation(rotations[currRotation], rotationTime);
                 /* Starts changing color of clock areas */
-                StartCoroutine(ChangeColor(area[currRotation]));
+
+                //StartCoroutine(ChangeColor(area[currRotation]));
+                StartCoroutine(ChangeColor(rotationTime));
                 /* Move on to next rotation */
                 currRotation = currRotation + 1;
             }
@@ -86,17 +92,34 @@ public class game : MonoBehaviour
     }
 
     /* Changes the color of an area of the clock */
-    private IEnumerator ChangeColor(GameObject area)
+    //private IEnumerator ChangeColor(GameObject area)
+    //{
+    //    // get color component
+    //    Renderer colorRenderer = area.GetComponent<Renderer>();
+    //    yield return new WaitForSeconds(rotationTime); // wait until the hour hand reaches the slice before turning color
+    //    colorRenderer.material.SetColor("_Color", colors[0]); // warning color
+    //    yield return new WaitForSeconds(3f);
+    //    colorRenderer.material.SetColor("_Color", colors[1]); // about to turn
+    //    yield return new WaitForSeconds(3f);
+    //    colorRenderer.material.SetColor("_Color", colors[2]); // avoid
+    //    yield return new WaitForSeconds(5f);
+    //    colorRenderer.material.SetColor("_Color", colors[3]); // reset
+    //}
+
+    private IEnumerator ChangeColor(float time)
     {
-        // get color component
-        Renderer colorRenderer = area.GetComponent<Renderer>();
-        yield return new WaitForSeconds(rotationTime); // wait until the hour hand reaches the slice before turning color
+        /* Wait to finish rotation */
+        //yield return new WaitForSeconds(time);
+        /* Retrieve current slice */
+        yield return new WaitForSeconds(time); // wait until the hour hand reaches the slice before turning color
+        GameObject currentSlice = hourMovement.GetCurrentSlice();
+        Renderer colorRenderer = currentSlice.GetComponent<Renderer>();
         colorRenderer.material.SetColor("_Color", colors[0]); // warning color
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(timeBeforeOrange);
         colorRenderer.material.SetColor("_Color", colors[1]); // about to turn
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(timeBeforeRed);
         colorRenderer.material.SetColor("_Color", colors[2]); // avoid
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(timeBeforeReset);
         colorRenderer.material.SetColor("_Color", colors[3]); // reset
     }
 
@@ -115,4 +138,6 @@ public class game : MonoBehaviour
         second += (timeStamp + offset);
         return second;
     }
+
+    
 }

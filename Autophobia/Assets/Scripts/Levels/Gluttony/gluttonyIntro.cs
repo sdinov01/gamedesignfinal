@@ -29,7 +29,7 @@ public class gluttonyIntro : MonoBehaviour
     /* Make intro skippable */
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+        if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) && !skipTutorial)
         {
             skipTutorial = true;
             if (tutorialRoutine != null)

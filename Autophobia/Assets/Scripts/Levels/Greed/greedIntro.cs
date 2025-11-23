@@ -46,7 +46,7 @@ public class greedIntro : MonoBehaviour
     void Update()
     {
         /* If left/right shift is pressed, skip tutorial */
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+        if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) && !skipTutorial)
         {
             /* Stop the tutorial coroutine */
             skipTutorial = true;
@@ -63,9 +63,6 @@ public class greedIntro : MonoBehaviour
 
             /* Update beginning time for time stamps later */
             beginTime = Time.time;
-
-            /* Start progress bar */
-            //timeBar.BeginTime();
         }   
     }
 

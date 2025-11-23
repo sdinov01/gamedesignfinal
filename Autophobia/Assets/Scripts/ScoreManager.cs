@@ -5,7 +5,13 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance { get; private set; }
     [SerializeField] private TextMeshProUGUI scoreText;
-    private int score = 0;
+    [SerializeField] private TextMeshProUGUI stageScore;
+    [SerializeField] private TextMeshProUGUI targetText;
+
+    public int tscore = 0;
+    public int sscore = 0;
+    public int target;
+    public int stage = 0;
 
     void Awake()
     {
@@ -21,12 +27,15 @@ public class ScoreManager : MonoBehaviour
 
     void Start()
     {
+        target = 4;
         UpdateScoreDisplay();
+        NewStage();
     }
 
     public void AddPoint()
     {
-        score++;
+        tscore++;
+        sscore++;
         UpdateScoreDisplay();
     }
 
@@ -34,7 +43,20 @@ public class ScoreManager : MonoBehaviour
     {
         if (scoreText != null)
         {
-            scoreText.text = "Score: " + score;
+            scoreText.text = "Total Score: " + tscore;
+        }
+        if (stageScore != null)
+        {
+            stageScore.text = "Stage Score: " + sscore;
+        }
+    }
+
+    public void NewStage()
+    {
+        if (targetText != null)
+        {
+            stage++;
+            targetText.text = "Stage " + stage + " target: " + target;
         }
     }
 }

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BallLifetime : MonoBehaviour
 {
-    private int beatsRemaining = 5;
+    private int beatsRemaining = 4;
     [SerializeField] private float scaleIncreasePerBeat = 0.08f;
     
     private Vector3 initialScale;

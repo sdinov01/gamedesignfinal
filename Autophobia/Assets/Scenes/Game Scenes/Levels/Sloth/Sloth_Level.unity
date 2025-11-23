@@ -569,8 +569,21 @@ MonoBehaviour:
   - 33.333
   - 34.667
   - 36
+  - 37.333
+  - 38.667
+  - 40
+  - 41.333
+  - 42.667
+  - 44
+  - 45.333
+  - 46.667
+  - 48
+  - 49.333
+  - 50.667
+  - 52
+  - 53.333
   bpm: 90
-  spawnPlace: 00000000010000000200000003000000040000000500000006000000050000000400000003000000020000000100000000000000010000000200000003000000
+  spawnPlace: 0000000001000000020000000300000004000000050000000000000001000000020000000300000004000000050000000400000003000000020000000100000000000000020000000400000001000000030000000500000002000000010000000400000003000000000000000500000003000000
 --- !u!1 &150246001
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,6 +1272,14 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 300151261}
+    - target: {fileID: 3871168113896595417, guid: 30b882d0775c54ed88cc97bb0966d4bc, type: 3}
+      propertyPath: GameHandler
+      value: 
+      objectReference: {fileID: 4781283}
+    - target: {fileID: 3871168113896595417, guid: 30b882d0775c54ed88cc97bb0966d4bc, type: 3}
+      propertyPath: musicSource
+      value: 
+      objectReference: {fileID: 2967411}
     - target: {fileID: 6439132859630361528, guid: 30b882d0775c54ed88cc97bb0966d4bc, type: 3}
       propertyPath: m_Name
       value: eye 3
@@ -3187,7 +3208,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.043619405, w: 0.9990483}
   m_LocalPosition: {x: -0.21, y: 1.61, z: 0}
-  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 880175297}

@@ -35,7 +35,6 @@ public class KnifeController : MonoBehaviour
         Vector3 target = basePos - dir * attackDistance;
 
 
-        // 刺出去
         while (Vector3.Distance(transform.position, target) > 0.01f)
         {
             transform.position = Vector3.MoveTowards(transform.position, target, attackSpeed * Time.deltaTime);

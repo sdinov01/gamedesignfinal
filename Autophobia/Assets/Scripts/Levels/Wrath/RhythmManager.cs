@@ -19,7 +19,11 @@ public class RhythmManager : MonoBehaviour
     private bool CRrunning = false;
     private KnifeController thisknife;
 
-    //private int nextKnifeIndex = 0; //  当前轮到哪一把刀
+    private int nextIndex = 0; // for spawn time
+    public List<float> spawnTimes = new List<float>(); 
+    public float attackDelay = 1.2f;
+    public AudioSource musicSource;
+
 
     void Start()
     {
@@ -28,31 +32,45 @@ public class RhythmManager : MonoBehaviour
 
     void Update()
     {
-        timer += Time.deltaTime;
-        if (timer >= beatInterval)
-        {
-            timer -= beatInterval;
-            beatCount++;
+        if (nextIndex >= spawnTimes.Count)
+        return;
 
-            HandleBeat(beatCount);
+        float targetTime = spawnTimes[nextIndex] + attackDelay;
+
+        if (musicSource.time >= targetTime)
+        {
+            TriggerNextKnife();
+            nextIndex++;
         }
+        
+        // timer += Time.deltaTime;
+        // if (timer >= beatInterval)
+        // {
+        //     timer -= beatInterval;
+        //     beatCount++;
+
+        //     HandleBeat(beatCount);
+        // }
+    
     }
 
-    void HandleBeat(int beat)
-    {
-        int beatInBar = ((beat - 1) % 4) + 1; // 1~4 循环 4/4
+    // void HandleBeat(int beat)
+    // {
+    //     for (int i = 0; i < spawnTimes.Count; i++)
+    //     {
+    // int beatInBar = ((beat - 1) % 4) + 1; 
 
-        if (beat <= 4)
-        {
-            // if (beatInBar == 4)
-            //     TriggerNextKnife();
-        }
-        else
-        {
-            // if (beatInBar == 2 || beatInBar == 4)
-            //     TriggerNextKnife();
-        }
-    }
+    // if (beat <= 4)
+    // {
+    //     if (beatInBar == 4)
+    //         TriggerNextKnife();
+    // }
+    // else
+    // {
+    //     if (beatInBar == 2 || beatInBar == 4)
+    //         TriggerNextKnife();
+    // }
+    // }
 
     public void TriggerNextKnife()
     {
@@ -78,17 +96,19 @@ public class RhythmManager : MonoBehaviour
     {
         Vector2 dir = player.position - center.position;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        if (angle < 0) angle += 360f;
 
-        if (angle < 0) angle += 360f; 
+        // if (angle >180f) 
+        //     return -1; 
 
-        float startAngle = 0f;
-        float endAngle = 180f;
-
-        int sectorCount = knives.Length;
-        float sectorSize = (endAngle - startAngle) / sectorCount;
-
-        int sector = Mathf.FloorToInt((angle - startAngle) / sectorSize);
-        return Mathf.Clamp(sector, 0, sectorCount - 1);
+        if (angle > 350f || angle < 20f) return 0;
+        if (angle < 50f) return 1;
+        if (angle < 90f) return 2;
+        if (angle < 130f) return 3;
+        if (angle < 170f) return 4;
+        if (angle < 240f) return 5; 
+        return 5;    // angle: 160–180
+        
     }
 
     IEnumerator sequence (Color s, Color e)

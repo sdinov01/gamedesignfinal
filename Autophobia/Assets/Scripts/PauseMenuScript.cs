@@ -65,6 +65,8 @@ public class PauseMenuHandler : MonoBehaviour {
                 //Debug.Log("Clicked restart button");
                 Time.timeScale = 1f;
                 SceneManager.LoadScene("Menu_Scene");
+                /* Unpauses audio */
+                AudioListener.pause = false;
                 // Please also reset all static variables here, for new games!
         }
 

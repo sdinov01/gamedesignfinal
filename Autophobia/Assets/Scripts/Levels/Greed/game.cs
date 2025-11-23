@@ -71,7 +71,7 @@ public class game : MonoBehaviour
             }
 
             /* Time to perform a rotation */
-            if (Time.time >= rotation - rotationTime)
+            if (Time.timeSinceLevelLoad >= rotation - rotationTime)
             {
 
                 

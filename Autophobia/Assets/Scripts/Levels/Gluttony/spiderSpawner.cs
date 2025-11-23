@@ -43,12 +43,18 @@ public class spiderSpawner : MonoBehaviour
     {
 
         StartCoroutine(SpawnWhileAudioPlaying());
+        skippedAlready = false;
+        startTime = 14.5f;
+        spider1index = 0;
+        spider2index = 0;
+        spider3index = 0;
+        spider4index = 0;
     }
 
     private IEnumerator SpawnWhileAudioPlaying()
     {
         /* Begin after tutorial/skip */
-        yield return new WaitUntil(() => Time.time >= startTime);
+        yield return new WaitUntil(() => Time.timeSinceLevelLoad >= startTime);
 
         /* Begin song Courotine fill bar */
         timeBar.SetDuration(audioSource.clip.length);
@@ -61,7 +67,7 @@ public class spiderSpawner : MonoBehaviour
             if (spider1index < spider1Spawn.Length - 1)
             {
                 float time1 = convertToSecond(spider1Spawn[spider1index]);
-                if (Time.time >= time1)
+                if (Time.timeSinceLevelLoad >= time1)
                 {
                     SpawnSpider(spawn1, dest1);
                     spider1index++;
@@ -70,7 +76,7 @@ public class spiderSpawner : MonoBehaviour
             if (spider2index < spider2Spawn.Length - 1)
             {
                 float time2 = convertToSecond(spider2Spawn[spider2index]);
-                if (Time.time >= time2)
+                if (Time.timeSinceLevelLoad >= time2)
                 {
                     SpawnSpider(spawn2, dest2);
                     spider2index++;
@@ -79,7 +85,7 @@ public class spiderSpawner : MonoBehaviour
             if (spider3index < spider3Spawn.Length - 1)
             {
                 float time3 = convertToSecond(spider3Spawn[spider3index]);
-                if (Time.time >= time3)
+                if (Time.timeSinceLevelLoad >= time3)
                 {
                     SpawnSpider(spawn3, dest3);
                     spider3index++;
@@ -88,7 +94,7 @@ public class spiderSpawner : MonoBehaviour
             if (spider4index < spider4Spawn.Length - 1)
             {
                 float time4 = convertToSecond(spider4Spawn[spider4index]);
-                if (Time.time >= time4)
+                if (Time.timeSinceLevelLoad >= time4)
                 {
                     SpawnSpider(spawn4, dest4);
                     spider4index++;
@@ -96,12 +102,6 @@ public class spiderSpawner : MonoBehaviour
             }          
             yield return null;
 
-
-            //SpawnSpider(spawn2, dest2);
-            //SpawnSpider(spawn3, dest3);
-            //SpawnSpider(spawn4, dest4);
-
-            //yield return new WaitForSeconds(spawnCooldown);
         }
     }
 
@@ -126,7 +126,7 @@ public class spiderSpawner : MonoBehaviour
         /* If the tutorial is skipped, make it the new start time */
         if (gluttonyIntroHandler.GetComponent<gluttonyIntro>().SkippedTutorial() && !skippedAlready)
         {
-            startTime = Time.time;
+            startTime = Time.timeSinceLevelLoad;
             skippedAlready = true;
         }
         /* If there are no more time stamps, then spiders can move */
@@ -140,14 +140,8 @@ public class spiderSpawner : MonoBehaviour
         float pulseTime = convertToSecond(pulseTimeStamps[currentTime]);
 
         /* Time to do pulse */
-        if (Time.time >= pulseTime)
+        if (Time.timeSinceLevelLoad >= pulseTime)
         {
-            /* Make it so spiders can't move and pulse occurs */
-            //spiderPrefab.GetComponent<spiderMovement>().SetDuration(pulseDuration[currentTime]);
-            //spiderPrefab.GetComponent<spiderMovement>().UpdateMove(false);
-            ///* If spiders can move, then update currentTime */
-            //currentTime++;
-
             spiderMovement.TriggerPulse(pulseDuration[currentTime]);
             currentTime++;
         }

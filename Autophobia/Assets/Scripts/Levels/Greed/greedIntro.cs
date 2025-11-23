@@ -36,7 +36,7 @@ public class greedIntro : MonoBehaviour
     private IEnumerator startBar()
     {
         /* Begin after tutorial/skip */
-        yield return new WaitUntil(() => Time.time >= beginTime);
+        yield return new WaitUntil(() => Time.timeSinceLevelLoad >= beginTime);
 
         /* Begin song Courotine fill bar */
         timeBar.SetDuration(audio.clip.length);
@@ -62,7 +62,7 @@ public class greedIntro : MonoBehaviour
             backgroundImage.enabled = false;
 
             /* Update beginning time for time stamps later */
-            beginTime = Time.time;
+            beginTime = Time.timeSinceLevelLoad;
         }   
     }
 

@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class spiderHealthAndDmg : MonoBehaviour
 {
@@ -6,6 +7,8 @@ public class spiderHealthAndDmg : MonoBehaviour
     private spiderMovement movement;
     private healthBar health;
     private bool takeDamage;
+
+    public float hitDuration;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,17 +32,28 @@ public class spiderHealthAndDmg : MonoBehaviour
             if (renderer.color == Color.red)
             {
                 Debug.Log("The spider is vulnerable and can take damage, and cannot deal damage\n");
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    Debug.Log("SMACK!\n");
-                    Destroy(gameObject);
-                }
+                StartCoroutine(PlayerHit());
             }
             else
             {
                 /* Player takes damage otherwise */
                 health.takeDamage(2f);
             }
+        }
+    }
+
+    private IEnumerator PlayerHit()
+    {
+        float timeElapsed = 0f;
+        while (timeElapsed < hitDuration)
+        {
+            timeElapsed += Time.deltaTime;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Debug.Log("SMACK!\n");
+                Destroy(gameObject);
+            }
+            yield return null;
         }
     }
 }

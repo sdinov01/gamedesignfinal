@@ -43,7 +43,7 @@ public class Circle : MonoBehaviour
                 ready = false;
                 animator.SetTrigger("miss");
                 GameHandler.Instance.ShowResult("Miss");
-                health.takeDamage(-10);
+                health.takeDamage(10f);
             }
         }
     }
@@ -73,7 +73,8 @@ public class Circle : MonoBehaviour
         {
             animator.SetTrigger("miss");
             GameHandler.Instance.ShowResult("Miss");
-            health.takeDamage(-10);
+            health.takeDamage(10f);
+            Debug.Log("down");
         }
         idealHitTime = -1f;
         playerInside = false;

@@ -14,6 +14,10 @@ public class RhythmManager : MonoBehaviour
     private float beatInterval;
     private float timer;
     private int beatCount = 0;
+    private SpriteRenderer sr;
+    private float offsetTime = 1.3f;
+    private bool CRrunning = false;
+    private KnifeController thisknife;
 
     private int nextIndex = 0; // for spawn time
     public List<float> spawnTimes = new List<float>(); 
@@ -75,8 +79,14 @@ public class RhythmManager : MonoBehaviour
         {
             if (knife.sectorIndex == sector)
             {
-                StartCoroutine(ColorFlash());
-                knife.TriggerAttack();
+                sr = knife.self.GetComponent<SpriteRenderer>();
+                thisknife = knife;
+                StartCoroutine (sequence (sr.color, Color.red));
+                // StartColorLerp (sr.color, Color.red);
+                // StartCoroutine (ColorFlash());
+                
+                // knife.TriggerAttack();
+                
                 return; 
             }
         }
@@ -101,6 +111,13 @@ public class RhythmManager : MonoBehaviour
         
     }
 
+    IEnumerator sequence (Color s, Color e)
+    {
+        yield return StartCoroutine (ColorLerp (s, e, offsetTime));
+        yield return StartCoroutine (KnifeAttack (thisknife));
+        yield return StartCoroutine (ColorFlash ());
+    }
+
     IEnumerator ColorFlash()
     {
         Color original = Color.white;
@@ -114,4 +131,25 @@ public class RhythmManager : MonoBehaviour
 
         handSprite.color = original;
     }
+
+    private IEnumerator KnifeAttack (KnifeController k)
+    {
+        k.TriggerAttack();
+        yield return null;
+    }
+
+    private IEnumerator ColorLerp (Color a, Color b, float duration)
+    {
+        CRrunning = true;
+        float t = 0f;
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            sr.color = Color.Lerp(a, b, t / duration);
+            yield return null;
+        }
+        sr.color = a;  
+        CRrunning = false;
+    }
 }
+

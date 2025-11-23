@@ -8,6 +8,7 @@ public class KnifeController : MonoBehaviour
     public float attackSpeed = 8f;
     public float returnSpeed = 8f;
     public bool canStart = false;
+    public GameObject self;
 
     private Vector3 basePos;
     private bool isAttacking = false;
@@ -17,6 +18,7 @@ public class KnifeController : MonoBehaviour
     void Awake()
     {
         basePos = transform.position;
+        self    = gameObject;
     }
 
     public void TriggerAttack()

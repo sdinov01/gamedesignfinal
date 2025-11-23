@@ -22,15 +22,11 @@ public class WrathPopulate : MonoBehaviour
     {
         audioparser     = GetComponent<ModularAudioHandler>();
         RM              = GetComponent<RhythmManager>();
-
-
         mInterval       = audioparser.measureint;
 
         audiostarttime  = AudioSettings.dspTime;
         nextM           = audiostarttime + mInterval;
-
         measureindex    = 0;
-
         TM.startup = true;
         TM.step2 = true;
         // StartCoroutine (TM.WaitForSeconds ((float)mInterval));
@@ -49,7 +45,7 @@ public class WrathPopulate : MonoBehaviour
 
             switch (measureindex) {
                 case 2: MType2(); break;
-
+                case 5: MType3(); break;
 
                 default: break;
             }
@@ -66,14 +62,24 @@ public class WrathPopulate : MonoBehaviour
 
     void MType2()
     {
-        StartCoroutine(OnHalfMeasure());
+        StartCoroutine(WaitHalfMeasure());
         RM.TriggerNextKnife();
     }
 
-    IEnumerator OnHalfMeasure()
+    IEnumerator WaitHalfMeasure()
     {
-
         yield return new WaitForSeconds ((float)audioparser.beat2int);
+    }
+
+    IEnumerator WaitThreeBeats()
+    {
+        yield return new WaitForSeconds ((float)audioparser.beat3int);
+    }
+
+    void MType3()
+    {
+        StartCoroutine(WaitThreeBeats());
+        RM.TriggerNextKnife();
     }
 
     

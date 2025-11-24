@@ -171,6 +171,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -759,7 +772,33 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beginning_10082 2_0: -7498632272083624267
+      Beginning_10082 2_1: 6819651087798618801
+      Beginning_10082 2_10: -7896875102946591718
+      Beginning_10082 2_11: -3018594386999255281
+      Beginning_10082 2_12: 3543806938421882253
+      Beginning_10082 2_13: -8300110134148373855
+      Beginning_10082 2_14: -1811418734055407468
+      Beginning_10082 2_15: -5675254763677872365
+      Beginning_10082 2_16: 1019603130577066241
+      Beginning_10082 2_17: 1463080238817081086
+      Beginning_10082 2_18: 355759710844505648
+      Beginning_10082 2_19: -150362903190510293
+      Beginning_10082 2_2: -3654002972871114212
+      Beginning_10082 2_20: -9032761014731312260
+      Beginning_10082 2_21: -809207972375764632
+      Beginning_10082 2_22: -4031465985092306071
+      Beginning_10082 2_23: -828787588333866640
+      Beginning_10082 2_24: -2062149221392693067
+      Beginning_10082 2_25: 3943924893742954781
+      Beginning_10082 2_3: -5485876943342222838
+      Beginning_10082 2_4: -1509501175293142405
+      Beginning_10082 2_5: -2853286303789314101
+      Beginning_10082 2_6: -4917898155441164127
+      Beginning_10082 2_7: -7627752322687410504
+      Beginning_10082 2_8: 7314580780784261210
+      Beginning_10082 2_9: -3238372734811923741
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -29,7 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Scenes/Levels/Lust/Lust_Level.unity
     guid: 713f81235b8f92f4c956fc7469f65ed5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Game Scenes/Levels/Pride_Level.unity
     guid: 51c14a428e319164cb42a45730fa3b0c
   - enabled: 1
@@ -38,5 +38,26 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Scenes/Levels/Wrath/Wrath_Level.unity
     guid: 75b5f63e77f65634996f28de61b8e3b8
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Levels/Wrath/Wrath_StartDialogue.unity
+    guid: d216ea19dd0bb8644979f4656b7bbbc9
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Levels/Sloth/Sloth_StartDialogue.unity
+    guid: f2256e82be30aaf4fa0b190a1773a467
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Levels/Pride/Pride_StartDialogue.unity
+    guid: 17a88b5aae188c549bcd9733c4adde15
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Levels/Lust/Lust_StartDialogue.unity
+    guid: 9426b11197eb1cc4bbab89540d7cc5a1
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Levels/Greed/Greed_StartDialogue.unity
+    guid: 5f6b410b85722bc488696dd5ca33d49e
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Levels/Gluttony/Gluttony_StartDialogue.unity
+    guid: 9e9e69284328cbe48bbe707ace9ba1d4
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Levels/Envy/Envy_StartDialogue.unity
+    guid: b6aeaab4ae0a8784cb5eeb609f65d069
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

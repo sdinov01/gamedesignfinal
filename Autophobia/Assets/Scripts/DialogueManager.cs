@@ -30,6 +30,8 @@ public class DialogueManager : MonoBehaviour
     private string fullText;          
     public Camera camera;    
 
+    private bool finished = false;
+
     void Start()
     {
         Color c = fullFrameImage.color;
@@ -69,6 +71,7 @@ public class DialogueManager : MonoBehaviour
         index++;
         if (index >= lines.Count)
         {
+            finished = true;
             return; // done
         }
 
@@ -103,5 +106,10 @@ public class DialogueManager : MonoBehaviour
     {
         if (!fullFrameImage) return;
         fullFrameImage.sprite = lines[currLine].frame;
+    }
+
+    public bool isDialogueFinished()
+    {
+        return finished;
     }
 }

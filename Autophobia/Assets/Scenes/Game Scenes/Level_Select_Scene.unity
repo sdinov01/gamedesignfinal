@@ -211,7 +211,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Pride_Level
+          m_StringArgument: Pride_StartDialogue
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &112570850
@@ -436,7 +436,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Gluttony_Level
+          m_StringArgument: Gluttony_StartDialogue
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &460119046
@@ -1013,7 +1013,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Lust_Level
+          m_StringArgument: Lust_StartDialogue
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &764089869
@@ -1146,7 +1146,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Greed_Level
+          m_StringArgument: Greed_StartDialogue
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &861816461
@@ -1279,7 +1279,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sloth_Level
+          m_StringArgument: Sloth_StartDialogue
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &902491773
@@ -1684,7 +1684,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Envy_Level
+          m_StringArgument: Envy_StartDialogue
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1130495354
@@ -2063,7 +2063,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Wrath_Level
+          m_StringArgument: Wrath_StartDialogue
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1633043323

@@ -76,10 +76,9 @@ public class BossProjectile : MonoBehaviour
         handler.UpdateHealth(missDamage);
     }
 
-    // 👉 NEW: how close this projectile is to its intended hit time
     public float GetTimeToHit()
     {
         float age = Time.time - spawnTime;
-        return lifetime - age;   // smaller |value| means closer to the ideal hit moment
+        return lifetime - age;
     }
 }

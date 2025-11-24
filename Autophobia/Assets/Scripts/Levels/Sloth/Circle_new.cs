@@ -35,15 +35,17 @@ public class Circle : MonoBehaviour
             OnClick(musicSource.time);
         }
         //when player does not do anything
-        if (ready && !judged)
+        if (ready && !judged && idealHitTime > 0)
         {
-            if (Time.time > idealHitTime + hitWindow)
+            if (musicSource.time > idealHitTime + hitWindow)
             {
+                Debug.Log("ideal time: " + idealHitTime);
                 judged = true;
                 ready = false;
                 animator.SetTrigger("miss");
                 GameHandler.Instance.ShowResult("Miss");
                 health.takeDamage(10f);
+                Debug.Log("didn't click");
             }
         }
     }
@@ -56,11 +58,11 @@ public class Circle : MonoBehaviour
         }
         judged = true;
         ready = false;
-        Debug.Log("clickTime: " + clickTime);
-        Debug.Log("ideal: " + idealHitTime);
+        // Debug.Log("clickTime: " + clickTime);
+        // Debug.Log("ideal: " + idealHitTime);
         float delta = Mathf.Abs(clickTime - idealHitTime); // |delat|
-        Debug.Log("delta" + delta);
-        Debug.Log("inside" + playerInside);
+        // Debug.Log("delta" + delta);
+        // Debug.Log("inside" + playerInside);
         Debug.Log(delta <= hitWindow);
         if (delta <= hitWindow &&  playerInside)
         {
@@ -73,8 +75,8 @@ public class Circle : MonoBehaviour
         {
             animator.SetTrigger("miss");
             GameHandler.Instance.ShowResult("Miss");
+            Debug.Log("real miss");
             health.takeDamage(10f);
-            Debug.Log("down");
         }
         idealHitTime = -1f;
         playerInside = false;

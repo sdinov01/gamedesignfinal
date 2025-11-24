@@ -31,7 +31,6 @@ public class spiderHealthAndDmg : MonoBehaviour
             /* Spider is vulnerable when red */
             if (renderer.color == Color.red)
             {
-                Debug.Log("The spider is vulnerable and can take damage, and cannot deal damage\n");
                 StartCoroutine(PlayerHit());
             }
             else
@@ -50,7 +49,6 @@ public class spiderHealthAndDmg : MonoBehaviour
             timeElapsed += Time.deltaTime;
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                Debug.Log("SMACK!\n");
                 Destroy(gameObject);
             }
             yield return null;

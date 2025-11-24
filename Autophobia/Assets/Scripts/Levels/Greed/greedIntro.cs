@@ -20,10 +20,6 @@ public class greedIntro : MonoBehaviour
 
     void Start()
     {
-        /* Set the audio source to play at the beginning time */
-        audio.PlayDelayed(beginTime);
-        /* Set duration */
-        timeBar.SetDuration(audio.clip.length);
         /* Set the texts and image to be visible or invisible */
         tutorial.enabled = true;
         goodLuck.enabled = false;
@@ -37,10 +33,12 @@ public class greedIntro : MonoBehaviour
     {
         /* Begin after tutorial/skip */
         yield return new WaitUntil(() => Time.timeSinceLevelLoad >= beginTime);
+        Debug.Log("SKIPPED!\n");
 
         /* Begin song Courotine fill bar */
         timeBar.SetDuration(audio.clip.length);
         timeBar.BeginTime();
+        audio.Play();
     }
 
     void Update()
@@ -52,17 +50,13 @@ public class greedIntro : MonoBehaviour
             skipTutorial = true;
             StopCoroutine(tutorialCoroutine);
 
-            /* Resets music to start now */
-            audio.Stop();
-            audio.Play();
-
             /* Disable texts and background immediately */
             tutorial.enabled = false;
             goodLuck.enabled = false;
             backgroundImage.enabled = false;
 
             /* Update beginning time for time stamps later */
-            beginTime = Time.timeSinceLevelLoad;
+            beginTime = Time.timeSinceLevelLoad + 2f;
         }   
     }
 

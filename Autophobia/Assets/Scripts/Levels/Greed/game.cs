@@ -1,4 +1,4 @@
-/* Handle rotations corresponding to music */
+﻿/* Handle rotations corresponding to music */
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
@@ -11,15 +11,17 @@ public class game : MonoBehaviour
     [SerializeField] private float[] timeStamps;
     /* The rotation */
     [SerializeField] private float[] rotations;
+    //[SerializeField] private float[] changeSpeed;
+
+
+    //private int currentSpeedIndex = 0;
+    //private int currentSpeed;
     /* Colors for changing the clock slices */
     [SerializeField] private Color[] colors;
     /* Health bar to keep track of whether the player loses */
     [SerializeField] private healthBar health;
     /* greedIntro to get starting time */
     [SerializeField] private greedIntro intro;
-    public float timeBeforeOrange;
-    public float timeBeforeRed;
-    public float timeBeforeReset;
 
     [SerializeField] private handMovement hourMovement;
 
@@ -33,94 +35,63 @@ public class game : MonoBehaviour
     /* Default start time */
     private float startTime = 14.5f;
     /* Offset */
-    private float offset = -0.05f;
+    private float offset = 0;
 
+    [SerializeField] private float[] colorDuration;
+    [SerializeField] private float[] changeDuration;
+    private int durationIndex;
+
+    private bool canPerformRotation = true;
+    private Coroutine performRotationCoroutine;
+
+    [SerializeField] private AudioSource audio;
+    private float previousRotationTime;
 
     void Start()
     {
         minuteHandMovement = minuteHand.GetComponent<handMovement>();
+        durationIndex = 0;
+        performRotationCoroutine = StartCoroutine(hourMovement.performRotations());
+        previousRotationTime = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
         /* Update start time */
-        startTime = intro.StartTime();
-
-
-        /* Keep track of time */
-        if (currRotation < timeStamps.Length && currRotation < rotations.Length)
+        float newTime = intro.StartTime();
+        if (newTime != startTime)
         {
-            /* Rotation has to be done by this time */
-            float rotation = calculateToSecond(timeStamps[currRotation]);
+            startTime = newTime;
+            StopCoroutine(performRotationCoroutine);
+            StartCoroutine(hourMovement.performRotations());
+        }
 
-            /* Duration of rotation */
-            if (currRotation + 1 < timeStamps.Length)
-            {
-                /* and the rotation is soon, rotation time will be the difference */
-                float nextRotation = calculateToSecond(timeStamps[currRotation + 1]);
-                if (nextRotation - rotation < 2f)
-                {
-                    rotationTime = (nextRotation - rotation) * 0.7f;
-                }
-            }
-            else
-            {
-                /* If there is no next rotation, the rotation will last 2 seconds */
-                rotationTime = 2f;
-            }
-
-            /* Time to perform a rotation */
-            if (Time.timeSinceLevelLoad >= rotation - rotationTime)
-            {
-
-                
-                minuteHandMovement.PerformRotation(rotations[currRotation], rotationTime);
-                /* Starts changing color of clock areas */
-
-                //StartCoroutine(ChangeColor(area[currRotation]));
-                StartCoroutine(ChangeColor(rotationTime));
-                /* Move on to next rotation */
-                currRotation = currRotation + 1;
-            }
-        } else
+        /* Time to change duration of the colors */
+        if (Time.timeSinceLevelLoad > changeDuration[durationIndex] && durationIndex < colorDuration.Length - 1)
         {
-            /* We finished rotations */
-            StartCoroutine(endGame(15f));
+            durationIndex++;
+        }
 
-        } 
+
     }
-
-    /* Changes the color of an area of the clock */
-    //private IEnumerator ChangeColor(GameObject area)
-    //{
-    //    // get color component
-    //    Renderer colorRenderer = area.GetComponent<Renderer>();
-    //    yield return new WaitForSeconds(rotationTime); // wait until the hour hand reaches the slice before turning color
-    //    colorRenderer.material.SetColor("_Color", colors[0]); // warning color
-    //    yield return new WaitForSeconds(3f);
-    //    colorRenderer.material.SetColor("_Color", colors[1]); // about to turn
-    //    yield return new WaitForSeconds(3f);
-    //    colorRenderer.material.SetColor("_Color", colors[2]); // avoid
-    //    yield return new WaitForSeconds(5f);
-    //    colorRenderer.material.SetColor("_Color", colors[3]); // reset
-    //}
 
     private IEnumerator ChangeColor(float time)
     {
         /* Wait to finish rotation */
-        //yield return new WaitForSeconds(time);
-        /* Retrieve current slice */
-        yield return new WaitForSeconds(time); // wait until the hour hand reaches the slice before turning color
+        yield return new WaitForSeconds(time);
+        /* Retrieve current slice's renderer to change color */
         GameObject currentSlice = hourMovement.GetCurrentSlice();
+        /* Retrieve the duration of the color changing */
+        float colorTime = colorDuration[durationIndex];
         Renderer colorRenderer = currentSlice.GetComponent<Renderer>();
-        colorRenderer.material.SetColor("_Color", colors[0]); // warning color
-        yield return new WaitForSeconds(timeBeforeOrange);
-        colorRenderer.material.SetColor("_Color", colors[1]); // about to turn
-        yield return new WaitForSeconds(timeBeforeRed);
-        colorRenderer.material.SetColor("_Color", colors[2]); // avoid
-        yield return new WaitForSeconds(timeBeforeReset);
-        colorRenderer.material.SetColor("_Color", colors[3]); // reset
+        colorRenderer.material.SetColor("_Color", colors[0]); 
+        yield return new WaitForSeconds(colorTime);
+        colorRenderer.material.SetColor("_Color", colors[1]);
+        yield return new WaitForSeconds(colorTime);
+        colorRenderer.material.SetColor("_Color", colors[2]); 
+        yield return new WaitForSeconds(colorTime);
+        colorRenderer.material.SetColor("_Color", colors[3]); 
     }
 
     /* When the level is complete, go to Level_Select scene */
@@ -140,5 +111,9 @@ public class game : MonoBehaviour
         return second;
     }
 
+    public void CanRotate(bool can)
+    {
+        canPerformRotation = can;
+    }
     
 }

@@ -35,7 +35,6 @@ public class gluttonyIntro : MonoBehaviour
     {
         if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) && !skipTutorial)
         {
-            Debug.Log("SKIPPED TUTORIAL\n");
             skipTutorial = true;
             if (tutorialRoutine != null)
             {

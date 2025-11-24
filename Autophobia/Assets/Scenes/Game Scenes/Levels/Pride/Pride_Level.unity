@@ -987,6 +987,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7225490054921102787, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
+      propertyPath: musicSource
+      value: 
+      objectReference: {fileID: 185541375}
     - target: {fileID: 8374165477365170968, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

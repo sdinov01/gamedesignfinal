@@ -423,6 +423,10 @@ PrefabInstance:
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
       objectReference: {fileID: 0}
+    - target: {fileID: 7225490054921102787, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
+      propertyPath: musicSource
+      value: 
+      objectReference: {fileID: 1908021268}
     - target: {fileID: 7281353139758632227, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
       propertyPath: m_SizeDelta.x
       value: 200

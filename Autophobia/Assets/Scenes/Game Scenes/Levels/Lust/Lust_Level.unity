@@ -850,6 +850,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameHandler
       objectReference: {fileID: 0}
+    - target: {fileID: 8432140820169243787, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
+      propertyPath: musicSource
+      value: 
+      objectReference: {fileID: 2114860226}
     m_RemovedComponents:
     - {fileID: 8168506862388812496, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
     m_RemovedGameObjects: []

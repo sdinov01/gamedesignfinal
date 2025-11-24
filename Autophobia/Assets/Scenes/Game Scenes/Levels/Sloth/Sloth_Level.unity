@@ -3175,6 +3175,10 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8432140820169243787, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
+      propertyPath: musicSource
+      value: 
+      objectReference: {fileID: 2967411}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7995290101017351889, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}

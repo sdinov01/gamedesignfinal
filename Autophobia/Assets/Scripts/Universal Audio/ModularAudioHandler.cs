@@ -5,7 +5,6 @@ using   System.Collections.Generic;
 
 public class ModularAudioHandler : MonoBehaviour
 {
-    public AudioSource      music;
     public double           bpm;
     public int              beatspermeasure;
 

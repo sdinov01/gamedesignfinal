@@ -19,6 +19,7 @@ public class PlatformSpawner : MonoBehaviour
     public      double      time = 0f;
     public      double      nextM;
     private     bool        readyStageEnd = false;
+    public      AudioSource music;
 
     private     int[]       stageEndFlags = {11, 19, 27, 35, 43, 52};
     private     int[]       stageEndIndex = {12, 20, 28, 36, 44, 53};
@@ -30,6 +31,8 @@ public class PlatformSpawner : MonoBehaviour
         index       =   0;
         previdx     =   0;
         nextM       =   M.measureint;
+        time        =   0;
+
     }
 
     void SpawnBall()
@@ -45,8 +48,8 @@ public class PlatformSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
-        if (time > nextM)
+        // time += Time.deltaTime;
+        if (music.time > nextM)
         {
             measureIndex++;
             nextM += M.measureint;
@@ -120,7 +123,7 @@ public class PlatformSpawner : MonoBehaviour
     IEnumerator MType1()
     {
         SpawnBall();
-        yield return new WaitForSeconds ((float)M.beat2int);
+        yield return new WaitForSeconds ((float)M.beatint);
         SpawnBall();
         
     }

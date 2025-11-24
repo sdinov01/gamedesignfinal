@@ -694,11 +694,30 @@ PrefabInstance:
       propertyPath: lines.Array.data[0].frame
       value: 
       objectReference: {fileID: 671686197075892656, guid: d5a411f143fe00646916aff09040f8ee, type: 3}
+    - target: {fileID: 8350621656080273941, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: dm
+      value: 
+      objectReference: {fileID: 2144666592}
+    - target: {fileID: 8350621656080273941, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: levelName
+      value: Level_Select_Scene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+--- !u!114 &2144666592 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+  m_PrefabInstance: {fileID: 2144666591}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2028045c66cd6874389e6553b05c7eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

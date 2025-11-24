@@ -196,11 +196,30 @@ PrefabInstance:
       propertyPath: lines.Array.data[1].frame
       value: 
       objectReference: {fileID: 671686197075892656, guid: b1ce37e953837ea46999947f02c99604, type: 3}
+    - target: {fileID: 8350621656080273941, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: dm
+      value: 
+      objectReference: {fileID: 331745529}
+    - target: {fileID: 8350621656080273941, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: levelName
+      value: Level_Select_Scene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+--- !u!114 &331745529 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+  m_PrefabInstance: {fileID: 331745528}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2028045c66cd6874389e6553b05c7eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1377651189
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class RotateOnBeat : MonoBehaviour
     void OnEnable()
     {
         BeatSync.OnBeat += RotateStep;
+        BeatSync.OnMeasure += Pulse;
     }
 
     void OnDisable()
@@ -32,5 +33,10 @@ public class RotateOnBeat : MonoBehaviour
             transform.localEulerAngles.y,
             currentZ
         );
+    }
+
+    void Pulse()
+    {
+        
     }
 }

@@ -29,19 +29,14 @@ public class PrideScoreVis : MonoBehaviour
     {
         if (childindex < numchildren)
         {
-            if ((PS.measureIndex == 12)) 
-            { 
-                SpriteRenderer sr = transform.GetChild(0).GetComponent<SpriteRenderer>();
-                ColorChange (sr, (SM.sscore > 3));
-                resetStageTarget (7);
-            };
-            if ((PS.measureIndex == 24)) 
-            { 
-                SpriteRenderer sr = transform.GetChild(1).GetComponent<SpriteRenderer>();
-                ColorChange (sr, (SM.sscore > 6));
-                resetStageTarget (9);
-            };
-
+            switch (PS.measureIndex) {
+                case 12: stageClear (0, 4, 5); break;
+                case 20: stageClear (1, 5, 6); break;
+                case 28: stageClear (2, 6, 7); break;
+                case 36: stageClear (3, 7, 10); break;
+                case 44: stageClear (4, 10, 12); break;
+                case 53: stageClear (5, 12, 0); break;
+            }
         }
     }
 
@@ -73,6 +68,14 @@ public class PrideScoreVis : MonoBehaviour
     {
         SM.target = i;
         SM.sscore = 0;
+        SM.NewStage();
+    }
+
+    void stageClear (int cindex, int tscore, int newtarget)
+    {
+        SpriteRenderer sr = transform.GetChild(cindex).GetComponent<SpriteRenderer>();
+        ColorChange (sr, (SM.sscore >= tscore));
+        resetStageTarget (newtarget);
     }
 
 }

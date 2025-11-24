@@ -55,8 +55,7 @@ public class ScoreManager : MonoBehaviour
     {
         if (targetText != null)
         {
-            stage++;
-            targetText.text = "Stage " + stage + " target: " + target;
+            targetText.text = "Stage target: " + target;
         }
     }
 }

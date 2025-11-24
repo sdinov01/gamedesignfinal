@@ -3,21 +3,30 @@ using System.Collections;
 
 public class handMovement : MonoBehaviour
 {
+    /*                  Rotation variables              */
+    
+    /* Variables to perform the rotation */
     private bool isRotating = false;
-    private float remainingRotation;   // how many degrees left
-    private float speed;               // degrees per second (can be ±)
-    private GameObject currentSlice = null;
-    [SerializeField] private game canRotate;
-    [SerializeField] private AudioSource audio;
-    [SerializeField] private float[] rotationAmount; // how much to rotate: ex. 30 degrees, 60, 30
-    [SerializeField] private float[] changeRotation; // when to change rotation: ex. 6th index, 8th index of rotatointimes.
+    private float remainingRotation;  
+    private float speed;
+    /* How much to rotate by */
+    [SerializeField] private float[] rotationAmount; 
+    /* Which rotationTime (index in array) to change the rotation */
+    [SerializeField] private int[] changeRotation; 
+    /* How long the rotation will last */
+    [SerializeField] private float[] rotationDuration;
+    /* Keeps track of the rotation amount and duration */
     private int rotationIndex = 0;
-    [SerializeField] private float[] rotationDuration; // how long the rotation will last. ex. 2 seconds, 5 seconds
-    [SerializeField] private float[] rotationTimes; // when to rotate.
+    /* When in the song to begin a rotation */
+    [SerializeField] private float[] rotationTimes; 
+    /* Keeps track of the current rotation time */
     private int currentRotation = 0;
-    // Ex. 30 degree rotations will occur until 5 second past, then 60 degree rotations of 5 seocnds. 
 
-  
+    
+    private GameObject currentSlice = null;
+    [SerializeField] private AudioSource audio;
+    [SerializeField] private restrictMovement rm;
+
 
     public IEnumerator performRotations()
     {
@@ -30,7 +39,6 @@ public class handMovement : MonoBehaviour
         {
             /* Time to perform a rotation */
             yield return new WaitUntil(() => audio.time >= rotationTimes[currentRotation]);
-            Debug.Log("I am rotating");
             /* Rotation and its duration will change */
             if (rotationIndex < changeRotation.Length && currentRotation < rotationTimes.Length)
             {
@@ -45,7 +53,7 @@ public class handMovement : MonoBehaviour
             /* Perform rotation */
             yield return StartCoroutine(PerformRotation(rotationAmt, currentDuration));
             currentRotation++;
-            //StartCoroutine(ChangeColor(rotationTime));
+            StartCoroutine(rm.ChangeColor(currentDuration));
         }
     }
 
@@ -68,14 +76,12 @@ public class handMovement : MonoBehaviour
             yield return null;
         }
 
-        // Snap exactly to final angle
         transform.eulerAngles = new Vector3(
             transform.eulerAngles.x,
             transform.eulerAngles.y,
             targetZ
         );
     }
-
 
 
     void OnCollisionEnter2D(Collision2D collision)

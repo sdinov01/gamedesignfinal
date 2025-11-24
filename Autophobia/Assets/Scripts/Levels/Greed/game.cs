@@ -76,23 +76,6 @@ public class game : MonoBehaviour
 
     }
 
-    private IEnumerator ChangeColor(float time)
-    {
-        /* Wait to finish rotation */
-        yield return new WaitForSeconds(time);
-        /* Retrieve current slice's renderer to change color */
-        GameObject currentSlice = hourMovement.GetCurrentSlice();
-        /* Retrieve the duration of the color changing */
-        float colorTime = colorDuration[durationIndex];
-        Renderer colorRenderer = currentSlice.GetComponent<Renderer>();
-        colorRenderer.material.SetColor("_Color", colors[0]); 
-        yield return new WaitForSeconds(colorTime);
-        colorRenderer.material.SetColor("_Color", colors[1]);
-        yield return new WaitForSeconds(colorTime);
-        colorRenderer.material.SetColor("_Color", colors[2]); 
-        yield return new WaitForSeconds(colorTime);
-        colorRenderer.material.SetColor("_Color", colors[3]); 
-    }
 
     /* When the level is complete, go to Level_Select scene */
     private IEnumerator endGame(float time)

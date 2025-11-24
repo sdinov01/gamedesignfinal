@@ -1119,6 +1119,7 @@ MonoBehaviour:
   - 0
   attackDelay: 1.2
   musicSource: {fileID: 1598560305}
+  health: {fileID: 1841383950}
 --- !u!4 &1003403186
 Transform:
   m_ObjectHideFlags: 0

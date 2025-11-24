@@ -23,7 +23,8 @@ public class RhythmManager : MonoBehaviour
     public List<float> spawnTimes = new List<float>(); 
     public float attackDelay = 1.2f;
     public AudioSource musicSource;
-
+    public healthBar health;
+    private bool musicStarted = false;
 
     void Start()
     {
@@ -32,7 +33,8 @@ public class RhythmManager : MonoBehaviour
 
     void Update()
     {
-        //make spawn time maually
+        checkMusicEnd();
+        //make spawn time manually
         // if (nextIndex >= spawnTimes.Count)
         // return;
 
@@ -103,7 +105,7 @@ public class RhythmManager : MonoBehaviour
         float minDiff = 999f;
         int bestSector = -1;
 
-        foreach (var knife in knives) // 6 个刀
+        foreach (var knife in knives)
         {
             float diff = Mathf.Abs(Mathf.DeltaAngle(playerAngle, knife.angle));
 
@@ -180,7 +182,24 @@ public class RhythmManager : MonoBehaviour
     public void Play()
     {
         musicSource.Play();
+        musicStarted = true;
     }
     
+    void checkMusicEnd()
+    {
+        if (!musicStarted)
+        {
+            return;
+        }    
+
+        if (!musicSource.isPlaying) 
+        {
+            if (health.healthLeft() > 0) 
+            {
+                Debug.Log("end");
+                UnityEngine.SceneManagement.SceneManager.LoadScene("wrath_end_dialogue");
+            }
+        }
+    }
 }
 

@@ -180,6 +180,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2027366846}
     - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: lines.Array.data[0].line
       value: "Glorified battle fills mine children\u2019s spirits more than anything
         else. "

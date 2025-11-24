@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0a512de74824b00a35899938b43e88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 1841383950}
+  playerHealth: {fileID: 0}
   music: {fileID: 1598560305}
   t: {fileID: 916022120}
 --- !u!4 &238480027
@@ -403,6 +403,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346438984}
   m_CullTransparentMesh: 1
+--- !u!1 &349435679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 349435681}
+  - component: {fileID: 349435680}
+  m_Layer: 0
+  m_Name: DialogueLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &349435680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349435679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764376074b5add446bfc33f7bfe4aed0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: 
+  winSceneName: wrath_end_dialogue
+  dm: {fileID: 0}
+--- !u!4 &349435681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349435679}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 244.44315, y: 183.77228, z: 3.8279977}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &473051493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -414,7 +461,7 @@ PrefabInstance:
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: health
       value: 
-      objectReference: {fileID: 1841383950}
+      objectReference: {fileID: 0}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -422,7 +469,7 @@ PrefabInstance:
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: healthObject
       value: 
-      objectReference: {fileID: 1841383950}
+      objectReference: {fileID: 0}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: attackDistance
       value: 1.2
@@ -1262,7 +1309,7 @@ PrefabInstance:
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: health
       value: 
-      objectReference: {fileID: 1841383950}
+      objectReference: {fileID: 0}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1274,7 +1321,7 @@ PrefabInstance:
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: healthObject
       value: 
-      objectReference: {fileID: 1841383950}
+      objectReference: {fileID: 0}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: attackDistance
       value: 1.2
@@ -1709,7 +1756,7 @@ PrefabInstance:
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: health
       value: 
-      objectReference: {fileID: 1841383950}
+      objectReference: {fileID: 0}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1721,7 +1768,7 @@ PrefabInstance:
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: healthObject
       value: 
-      objectReference: {fileID: 1841383950}
+      objectReference: {fileID: 0}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: attackDistance
       value: 1.2
@@ -1798,7 +1845,7 @@ PrefabInstance:
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: health
       value: 
-      objectReference: {fileID: 1841383950}
+      objectReference: {fileID: 0}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1810,7 +1857,7 @@ PrefabInstance:
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: healthObject
       value: 
-      objectReference: {fileID: 1841383950}
+      objectReference: {fileID: 0}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: attackDistance
       value: 1.2
@@ -2920,7 +2967,7 @@ PrefabInstance:
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: health
       value: 
-      objectReference: {fileID: 1841383950}
+      objectReference: {fileID: 0}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -2932,7 +2979,7 @@ PrefabInstance:
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: healthObject
       value: 
-      objectReference: {fileID: 1841383950}
+      objectReference: {fileID: 0}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: attackDistance
       value: 1.2
@@ -3463,17 +3510,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5086492732952015457, guid: 9994e71111315964aa1accec3dbda8d5, type: 3}
   m_PrefabInstance: {fileID: 2109702997}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1841383950 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4189397477639443584, guid: 9994e71111315964aa1accec3dbda8d5, type: 3}
-  m_PrefabInstance: {fileID: 2109702997}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62f748ef22f6eb84c8b18a4c9fa7e1af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1849054165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4420,7 +4456,7 @@ PrefabInstance:
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: health
       value: 
-      objectReference: {fileID: 1841383950}
+      objectReference: {fileID: 0}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -4432,7 +4468,7 @@ PrefabInstance:
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: healthObject
       value: 
-      objectReference: {fileID: 1841383950}
+      objectReference: {fileID: 0}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: attackDistance
       value: 1.2
@@ -4519,3 +4555,4 @@ SceneRoots:
   - {fileID: 1003403186}
   - {fileID: 2014785276}
   - {fileID: 238480027}
+  - {fileID: 349435681}

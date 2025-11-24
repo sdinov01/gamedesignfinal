@@ -37,7 +37,8 @@ public class TutorialManager : MonoBehaviour
 
 
     [Header("Music")]
-    public AudioSource audioSource;
+    public GameObject audio;
+
     public KnifeController[] knives;
 
     public bool step2 = false;
@@ -52,28 +53,29 @@ public class TutorialManager : MonoBehaviour
         player.transform.position = firstPlatform.transform.position;
         playerbody.SetActive (false);
 
+        audio.SetActive(false);
+
         CanvasHandler (T1Panel, T1Group, T1Start, false, false);
     }
 
     void FirstButtonClicked()
     {
+        StartCoroutine(FadeOutAndDeactivate(T1Panel, T1Group));
         playerbody.SetActive(true);
         controller.EnableMovement();
         
         glowObjects[0].SetActive(true);
         highlighters[0].StartFlashing();
-        
-        CanvasHandler (T1Panel, T1Group, T1Start, true, false);
-        StartCoroutine (WaitForSeconds(3f));
-        CanvasHandler (T2Panel, T2Group, T2Start, false, true);
+
     }
 
     void SecondButtonClicked()
     {
         StartStep2();
-        CanvasHandler (T2Panel, T2Group, T2Start, true, true);
-        StartCoroutine (WaitForSeconds(3f));
-        audiomanager.SetActive(true);
+        StartCoroutine(FadeOutAndDeactivate(T2Panel, T2Group));
+        audio.SetActive(true);
+        RhythmManager rhythmManager = audiomanager.GetComponent<RhythmManager>();
+        rhythmManager.Play();
 
     }
 
@@ -125,6 +127,10 @@ public class TutorialManager : MonoBehaviour
         if (currentStep < highlighters.Length){
             glowObjects[currentStep].SetActive(true);
             highlighters[currentStep].StartFlashing();
+        }
+        else
+        {
+            CanvasHandler (T2Panel, T2Group, T2Start, false, true); //show next canvas
         }
     }
 

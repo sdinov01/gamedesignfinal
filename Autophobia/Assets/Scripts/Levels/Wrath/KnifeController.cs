@@ -12,13 +12,20 @@ public class KnifeController : MonoBehaviour
 
     private Vector3 basePos;
     private bool isAttacking = false;
-    [SerializeField] private healthBar healthObject;
+    public healthBar health;
     private float lastHitTime = -999f;
+
+    public Transform center; 
+    public float angle;
 
     void Awake()
     {
         basePos = transform.position;
         self    = gameObject;
+
+        Vector2 dir = transform.position - center.position;
+        angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        if (angle < 0) angle += 360f;
     }
 
     public void TriggerAttack()
@@ -57,7 +64,7 @@ public class KnifeController : MonoBehaviour
         if (Time.time - lastHitTime < 0.6f) return;
         lastHitTime = Time.time;
         Debug.Log("take damage"); 
-        healthObject.takeDamage(10f);
+        health.takeDamage(10f);
     }
 
     void ResetCollider()

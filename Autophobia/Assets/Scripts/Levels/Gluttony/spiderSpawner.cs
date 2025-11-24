@@ -3,10 +3,10 @@ using System.Collections;
 
 public class spiderSpawner : MonoBehaviour
 {
-    public float spawnCooldown = 1f;
-
+    /* Spider prefab */
     [SerializeField] private GameObject spiderPrefab;
-    [SerializeField] private GameObject gluttonyIntroHandler;
+
+    /* Spider spawning and destination locations */
     [SerializeField] private Transform spawn1;
     [SerializeField] private Transform spawn2;
     [SerializeField] private Transform spawn3;
@@ -18,6 +18,8 @@ public class spiderSpawner : MonoBehaviour
     [SerializeField] private Transform dest4;
 
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private GameObject gluttonyIntroHandler;
+
     /* When the spider pauses movement */
     [SerializeField] private float[] pulseTimeStamps;
     [SerializeField] private float[] pulseDuration;
@@ -31,9 +33,8 @@ public class spiderSpawner : MonoBehaviour
     private int spider4index = 0;
     private int currentTime = 0;
 
-    /* By default it starts at 15. Determines when to start spawning and pulsing */
+    /* Determines when to start spawning and pulsing */
     private float startTime = 14.5f;
-    public float offset;
     private bool skippedAlready = false;
 
     [SerializeField] private TimeBar timeBar;
@@ -63,7 +64,6 @@ public class spiderSpawner : MonoBehaviour
         while (audioSource.isPlaying)
         {
             /* Don't spawn if the spiders are currently vulnerable */
-            //yield return new WaitUntil(() => spiderPrefab.GetComponent<spiderMovement>().CanMove());
             if (spider1index < spider1Spawn.Length - 1)
             {
                 float time1 = convertToSecond(spider1Spawn[spider1index]);
@@ -107,17 +107,10 @@ public class spiderSpawner : MonoBehaviour
 
     private void SpawnSpider(Transform origin, Transform destination)
     {
-        // new spider
+        /* Spawn a new spider and initialize its origin and destination */
         GameObject newSpider = Instantiate(spiderPrefab, origin.position, Quaternion.identity);
-
-        // retrieve script
         spiderMovement move = newSpider.GetComponent<spiderMovement>();
-
-        // initialize origin and destination
         move.SetOriginAndDestination(origin, destination);
-
-        // allow it to move
-        //move.UpdateMove(true);
     }
 
     void Update()
@@ -132,7 +125,6 @@ public class spiderSpawner : MonoBehaviour
         /* If there are no more time stamps, then spiders can move */
         if (currentTime > pulseTimeStamps.Length - 1)
         {
-            Debug.Log("No more time stamps");
             return;
         }
 
@@ -154,7 +146,7 @@ public class spiderSpawner : MonoBehaviour
         /* First add startTime */
         float second = startTime;
         /* Then add the second offset to the time stamp in the music */
-        second += (timeStamp + offset);
+        second += timeStamp;
         return second;
     }
 

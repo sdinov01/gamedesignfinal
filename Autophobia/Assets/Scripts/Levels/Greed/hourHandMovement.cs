@@ -42,7 +42,7 @@ public class handMovement : MonoBehaviour
             /* Rotation and its duration will change */
             if (rotationIndex < changeRotation.Length && currentRotation < rotationTimes.Length)
             {
-                if (currentRotation >= changeRotation[rotationIndex])
+                if (currentRotation >= changeRotation[rotationIndex] && rotationIndex < rotationAmount.Length - 1)
                 {
                     rotationIndex++;
                     rotationAmt = rotationAmount[rotationIndex];

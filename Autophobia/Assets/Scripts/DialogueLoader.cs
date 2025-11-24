@@ -7,7 +7,6 @@ public class DialogueLoader : MonoBehaviour
     public string levelName = "";
     public string winSceneName = "";
     public DialogueManager dm;
-    public levelTracker lt;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,37 +27,39 @@ public class DialogueLoader : MonoBehaviour
             switch (winSceneName)
             {
                 case "wrath_end_dialogue":
-                    if (lt.isWrathComplete()) {
+                    if (levelTracker.wrathComplete) {
                         SceneManager.LoadScene(winSceneName);
                     }
                     break;
                 case "pride_end_dialogue":
-                    if (lt.isPrideComplete()) {
+                    if (levelTracker.prideComplete) {
                         SceneManager.LoadScene(winSceneName);
                     }
                     break;
                 case "Gluttony_end_dialogue":
-                    if (lt.isGluttonyComplete()) {
+                    if (levelTracker.gluttonyComplete) {
                         SceneManager.LoadScene(winSceneName);
                     }
                     break;
                 case "lust_end_dialogue":
-                    if (lt.isLustComplete()) {
+                    if (levelTracker.lustComplete) {
                         SceneManager.LoadScene(winSceneName);
                     }
                     break;
                 case "sloth_end_dialogue":
-                    if (lt.isSlothComplete()) {
+                    if (levelTracker.slothComplete) {
                         SceneManager.LoadScene(winSceneName);
                     }
                     break;
                 case "greed_end_dialogue":
-                    if (lt.isGreedComplete()) {
+                    //Debug.Log("inside correct case");
+                    if (levelTracker.greedComplete) {
+                        //Debug.Log("Scene loads");
                         SceneManager.LoadScene(winSceneName);
                     }
                     break;
                 case "envy_end_dialogue":
-                    if (lt.isEnvyComplete()) {
+                    if (levelTracker.envyComplete) {
                         SceneManager.LoadScene(winSceneName);
                     }
                     break;

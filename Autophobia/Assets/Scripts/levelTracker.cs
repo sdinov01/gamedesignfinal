@@ -20,32 +20,5 @@ public class levelTracker : MonoBehaviour
         gluttonyComplete = false;
         lustComplete = false;
     }
-
-    public bool isWrathComplete () {
-        return wrathComplete;
-    }
-
-    public bool isLustComplete () {
-        return lustComplete;
-    }
-
-    public bool isGreedComplete () {
-        return greedComplete;
-    }
-
-    public bool isGluttonyComplete () {
-        return gluttonyComplete;
-    }
-
-    public bool isPrideComplete () {
-        return prideComplete;
-    }
-
-    public bool isEnvyComplete () {
-        return envyComplete;
-    }
-
-    public bool isSlothComplete () {
-        return slothComplete;
-    }
+    
 }

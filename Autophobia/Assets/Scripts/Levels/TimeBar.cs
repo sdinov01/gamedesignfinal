@@ -8,6 +8,7 @@ public class TimeBar : MonoBehaviour
     [SerializeField] private Image progressBar;
     private bool start = false;
     private float duration;
+    public string winScene = "";
     void Start()
     {
         progressBar.fillAmount = 0;   
@@ -51,7 +52,6 @@ public class TimeBar : MonoBehaviour
     private IEnumerator endScene()
     {
         yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene("Level_Select_Scene");
-
+        SceneManager.LoadScene(winScene);
     }
 }

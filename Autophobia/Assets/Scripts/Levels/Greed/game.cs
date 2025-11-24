@@ -127,7 +127,8 @@ public class game : MonoBehaviour
     private IEnumerator endGame(float time)
     {
         yield return new WaitForSeconds(time);
-        SceneManager.LoadScene("Level_Select_Scene");
+        levelTracker.greedComplete = true;
+        Debug.Log(levelTracker.greedComplete);
     }
 
     private float calculateToSecond(float timeStamp)

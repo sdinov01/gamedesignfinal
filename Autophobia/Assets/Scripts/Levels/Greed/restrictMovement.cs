@@ -55,7 +55,7 @@ public class restrictMovement : MonoBehaviour
     {
         takeDamage = false;
         camShake.SetShake(true);
-        health.takeDamage(5f);
+        health.takeDamage(7.5f);
         yield return new WaitForSeconds(0.8f);
         takeDamage = true;
     }

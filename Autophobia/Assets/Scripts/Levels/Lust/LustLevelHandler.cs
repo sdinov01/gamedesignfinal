@@ -15,7 +15,6 @@ public class LustLevelHandler : MonoBehaviour
     private float timer = 0f;
 
     public BossShooter bossShooter;         
-    public BossShooter bossShooter2; 
     public linearPlatMove platformMover;    
 
     void Start()
@@ -30,7 +29,7 @@ public class LustLevelHandler : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (platformMover == null || bossShooter == null || bossShooter2 == null)
+            if (platformMover == null || bossShooter == null)
             {
                 Debug.LogWarning("LustLevelHandler: platformMover or bossShooter is not assigned!");
             }

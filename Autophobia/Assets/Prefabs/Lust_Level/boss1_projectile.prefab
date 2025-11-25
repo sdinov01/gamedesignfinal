@@ -144,6 +144,10 @@ MonoBehaviour:
   hbscript: {fileID: 0}
   thiscollider: {fileID: 0}
   playercollider: {fileID: 0}
+  sprite: {fileID: 0}
+  RedOrPurple: 0
+  Red: {fileID: 1307706269618533979, guid: 5b5a4bd23365f914089df793c1a65e87, type: 3}
+  Purple: {fileID: 18201438350257015, guid: fb5a78189ffdfbc4094c8e98029d385b, type: 3}
 --- !u!58 &-6111458335878131475
 CircleCollider2D:
   m_ObjectHideFlags: 0

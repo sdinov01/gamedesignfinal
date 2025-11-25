@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class BossProjectile : MonoBehaviour
 {
@@ -20,18 +22,34 @@ public class BossProjectile : MonoBehaviour
     public healthBar hbscript;
     public Collider2D thiscollider;
     public Collider2D playercollider;
+    public SpriteRenderer sprite;
+    public bool RedOrPurple;
+    public Sprite Red;
+    public Sprite Purple;
+    private bool CanScore = true;
 
     void Start()
     {
-        spawnTime = Time.time;
-        startPos = transform.position;
-        player      = GameObject.FindWithTag("Player");
-        healthbar   = GameObject.FindWithTag("HealthBar");
-        hbscript    = healthbar.GetComponent<healthBar>();
+        spawnTime           = Time.time;
+        startPos            = transform.position;
+        player              = GameObject.FindWithTag("Player");
+        healthbar           = GameObject.FindWithTag("HealthBar");
+        hbscript            = healthbar.GetComponent<healthBar>();
 
-        thiscollider    = transform.GetComponent<Collider2D>();
-        playercollider  = player.GetComponent<Collider2D>();
+        thiscollider        = transform.GetComponent<Collider2D>();
+        playercollider      = player.GetComponent<Collider2D>();
         Destroy(gameObject, lifetime + hitWindow);
+
+        sprite              = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        if (sprite.sprite == Red)
+        {
+            RedOrPurple = true;
+        } 
+        else
+        {
+            RedOrPurple = false;
+        }
+        
     }
 
     void Update()
@@ -46,11 +64,27 @@ public class BossProjectile : MonoBehaviour
 
         if (thiscollider.IsTouching(playercollider))
         {
-            // Apply damage
-            hbscript.takeDamage ((float)2.5);
-
-            Destroy(gameObject);   // Destroy projectile after hit
+            if (RedOrPurple)
+            {
+                hbscript.takeDamage ((float)10);
+                Destroy(gameObject);   // Destroy projectile after hit
+            }
+            else
+            {
+                CanScore = true;
+            }
         }
+        else
+        {
+            CanScore = false;
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && CanScore)
+        {
+            hbscript.healDamage ((float)5);
+            Destroy(gameObject);
+            CanScore = false;
+        }
+
     }
 
     public void OnClick()

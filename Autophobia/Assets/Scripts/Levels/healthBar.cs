@@ -32,6 +32,19 @@ public class healthBar : MonoBehaviour
         healthImage.fillAmount = health / 100f;
     }
 
+    public void healDamage(float restore)
+    {
+        if ((health + restore) > 100)
+        {
+            health = 100f;
+        } 
+        else
+        {
+            health += restore;
+        }
+        healthImage.fillAmount = health / 100f;
+    }
+
     public float healthLeft()
     {
         return health;

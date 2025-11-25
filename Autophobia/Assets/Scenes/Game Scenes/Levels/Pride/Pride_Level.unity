@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 66103369}
   - component: {fileID: 66103371}
   - component: {fileID: 66103370}
+  - component: {fileID: 66103372}
   m_Layer: 5
   m_Name: CountIn
   m_TagString: Untagged
@@ -302,6 +303,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66103368}
   m_CullTransparentMesh: 1
+--- !u!212 &66103372
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66103368}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 815395477
+  m_SortingLayer: 5
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 4ac0b0a0bce94cf4293623b0899d99b5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &141978587
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,7 +733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {fileID: 1999180694}
-  speed: 5
+  speed: 4.6
   ballchild: {fileID: 0}
   childcount: 0
 --- !u!224 &335194762 stripped
@@ -1001,7 +1057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {fileID: 1920646946}
-  speed: 3.75
+  speed: 3.6
   ballchild: {fileID: 0}
   childcount: 0
 --- !u!1 &804005100
@@ -1517,7 +1573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {fileID: 1182660457}
-  speed: 5
+  speed: 4.6
   ballchild: {fileID: 0}
   childcount: 0
 --- !u!4 &1305508071 stripped
@@ -1741,7 +1797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {fileID: 1517815375}
-  speed: 3.75
+  speed: 3.6
   ballchild: {fileID: 0}
   childcount: 0
 --- !u!1 &1434567722
@@ -1838,10 +1894,7 @@ MonoBehaviour:
   M: {fileID: 1434567726}
   music: {fileID: 185541375}
   BS: {fileID: 1434567725}
-<<<<<<< HEAD
   T: {fileID: 1825547546}
-=======
->>>>>>> parent of 197ec24 (Changes)
 --- !u!1001 &1450166440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3380,6 +3433,18 @@ PrefabInstance:
       value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 2957144116543492563, guid: 0c924e578da6a45aab3a9c1474f6a7be, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957144116543492563, guid: 0c924e578da6a45aab3a9c1474f6a7be, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1111112
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957144116543492563, guid: 0c924e578da6a45aab3a9c1474f6a7be, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1111112
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957144116543492563, guid: 0c924e578da6a45aab3a9c1474f6a7be, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -3418,6 +3483,10 @@ PrefabInstance:
     - target: {fileID: 2957144116543492563, guid: 0c924e578da6a45aab3a9c1474f6a7be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957144116543492563, guid: 0c924e578da6a45aab3a9c1474f6a7be, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6097060542407575438, guid: 0c924e578da6a45aab3a9c1474f6a7be, type: 3}
       propertyPath: m_Name

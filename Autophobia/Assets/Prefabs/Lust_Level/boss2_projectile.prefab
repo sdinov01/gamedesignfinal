@@ -27,8 +27,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.0797708, y: -0.10558837, z: -1}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.6666666}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5144725744898798367}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -135,7 +135,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   lifetime: 5
+  hitWindow: 0.2
   direction: {x: 1, y: 0}
+  travelDistance: 0
+  player: {fileID: 0}
+  healthbar: {fileID: 0}
+  hbscript: {fileID: 0}
+  thiscollider: {fileID: 0}
+  playercollider: {fileID: 0}
 --- !u!58 &5175077558632301708
 CircleCollider2D:
   m_ObjectHideFlags: 0

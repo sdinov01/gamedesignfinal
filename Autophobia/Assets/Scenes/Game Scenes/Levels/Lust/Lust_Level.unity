@@ -132,7 +132,7 @@ GameObject:
   m_Layer: 0
   m_Name: PurpleBoss
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
@@ -145,7 +145,7 @@ Transform:
   m_GameObject: {fileID: 15700267}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.59, y: -3.14, z: 0.030812616}
+  m_LocalPosition: {x: -6.6, y: -3.14, z: 0.030812616}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -167,26 +167,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 319a49b3f0876ba4dbbda18a2c4e82c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m: {fileID: 0}
+  m: {fileID: 412190495}
   firePoints:
   - {fileID: 1540660596}
   - {fileID: 1253458011}
   - {fileID: 1652464522}
   - {fileID: 1092530923}
   phases:
-  - name: 
-    beatsBetweenShots: 2
-    lanePattern: 04000000040000000400000004000000
-    beatsInPhase: 8
+  - name: 1-2-3-4 LONG
+    beatsBetweenShots: 8
+    lanePattern: 00000000010000000200000003000000
+    beatsInPhase: 32
     projectileSpeed: 2
     multi: 0
-  BossProjectile: {fileID: 0}
+  BossProjectile: {fileID: 5651431535328739071, guid: 18cce985a257e954f8d43e3f248ace22, type: 3}
   laneTravelDistances:
-  - 7.3
-  - 6.15
-  - 5.2
   - 4.6
-  phaseOrder: 
+  - 5.2
+  - 6.15
+  - 7.3
+  phaseOrder: 00000000
   POlen: 0
   POindex: 0
 --- !u!1 &44026119
@@ -847,10 +847,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1092530923}
+  - component: {fileID: 1092530924}
   m_Layer: 0
   m_Name: firePoint4
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -863,12 +864,28 @@ Transform:
   m_GameObject: {fileID: 1092530922}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.039101195, w: 0.99923533}
-  m_LocalPosition: {x: -0.02, y: 0.18, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 15700268}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.482}
+--- !u!114 &1092530924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092530922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2244fb92916be42799f32a2edf52df1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destination: {fileID: 875178465}
+  moveSpeed: 5
+  smoothness: 0.1
+  ccount: 0
 --- !u!1 &1251387286
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,6 +943,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1253458011}
+  - component: {fileID: 1253458012}
   m_Layer: 0
   m_Name: firePoint2
   m_TagString: Untagged
@@ -942,12 +960,28 @@ Transform:
   m_GameObject: {fileID: 1253458010}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.2859665, w: 0.9582396}
-  m_LocalPosition: {x: -0.59000015, y: 1.05, z: 0}
+  m_LocalPosition: {x: -0.3, y: 1.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 15700268}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 33.233}
+--- !u!114 &1253458012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253458010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2244fb92916be42799f32a2edf52df1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destination: {fileID: 1572291664}
+  moveSpeed: 5
+  smoothness: 0.1
+  ccount: 0
 --- !u!1001 &1379091549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1163,6 +1197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1540660596}
+  - component: {fileID: 1540660597}
   m_Layer: 0
   m_Name: firePoint1
   m_TagString: Untagged
@@ -1179,12 +1214,28 @@ Transform:
   m_GameObject: {fileID: 1540660595}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.32946172, w: 0.944169}
-  m_LocalPosition: {x: -1.16, y: 1.42, z: 0}
+  m_LocalPosition: {x: -0.8, y: 1.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 15700268}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 38.472}
+--- !u!114 &1540660597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540660595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2244fb92916be42799f32a2edf52df1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destination: {fileID: 2092702846}
+  moveSpeed: 5
+  smoothness: 0.1
+  ccount: 0
 --- !u!1 &1572291663
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,10 +1385,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1652464522}
+  - component: {fileID: 1652464523}
   m_Layer: 0
   m_Name: firePoint3
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1350,12 +1402,28 @@ Transform:
   m_GameObject: {fileID: 1652464521}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.17926967, w: 0.9838}
-  m_LocalPosition: {x: -0.29, y: 0.78, z: 0}
+  m_LocalPosition: {x: 0, y: 0.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 15700268}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 20.654}
+--- !u!114 &1652464523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652464521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2244fb92916be42799f32a2edf52df1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destination: {fileID: 447248299}
+  moveSpeed: 5
+  smoothness: 0.1
+  ccount: 0
 --- !u!1001 &1669996052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1427,7 +1495,7 @@ GameObject:
   m_Layer: 0
   m_Name: RedBoss
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
@@ -1805,6 +1873,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 865496374}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2223070926734041689
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5144725744898798367, guid: 18cce985a257e954f8d43e3f248ace22, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144725744898798367, guid: 18cce985a257e954f8d43e3f248ace22, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144725744898798367, guid: 18cce985a257e954f8d43e3f248ace22, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144725744898798367, guid: 18cce985a257e954f8d43e3f248ace22, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144725744898798367, guid: 18cce985a257e954f8d43e3f248ace22, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144725744898798367, guid: 18cce985a257e954f8d43e3f248ace22, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144725744898798367, guid: 18cce985a257e954f8d43e3f248ace22, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144725744898798367, guid: 18cce985a257e954f8d43e3f248ace22, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144725744898798367, guid: 18cce985a257e954f8d43e3f248ace22, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144725744898798367, guid: 18cce985a257e954f8d43e3f248ace22, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5651431535328739071, guid: 18cce985a257e954f8d43e3f248ace22, type: 3}
+      propertyPath: m_Name
+      value: boss2_projectile
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18cce985a257e954f8d43e3f248ace22, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1815,6 +1940,7 @@ SceneRoots:
   - {fileID: 153420270}
   - {fileID: 412190494}
   - {fileID: 502470431}
+  - {fileID: 2223070926734041689}
   - {fileID: 1669996052}
   - {fileID: 865496374}
   - {fileID: 2093007463}

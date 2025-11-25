@@ -9,6 +9,7 @@ public class gluttonyIntro : MonoBehaviour
     [SerializeField] private TMP_Text tutorial;
     [SerializeField] private TMP_Text goodLuck;
     [SerializeField] private Image background;
+    [SerializeField] private TMP_Text skip;
     /* Delay before the song is played */
     public float musicDelay = 15f;
     public float fadeTime = 5f;
@@ -50,6 +51,9 @@ public class gluttonyIntro : MonoBehaviour
             goodLuck.color = new Color(goodLuck.color.r, goodLuck.color.g, goodLuck.color.b, 0);
             goodLuck.enabled = false;
 
+            skip.color = new Color(skip.color.r, skip.color.g, skip.color.b, 0);
+            skip.enabled = false;
+
             // Immediately fade background out
             background.enabled = false;
         }
@@ -67,6 +71,7 @@ public class gluttonyIntro : MonoBehaviour
         if (skipTutorial) yield break;
         StartCoroutine(FadeOut(goodLuck));
         StartCoroutine(FadeOutImage(background));
+        StartCoroutine(FadeOut(skip));
         yield return new WaitForSeconds(fadeTime);
     }
 

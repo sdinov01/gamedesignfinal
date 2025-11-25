@@ -35,46 +35,47 @@ public class RhythmManager : MonoBehaviour
     {
         checkMusicEnd();
         //make spawn time manually
-        // if (nextIndex >= spawnTimes.Count)
-        // return;
-
-        // float targetTime = spawnTimes[nextIndex] - attackDelay;
-
-        // if (musicSource.time >= targetTime)
-        // {
-        //     TriggerNextKnife();
-        //     nextIndex++;
-        // }
-        
-        //let it follow the beat
-        timer += Time.deltaTime;
-        if (timer >= beatInterval)
-        {
-            timer -= beatInterval;
-            beatCount++;
-
-            HandleBeat(beatCount);
+        if (nextIndex >= spawnTimes.Count){
+        return;
         }
+        float targetTime = spawnTimes[nextIndex] - 0.3f;
+
+        if (musicSource.time >= targetTime)
+        {
+            Debug.Log("trigger next knife");
+            TriggerNextKnife();
+            nextIndex++;
+        }
+        
+        // //let it follow the beat
+        // timer += Time.deltaTime;
+        // if (timer >= beatInterval)
+        // {
+        //     timer -= beatInterval;
+        //     beatCount++;
+
+        //     HandleBeat(beatCount);
+        // }
     
     }
 
-    void HandleBeat(int beat)
-    {
-    //     for (int i = 0; i < spawnTimes.Count; i++)
-    //     {
-        int beatInBar = ((beat - 1) % 4) + 1; 
+    // void HandleBeat(int beat)
+    // {
+    // //     for (int i = 0; i < spawnTimes.Count; i++)
+    // //     {
+    //     int beatInBar = ((beat - 1) % 4) + 1; 
 
-        if (beat <= 4)
-        {
-            if (beatInBar == 4)
-                TriggerNextKnife();
-        }
-        else
-        {
-            if (beatInBar == 2 || beatInBar == 4)
-                TriggerNextKnife();
-        }
-    }
+    //     if (beat <= 4)
+    //     {
+    //         if (beatInBar == 4)
+    //             TriggerNextKnife();
+    //     }
+    //     else
+    //     {
+    //         if (beatInBar == 2 || beatInBar == 4)
+    //             TriggerNextKnife();
+    //     }
+    // }
 
     public void TriggerNextKnife()
     {
@@ -89,7 +90,7 @@ public class RhythmManager : MonoBehaviour
                 // StartColorLerp (sr.color, Color.red);
                 // StartCoroutine (ColorFlash());
                 
-                // knife.TriggerAttack();
+                knife.TriggerAttack();
                 
                 return; 
             }

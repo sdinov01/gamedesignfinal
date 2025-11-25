@@ -85,7 +85,7 @@ public class RhythmManager : MonoBehaviour
             {
                 sr = knife.self.GetComponent<SpriteRenderer>();
                 thisknife = knife;
-                StartCoroutine (sequence (sr.color, Color.red));
+                // StartCoroutine (sequence (sr.color, Color.red));
                 // StartColorLerp (sr.color, Color.red);
                 // StartCoroutine (ColorFlash());
                 
@@ -139,51 +139,51 @@ public class RhythmManager : MonoBehaviour
         
     // }
 
-    IEnumerator sequence (Color s, Color e)
-    {
-        yield return StartCoroutine (ColorLerp (s, e, offsetTime));
-        yield return StartCoroutine (KnifeAttack (thisknife));
-        yield return StartCoroutine (ColorFlash ());
-    }
+    // IEnumerator sequence (Color s, Color e)
+    // {
+    //     // yield return StartCoroutine (ColorLerp (s, e, offsetTime));
+    //     yield return StartCoroutine (KnifeAttack (thisknife));
+    //     // yield return StartCoroutine (ColorFlash ());
+    // }
 
-    IEnumerator ColorFlash()
-    {
-        Color original = Color.white;
+    // IEnumerator ColorFlash()
+    // {
+    //     Color original = Color.white;
 
-        Color flashColor;
-        ColorUtility.TryParseHtmlString("#D2B1B1", out flashColor);
+    //     Color flashColor;
+    //     ColorUtility.TryParseHtmlString("#D2B1B1", out flashColor);
 
-        handSprite.color = flashColor;
+    //     handSprite.color = flashColor;
 
-        yield return new WaitForSeconds(0.1f);
+    //     yield return new WaitForSeconds(0.1f);
 
-        handSprite.color = original;
-    }
+    //     handSprite.color = original;
+    // }
 
-    private IEnumerator KnifeAttack (KnifeController k)
-    {
-        k.TriggerAttack();
-        yield return null;
-    }
+    // private IEnumerator KnifeAttack (KnifeController k)
+    // {
+    //     k.TriggerAttack();
+    //     yield return null;
+    // }
 
-    private IEnumerator ColorLerp (Color a, Color b, float duration)
-    {
-        CRrunning = true;
-        float t = 0f;
-        while (t < duration)
-        {
-            t += Time.deltaTime;
-            sr.color = Color.Lerp(a, b, t / duration);
-            yield return null;
-        }
-        sr.color = a;  
-        CRrunning = false;
-    }
-    public void Play()
-    {
-        musicSource.Play();
-        musicStarted = true;
-    }
+    // private IEnumerator ColorLerp (Color a, Color b, float duration)
+    // {
+    //     CRrunning = true;
+    //     float t = 0f;
+    //     while (t < duration)
+    //     {
+    //         t += Time.deltaTime;
+    //         sr.color = Color.Lerp(a, b, t / duration);
+    //         yield return null;
+    //     }
+    //     sr.color = a;  
+    //     CRrunning = false;
+    // }
+    // public void Play()
+    // {
+    //     musicSource.Play();
+    //     musicStarted = true;
+    // }
     
     void checkMusicEnd()
     {

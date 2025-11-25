@@ -70,6 +70,15 @@ public class PauseMenuHandler : MonoBehaviour {
                 // Please also reset all static variables here, for new games!
         }
 
+        public void QuitLevelGame(){
+                //Debug.Log("Clicked restart button");
+                Time.timeScale = 1f;
+                SceneManager.LoadScene("Level_Select_Scene");
+                /* Unpauses audio */
+                AudioListener.pause = false;
+                // Please also reset all static variables here, for new games!
+        }
+
         public void QuitGame(){
                 //Debug.Log("Clicked quit button");
                 #if UNITY_EDITOR

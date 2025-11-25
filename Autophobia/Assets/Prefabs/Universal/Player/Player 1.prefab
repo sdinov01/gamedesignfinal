@@ -77,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 952424591
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 50
   m_Sprite: {fileID: 5905681027756182028, guid: a7a9de153fcc290488195ea7987e7655, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -125,7 +125,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 1
+  m_Radius: 9.5
 --- !u!95 &8899841045595317813
 Animator:
   serializedVersion: 7

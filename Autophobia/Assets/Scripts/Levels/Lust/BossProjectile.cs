@@ -14,11 +14,23 @@ public class BossProjectile : MonoBehaviour
     private bool clickedOnce = false;
     float hitDamage = 2f;
 
+    [Header("Colliders and player finder")]
+    public GameObject player;
+    public GameObject healthbar;
+    public healthBar hbscript;
+    public Collider2D thiscollider;
+    public Collider2D playercollider;
+
     void Start()
     {
         spawnTime = Time.time;
         startPos = transform.position;
+        player      = GameObject.FindWithTag("Player");
+        healthbar   = GameObject.FindWithTag("HealthBar");
+        hbscript    = healthbar.GetComponent<healthBar>();
 
+        thiscollider    = transform.GetComponent<Collider2D>();
+        playercollider  = player.GetComponent<Collider2D>();
         Destroy(gameObject, lifetime + hitWindow);
     }
 
@@ -31,35 +43,20 @@ public class BossProjectile : MonoBehaviour
         Vector3 targetPos = startPos + dir3D * travelDistance;
 
         transform.position = Vector3.Lerp(startPos, targetPos, t);
+
+        if (thiscollider.IsTouching(playercollider))
+        {
+            // Apply damage
+            hbscript.takeDamage ((float)2.5);
+
+            Destroy(gameObject);   // Destroy projectile after hit
+        }
     }
 
     public void OnClick()
     {
         if (clickedOnce) return;
         clickedOnce = true;
-
-        var handler = FindObjectOfType<LustLevelHandler>();
-        if (handler == null)
-        {
-            Debug.LogWarning("BossProjectile: No LustLevelHandler found!");
-            Destroy(gameObject);
-            return;
-        }
-
-        float age = Time.time - spawnTime;
-        float delta = age - lifetime;
-
-        Debug.Log($"Projectile clicked. age={age:F3}, lifetime={lifetime}, delta={delta:F3}");
-
-        if (Mathf.Abs(delta) <= hitWindow)
-        {
-            handler.ShowResult("Perfect");
-        }
-        else
-        {
-            handler.ShowResult("Miss");
-            handler.UpdateHealth(hitDamage);
-        }
 
         Destroy(gameObject);
     }

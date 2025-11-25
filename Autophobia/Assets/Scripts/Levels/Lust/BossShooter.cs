@@ -7,25 +7,36 @@ using UnityEngine;
 public class FiringPhase
 {
     public string name;               
-    public float bpm = 130f;          
     public int beatsBetweenShots = 1; 
     public int[] lanePattern;    
     public int beatsInPhase = 16;     
     public float projectileSpeed = 2f;   
+    public bool  multi;
 }
 
 public class BossShooter : MonoBehaviour
 {
-    public FiringPhase[] phases;
-    public GameObject BossProjectile;       
-    public Transform[] firePoints;          
+    public ModularAudioHandler m;
 
-    public float[] laneTravelDistances = new float[] { 5f, 6f, 7f, 9f };
+    [Header("Spawn Points")]
+    public Transform[] firePoints; 
+
+    [Header("Phases")]
+    public FiringPhase[] phases;
+
+    [Header("Projectile")]
+    public GameObject BossProjectile;               
+
+    public float[] laneTravelDistances;
 
     private List<BossProjectile> laneOneProj   = new List<BossProjectile>();
     private List<BossProjectile> laneTwoProj   = new List<BossProjectile>();
     private List<BossProjectile> laneThreeProj = new List<BossProjectile>();
     private List<BossProjectile> laneFourProj  = new List<BossProjectile>();
+
+    public  int[]   phaseOrder;
+    public  int     POlen;
+    public  int     POindex;
 
     private int currentPhaseIndex = 0;
     private float secondsPerBeat = 0f;
@@ -33,6 +44,12 @@ public class BossShooter : MonoBehaviour
 
     private void Start()
     {
+        secondsPerBeat = (float)m.beatint;
+        POlen = phaseOrder.Length;
+        POindex = 0;
+
+        // currentPhaseIndex = phaseOrder[POindex];
+
         if (!ValidateSetup())
         {
             enabled = false;
@@ -72,21 +89,17 @@ public class BossShooter : MonoBehaviour
         currentPhaseIndex = Mathf.Clamp(phaseIndex, 0, phases.Length - 1);
         FiringPhase phase = phases[currentPhaseIndex];
 
-        if (phase.bpm <= 0f)
-        {
-            phase.bpm = 120f;
-            Debug.LogWarning($"BossShooter: Phase {phaseIndex} had invalid BPM, defaulting to 120");
-        }
-
-        secondsPerBeat = 60f / phase.bpm;
         beatInPhase = 0;
 
-        Debug.Log($"BossShooter: Switched to phase {currentPhaseIndex} ({phase.name}), BPM={phase.bpm}, Speed={phase.projectileSpeed}");
+        Debug.Log($"BossShooter: Switched to phase {currentPhaseIndex} ({phase.name}), Speed={phase.projectileSpeed}");
     }
 
    private void AdvancePhase()
     {
-        int next = (currentPhaseIndex + 1) % phases.Length;
+        POindex = (POindex + 1) % POlen;
+        int next = phaseOrder[POindex];
+
+
         SetPhase(next);
     }
 
@@ -96,12 +109,12 @@ public class BossShooter : MonoBehaviour
         {
             FiringPhase phase = phases[currentPhaseIndex];
 
-            if (phase.lanePattern == null || phase.lanePattern.Length == 0)
-            {
-                Debug.LogWarning($"BossShooter: Phase {currentPhaseIndex} ({phase.name}) has no lane pattern.");
-                yield return new WaitForSeconds(secondsPerBeat);
-                continue;
-            }
+            // if (phase.lanePattern.Length == 0)
+            // {
+            //     Debug.LogWarning($"BossShooter: Phase {currentPhaseIndex} ({phase.name}) has no lane pattern.");
+            //     yield return new WaitForSeconds(secondsPerBeat);
+            //     continue;
+            // }
 
             beatInPhase++;
 
@@ -136,22 +149,34 @@ public class BossShooter : MonoBehaviour
         laneIndex = Mathf.Clamp(laneIndex, 0, firePoints.Length - 1);
 
         Transform fp = firePoints[laneIndex];
-        if (fp != null)
+        
+        if (phase.multi == false)
         {
-            SpawnProjectileFrom(fp, laneIndex, phase);
+           SpawnProjectileFrom(fp, laneIndex, phase); 
         }
         else
         {
-            Debug.LogWarning($"BossShooter: FirePoint at index {laneIndex} is null!");
+            if (phase.lanePattern.Length > 0)
+            {
+                for (int i = 0; i < phase.lanePattern.Length; i++)
+                {
+                    int lane = phase.lanePattern[i];
+                    SpawnProjectileFrom (firePoints[lane], lane, phase );
+                }
+            }
         }
+        
     }
 
     private void SpawnProjectileFrom(Transform firePoint, int laneIndex, FiringPhase phase)
     {
+        // Get position spawn point
         Vector3 spawnPosition = firePoint.position;
         spawnPosition.z = -1f;
         
+        // Instantiate at position spawn point
         GameObject projObj = Instantiate(BossProjectile, spawnPosition, Quaternion.identity);
+        // Parents the spawned object with the fire point
         projObj.transform.SetParent(firePoints[laneIndex], true);
 
         BossProjectile proj = projObj.GetComponent<BossProjectile>();
@@ -169,25 +194,15 @@ public class BossShooter : MonoBehaviour
         proj.speed = phase.projectileSpeed;
 
         // Set travel distance based on lane
-        float distance = 5f;
+        float distance = 0f;
         if (laneTravelDistances != null && laneIndex < laneTravelDistances.Length)
         {
             distance = laneTravelDistances[laneIndex];
         }
 
         proj.travelDistance = distance;
-
-        // Calculate lifetime based on speed and distance
-        if (proj.speed <= 0f)
-        {
-            Debug.LogWarning("BossShooter: Projectile speed is 0 or negative, setting fallback lifetime");
-            proj.lifetime = 5f;
-        }
-        else
-        {
-            proj.lifetime = distance / proj.speed;
-        }
-
+        proj.lifetime = distance / proj.speed;
+        
         // Add to appropriate lane list
         AddProjectileToLane(laneIndex, proj);
     }

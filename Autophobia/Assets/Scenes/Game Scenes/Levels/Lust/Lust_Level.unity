@@ -167,24 +167,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 319a49b3f0876ba4dbbda18a2c4e82c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  phases:
-  - name: 
-    bpm: 140
-    beatsBetweenShots: 2
-    lanePattern: 04000000040000000400000004000000
-    beatsInPhase: 8
-    projectileSpeed: 2
-  BossProjectile: {fileID: 0}
+  m: {fileID: 0}
   firePoints:
   - {fileID: 1540660596}
   - {fileID: 1253458011}
   - {fileID: 1652464522}
   - {fileID: 1092530923}
+  phases:
+  - name: 
+    beatsBetweenShots: 2
+    lanePattern: 04000000040000000400000004000000
+    beatsInPhase: 8
+    projectileSpeed: 2
+    multi: 0
+  BossProjectile: {fileID: 0}
   laneTravelDistances:
   - 7.3
   - 6.15
   - 5.2
   - 4.6
+  phaseOrder: 
+  POlen: 0
+  POindex: 0
 --- !u!1 &44026119
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,6 +286,33 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1348311540491034965, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
   m_PrefabInstance: {fileID: 1404411335}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &55951886
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55951880}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &61204883
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,8 +586,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platform: {fileID: 447248298}
-  left: []
-  right: []
+  left:
+  - {fileID: 447248300}
+  right:
+  - {fileID: 447248300}
   up:
   - {fileID: 1572291665}
   down:
@@ -635,7 +668,7 @@ Transform:
   m_GameObject: {fileID: 473113863}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.9499577, w: 0.31237844}
-  m_LocalPosition: {x: -1.4, y: -1.7, z: 0}
+  m_LocalPosition: {x: -1.4, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -778,7 +811,7 @@ Transform:
   m_GameObject: {fileID: 875178464}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.07, y: -2.69, z: 0}
+  m_LocalPosition: {x: -0.07, y: -2.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -797,8 +830,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platform: {fileID: 875178464}
-  left: []
-  right: []
+  left:
+  - {fileID: 875178466}
+  right:
+  - {fileID: 875178466}
   up:
   - {fileID: 447248300}
   down:
@@ -860,7 +895,7 @@ Transform:
   m_GameObject: {fileID: 1251387286}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.98730725, w: 0.15882209}
-  m_LocalPosition: {x: -1.2, y: -0.4, z: 0}
+  m_LocalPosition: {x: -1.2, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -925,6 +960,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1023311666384760413, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -120
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023311666384760413, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1281035959629099187, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.53015924
@@ -965,6 +1008,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1420487336776392085, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 1451147219685831913, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
       propertyPath: M
       value: 
@@ -985,6 +1032,15 @@ PrefabInstance:
       propertyPath: purpleboss
       value: 
       objectReference: {fileID: 15700267}
+    - target: {fileID: 1451147219685831913, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
+      propertyPath: interactables
+      value: 
+      objectReference: {fileID: 865496373}
+    - target: {fileID: 4355051381652305177, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
+      propertyPath: m_text
+      value: Avoid the red kisses, but press Space when the purple kisses enter a
+        platform's zone to earn points!
+      objectReference: {fileID: 0}
     - target: {fileID: 4481054124087775137, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
       propertyPath: audiomanager
       value: 
@@ -993,6 +1049,14 @@ PrefabInstance:
       propertyPath: interactables
       value: 
       objectReference: {fileID: 865496373}
+    - target: {fileID: 5696047060393821303, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
+      propertyPath: m_TagString
+      value: HealthBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 6554552860447574976, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
+      propertyPath: m_text
+      value: 'Use WS or the up and down arrows to jump between the platforms. '
+      objectReference: {fileID: 0}
     - target: {fileID: 7310996584702040656, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1000,6 +1064,10 @@ PrefabInstance:
     - target: {fileID: 7900254055907941593, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
       propertyPath: m_Name
       value: GameHandler
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191572634623733711, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 8432140820169243787, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
       propertyPath: musicSource
@@ -1037,14 +1105,6 @@ PrefabInstance:
     - target: {fileID: 1348311540491034965, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722510144039775641, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5722510144039775641, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 952424591
       objectReference: {fileID: 0}
     - target: {fileID: 6658307193134000300, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1086,30 +1146,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8777897104200232352, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
-      propertyPath: platformObjects.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8777897104200232352, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
-      propertyPath: 'platformObjects.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2092702845}
-    - target: {fileID: 8777897104200232352, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
-      propertyPath: 'platformObjects.Array.data[1]'
-      value: 
-      objectReference: {fileID: 1572291663}
-    - target: {fileID: 8777897104200232352, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
-      propertyPath: 'platformObjects.Array.data[2]'
-      value: 
-      objectReference: {fileID: 447248298}
-    - target: {fileID: 8777897104200232352, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
-      propertyPath: 'platformObjects.Array.data[3]'
-      value: 
-      objectReference: {fileID: 875178464}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1348311540491034965, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 55951886}
   m_SourcePrefab: {fileID: 100100000, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
 --- !u!1 &1540660595
 GameObject:
@@ -1187,8 +1230,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platform: {fileID: 1572291663}
-  left: []
-  right: []
+  left:
+  - {fileID: 1572291665}
+  right:
+  - {fileID: 1572291665}
   up:
   - {fileID: 2092702847}
   down:
@@ -1385,7 +1430,7 @@ GameObject:
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1994410145
 Transform:
   m_ObjectHideFlags: 0
@@ -1417,30 +1462,106 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 319a49b3f0876ba4dbbda18a2c4e82c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  phases:
-  - name: Phase1
-    bpm: 130
-    beatsBetweenShots: 4
-    lanePattern: 00000000010000000200000003000000
-    beatsInPhase: 4
-    projectileSpeed: 2
-  - name: Phase2
-    bpm: 130
-    beatsBetweenShots: 4
-    lanePattern: 03000000020000000100000000000000
-    beatsInPhase: 8
-    projectileSpeed: 2
-  BossProjectile: {fileID: 8218206109086024149, guid: d155b799486f6bf47ad75bd7b748471b, type: 3}
+  m: {fileID: 412190495}
   firePoints:
   - {fileID: 465176907}
   - {fileID: 1251387287}
   - {fileID: 61204884}
   - {fileID: 473113864}
+  phases:
+  - name: 1-1-2-2 LONG
+    beatsBetweenShots: 4
+    lanePattern: 00000000000000000100000001000000
+    beatsInPhase: 16
+    projectileSpeed: 2
+    multi: 0
+  - name: 4-4-3-3 LONG
+    beatsBetweenShots: 4
+    lanePattern: 03000000030000000200000002000000
+    beatsInPhase: 16
+    projectileSpeed: 2
+    multi: 0
+  - name: 1-1-2-2
+    beatsBetweenShots: 2
+    lanePattern: 00000000000000000100000001000000
+    beatsInPhase: 8
+    projectileSpeed: 2
+    multi: 0
+  - name: 4-4-3-3
+    beatsBetweenShots: 2
+    lanePattern: 03000000030000000200000002000000
+    beatsInPhase: 8
+    projectileSpeed: 2
+    multi: 0
+  - name: 1-2-3-2
+    beatsBetweenShots: 2
+    lanePattern: 00000000010000000200000001000000
+    beatsInPhase: 8
+    projectileSpeed: 2
+    multi: 0
+  - name: 4-3-2-3
+    beatsBetweenShots: 2
+    lanePattern: 03000000020000000100000002000000
+    beatsInPhase: 8
+    projectileSpeed: 2
+    multi: 0
+  - name: 1&2
+    beatsBetweenShots: 2
+    lanePattern: 0000000001000000
+    beatsInPhase: 2
+    projectileSpeed: 2
+    multi: 1
+  - name: 1&3
+    beatsBetweenShots: 2
+    lanePattern: 0000000002000000
+    beatsInPhase: 2
+    projectileSpeed: 2
+    multi: 1
+  - name: 1&4
+    beatsBetweenShots: 2
+    lanePattern: 0000000003000000
+    beatsInPhase: 2
+    projectileSpeed: 2
+    multi: 1
+  - name: 2&3
+    beatsBetweenShots: 2
+    lanePattern: 0100000002000000
+    beatsInPhase: 2
+    projectileSpeed: 2
+    multi: 1
+  - name: 2&4
+    beatsBetweenShots: 2
+    lanePattern: 0100000003000000
+    beatsInPhase: 2
+    projectileSpeed: 2
+    multi: 1
+  - name: 3&4
+    beatsBetweenShots: 2
+    lanePattern: 0200000003000000
+    beatsInPhase: 2
+    projectileSpeed: 2
+    multi: 1
+  - name: RESTMIDDLE
+    beatsBetweenShots: 4
+    lanePattern: 0100000002000000
+    beatsInPhase: 4
+    projectileSpeed: 2
+    multi: 1
+  - name: RESTOUTER
+    beatsBetweenShots: 4
+    lanePattern: 0000000003000000
+    beatsInPhase: 4
+    projectileSpeed: 2
+    multi: 1
+  BossProjectile: {fileID: 8218206109086024149, guid: d155b799486f6bf47ad75bd7b748471b, type: 3}
   laneTravelDistances:
-  - 6.5
-  - 6.7
-  - 7.2
-  - 8
+  - 5.73
+  - 6.08
+  - 6.3
+  - 6.92
+  phaseOrder: 0000000001000000000000000100000002000000030000000200000003000000050000000600000005000000060000000d0000000c0000000d0000000c000000
+  POlen: 0
+  POindex: 0
 --- !u!114 &1994410147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1500,8 +1621,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platform: {fileID: 2092702845}
-  left: []
-  right: []
+  left:
+  - {fileID: 2092702847}
+  right:
+  - {fileID: 2092702847}
   up:
   - {fileID: 875178466}
   down:

@@ -10,6 +10,7 @@ public class greedIntro : MonoBehaviour
     [SerializeField] private TMP_Text tutorial;
     [SerializeField] private TMP_Text goodLuck;
     [SerializeField] private TimeBar timeBar;
+    [SerializeField] private TMP_Text skip;
 
     /* Default time will be 14.5 seconds after the scene is opened */
     private float beginTime = 14.5f;
@@ -52,6 +53,7 @@ public class greedIntro : MonoBehaviour
             /* Disable texts and background immediately */
             tutorial.enabled = false;
             goodLuck.enabled = false;
+            skip.enabled = false;
             backgroundImage.enabled = false;
 
             /* Update beginning time for time stamps later */
@@ -95,6 +97,7 @@ public class greedIntro : MonoBehaviour
         /* Fade the good luck text and background */
         StartCoroutine(fadeImage(backgroundImage, fadeDuration));
         StartCoroutine(fadeText(goodLuck, fadeDuration));
+        StartCoroutine(fadeText(skip, fadeDuration));
     }
 
     private IEnumerator fadeImage(Image image, float duration)

@@ -35,7 +35,7 @@ public class handMovement : MonoBehaviour
         /* Begin rotations when audio starts playing */
         yield return new WaitUntil(() => audio.isPlaying);
         /* The rotations will stop if changeRotation is -1. */
-        while (audio.isPlaying)
+        while (audio.time < audio.clip.length)
         {
             /* Time to perform a rotation */
             if (currentRotation >= rotationTimes.Length - 1)

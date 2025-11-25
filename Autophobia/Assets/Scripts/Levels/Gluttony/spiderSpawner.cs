@@ -60,8 +60,9 @@ public class spiderSpawner : MonoBehaviour
         /* Begin song Courotine fill bar */
         timeBar.SetDuration(audioSource.clip.length);
         timeBar.BeginTime();
+        float finishSong = startTime + audioSource.clip.length;
 
-        while (audioSource.isPlaying)
+        while (audioSource.time < audioSource.clip.length)
         {
             /* Don't spawn if the spiders are currently vulnerable */
             if (spider1index < spider1Spawn.Length - 1)

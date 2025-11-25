@@ -65,7 +65,7 @@ public class restrictMovement : MonoBehaviour
     {
         /* Wait to finish rotation */
         yield return new WaitForSeconds(time);
-        /* Retrieve the duration of the color changing */
+        /* Retrieve the slice to change the color of */
         currentSlice = hourHand.GetCurrentSlice();
         float colorTime = colorDuration[durationIndex];
         Renderer colorRenderer = currentSlice.GetComponent<Renderer>();

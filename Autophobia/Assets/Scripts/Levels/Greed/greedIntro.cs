@@ -33,7 +33,6 @@ public class greedIntro : MonoBehaviour
     {
         /* Begin after tutorial/skip */
         yield return new WaitUntil(() => Time.timeSinceLevelLoad >= beginTime);
-        Debug.Log("SKIPPED!\n");
 
         /* Begin song Courotine fill bar */
         timeBar.SetDuration(audio.clip.length);

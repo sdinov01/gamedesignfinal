@@ -38,6 +38,10 @@ public class handMovement : MonoBehaviour
         while (audio.isPlaying)
         {
             /* Time to perform a rotation */
+            if (currentRotation >= rotationTimes.Length - 1)
+            {
+                break;
+            }
             yield return new WaitUntil(() => audio.time >= rotationTimes[currentRotation]);
             /* Rotation and its duration will change */
             if (rotationIndex < changeRotation.Length && currentRotation < rotationTimes.Length)

@@ -48,8 +48,9 @@ public class PlatformSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        int currentMeasure = Mathf.FloorToInt((float)(music.time / M.measureint));
         // time += Time.deltaTime;
-        if (music.time > nextM)
+        if (currentMeasure > measureIndex)
         {
             measureIndex++;
             nextM += M.measureint;

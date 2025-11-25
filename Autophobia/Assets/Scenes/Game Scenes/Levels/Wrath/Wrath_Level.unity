@@ -1112,11 +1112,30 @@ MonoBehaviour:
   - {fileID: 889240688}
   - {fileID: 1393361654}
   spawnTimes:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 6.15
+  - 14.25
+  - 23.85
+  - 28.75
+  - 33.525
+  - 39.6
+  - 44.4
+  - 49.2
+  - 51.6
+  - 54
+  - 56.4
+  - 58.65
+  - 59.025
+  - 61.125
+  - 63.525
+  - 63.825
+  - 65.925
+  - 68.525
+  - 69.525
+  - 70.725
+  - 71.925
+  - 73.125
+  - 74.325
+  - 75.525
   attackDelay: 1.2
   musicSource: {fileID: 1598560305}
   health: {fileID: 1841383950}
@@ -4345,7 +4364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5722510144039775641, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5722510144039775641, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
       propertyPath: m_SortingLayerID

@@ -35,46 +35,47 @@ public class RhythmManager : MonoBehaviour
     {
         checkMusicEnd();
         //make spawn time manually
-        // if (nextIndex >= spawnTimes.Count)
-        // return;
-
-        // float targetTime = spawnTimes[nextIndex] - attackDelay;
-
-        // if (musicSource.time >= targetTime)
-        // {
-        //     TriggerNextKnife();
-        //     nextIndex++;
-        // }
-        
-        //let it follow the beat
-        timer += Time.deltaTime;
-        if (timer >= beatInterval)
-        {
-            timer -= beatInterval;
-            beatCount++;
-
-            HandleBeat(beatCount);
+        if (nextIndex >= spawnTimes.Count){
+        return;
         }
+        float targetTime = spawnTimes[nextIndex] - 0.3f;
+
+        if (musicSource.time >= targetTime)
+        {
+            Debug.Log("trigger next knife");
+            TriggerNextKnife();
+            nextIndex++;
+        }
+        
+        // //let it follow the beat
+        // timer += Time.deltaTime;
+        // if (timer >= beatInterval)
+        // {
+        //     timer -= beatInterval;
+        //     beatCount++;
+
+        //     HandleBeat(beatCount);
+        // }
     
     }
 
-    void HandleBeat(int beat)
-    {
-    //     for (int i = 0; i < spawnTimes.Count; i++)
-    //     {
-        int beatInBar = ((beat - 1) % 4) + 1; 
+    // void HandleBeat(int beat)
+    // {
+    // //     for (int i = 0; i < spawnTimes.Count; i++)
+    // //     {
+    //     int beatInBar = ((beat - 1) % 4) + 1; 
 
-        if (beat <= 4)
-        {
-            if (beatInBar == 4)
-                TriggerNextKnife();
-        }
-        else
-        {
-            if (beatInBar == 2 || beatInBar == 4)
-                TriggerNextKnife();
-        }
-    }
+    //     if (beat <= 4)
+    //     {
+    //         if (beatInBar == 4)
+    //             TriggerNextKnife();
+    //     }
+    //     else
+    //     {
+    //         if (beatInBar == 2 || beatInBar == 4)
+    //             TriggerNextKnife();
+    //     }
+    // }
 
     public void TriggerNextKnife()
     {
@@ -85,11 +86,11 @@ public class RhythmManager : MonoBehaviour
             {
                 sr = knife.self.GetComponent<SpriteRenderer>();
                 thisknife = knife;
-                StartCoroutine (sequence (sr.color, Color.red));
+                // StartCoroutine (sequence (sr.color, Color.red));
                 // StartColorLerp (sr.color, Color.red);
                 // StartCoroutine (ColorFlash());
                 
-                // knife.TriggerAttack();
+                knife.TriggerAttack();
                 
                 return; 
             }
@@ -136,49 +137,50 @@ public class RhythmManager : MonoBehaviour
     //     if (angle < 170f) return 4;
     //     if (angle < 240f) return 5; 
     //     return 5;    // angle: 160–180
-        
+
     // }
 
-    IEnumerator sequence (Color s, Color e)
-    {
-        yield return StartCoroutine (ColorLerp (s, e, offsetTime));
-        yield return StartCoroutine (KnifeAttack (thisknife));
-        yield return StartCoroutine (ColorFlash ());
-    }
+    // IEnumerator sequence (Color s, Color e)
+    // {
+    //     // yield return StartCoroutine (ColorLerp (s, e, offsetTime));
+    //     yield return StartCoroutine (KnifeAttack (thisknife));
+    //     // yield return StartCoroutine (ColorFlash ());
+    // }
 
-    IEnumerator ColorFlash()
-    {
-        Color original = Color.white;
+    // IEnumerator ColorFlash()
+    // {
+    //     Color original = Color.white;
 
-        Color flashColor;
-        ColorUtility.TryParseHtmlString("#D2B1B1", out flashColor);
+    //     Color flashColor;
+    //     ColorUtility.TryParseHtmlString("#D2B1B1", out flashColor);
 
-        handSprite.color = flashColor;
+    //     handSprite.color = flashColor;
 
-        yield return new WaitForSeconds(0.1f);
+    //     yield return new WaitForSeconds(0.1f);
 
-        handSprite.color = original;
-    }
+    //     handSprite.color = original;
+    // }
 
-    private IEnumerator KnifeAttack (KnifeController k)
-    {
-        k.TriggerAttack();
-        yield return null;
-    }
+    // private IEnumerator KnifeAttack (KnifeController k)
+    // {
+    //     k.TriggerAttack();
+    //     yield return null;
+    // }
 
-    private IEnumerator ColorLerp (Color a, Color b, float duration)
-    {
-        CRrunning = true;
-        float t = 0f;
-        while (t < duration)
-        {
-            t += Time.deltaTime;
-            sr.color = Color.Lerp(a, b, t / duration);
-            yield return null;
-        }
-        sr.color = a;  
-        CRrunning = false;
-    }
+    // private IEnumerator ColorLerp (Color a, Color b, float duration)
+    // {
+    //     CRrunning = true;
+    //     float t = 0f;
+    //     while (t < duration)
+    //     {
+    //         t += Time.deltaTime;
+    //         sr.color = Color.Lerp(a, b, t / duration);
+    //         yield return null;
+    //     }
+    //     sr.color = a;  
+    //     CRrunning = false;
+    // }
+    
     public void Play()
     {
         musicSource.Play();

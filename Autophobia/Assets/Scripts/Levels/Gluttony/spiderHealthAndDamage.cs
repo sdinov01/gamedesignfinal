@@ -36,7 +36,7 @@ public class spiderHealthAndDmg : MonoBehaviour
             else
             {
                 /* Player takes damage otherwise */
-                health.takeDamage(2f);
+                health.takeDamage(1.6f);
             }
         }
     }

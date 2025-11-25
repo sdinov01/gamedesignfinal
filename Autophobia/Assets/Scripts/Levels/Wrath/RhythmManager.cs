@@ -136,7 +136,7 @@ public class RhythmManager : MonoBehaviour
     //     if (angle < 170f) return 4;
     //     if (angle < 240f) return 5; 
     //     return 5;    // angle: 160–180
-        
+
     // }
 
     // IEnumerator sequence (Color s, Color e)
@@ -179,11 +179,12 @@ public class RhythmManager : MonoBehaviour
     //     sr.color = a;  
     //     CRrunning = false;
     // }
-    // public void Play()
-    // {
-    //     musicSource.Play();
-    //     musicStarted = true;
-    // }
+    
+    public void Play()
+    {
+        musicSource.Play();
+        musicStarted = true;
+    }
     
     void checkMusicEnd()
     {

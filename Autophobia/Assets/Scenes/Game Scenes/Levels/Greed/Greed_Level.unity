@@ -3146,7 +3146,7 @@ MonoBehaviour:
   - 60
   - 30
   - 30
-  changeRotation: 000000000000000000000000
+  changeRotation: 000000000c00000000000000
   rotationDuration:
   - 0.1
   - 0.1

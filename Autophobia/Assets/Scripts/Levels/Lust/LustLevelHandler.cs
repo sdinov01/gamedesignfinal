@@ -39,49 +39,9 @@ public class LustLevelHandler : MonoBehaviour
                 int currPlatform = platformMover.getCurrPosition();
                 Debug.Log("Current platform: " + currPlatform);
 
-                BossProjectile proj  = bossShooter.getCurrLaneProj(currPlatform);
-                BossProjectile proj2 = bossShooter2.getCurrLaneProj(currPlatform);
 
                 BossProjectile toHit = null;
                 BossShooter shooterOfToHit = null;
-
-                // Decide which projectile (if any) we should hit
-                if (proj != null && proj2 != null)
-                {
-                    float t1 = Mathf.Abs(proj.GetTimeToHit());
-                    float t2 = Mathf.Abs(proj2.GetTimeToHit());
-
-                    if (t1 <= t2)
-                    {
-                        toHit = proj;
-                        shooterOfToHit = bossShooter;
-                    }
-                    else
-                    {
-                        toHit = proj2;
-                        shooterOfToHit = bossShooter2;
-                    }
-                }
-                else if (proj != null)
-                {
-                    toHit = proj;
-                    shooterOfToHit = bossShooter;
-                }
-                else if (proj2 != null)
-                {
-                    toHit = proj2;
-                    shooterOfToHit = bossShooter2;
-                }
-
-                if (toHit != null && shooterOfToHit != null)
-                {
-                    shooterOfToHit.removeProj(currPlatform);
-                    toHit.OnClick();
-                }
-                else
-                {
-                    ShowResult("Miss");
-                }
             }
         }
     }

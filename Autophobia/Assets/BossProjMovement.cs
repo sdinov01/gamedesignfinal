@@ -23,6 +23,7 @@ public class BossProjectileMovement : MonoBehaviour
     {
         spawnTime = Time.time;
         startPos = transform.position;
+        player = GameObject.FindWithTag("Player");
 
         thiscollider    = transform.GetComponent<Collider2D>();
         playercollider  = player.GetComponent<Collider2D>();
@@ -33,12 +34,12 @@ public class BossProjectileMovement : MonoBehaviour
     void Update()
     {
         float age = Time.time - spawnTime;
-        float t = Mathf.Clamp01(age / lifetime);
+        // float t = Mathf.Clamp01(age / lifetime);
 
-        Vector3 dir3D = ((Vector3)direction).normalized;
-        Vector3 targetPos = startPos + dir3D * travelDistance;
+        // Vector3 dir3D = ((Vector3)direction).normalized;
+        // Vector3 targetPos = startPos + dir3D * travelDistance;
 
-        transform.position = Vector3.Lerp(startPos, targetPos, t);
+        // transform.position = Vector3.Lerp(startPos, targetPos, t);
 
         var handler = FindObjectOfType<LustLevelHandler>();
         bool colliderin = thiscollider.IsTouching(playercollider);
@@ -70,11 +71,6 @@ public class BossProjectileMovement : MonoBehaviour
         {
             handler.ShowResult("Perfect");
         }
-        // else
-        // {
-        //     handler.ShowResult("Miss");
-        //     handler.UpdateHealth(hitDamage);
-        // }
 
         Destroy(gameObject);
     }

@@ -72,8 +72,8 @@ public class BossProjectile : MonoBehaviour
         var handler = FindObjectOfType<LustLevelHandler>();
         if (handler == null) return;
 
-        handler.ShowResult("Miss");
-        handler.UpdateHealth(hitDamage);
+        // handler.ShowResult("Miss");
+        // handler.UpdateHealth(hitDamage);
     }
 
     public float GetTimeToHit()

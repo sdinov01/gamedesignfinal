@@ -12,6 +12,7 @@ public class TutorialManager : MonoBehaviour
     public linearPlatMove player;
     public PlayerController controller;
     public float fadeInTime = 2f;
+    public GameObject LevelManager;
 
 
 
@@ -45,6 +46,7 @@ public class TutorialManager : MonoBehaviour
     public bool startup = false;
 
     void Start() {
+        LevelManager.SetActive(false);
 
         foreach (var g in glowObjects)
         {
@@ -76,6 +78,7 @@ public class TutorialManager : MonoBehaviour
         audio.SetActive(true);
         RhythmManager rhythmManager = audiomanager.GetComponent<RhythmManager>();
         rhythmManager.Play();
+        LevelManager.SetActive(true);
 
     }
 

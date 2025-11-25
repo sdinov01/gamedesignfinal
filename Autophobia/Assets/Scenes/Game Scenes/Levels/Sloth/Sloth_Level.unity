@@ -3156,7 +3156,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!114 &1719357962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3257,8 +3257,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.98291016
-      value: 0.00031661987
+      time: 1
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

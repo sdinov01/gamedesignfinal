@@ -14,6 +14,7 @@ public class CountIn : MonoBehaviour
     public AudioSource music;
     public BeatSync BS;
     private int countdown = 3;
+    public Timer T;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,7 +36,6 @@ public class CountIn : MonoBehaviour
         yield return new WaitForSeconds ((float)M.beat2int);
         ActivateAll();
         countInText.gameObject.SetActive (false);
-
     }
 
     void ActivateAll()
@@ -44,7 +44,9 @@ public class CountIn : MonoBehaviour
         stageScore.gameObject.SetActive (true);
         targetText.gameObject.SetActive (true);
         PS.gameObject.SetActive (true);
+        T.gameObject.SetActive (true);
         BS.enabled = true;
         music.gameObject.SetActive (true);
+        
     }
 }

@@ -9,20 +9,18 @@ public class FiringPhase
     public string name;               
     public float bpm = 130f;          
     public int beatsBetweenShots = 1; 
-    public int[] lanePattern;         
+    public int[] lanePattern;    
     public int beatsInPhase = 16;     
-
     public float projectileSpeed = 2f;   
 }
 
 public class BossShooter : MonoBehaviour
 {
     public FiringPhase[] phases;
-
-    public GameObject bossProjectile;       
+    public GameObject BossProjectile;       
     public Transform[] firePoints;          
 
-    public float[] laneTravelDistances = new float[] { 5f, 6f, 7f, 8f };
+    public float[] laneTravelDistances = new float[] { 5f, 6f, 7f, 9f };
 
     private List<BossProjectile> laneOneProj   = new List<BossProjectile>();
     private List<BossProjectile> laneTwoProj   = new List<BossProjectile>();
@@ -42,7 +40,7 @@ public class BossShooter : MonoBehaviour
             return;
         }
 
-        if (bossProjectile == null)
+        if (BossProjectile == null)
         {
             Debug.LogError("BossShooter: bossProjectile prefab not assigned!");
             enabled = false;
@@ -137,7 +135,7 @@ public class BossShooter : MonoBehaviour
     {
         Vector3 spawnPosition = firePoint.position;
         spawnPosition.z = -1f;
-        GameObject projObj = Instantiate(bossProjectile, spawnPosition, Quaternion.identity);
+        GameObject projObj = Instantiate(BossProjectile, spawnPosition, Quaternion.identity);
 
         BossProjectile proj = projObj.GetComponent<BossProjectile>();
         if (proj == null)
@@ -148,7 +146,6 @@ public class BossShooter : MonoBehaviour
 
         Vector2 shootDir = (Vector2)firePoint.right;
         proj.direction = shootDir.normalized;
-
         proj.speed = phase.projectileSpeed;
 
         float distance = 5f;

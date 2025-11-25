@@ -12,9 +12,12 @@ public class ScoreManager : MonoBehaviour
     public int sscore = 0;
     public int target;
     public int stage = 0;
+    public int successes;
+    
 
     void Awake()
     {
+        successes = 0;
         if (Instance == null)
         {
             Instance = this;

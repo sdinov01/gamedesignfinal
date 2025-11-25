@@ -74,6 +74,7 @@ public class PrideScoreVis : MonoBehaviour
     void stageClear (int cindex, int tscore, int newtarget)
     {
         SpriteRenderer sr = transform.GetChild(cindex).GetComponent<SpriteRenderer>();
+        if (SM.sscore >= tscore) { SM.successes++; }
         ColorChange (sr, (SM.sscore >= tscore));
         resetStageTarget (newtarget);
     }

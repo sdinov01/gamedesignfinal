@@ -7,12 +7,12 @@ public class BossProjectile : MonoBehaviour
     public float hitWindow = 0.2f;        
     public Vector2 direction = Vector2.right;
 
-    [HideInInspector] public float travelDistance;
+    public float travelDistance;
 
     private float spawnTime;
     private Vector3 startPos;
     private bool clickedOnce = false;
-    float missDamage = 10f;
+    float hitDamage = 2f;
 
     void Start()
     {
@@ -58,7 +58,7 @@ public class BossProjectile : MonoBehaviour
         else
         {
             handler.ShowResult("Miss");
-            handler.UpdateHealth(missDamage);
+            handler.UpdateHealth(hitDamage);
         }
 
         Destroy(gameObject);
@@ -73,7 +73,7 @@ public class BossProjectile : MonoBehaviour
         if (handler == null) return;
 
         handler.ShowResult("Miss");
-        handler.UpdateHealth(missDamage);
+        handler.UpdateHealth(hitDamage);
     }
 
     public float GetTimeToHit()

@@ -3636,6 +3636,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4481054124087775137, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481054124087775137, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
+      propertyPath: audiomanager
+      value: 
+      objectReference: {fileID: 2967410}
     - target: {fileID: 5696047060393821303, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
       propertyPath: m_IsActive
       value: 0

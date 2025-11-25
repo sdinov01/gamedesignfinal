@@ -86,16 +86,31 @@ public class RhythmManager : MonoBehaviour
             if (knife.sectorIndex == sector)
             {
                 sr = knife.self.GetComponent<SpriteRenderer>();
-                thisknife = knife;
+                StartCoroutine(FlashThenAttack(knife,sr));
+                //thisknife = knife;
                 // StartCoroutine (sequence (sr.color, Color.red));
                 // StartColorLerp (sr.color, Color.red);
                 // StartCoroutine (ColorFlash());
                 
-                knife.TriggerAttack();
+                //knife.TriggerAttack();
                 
                 return; 
             }
         }
+    }
+    IEnumerator FlashThenAttack(KnifeController knife, SpriteRenderer sr)
+    {
+        Color original = sr.color;
+
+        // 变红
+        sr.color = Color.red;
+        yield return new WaitForSeconds(0.3f);
+
+        // 变回原来的颜色
+        sr.color = original;
+
+        // 攻击
+        knife.TriggerAttack();
     }
 
     int GetPlayerSector()

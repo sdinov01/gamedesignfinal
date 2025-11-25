@@ -1004,6 +1004,7 @@ MonoBehaviour:
   player: {fileID: 1839682700}
   controller: {fileID: 1839682694}
   fadeInTime: 2
+  LevelManager: {fileID: 238480025}
   T1Panel: {fileID: 2000722655}
   T1Group: {fileID: 2000722659}
   T1Start: {fileID: 1016552811}
@@ -1166,9 +1167,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e35ccd2683944e69aa287e892849048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 1598560305}
   bpm: 100
   beatspermeasure: 4
+  time: 0
   dspstart: 0
   Ebeatint: 0
   Qbeatint: 0
@@ -2208,7 +2209,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12, y: 86}
+  m_AnchoredPosition: {x: -12, y: 77}
   m_SizeDelta: {x: 439.033, y: 342.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1409432600
@@ -2231,7 +2232,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Listen to the beat. \nAvoid the Knives!"
+  m_text: 'Dodge when you hear the sound of the sword
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2265,7 +2268,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2443,7 +2446,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015259, y: -99}
+  m_AnchoredPosition: {x: -16, y: -147}
   m_SizeDelta: {x: 219.758, y: 74.032}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1539012055

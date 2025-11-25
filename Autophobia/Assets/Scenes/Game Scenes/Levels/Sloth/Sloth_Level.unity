@@ -525,7 +525,7 @@ MonoBehaviour:
   - 74.667
   - 77.333
   bpm: 90
-  spawnPlace: 0000000001000000020000000300000005000000040000000000000001000000020000000300000004000000050000000400000003000000020000000100000000000000010000000200000003000000040000000500000000000000010000000200000001000000000000000100000002000000030000000400000005000000040000000300000002000000
+  spawnPlace: 0000000001000000020000000300000004000000050000000000000001000000020000000300000004000000050000000400000003000000020000000100000000000000010000000200000003000000040000000500000000000000010000000200000001000000000000000100000002000000030000000400000005000000040000000300000002000000
 --- !u!1 &150246001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3156,7 +3156,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!114 &1719357962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3257,8 +3257,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.98291016
-      value: 0.00031661987
+      time: 1
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3636,6 +3636,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4481054124087775137, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481054124087775137, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
+      propertyPath: audiomanager
+      value: 
+      objectReference: {fileID: 2967410}
     - target: {fileID: 5696047060393821303, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
       propertyPath: m_IsActive
       value: 0

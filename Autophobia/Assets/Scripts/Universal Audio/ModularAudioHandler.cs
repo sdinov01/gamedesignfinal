@@ -7,6 +7,7 @@ public class ModularAudioHandler : MonoBehaviour
 {
     public double           bpm;
     public int              beatspermeasure;
+    public float            time;
 
     public static event     Action onEbeat;
     public static event     Action onQbeat;

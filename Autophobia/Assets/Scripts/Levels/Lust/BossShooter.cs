@@ -7,7 +7,7 @@ using UnityEngine;
 public class FiringPhase
 {
     public string name;               
-    public float bpm = 120f;          
+    public float bpm = 130f;          
     public int beatsBetweenShots = 1; 
     public int[] lanePattern;         
     public int beatsInPhase = 16;     

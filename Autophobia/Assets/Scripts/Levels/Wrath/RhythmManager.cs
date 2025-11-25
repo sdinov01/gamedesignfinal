@@ -122,25 +122,6 @@ public class RhythmManager : MonoBehaviour
     }
 
 
-    // int GetPlayerSector()
-    // {
-    //     Vector2 dir = player.position - center.position;
-    //     float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-    //     if (angle < 0) angle += 360f;
-
-    //     // if (angle >180f) 
-    //     //     return -1; 
-
-    //     if (angle > 350f || angle < 20f) return 0;
-    //     if (angle < 50f) return 1;
-    //     if (angle < 90f) return 2;
-    //     if (angle < 130f) return 3;
-    //     if (angle < 170f) return 4;
-    //     if (angle < 240f) return 5; 
-    //     return 5;    // angle: 160–180
-
-    // }
-
     // IEnumerator sequence (Color s, Color e)
     // {
     //     // yield return StartCoroutine (ColorLerp (s, e, offsetTime));
@@ -197,7 +178,7 @@ public class RhythmManager : MonoBehaviour
 
         if (!musicSource.isPlaying) 
         {
-            if (health.healthLeft() > 0) 
+            if (health.healthLeft() > 0 && musicSource.time >= musicSource.clip.length - 0.1f) 
             {
                 Debug.Log("end");
                 UnityEngine.SceneManagement.SceneManager.LoadScene("wrath_end_dialogue");

@@ -16,6 +16,9 @@ public class GameHandler : MonoBehaviour
 
     private float timer = 0f;
     private Circle currentCircle;
+    public AudioSource musicSource;
+    public healthBar health;
+    //private bool musicStarted = false;
     public void SetCurrentCircle(Circle c)
     {
         currentCircle = c;
@@ -29,6 +32,7 @@ public class GameHandler : MonoBehaviour
     }
     void Update()
     {
+        checkMusicEnd();
     }  
     
     public void ShowResult(string result)
@@ -72,6 +76,19 @@ public class GameHandler : MonoBehaviour
             #else
             Application.Quit();
             #endif
+    }
+
+    void checkMusicEnd()
+    {    
+
+        if (!musicSource.isPlaying) 
+        {
+            if (health.healthLeft() > 0 && musicSource.time >= musicSource.clip.length - 0.1f) 
+            {
+                Debug.Log("end");
+                UnityEngine.SceneManagement.SceneManager.LoadScene("sloth_end_dialogue");
+            }
+        }
     }
 
 }

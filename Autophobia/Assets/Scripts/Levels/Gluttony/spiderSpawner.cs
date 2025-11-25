@@ -32,12 +32,14 @@ public class spiderSpawner : MonoBehaviour
     private int spider3index = 0;
     private int spider4index = 0;
     private int currentTime = 0;
+    
 
     /* Determines when to start spawning and pulsing */
     private float startTime = 14.5f;
     private bool skippedAlready = false;
 
     [SerializeField] private TimeBar timeBar;
+    public healthBar health;
    
 
     private void Start()
@@ -116,6 +118,7 @@ public class spiderSpawner : MonoBehaviour
 
     void Update()
     {
+        checkMusicEnd();
         
         /* If the tutorial is skipped, make it the new start time */
         if (gluttonyIntroHandler.GetComponent<gluttonyIntro>().SkippedTutorial() && !skippedAlready)
@@ -151,6 +154,18 @@ public class spiderSpawner : MonoBehaviour
         return second;
     }
 
+    void checkMusicEnd()
+    {    
+
+        if (!audioSource.isPlaying) 
+        {
+            if (health.healthLeft() > 0 && audioSource.time >= audioSource.clip.length - 0.1f) 
+            {
+                Debug.Log("end");
+                UnityEngine.SceneManagement.SceneManager.LoadScene("gluttony_end_dialogue");
+            }
+        }
+    }
    
 
 }

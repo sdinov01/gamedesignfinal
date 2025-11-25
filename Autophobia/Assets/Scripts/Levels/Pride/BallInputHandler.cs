@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class BallInputHandler : MonoBehaviour
 {
     private bool isAtMaxSize = false;
-    [SerializeField] private float inputWindow = 0.15f; // seconds before/after beat
+    [SerializeField] private float inputWindow = 0.25f; // seconds before/after beat
     [SerializeField] private string playerTag = "Player"; // Tag for the player object
     
     private double lastBeatTime;

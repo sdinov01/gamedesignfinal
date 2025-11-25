@@ -25,7 +25,6 @@ public class BeatSync : MonoBehaviour
 
         // Schedule according to when the AudioSource actually starts playing
         dspStartTime = AudioSettings.dspTime;
-
         music.PlayScheduled(dspStartTime);
 
         nextBeatTime = dspStartTime + beatInterval;

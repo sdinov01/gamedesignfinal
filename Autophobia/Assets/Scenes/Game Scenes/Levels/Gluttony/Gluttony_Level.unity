@@ -186,7 +186,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Spiders are invulnerable until the "chomp" is heard, and they pulse to
     further signal vulnerability. You are not required to kill the spiders, but it
-    is easier to navigate if they are dead.
+    is easier to navigate if they are dead. Press space when you touch them to kill
+    them.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

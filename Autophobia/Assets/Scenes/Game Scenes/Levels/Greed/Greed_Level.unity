@@ -3142,11 +3142,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationAmount:
-  - 30
+  - -30
+  - -60
+  - 150
   - 60
-  - 30
-  - 30
-  changeRotation: 000000000c00000000000000
+  - -30
+  - -60
+  - -30
+  - -60
+  - -90
+  - -60
+  - -30
+  - 60
+  - -30
+  changeRotation: 0c00000014000000150000001600000030000000380000003c0000004500000048000000500000005a000000640000006e000000
   rotationDuration:
   - 0.1
   - 0.1

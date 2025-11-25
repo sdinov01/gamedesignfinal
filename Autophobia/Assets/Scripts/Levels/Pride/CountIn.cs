@@ -30,7 +30,7 @@ public class CountIn : MonoBehaviour
         countInText.text = s2;
         yield return new WaitForSeconds ((float)M.beat2int);
         countInText.text = s1;
-        ball.SetActive(true);
+        // ball.SetActive(true);
         yield return new WaitForSeconds ((float)M.beat2int);
         countInText.text = go;
         yield return new WaitForSeconds ((float)M.beat2int);

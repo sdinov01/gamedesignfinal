@@ -26,6 +26,7 @@ public class RhythmManager : MonoBehaviour
     public healthBar health;
     private bool musicStarted = false;
 
+
     void Start()
     {
         beatInterval = 60f / bpm;

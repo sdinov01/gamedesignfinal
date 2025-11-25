@@ -1261,6 +1261,10 @@ PrefabInstance:
       propertyPath: m_text
       value: 'Use WS or the up and down arrows to jump between the platforms. '
       objectReference: {fileID: 0}
+    - target: {fileID: 6897594336104768474, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
+      propertyPath: winScene
+      value: lust_end_dialogue
+      objectReference: {fileID: 0}
     - target: {fileID: 7310996584702040656, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

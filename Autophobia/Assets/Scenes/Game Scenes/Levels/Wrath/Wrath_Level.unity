@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0a512de74824b00a35899938b43e88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
+  playerHealth: {fileID: 1841383950}
   music: {fileID: 1598560305}
   t: {fileID: 916022120}
 --- !u!4 &238480027

@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class gluttonyIntro : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class gluttonyIntro : MonoBehaviour
     [SerializeField] private TMP_Text goodLuck;
     [SerializeField] private Image background;
     [SerializeField] private TMP_Text skip;
+    [SerializeField] private spiderHealthAndDmg spiderHealth;
     /* Delay before the song is played */
     public float musicDelay = 15f;
     public float fadeTime = 5f;
@@ -29,6 +31,16 @@ public class gluttonyIntro : MonoBehaviour
         goodLuck.enabled = false;
         /* Start the tutorial messages */
         tutorialRoutine = StartCoroutine(TutorialMessage());
+
+        /* Type of level determines whether the player can heal off killing spiders */
+        string sceneName = SceneManager.GetActiveScene().name;
+        if (sceneName == "Envy_Level")
+        {
+            spiderHealth.CanHeal(true);
+        } else
+        {
+            spiderHealth.CanHeal(false);
+        }
     }
 
     /* Make intro skippable */

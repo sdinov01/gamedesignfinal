@@ -150,6 +150,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resultText: {fileID: 0}
   displayTime: 1
+  musicSource: {fileID: 1996977026}
+  health: {fileID: 0}
 --- !u!4 &393463473
 Transform:
   m_ObjectHideFlags: 0

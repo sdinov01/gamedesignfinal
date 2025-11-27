@@ -7,6 +7,7 @@ public class spiderHealthAndDmg : MonoBehaviour
     private spiderMovement movement;
     private healthBar health;
     private bool takeDamage;
+    private static bool canHeal = false;
 
     public float hitDuration;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -50,8 +51,18 @@ public class spiderHealthAndDmg : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Destroy(gameObject);
+                /* Player will heal */
+                if (canHeal)
+                {
+                    health.healDamage(1f);
+                }
             }
             yield return null;
         }
+    }
+
+    public void CanHeal(bool heal)
+    {
+        canHeal = heal;
     }
 }

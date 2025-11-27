@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Game Scenes/Levels/Greed/Greed_Level.unity
     guid: 1d6957d7abbfa20419e3047f3a627d42
   - enabled: 1
-    path: Assets/Scenes/Game Scenes/Levels/Lust/Lust_Level.unity
+    path: Assets/Scenes/Game Scenes/Levels/Lust/Lust_Level_Prototype.unity
     guid: 713f81235b8f92f4c956fc7469f65ed5
   - enabled: 0
     path: Assets/Scenes/Game Scenes/Levels/Pride_Level.unity

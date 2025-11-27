@@ -792,6 +792,7 @@ MonoBehaviour:
   goodLuck: {fileID: 1183140603}
   background: {fileID: 1860445096}
   skip: {fileID: 1282148960}
+  spiderHealth: {fileID: 3383082427837304278, guid: a7fa7ea3f345ed34eb50f18911ef0538, type: 3}
   musicDelay: 15
   fadeTime: 2
   fadeDelay: 7
@@ -2009,7 +2010,7 @@ MonoBehaviour:
   - 76.625
   - 78.75
   timeBar: {fileID: 1550033469}
-  health: {fileID: 0}
+  health: {fileID: 2068962258}
 --- !u!1 &1762975430
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,6 +2488,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthImage: {fileID: 2068962255}
+--- !u!114 &2068962258 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3602584289733058953, guid: 9994e71111315964aa1accec3dbda8d5, type: 3}
+  m_PrefabInstance: {fileID: 2068962253}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068962256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62f748ef22f6eb84c8b18a4c9fa7e1af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2144513117
 GameObject:
   m_ObjectHideFlags: 0

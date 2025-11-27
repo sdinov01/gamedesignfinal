@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class spiderSpawner : MonoBehaviour
 {
@@ -162,7 +163,18 @@ public class spiderSpawner : MonoBehaviour
             if (health.healthLeft() > 0 && audioSource.time >= audioSource.clip.length - 0.1f) 
             {
                 Debug.Log("end");
-                UnityEngine.SceneManagement.SceneManager.LoadScene("gluttony_end_dialogue");
+                string sceneName = SceneManager.GetActiveScene().name;
+                if (sceneName == "Gluttony_Level")
+                {
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("gluttony_end_dialogue");
+                } else if (sceneName == "Lust_Level")
+                {
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("lust_end_dialogue");
+                } else if (sceneName == "Envy_Level")
+                {
+                    //UnityEngine.SceneManagement.SceneManager.LoadScene("gluttony_end_dialogue");
+                    // does not exist yet please add.
+                }
             }
         }
     }

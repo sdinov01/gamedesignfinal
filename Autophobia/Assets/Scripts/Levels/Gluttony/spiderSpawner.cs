@@ -4,36 +4,32 @@ using UnityEngine.SceneManagement;
 
 public class spiderSpawner : MonoBehaviour
 {
-    /* Spider prefab */
-    [SerializeField] private GameObject spiderPrefab;
+    /* Enemy prefab */
+    [SerializeField] private GameObject enemy;
 
-    /* Spider spawning and destination locations */
-    [SerializeField] private Transform spawn1;
-    [SerializeField] private Transform spawn2;
-    [SerializeField] private Transform spawn3;
-    [SerializeField] private Transform spawn4;
+    /* Spawning origin */
+    [SerializeField] private Transform[] spawns;
 
-    [SerializeField] private Transform dest1;
-    [SerializeField] private Transform dest2;
-    [SerializeField] private Transform dest3;
-    [SerializeField] private Transform dest4;
+    /* Destination */
+    [SerializeField] private Transform[] destinations;
+
+    /* Indices to spawn enemies */
+    private int[] spawnIndices;
+
+    private float[][] spawnTimes;
 
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private GameObject gluttonyIntroHandler;
 
-    /* When the spider pauses movement */
+    /* When the enemy pauses movement */
     [SerializeField] private float[] pulseTimeStamps;
     [SerializeField] private float[] pulseDuration;
     [SerializeField] private float[] spider1Spawn;
     [SerializeField] private float[] spider2Spawn;
     [SerializeField] private float[] spider3Spawn;
     [SerializeField] private float[] spider4Spawn;
-    private int spider1index = 0;
-    private int spider2index = 0;
-    private int spider3index = 0;
-    private int spider4index = 0;
     private int currentTime = 0;
-    
+
 
     /* Determines when to start spawning and pulsing */
     private float startTime = 14.5f;
@@ -49,10 +45,13 @@ public class spiderSpawner : MonoBehaviour
         StartCoroutine(SpawnWhileAudioPlaying());
         skippedAlready = false;
         startTime = 14.5f;
-        spider1index = 0;
-        spider2index = 0;
-        spider3index = 0;
-        spider4index = 0;
+        spawnIndices = new int[spawns.Length];
+        spawnTimes = new float[spawns.Length][];
+        /* Add the spawns manually */
+        spawnTimes[0] = spider1Spawn;
+        spawnTimes[1] = spider2Spawn;
+        spawnTimes[2] = spider3Spawn;
+        spawnTimes[3] = spider4Spawn;
     }
 
     private IEnumerator SpawnWhileAudioPlaying()
@@ -67,43 +66,26 @@ public class spiderSpawner : MonoBehaviour
 
         while (audioSource.time < audioSource.clip.length)
         {
-            /* Don't spawn if the spiders are currently vulnerable */
-            if (spider1index < spider1Spawn.Length - 1)
+            /* Go through each spawner and check if it's time to spawn a spider */
+            for (int spawner = 0; spawner < spawns.Length; spawner++)
             {
-                float time1 = convertToSecond(spider1Spawn[spider1index]);
-                if (Time.timeSinceLevelLoad >= time1)
+                /* Retrieve the index for the spawn time */
+                int toSpawn = spawnIndices[spawner];
+                /* This index must be a valid index */
+                if (toSpawn <  spawnTimes[spawner].Length - 1)
                 {
-                    SpawnSpider(spawn1, dest1);
-                    spider1index++;
+                    /* Retrieve the spawn time using the index */
+                    float time = convertToSecond(spawnTimes[spawner][toSpawn]);
+                    /* Check if it is time to spawn that spider */
+                    if (Time.timeSinceLevelLoad >= time)
+                    {
+                        /* If it is time, spawn the spider and assign its origin and destination */
+                        SpawnSpider(spawns[spawner], destinations[spawner]);
+                        /* Update the index */
+                        spawnIndices[spawner]++;
+                    }
                 }
-            }
-            if (spider2index < spider2Spawn.Length - 1)
-            {
-                float time2 = convertToSecond(spider2Spawn[spider2index]);
-                if (Time.timeSinceLevelLoad >= time2)
-                {
-                    SpawnSpider(spawn2, dest2);
-                    spider2index++;
-                }
-            }
-            if (spider3index < spider3Spawn.Length - 1)
-            {
-                float time3 = convertToSecond(spider3Spawn[spider3index]);
-                if (Time.timeSinceLevelLoad >= time3)
-                {
-                    SpawnSpider(spawn3, dest3);
-                    spider3index++;
-                }
-            }
-            if (spider4index < spider4Spawn.Length - 1)
-            {
-                float time4 = convertToSecond(spider4Spawn[spider4index]);
-                if (Time.timeSinceLevelLoad >= time4)
-                {
-                    SpawnSpider(spawn4, dest4);
-                    spider4index++;
-                }
-            }          
+            }     
             yield return null;
 
         }
@@ -112,7 +94,7 @@ public class spiderSpawner : MonoBehaviour
     private void SpawnSpider(Transform origin, Transform destination)
     {
         /* Spawn a new spider and initialize its origin and destination */
-        GameObject newSpider = Instantiate(spiderPrefab, origin.position, Quaternion.identity);
+        GameObject newSpider = Instantiate(enemy, origin.position, Quaternion.identity);
         spiderMovement move = newSpider.GetComponent<spiderMovement>();
         move.SetOriginAndDestination(origin, destination);
     }

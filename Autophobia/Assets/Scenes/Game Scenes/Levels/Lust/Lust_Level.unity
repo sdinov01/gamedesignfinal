@@ -719,7 +719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 762916264}
   m_Layer: 0
-  m_Name: Spawn 4
+  m_Name: Origin 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -997,7 +997,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1195315018}
   m_Layer: 0
-  m_Name: Spawn 5
+  m_Name: Destination 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1028,7 +1028,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1218123453}
   m_Layer: 0
-  m_Name: Spawn 8
+  m_Name: Destination 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1059,7 +1059,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1221105695}
   m_Layer: 0
-  m_Name: Spawn 2
+  m_Name: Destination 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1226,7 +1226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1334929157}
   m_Layer: 0
-  m_Name: Spawn 6
+  m_Name: Origin 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1257,7 +1257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1412348516}
   m_Layer: 0
-  m_Name: Spawn 7
+  m_Name: Origin 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1484,7 +1484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1492540235}
   m_Layer: 0
-  m_Name: Spawn 3
+  m_Name: Destination 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1647,13 +1647,13 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1762975431}
-  - {fileID: 1221105695}
-  - {fileID: 1492540235}
   - {fileID: 762916264}
-  - {fileID: 1195315018}
   - {fileID: 1334929157}
   - {fileID: 1412348516}
   - {fileID: 1218123453}
+  - {fileID: 1195315018}
+  - {fileID: 1221105695}
+  - {fileID: 1492540235}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1595698599
@@ -1668,7 +1668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6fc2b9ea1adb5f4bbd2604a985ab697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spiderPrefab: {fileID: 2130984167284008389, guid: a7fa7ea3f345ed34eb50f18911ef0538, type: 3}
+  enemy: {fileID: 2130984167284008389, guid: a7fa7ea3f345ed34eb50f18911ef0538, type: 3}
   spawn1: {fileID: 1762975431}
   spawn2: {fileID: 762916264}
   spawn3: {fileID: 1334929157}
@@ -1677,6 +1677,16 @@ MonoBehaviour:
   dest2: {fileID: 1195315018}
   dest3: {fileID: 1221105695}
   dest4: {fileID: 1492540235}
+  spawns:
+  - {fileID: 1762975431}
+  - {fileID: 762916264}
+  - {fileID: 1334929157}
+  - {fileID: 1412348516}
+  destinations:
+  - {fileID: 1218123453}
+  - {fileID: 1195315018}
+  - {fileID: 1221105695}
+  - {fileID: 1492540235}
   audioSource: {fileID: 1908021268}
   gluttonyIntroHandler: {fileID: 836761431}
   pulseTimeStamps: []
@@ -1971,7 +1981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1762975431}
   m_Layer: 0
-  m_Name: Spawn 1
+  m_Name: Origin 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

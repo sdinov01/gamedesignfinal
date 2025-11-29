@@ -8,6 +8,9 @@ TagManager:
   - Platform
   - Spawner
   - HealthBar
+  - SFX
+  - EndScene
+  - MusicPlayer
   layers:
   - Default
   - TransparentFX
@@ -62,6 +65,9 @@ TagManager:
     locked: 0
   - name: Pause Menu
     uniqueID: 4142687053
+    locked: 0
+  - name: End
+    uniqueID: 3992428045
     locked: 0
   m_RenderingLayers:
   - Default

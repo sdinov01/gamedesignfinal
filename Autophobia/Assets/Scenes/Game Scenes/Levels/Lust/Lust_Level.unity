@@ -1669,14 +1669,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 2130984167284008389, guid: a7fa7ea3f345ed34eb50f18911ef0538, type: 3}
-  spawn1: {fileID: 1762975431}
-  spawn2: {fileID: 762916264}
-  spawn3: {fileID: 1334929157}
-  spawn4: {fileID: 1412348516}
-  dest1: {fileID: 1218123453}
-  dest2: {fileID: 1195315018}
-  dest3: {fileID: 1221105695}
-  dest4: {fileID: 1492540235}
   spawns:
   - {fileID: 1762975431}
   - {fileID: 762916264}
@@ -2042,7 +2034,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

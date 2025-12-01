@@ -20,7 +20,7 @@ public class ConditionalEnd : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((timer.time >= 10) && !scenecalled)
+        if ((timer.time >= 92) && !scenecalled)
         {
             scenecalled = true;
             if (SM.successes >= pointsneeded )

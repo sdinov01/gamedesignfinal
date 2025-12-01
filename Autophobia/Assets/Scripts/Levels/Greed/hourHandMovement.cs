@@ -26,11 +26,13 @@ public class handMovement : MonoBehaviour
     private GameObject currentSlice = null;
     [SerializeField] private AudioSource audio;
     [SerializeField] private restrictMovement rm;
+    private bool firstRotation = false;
+    private bool canChange = false;
 
 
     public IEnumerator performRotations()
     {
-        float rotationAmt = rotationAmount[rotationIndex] * 2;
+        float rotationAmt = (rotationAmount[rotationIndex] * 2) % 360;
         float currentDuration = rotationDuration[rotationIndex];
         /* Begin rotations when audio starts playing */
         yield return new WaitUntil(() => audio.isPlaying);
@@ -42,6 +44,10 @@ public class handMovement : MonoBehaviour
             {
                 break;
             }
+            if (currentRotation == 0)
+            {
+                firstRotation = true;
+            }
             yield return new WaitUntil(() => audio.time >= rotationTimes[currentRotation]);
             /* Rotation and its duration will change */
             if (rotationIndex < changeRotation.Length && currentRotation < rotationTimes.Length)
@@ -49,27 +55,28 @@ public class handMovement : MonoBehaviour
                 if (currentRotation >= changeRotation[rotationIndex] && rotationIndex < rotationAmount.Length - 1)
                 {
                     rotationIndex++;
-                    rotationAmt = rotationAmount[rotationIndex] * 2;
+                    rotationAmt = (rotationAmount[rotationIndex] * 2) % 360;
                     currentDuration = rotationDuration[rotationIndex];
+                    //firstRotation = true;
                 }
             }
-
-            /* Perform rotation */
-            if (currentRotation % 4 == 1){
-                Debug.Log("HI IM ODD");
-                rotationAmt -= 15;
-            } else if (currentRotation % 4 == 2){
+            /* Perform rotation and shift so it touches two slices now. */
+            if (firstRotation && rotationAmt % 30 == 0)
+            {
                 rotationAmt += 15;
-                Debug.Log("HI IM EVEN");
+            } else if (firstRotation && (rotationAmt % 30 == 15 || rotationAmt % 30 == -15))
+            {
+                rotationAmt -= 15;
+                firstRotation = false;
             }
             yield return StartCoroutine(PerformRotation(rotationAmt, currentDuration));
             currentRotation++;
-            StartCoroutine(rm.ChangeColor(currentDuration));
         }
     }
 
     public IEnumerator PerformRotation(float rotation, float time)
     {
+        canChange = false;
         float elapsed = 0f;
         float startZ = transform.eulerAngles.z;
         float targetZ = startZ + rotation;
@@ -92,16 +99,21 @@ public class handMovement : MonoBehaviour
             transform.eulerAngles.y,
             targetZ
         );
+        canChange = true;
     }
 
 
-    void OnCollisionEnter2D(Collision2D collision)
+    public bool CanChangeColor()
     {
-        currentSlice = collision.gameObject;
+        return canChange;
     }
 
-    public GameObject GetCurrentSlice()
-    {
-        return currentSlice;
-    }
+    //public bool SetChangeColor(float canChange)
+    //{
+    //    this.canChange = canChange;
+    //}
+    //public GameObject GetCurrentSlice()
+    //{
+    //    return currentSlice;
+    //}
 }

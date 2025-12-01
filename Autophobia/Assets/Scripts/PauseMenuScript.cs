@@ -13,7 +13,17 @@ public class PauseMenuHandler : MonoBehaviour {
         public AudioSource musicSource;
         public float volumeLevel = 1.0f;
         public Slider sliderVolumeCtrl;
-        public Animator pauseAnimator;
+        public GameObject pauseAnimObject;
+        public GameObject image;
+        public GameObject pauseButton;
+
+        public GameObject Button1;
+        public GameObject Button2;
+        public GameObject Button3;
+        public GameObject Button4;
+        public GameObject Button5;
+        public GameObject Button6;
+
 
         void Awake(){
                 SetVolume (volumeLevel);
@@ -25,6 +35,7 @@ public class PauseMenuHandler : MonoBehaviour {
 
         void Start(){
                 pauseMenuUI.SetActive(false);
+                pauseAnimObject.SetActive(false);
                 GameisPaused = false;
         }
 
@@ -37,21 +48,43 @@ public class PauseMenuHandler : MonoBehaviour {
 
         public void Pause(){
                 if (!GameisPaused){
+                        image.SetActive(false);
+                        pauseButton.SetActive(false);
                         pauseMenuUI.SetActive(true);
+                        Button1.SetActive(false);
+                        Button2.SetActive(false);
+                        Button3.SetActive(false);
+                        Button4.SetActive(false);
+                        Button5.SetActive(false);
+                        Button6.SetActive(false);
 
-                        Animator anim = pauseMenuUI.GetComponent<Animator>();
-                        anim.Play("Pause_anim", 0, 0f);
-                        
+                        pauseAnimObject.SetActive(true);
+                        StartCoroutine(ShowButtonAfterDelay());
+
                         Time.timeScale = 0f;
                         AudioListener.pause = true;
                         GameisPaused = true;}
-             else { Resume (); }
-             //NOTE: This function is for the pause button
+                else { Resume (); }
+                //NOTE: This function is for the pause button
+        }
+        IEnumerator ShowButtonAfterDelay()
+        {
+                yield return new WaitForSecondsRealtime(1.5f);
+                Debug.Log("delay");
+                Button1.SetActive(true);
+                Button2.SetActive(true);
+                Button3.SetActive(true);
+                Button4.SetActive(true);
+                Button5.SetActive(true);
+                Button6.SetActive(true);
         }
 
         public void Resume(){
                 //Debug.Log("Clicked resume button");
+                pauseAnimObject.SetActive(false);
                 pauseMenuUI.SetActive(false);
+                image.SetActive(true);
+                pauseButton.SetActive(true);
                 Time.timeScale = 1f;
                 AudioListener.pause = false;
                 GameisPaused = false;

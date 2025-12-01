@@ -2664,6 +2664,10 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 7225490054921102787, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 2014785275}
+    - target: {fileID: 7225490054921102787, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
       propertyPath: musicSource
       value: 
       objectReference: {fileID: 1598560305}

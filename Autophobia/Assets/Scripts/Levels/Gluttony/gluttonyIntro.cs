@@ -13,8 +13,8 @@ public class gluttonyIntro : MonoBehaviour
     [SerializeField] private TMP_Text skip;
     [SerializeField] private spiderHealthAndDmg spiderHealth;
     /* Delay before the song is played */
-    public float musicDelay = 15f;
-    public float fadeTime = 5f;
+    public float musicDelay = 27f;
+    public float fadeTime = 1.5f;
     public float fadeDelay = 11f;
 
     private Coroutine tutorialRoutine;
@@ -23,7 +23,7 @@ public class gluttonyIntro : MonoBehaviour
     void Start()
     {
         /* Default */
-        musicDelay = 15f;
+        musicDelay = 27f;
         skipTutorial = false;
         audioSource.Stop();
         audioSource.PlayDelayed(musicDelay);
@@ -63,41 +63,63 @@ public class gluttonyIntro : MonoBehaviour
 
     private IEnumerator TutorialMessage()
     {
+        yield return StartCoroutine(FadeIn(tutorial));
+
         yield return new WaitForSeconds(fadeDelay);
         if (skipTutorial) yield break;
         StartCoroutine(FadeOut(tutorial));
         yield return new WaitForSeconds(2.5f);
         if (skipTutorial) yield break;
-        goodLuck.enabled = true;
+
+        yield return StartCoroutine(FadeIn(goodLuck));
+        //goodLuck.enabled = true;
         yield return new WaitForSeconds(2f);
         if (skipTutorial) yield break;
         StartCoroutine(FadeOut(goodLuck));
-        StartCoroutine(FadeOutImage(background));
+        background.gameObject.SetActive(false);
+        //StartCoroutine(FadeOutImage(background));
         StartCoroutine(FadeOut(skip));
         yield return new WaitForSeconds(fadeTime);
     }
-
-    private IEnumerator FadeOutImage(Image background)
+    private IEnumerator FadeIn(TMP_Text text)
     {
-        Color c = background.color;
-        float startAlpha = c.a;
+        text.enabled = true;
+        Color c = text.color;
         float t = 0;
 
         while (t < fadeTime)
         {
-            if (skipTutorial)
-            {
-                break;
-            }
+            if (skipTutorial) yield break;
+
             t += Time.deltaTime;
-            float alpha = Mathf.Lerp(startAlpha, 0, t / fadeTime);
-            background.color = new Color(c.r, c.g, c.b, alpha);
+            float alpha = Mathf.Lerp(0, 1, t / fadeTime);
+            text.color = new Color(c.r, c.g, c.b, alpha);
             yield return null;
         }
 
-        background.color = new Color(c.r, c.g, c.b, 0);
-        background.enabled = false;
+        text.color = new Color(c.r, c.g, c.b, 1);
     }
+    // private IEnumerator FadeOutImage(Image background)
+    // {
+    //     Color c = background.color;
+    //     float startAlpha = c.a;
+    //     float t = 0;
+
+    //     while (t < fadeTime)
+    //     {
+    //         if (skipTutorial)
+    //         {
+    //             break;
+    //         }
+    //         t += Time.deltaTime;
+    //         float alpha = Mathf.Lerp(startAlpha, 0, t / fadeTime);
+    //         background.color = new Color(c.r, c.g, c.b, alpha);
+    //         yield return null;
+    //     }
+
+    //     background.color = new Color(c.r, c.g, c.b, 0);
+    //     background.enabled = false;
+    // }
     private IEnumerator FadeOut(TMP_Text text)
     {
         Color c = text.color;

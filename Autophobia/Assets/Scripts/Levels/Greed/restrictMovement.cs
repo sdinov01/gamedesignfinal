@@ -1,81 +1,74 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class restrictMovement : MonoBehaviour
 {
-    /* Handles color change */
+    /* Color behavior */
     [SerializeField] private Color[] colors;
     [SerializeField] private float[] colorDuration;
     [SerializeField] private float[] changeDuration;
     private int durationIndex = 0;
 
-    /* Handles whether to change color */
+    /* Slices touched */
+    private Dictionary<GameObject, Coroutine> activeCoroutines = new Dictionary<GameObject, Coroutine>();
+
+    /* Interaction with hand */
     [SerializeField] private handMovement hourHand;
-    private bool inRed = false;
-    private bool takeDamage = true;
-    private GameObject currentSlice;
 
-    /* Handles effects */
-    [SerializeField] private healthBar health;
-    [SerializeField] private cameraShake camShake;
+    /* Damage system */
     [SerializeField] private AudioSource audio;
+    private bool takeDamage = true;
 
-    void OnCollisionStay2D(Collision2D collision)
-    {
-        /* If we are already taking damage, return so we don't take additional damage. */
-        Renderer slice = collision.gameObject.GetComponent<Renderer>();
-        inRed = (slice.material.GetColor("_Color") == colors[2]);
-    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        /* If the player is in a red slice, take damage */
-        Renderer slice = collision.gameObject.GetComponent<Renderer>();
-        inRed = (slice.material.GetColor("_Color") == colors[2]);
+        GameObject slice = collision.gameObject;
     }
+
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        GameObject slice = collision.gameObject;
+
+        /* If we are able to change color */
+        if (hourHand.CanChangeColor())
+        {
+            /* Check if the slice is already changing color. If so, stop that coroutine */
+            if (activeCoroutines.ContainsKey(slice))
+            {
+                StopCoroutine(activeCoroutines[slice]);
+                activeCoroutines.Remove(slice);
+            }
+
+            /* Start new color animation */
+            Coroutine co = StartCoroutine(ChangeColor(slice));
+            activeCoroutines[slice] = co;
+        }
+    }
+
 
     void Update()
     {
-        /* Duration of the color change has to be updated */
-        if (audio.time >= changeDuration[durationIndex] && durationIndex < changeDuration.Length - 1)
+        if (durationIndex < changeDuration.Length - 1 && audio.time >= changeDuration[durationIndex])
         {
             durationIndex++;
         }
     }
-    void FixedUpdate()
+
+    public IEnumerator ChangeColor(GameObject slice)
     {
-        /* Take damage when this is true */
-        if (takeDamage && inRed)
+        if (slice == null) yield break;
+
+        Renderer rend = slice.GetComponent<Renderer>();
+        if (rend == null) yield break;
+
+        float step = colorDuration[durationIndex];
+
+        /* Change color of slice */
+        for (int i = 0; i < colors.Length; i++)
         {
-            StartCoroutine(damage());
+            rend.material.SetColor("_Color", colors[i]);
+            yield return new WaitForSeconds(step);
         }
     }
-
-    private IEnumerator damage()
-    {
-        takeDamage = false;
-        camShake.SetShake(true);
-        health.takeDamage(7.5f);
-        yield return new WaitForSeconds(0.8f);
-        takeDamage = true;
-    }
-
-    /* Change color of slice */
-    public IEnumerator ChangeColor(float time)
-    {
-        /* Wait to finish rotation */
-        yield return new WaitForSeconds(time);
-        /* Retrieve the slice to change the color of */
-        currentSlice = hourHand.GetCurrentSlice();
-        float colorTime = colorDuration[durationIndex];
-        Renderer colorRenderer = currentSlice.GetComponent<Renderer>();
-        colorRenderer.material.SetColor("_Color", colors[0]);
-        yield return new WaitForSeconds(colorTime);
-        colorRenderer.material.SetColor("_Color", colors[1]);
-        yield return new WaitForSeconds(colorTime);
-        colorRenderer.material.SetColor("_Color", colors[2]);
-        yield return new WaitForSeconds(colorTime);
-        colorRenderer.material.SetColor("_Color", colors[3]);
-    }
-
 }

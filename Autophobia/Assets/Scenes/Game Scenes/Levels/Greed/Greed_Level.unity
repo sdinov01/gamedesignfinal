@@ -1181,7 +1181,6 @@ GameObject:
   - component: {fileID: 256854830}
   - component: {fileID: 256854831}
   - component: {fileID: 256854833}
-  - component: {fileID: 256854832}
   - component: {fileID: 256854834}
   m_Layer: 0
   m_Name: Minute Hand
@@ -1220,35 +1219,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationAmount: 150
---- !u!114 &256854832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256854829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab86d1ecb7c5b3f499f75771d2de1f0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colors:
-  - {r: 0.40392157, g: 0.31764707, b: 0.28627452, a: 0.6862745}
-  - {r: 0.24705882, g: 0.14901961, b: 0.11372549, a: 0.8509804}
-  - {r: 0.30980393, g: 0.043137256, b: 0.019607844, a: 0.92941177}
-  - {r: 1, g: 1, b: 1, a: 0.92941177}
-  colorDuration:
-  - 2
-  - 1
-  - 0.5
-  changeDuration:
-  - 30
-  - 45
-  - 60
-  hourHand: {fileID: 1584120215}
-  health: {fileID: 1330991106}
+  health: {fileID: 1330991107}
   camShake: {fileID: 158816886}
-  audio: {fileID: 1706556084}
+  red: {r: 0.30980393, g: 0.043137256, b: 0.019607844, a: 0.92941177}
 --- !u!61 &256854833
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3110,6 +3083,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthImage: {fileID: 264073356}
+--- !u!114 &1330991107 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3602584289733058953, guid: 9994e71111315964aa1accec3dbda8d5, type: 3}
+  m_PrefabInstance: {fileID: 6222274539252396322}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968110393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62f748ef22f6eb84c8b18a4c9fa7e1af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1407782588
 GameObject:
   m_ObjectHideFlags: 0
@@ -3245,6 +3229,7 @@ GameObject:
   - component: {fileID: 1584120215}
   - component: {fileID: 1584120216}
   - component: {fileID: 1584120217}
+  - component: {fileID: 1584120218}
   m_Layer: 0
   m_Name: Pivot
   m_TagString: Untagged
@@ -3441,7 +3426,7 @@ MonoBehaviour:
   - 92
   - 96
   audio: {fileID: 1706556084}
-  rm: {fileID: 256854832}
+  rm: {fileID: 0}
 --- !u!61 &1584120216
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3476,7 +3461,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.009487629, y: -0.92689836}
+  m_Offset: {x: 0.009487584, y: -0.92689836}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3486,7 +3471,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.09825039, y: 1.3089402}
+  m_Size: {x: 0.37972388, y: 1.3089402}
   m_EdgeRadius: 0
 --- !u!50 &1584120217
 Rigidbody2D:
@@ -3515,6 +3500,33 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1584120218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584120212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab86d1ecb7c5b3f499f75771d2de1f0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors:
+  - {r: 0.40392157, g: 0.31764707, b: 0.28627452, a: 0.6862745}
+  - {r: 0.24705882, g: 0.14901961, b: 0.11372549, a: 0.8509804}
+  - {r: 0.30980393, g: 0.043137256, b: 0.019607844, a: 0.92941177}
+  - {r: 1, g: 1, b: 1, a: 0.92941177}
+  colorDuration:
+  - 2
+  - 1
+  - 0.5
+  changeDuration:
+  - 30
+  - 45
+  - 60
+  hourHand: {fileID: 1584120215}
+  audio: {fileID: 1706556084}
 --- !u!1 &1602948720
 GameObject:
   m_ObjectHideFlags: 0

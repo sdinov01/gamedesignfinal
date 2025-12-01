@@ -492,6 +492,13 @@ MonoBehaviour:
   - {fileID: 1066337837}
   - {fileID: 735165776}
   - {fileID: 1865390756}
+  lights:
+  - {fileID: 478158451}
+  - {fileID: 1787020355}
+  - {fileID: 1914520500}
+  - {fileID: 1733309749}
+  - {fileID: 1780443372}
+  - {fileID: 1579989472}
   spawnTimes:
   - 1.333
   - 4
@@ -1526,6 +1533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 713310870}
   - component: {fileID: 713310869}
+  - component: {fileID: 713310871}
   m_Layer: 0
   m_Name: light
   m_TagString: Untagged
@@ -1613,6 +1621,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &713310871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713310868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &715398681
 GameObject:
   m_ObjectHideFlags: 0

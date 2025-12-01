@@ -29,7 +29,10 @@ public class spiderMovement : MonoBehaviour
         if (isPulsingGlobal)
         {
             // Turn red and don't move
-            spriteRenderer.color = Color.red;
+            if (gameObject.tag == "Spider")
+            {
+                spriteRenderer.color = Color.red;
+            }
 
             // End of pulse?
             if (Time.time >= pulseEndTime)

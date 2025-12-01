@@ -6,6 +6,7 @@ public class spiderSpawner : MonoBehaviour
 {
     /* Enemy prefab */
     [SerializeField] private GameObject enemy;
+    [SerializeField] private GameObject enemy2;
 
     /* Spawning origin */
     [SerializeField] private Transform[] spawns;
@@ -28,6 +29,7 @@ public class spiderSpawner : MonoBehaviour
     [SerializeField] private float[] spider2Spawn;
     [SerializeField] private float[] spider3Spawn;
     [SerializeField] private float[] spider4Spawn;
+    [SerializeField] private float[] healSpiderSpawn;
     private int currentTime = 0;
 
 
@@ -52,6 +54,7 @@ public class spiderSpawner : MonoBehaviour
         spawnTimes[1] = spider2Spawn;
         spawnTimes[2] = spider3Spawn;
         spawnTimes[3] = spider4Spawn;
+        spawnTimes[4] = healSpiderSpawn;
     }
 
     private IEnumerator SpawnWhileAudioPlaying()
@@ -80,7 +83,7 @@ public class spiderSpawner : MonoBehaviour
                     if (Time.timeSinceLevelLoad >= time)
                     {
                         /* If it is time, spawn the spider and assign its origin and destination */
-                        SpawnSpider(spawns[spawner], destinations[spawner]);
+                        SpawnSpider(spawns[spawner], destinations[spawner], (spawner == 4));
                         /* Update the index */
                         spawnIndices[spawner]++;
                     }
@@ -91,10 +94,22 @@ public class spiderSpawner : MonoBehaviour
         }
     }
 
-    private void SpawnSpider(Transform origin, Transform destination)
+    private void SpawnSpider(Transform origin, Transform destination, bool heal)
     {
         /* Spawn a new spider and initialize its origin and destination */
-        GameObject newSpider = Instantiate(enemy, origin.position, Quaternion.identity);
+        GameObject newSpider;
+        if (heal && enemy2 != null)
+        {
+            newSpider = Instantiate(enemy2, origin.position, Quaternion.identity);
+        } else if (enemy != null)
+        {
+            newSpider = Instantiate(enemy, origin.position, Quaternion.identity);
+        } else
+        {
+            Debug.Log("wahwah");
+            return;
+        }
+
         spiderMovement move = newSpider.GetComponent<spiderMovement>();
         move.SetOriginAndDestination(origin, destination);
     }

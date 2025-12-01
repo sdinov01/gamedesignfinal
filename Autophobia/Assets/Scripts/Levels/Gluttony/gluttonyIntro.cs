@@ -31,16 +31,6 @@ public class gluttonyIntro : MonoBehaviour
         goodLuck.enabled = false;
         /* Start the tutorial messages */
         tutorialRoutine = StartCoroutine(TutorialMessage());
-
-        /* Type of level determines whether the player can heal off killing spiders */
-        string sceneName = SceneManager.GetActiveScene().name;
-        if (sceneName == "Envy_Level")
-        {
-            spiderHealth.CanHeal(true);
-        } else
-        {
-            spiderHealth.CanHeal(false);
-        }
     }
 
     /* Make intro skippable */

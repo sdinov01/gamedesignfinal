@@ -11,6 +11,8 @@ TagManager:
   - SFX
   - EndScene
   - MusicPlayer
+  - Spider
+  - HealSpider
   layers:
   - Default
   - TransparentFX

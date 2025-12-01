@@ -1,34 +1,22 @@
 using UnityEngine;
 using System.Collections;
 
-public class spiderHealthAndDmg : MonoBehaviour
+public class SpiderHealth : MonoBehaviour
 {
-    private SpriteRenderer renderer;
     private healthBar health;
-
     public float hitDuration;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float healAmt;
+
     void Start()
     {
-        renderer = this.GetComponent<SpriteRenderer>();
         health = GameObject.FindWithTag("HealthBar").GetComponent<healthBar>();
     }
-
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            /* Spider is vulnerable when red */
-            if (renderer.color == Color.red)
-            {
-                StartCoroutine(PlayerHit());
-            }
-            else
-            {
-                /* Player takes damage otherwise */
-                health.takeDamage(1.6f);
-            }
+            StartCoroutine(PlayerHit());
         }
     }
 
@@ -41,9 +29,9 @@ public class spiderHealthAndDmg : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Destroy(gameObject);
+                health.healDamage(healAmt);
             }
             yield return null;
         }
     }
-
 }

@@ -1840,12 +1840,18 @@ MonoBehaviour:
   - {fileID: 1334929157}
   - {fileID: 1412348516}
   - {fileID: 1534862710}
+  - {fileID: 1534862710}
+  - {fileID: 1534862710}
+  - {fileID: 1534862710}
   destinations:
   - {fileID: 1218123453}
   - {fileID: 1195315018}
   - {fileID: 1221105695}
   - {fileID: 1492540235}
   - {fileID: 1135738356}
+  - {fileID: 1587760483}
+  - {fileID: 1816082112}
+  - {fileID: 557409814}
   audioSource: {fileID: 1908021268}
   gluttonyIntroHandler: {fileID: 836761431}
   pulseTimeStamps:
@@ -2177,6 +2183,15 @@ MonoBehaviour:
   - 76.625
   - 78.75
   healSpiderSpawn1:
+  - 0
+  - 2
+  healSpiderSpawn2:
+  - 0
+  - 2
+  healSpiderSpawn3:
+  - 0
+  - 2
+  healSpiderSpawn4:
   - 0
   - 2
   timeBar: {fileID: 1550033469}

@@ -30,6 +30,9 @@ public class spiderSpawner : MonoBehaviour
     [SerializeField] private float[] spider3Spawn;
     [SerializeField] private float[] spider4Spawn;
     [SerializeField] private float[] healSpiderSpawn1;
+    [SerializeField] private float[] healSpiderSpawn2;
+    [SerializeField] private float[] healSpiderSpawn3;
+    [SerializeField] private float[] healSpiderSpawn4;
     private int currentTime = 0;
 
 
@@ -55,6 +58,9 @@ public class spiderSpawner : MonoBehaviour
         spawnTimes[2] = spider3Spawn;
         spawnTimes[3] = spider4Spawn;
         spawnTimes[4] = healSpiderSpawn1;
+        spawnTimes[5] = healSpiderSpawn2;
+        spawnTimes[6] = healSpiderSpawn3;
+        spawnTimes[7] = healSpiderSpawn4;
     }
 
     private IEnumerator SpawnWhileAudioPlaying()
@@ -83,7 +89,7 @@ public class spiderSpawner : MonoBehaviour
                     if (Time.timeSinceLevelLoad >= time)
                     {
                         /* If it is time, spawn the spider and assign its origin and destination */
-                        SpawnSpider(spawns[spawner], destinations[spawner], (spawner == 4));
+                        SpawnSpider(spawns[spawner], destinations[spawner], (spawner >= 4));
                         Debug.Log("SPAWNED SPIDER");
                         /* Update the index */
                         spawnIndices[spawner]++;
@@ -102,14 +108,12 @@ public class spiderSpawner : MonoBehaviour
         if (heal && enemy2 != null)
         {
             newSpider = Instantiate(enemy2, origin.position, Quaternion.identity);
-            Debug.Log("heal");
         } else if (enemy != null)
         {
             newSpider = Instantiate(enemy, origin.position, Quaternion.identity);
-            Debug.Log("not heal");
         } else
         {
-            Debug.Log("wahwah");
+            Debug.Log("One of the prefabs is not set");
             return;
         }
 

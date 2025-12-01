@@ -13,6 +13,7 @@ public class PauseMenuHandler : MonoBehaviour {
         public AudioSource musicSource;
         public float volumeLevel = 1.0f;
         public Slider sliderVolumeCtrl;
+        public Animator pauseAnimator;
 
         void Awake(){
                 SetVolume (volumeLevel);
@@ -37,6 +38,10 @@ public class PauseMenuHandler : MonoBehaviour {
         public void Pause(){
                 if (!GameisPaused){
                         pauseMenuUI.SetActive(true);
+
+                        Animator anim = pauseMenuUI.GetComponent<Animator>();
+                        anim.Play("Pause_anim", 0, 0f);
+                        
                         Time.timeScale = 0f;
                         AudioListener.pause = true;
                         GameisPaused = true;}

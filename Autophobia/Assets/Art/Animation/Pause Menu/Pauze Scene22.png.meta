@@ -122,10 +122,10 @@ TextureImporter:
       name: Pauze Scene22_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 657
-        width: 47
-        height: 47
+        x: 0
+        y: 0
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,55 +140,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Pauze Scene22_1
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 686
-        width: 27
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7a654e1808a7d16c0800000000000000
-      internalID: -4171042987521583449
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pauze Scene22_2
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 35
-        width: 1188
-        height: 685
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d1e42878266dff8e0800000000000000
-      internalID: -1657370419180450275
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5af0b708eb58442628933ab0db0af9a0
     internalID: 0
     vertices: []
     indices: 
@@ -199,8 +155,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Pauze Scene22_0: 1200011690825238132
-      Pauze Scene22_1: -4171042987521583449
-      Pauze Scene22_2: -1657370419180450275
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

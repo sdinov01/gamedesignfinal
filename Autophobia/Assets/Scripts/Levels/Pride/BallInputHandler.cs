@@ -20,7 +20,7 @@ public class BallInputHandler : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindWithTag (playerTag);
+        player          = GameObject.FindWithTag (playerTag);
 
         thiscollider    = transform.GetComponent<Collider2D>();
         playercollider  = player.GetComponent<Collider2D>();
@@ -47,6 +47,9 @@ public class BallInputHandler : MonoBehaviour
     void Update()
     {
         bool colliderin = thiscollider.IsTouching(playercollider);
+
+
+
 
         if (Input.GetKeyDown(KeyCode.Space) && canScore && canInput)
         {

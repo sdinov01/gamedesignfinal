@@ -7,8 +7,11 @@ public class BallLifetime : MonoBehaviour
     private float scaleIncreasePerBeat = 0.08f;
     private Vector3 initialScale;
     private BallInputHandler inputHandler;
+    private BallDmgHandler damageHandler;
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
+    private Color affected;
+    public bool canHurt = false;
 
     void Start()
     {
@@ -23,6 +26,8 @@ public class BallLifetime : MonoBehaviour
         {
             originalColor = spriteRenderer.color;
         }
+
+        affected    = GameObject.FindWithTag("ColorSource").GetComponent<SpriteRenderer>().color;
     }
 
     void OnEnable()
@@ -48,22 +53,29 @@ public class BallLifetime : MonoBehaviour
         // Check if this is the last beat (biggest size)
         if (beatsRemaining == 1)
         {
+            canHurt = true;
+
             if (inputHandler != null)
             {
-                inputHandler.SetAtMaxSize(true);
+                inputHandler.SetAtMaxSize(true); 
             }
             
             // Turn green at max size
             if (spriteRenderer != null)
             {
-                spriteRenderer.color = Color.green;
+                spriteRenderer.color = affected;
             }
         }
         
         if (beatsRemaining <= 0)
         {
-            Destroy(gameObject);
+            EndLife();
         }
+    }
+
+    public void EndLife()
+    {
+        Destroy(gameObject);
     }
 
     // void OnHalfBeat ()

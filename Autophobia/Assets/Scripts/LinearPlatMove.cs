@@ -158,7 +158,7 @@ public class linearPlatMove : MonoBehaviour
     else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         target = GetTargetPlatform(current.up);
 
-    else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+    else if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.S))
         target = GetTargetPlatform(current.down);
 
     if (target != null)

@@ -15,6 +15,8 @@ public class CountIn : MonoBehaviour
     public BeatSync BS;
     private int countdown = 3;
     public Timer T;
+    public SpriteRenderer prideart;
+    public SpriteRenderer centercircle;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -47,6 +49,7 @@ public class CountIn : MonoBehaviour
         T.gameObject.SetActive (true);
         BS.enabled = true;
         music.gameObject.SetActive (true);
-        
+        prideart.enabled = true;
+        centercircle.color = Color.white;
     }
 }

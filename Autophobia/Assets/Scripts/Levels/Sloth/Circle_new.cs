@@ -88,9 +88,9 @@ public class Circle : MonoBehaviour
             playerInside = true;
     }
 
-    // void OnTriggerExit2D(Collider2D other)
-    // {
-    //     if (other.CompareTag("Player"))
-    //         playerInside = false;
-    // }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+            playerInside = false;
+    }
 }

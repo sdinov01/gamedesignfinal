@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 52c28d44b615b4d3e8bda9b05fc83300
+guid: e76cd3452232ede48b8528678c551235
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -53381983590356497
-    second: pride_slice5_0
+      213: -8060396104083226304
+    second: Beginning_10082_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pride_slice5_0
+      name: Beginning_10082_0
       rect:
         serializedVersion: 2
-        x: 695
-        y: 371
-        width: 296
-        height: 251
+        x: 62
+        y: 2
+        width: 1109
+        height: 718
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe9e0b66e59524ff0800000000000000
-      internalID: -53381983590356497
+      spriteID: 0414d2bf278b32090800000000000000
+      internalID: -8060396104083226304
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      pride_slice5_0: -53381983590356497
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

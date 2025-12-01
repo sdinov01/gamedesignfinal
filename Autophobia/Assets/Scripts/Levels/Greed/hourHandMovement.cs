@@ -30,7 +30,7 @@ public class handMovement : MonoBehaviour
 
     public IEnumerator performRotations()
     {
-        float rotationAmt = rotationAmount[rotationIndex];
+        float rotationAmt = rotationAmount[rotationIndex] * 2;
         float currentDuration = rotationDuration[rotationIndex];
         /* Begin rotations when audio starts playing */
         yield return new WaitUntil(() => audio.isPlaying);
@@ -49,12 +49,19 @@ public class handMovement : MonoBehaviour
                 if (currentRotation >= changeRotation[rotationIndex] && rotationIndex < rotationAmount.Length - 1)
                 {
                     rotationIndex++;
-                    rotationAmt = rotationAmount[rotationIndex];
+                    rotationAmt = rotationAmount[rotationIndex] * 2;
                     currentDuration = rotationDuration[rotationIndex];
                 }
             }
 
             /* Perform rotation */
+            if (currentRotation % 4 == 1){
+                Debug.Log("HI IM ODD");
+                rotationAmt -= 15;
+            } else if (currentRotation % 4 == 2){
+                rotationAmt += 15;
+                Debug.Log("HI IM EVEN");
+            }
             yield return StartCoroutine(PerformRotation(rotationAmt, currentDuration));
             currentRotation++;
             StartCoroutine(rm.ChangeColor(currentDuration));

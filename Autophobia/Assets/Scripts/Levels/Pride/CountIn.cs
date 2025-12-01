@@ -17,6 +17,7 @@ public class CountIn : MonoBehaviour
     public Timer T;
     public SpriteRenderer prideart;
     public SpriteRenderer centercircle;
+    public GameObject S0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,9 +31,11 @@ public class CountIn : MonoBehaviour
         countInText.text = s3;
         yield return new WaitForSeconds ((float)M.beat2int);
         countInText.text = s2;
+        Instantiate (ball, S0.transform);
         yield return new WaitForSeconds ((float)M.beat2int);
         countInText.text = s1;
         // ball.SetActive(true);
+
         yield return new WaitForSeconds ((float)M.beat2int);
         countInText.text = go;
         yield return new WaitForSeconds ((float)M.beat2int);

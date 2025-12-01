@@ -19,52 +19,72 @@ public class linearPlatMove : MonoBehaviour
     private float tweenElapsed = 0;
     private float tweenSpeed = 10f;
     private bool canMove = false;
+    private GameObject Ispinner;
+    private GameObject Ospinner;
+
+    private float IspinnerRotationAmount = 45f; 
+    private float IspinnerTargetRotation;
+    private float IspinnerRotationSpeed = 5f; 
+    private Color Icolor;
+
+
+
+    private float OspinnerRotationAmount = 45f; 
+    private float OspinnerTargetRotation;
+    private float OspinnerRotationSpeed = 2.5f; 
+    private Color Ocolor;
 
     void Start()
-{
-    platforms = new Platform[platformObjects.Length];
-    currPosition = 0;
-
-    bool valid = true;
-
-    for (int i = 0; i < platformObjects.Length; i++)
     {
-        if (platformObjects[i] == null)
+        platforms = new Platform[platformObjects.Length];
+        currPosition = 0;
+
+        Ispinner = GameObject.FindWithTag("Spinner");
+        Icolor = new Color(0.576f, 0.345f, 0.345f);
+
+        Ospinner = GameObject.FindWithTag("OuterSpinner");
+        Ocolor = new Color(0.459f, 0.078f, 0.800f);
+
+        bool valid = true;
+
+        for (int i = 0; i < platformObjects.Length; i++)
         {
-            Debug.LogError("ERROR: platformObjects[" + i + "] is NULL. Fix array in Inspector.");
-            valid = false;
-            continue;
+            if (platformObjects[i] == null)
+            {
+                Debug.LogError("ERROR: platformObjects[" + i + "] is NULL. Fix array in Inspector.");
+                valid = false;
+                continue;
+            }
+
+            Platform p = platformObjects[i].GetComponent<Platform>();
+            if (p == null)
+            {
+                Debug.LogError("ERROR: platformObjects[" + i + "] has NO Platform component. Fix in Inspector.", platformObjects[i]);
+                valid = false;
+                continue;
+            }
+
+            platforms[i] = p;
         }
 
-        Platform p = platformObjects[i].GetComponent<Platform>();
-        if (p == null)
+        if (!valid)
         {
-            Debug.LogError("ERROR: platformObjects[" + i + "] has NO Platform component. Fix in Inspector.", platformObjects[i]);
-            valid = false;
-            continue;
+            Debug.LogError("Platform setup invalid. Stopping movement script.");
+            enabled = false;   // ← prevents Update() from running and prevents all crashes
+            return;
         }
 
-        platforms[i] = p;
+        // Position player on first platform
+        GameObject platform = platformObjects[0];
+        player.transform.position = new Vector3(
+            platform.transform.position.x,
+            platform.transform.position.y,
+            player.transform.position.z
+        );
+
+        tweenOrigin = player.transform.position;
+        tweenTarget = player.transform.position;
     }
-
-    if (!valid)
-    {
-        Debug.LogError("Platform setup invalid. Stopping movement script.");
-        enabled = false;   // ← prevents Update() from running and prevents all crashes
-        return;
-    }
-
-    // Position player on first platform
-    GameObject platform = platformObjects[0];
-    player.transform.position = new Vector3(
-        platform.transform.position.x,
-        platform.transform.position.y,
-        player.transform.position.z
-    );
-
-    tweenOrigin = player.transform.position;
-    tweenTarget = player.transform.position;
-}
 
 
     /* Finds the first available platform in a list */
@@ -139,47 +159,73 @@ public class linearPlatMove : MonoBehaviour
     //     }
     // }
     void Update()
-{
-    if (currPosition < 0 || currPosition >= platforms.Length)
-        return; // safety
-
-    Platform target = null;
-    Platform current = platforms[currPosition];
-
-    if (current == null)
-        return; // safety
-
-    if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
-        target = GetTargetPlatform(current.right);
-
-    else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
-        target = GetTargetPlatform(current.left);
-
-    else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
-        target = GetTargetPlatform(current.up);
-
-    else if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.S))
-        target = GetTargetPlatform(current.down);
-
-    if (target != null)
     {
-        currPosition = System.Array.IndexOf(platforms, target);
-        canMove = true;
-    }
+        if (currPosition < 0 || currPosition >= platforms.Length)
+            return; // safety
 
-    tweenOrigin = player.transform.position;
+        Platform target = null;
+        Platform current = platforms[currPosition];
 
-    if (!canMove)
-    {
-        GameObject currPlatform = platformObjects[currPosition];
-        Vector3 targetPos = new Vector3(
-            currPlatform.transform.position.x,
-            currPlatform.transform.position.y + offset,
-            player.transform.position.z
-        );
-        player.transform.position = targetPos;
+        if (current == null)
+            return; // safety
+
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        {
+            target = GetTargetPlatform(current.right);
+            RotateISpinner(-IspinnerRotationAmount);
+            RotateOSpinner(OspinnerRotationAmount);
+
+        } else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) {
+            target = GetTargetPlatform(current.left);
+            RotateISpinner(IspinnerRotationAmount);
+            RotateOSpinner(-OspinnerRotationAmount);
+
+        } else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) {
+            target = GetTargetPlatform(current.up);
+
+        } else if (Input.GetKeyDown(KeyCode.J)) {
+            target = GetTargetPlatform(current.down);
+            FlipColor();
+        }
+        if (target != null)
+        {
+            currPosition = System.Array.IndexOf(platforms, target);
+            canMove = true;
+        }
+
+        tweenOrigin = player.transform.position;
+
+        if (!canMove)
+        {
+            GameObject currPlatform = platformObjects[currPosition];
+            Vector3 targetPos = new Vector3(
+                currPlatform.transform.position.x,
+                currPlatform.transform.position.y + offset,
+                player.transform.position.z
+            );
+            player.transform.position = targetPos;
+        }
+        if (Ispinner != null)
+        {
+            float currentZ = Ispinner.transform.eulerAngles.z;
+            float newZ = Mathf.LerpAngle(currentZ, IspinnerTargetRotation, Time.deltaTime * IspinnerRotationSpeed);
+            Ispinner.transform.eulerAngles = new Vector3(
+                Ispinner.transform.eulerAngles.x,
+                Ispinner.transform.eulerAngles.y,
+                newZ
+            );
+        }
+        if (Ospinner != null)
+        {
+            float currentZ = Ospinner.transform.eulerAngles.z;
+            float newZ = Mathf.LerpAngle(currentZ, OspinnerTargetRotation, Time.deltaTime * OspinnerRotationSpeed);
+            Ospinner.transform.eulerAngles = new Vector3(
+                Ospinner.transform.eulerAngles.x,
+                Ospinner.transform.eulerAngles.y,
+                newZ
+            );
+        }
     }
-}
 
 
     void FixedUpdate()
@@ -210,6 +256,38 @@ public class linearPlatMove : MonoBehaviour
             tweenElapsed = 0f;
         }
     }
+    void RotateISpinner(float degrees)
+    {
+        if (Ispinner != null)
+        {
+            IspinnerTargetRotation += degrees;
+        }
+    }
+    void RotateOSpinner(float degrees)
+    {
+        if (Ospinner != null)
+        {
+            OspinnerTargetRotation += degrees;
+        }
+    }
+
+    void FlipColor()
+    {
+        Icolor = Ispinner.GetComponent<SpriteRenderer>().color;
+        Ocolor = Ospinner.GetComponent<SpriteRenderer>().color;
+        // Color temp = Icolor;
+
+        Ispinner.GetComponent<SpriteRenderer>().color = Ocolor;
+        Ospinner.GetComponent<SpriteRenderer>().color = Icolor;
+
+
+        // Ispri
+
+        // Icolor = Ocolor;
+        // Ocolor = temp;
+    }
+
+
 
     public int getCurrPosition() {
         return currPosition;

@@ -16,7 +16,7 @@ public class RotateOnBeat : MonoBehaviour
         BeatSync.OnBeat -= RotateStep;
     }
 
-    void RotateStep()
+    public void RotateStep()
     {
         if (clockwise)
         {

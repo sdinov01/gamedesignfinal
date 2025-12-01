@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 8e5f2002b11d23942ab2a3e4018cd00d
+guid: 3ee93aa71794d47bb8a410fd4161cccc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3416273860834239154
-    second: envy_baba_0
+      213: 3584096944263553865
+    second: pride_slice1_0
+  - first:
+      213: -6743178065942009399
+    second: pride_slice1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +99,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: envy_baba_0
+      name: pride_slice1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 302
+        y: 120
+        width: 348
+        height: 335
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e4dd5851605f690d0800000000000000
-      internalID: -3416273860834239154
+      spriteID: 94364637e254db130800000000000000
+      internalID: 3584096944263553865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pride_slice1_1
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 370
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c92252a64b6b62a0800000000000000
+      internalID: -6743178065942009399
       vertices: []
       indices: 
       edges: []
@@ -147,8 +159,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      envy_baba_0: -3416273860834239154
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -40,7 +40,7 @@ public class PlatformSpawner : MonoBehaviour
         previdx = index;
         while (index == previdx)
         {
-            index = UnityEngine.Random.Range (0, 4);
+            index = UnityEngine.Random.Range (0, 8);
         }
         ball = Instantiate (ballspawn, spawnpoints[index].transform);
     }

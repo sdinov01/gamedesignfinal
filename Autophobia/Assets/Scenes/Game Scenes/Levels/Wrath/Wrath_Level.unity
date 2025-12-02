@@ -1312,7 +1312,7 @@ MonoBehaviour:
   handSprite: {fileID: 1818113445}
   center: {fileID: 2014785276}
   player: {fileID: 1839682699}
-  bpm: 50
+  bpm: 100
   knives:
   - {fileID: 568709166}
   - {fileID: 297203121}
@@ -3150,13 +3150,13 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2576638760144512333, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
-      insertIndex: -1
+      insertIndex: 2
       addedObject: {fileID: 2000722656}
     - targetCorrespondingSourceObject: {fileID: 2576638760144512333, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
-      insertIndex: -1
+      insertIndex: 3
       addedObject: {fileID: 273387876}
     - targetCorrespondingSourceObject: {fileID: 2576638760144512333, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
-      insertIndex: -1
+      insertIndex: 4
       addedObject: {fileID: 1841383949}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f885b3984ba824b4a9544cec15907f02, type: 3}

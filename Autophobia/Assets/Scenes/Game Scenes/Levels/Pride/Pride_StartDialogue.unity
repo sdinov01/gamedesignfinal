@@ -209,7 +209,7 @@ PrefabInstance:
       objectReference: {fileID: -5144925568100834179, guid: 89d6cfa5825301b4aba2023b37f9d5cc, type: 3}
     - target: {fileID: 8350621656080273941, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: levelName
-      value: PrideV2
+      value: pride_level
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

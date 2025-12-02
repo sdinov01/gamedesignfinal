@@ -4,25 +4,25 @@ using System.Collections;
 public class handMovement : MonoBehaviour
 {
     /*                  Rotation variables              */
-    
+
     /* Variables to perform the rotation */
     private bool isRotating = false;
-    private float remainingRotation;  
+    private float remainingRotation;
     private float speed;
     /* How much to rotate by */
-    [SerializeField] private float[] rotationAmount; 
+    [SerializeField] private float[] rotationAmount;
     /* Which rotationTime (index in array) to change the rotation */
-    [SerializeField] private int[] changeRotation; 
+    [SerializeField] private int[] changeRotation;
     /* How long the rotation will last */
     [SerializeField] private float[] rotationDuration;
     /* Keeps track of the rotation amount and duration */
     private int rotationIndex = 0;
     /* When in the song to begin a rotation */
-    [SerializeField] private float[] rotationTimes; 
+    [SerializeField] private float[] rotationTimes;
     /* Keeps track of the current rotation time */
     private int currentRotation = 0;
 
-    
+
     private GameObject currentSlice = null;
     [SerializeField] private AudioSource audio;
     [SerializeField] private restrictMovement rm;
@@ -64,11 +64,13 @@ public class handMovement : MonoBehaviour
             if (firstRotation && rotationAmt % 30 == 0)
             {
                 rotationAmt += 15;
-            } else if (firstRotation && (rotationAmt % 30 == 15 || rotationAmt % 30 == -15))
+            }
+            else if (firstRotation && (rotationAmt % 30 == 15 || rotationAmt % 30 == -15))
             {
                 rotationAmt -= 15;
                 firstRotation = false;
             }
+            Debug.Log("first rotation");
             yield return StartCoroutine(PerformRotation(rotationAmt, currentDuration));
             currentRotation++;
         }
@@ -107,13 +109,4 @@ public class handMovement : MonoBehaviour
     {
         return canChange;
     }
-
-    //public bool SetChangeColor(float canChange)
-    //{
-    //    this.canChange = canChange;
-    //}
-    //public GameObject GetCurrentSlice()
-    //{
-    //    return currentSlice;
-    //}
 }

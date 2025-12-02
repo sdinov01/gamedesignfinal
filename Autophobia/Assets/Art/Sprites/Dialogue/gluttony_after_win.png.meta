@@ -119,10 +119,10 @@ TextureImporter:
       name: gluttony_after_win_0
       rect:
         serializedVersion: 2
-        x: 382
-        y: 163
-        width: 1156
-        height: 902
+        x: 87
+        y: 129
+        width: 1745
+        height: 926
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

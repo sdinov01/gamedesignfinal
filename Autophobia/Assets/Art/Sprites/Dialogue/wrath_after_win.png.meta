@@ -116,10 +116,10 @@ TextureImporter:
       name: wrath_after_win_0
       rect:
         serializedVersion: 2
-        x: 352
-        y: 145
-        width: 1215
-        height: 935
+        x: 86
+        y: 101
+        width: 1749
+        height: 979
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

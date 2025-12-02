@@ -116,10 +116,10 @@ TextureImporter:
       name: wrath_before_win_0
       rect:
         serializedVersion: 2
-        x: 351
-        y: 145
-        width: 1216
-        height: 934
+        x: 87
+        y: 103
+        width: 1747
+        height: 976
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

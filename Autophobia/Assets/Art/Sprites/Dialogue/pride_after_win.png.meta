@@ -116,12 +116,12 @@ TextureImporter:
       name: pride_after_win_0
       rect:
         serializedVersion: 2
-        x: 390
-        y: 194
-        width: 1159
-        height: 821
+        x: 85
+        y: 129
+        width: 1748
+        height: 951
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fc53f3acd4141fb458aff69066a9d6cc
     internalID: 0
     vertices: []
     indices: 

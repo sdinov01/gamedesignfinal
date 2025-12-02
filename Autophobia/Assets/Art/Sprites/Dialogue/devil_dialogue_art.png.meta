@@ -119,10 +119,10 @@ TextureImporter:
       name: devil_dialogue_art_0
       rect:
         serializedVersion: 2
-        x: 410
-        y: 193
-        width: 1104
-        height: 738
+        x: 85
+        y: 154
+        width: 1749
+        height: 877
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

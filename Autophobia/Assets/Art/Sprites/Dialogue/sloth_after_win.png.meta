@@ -116,10 +116,10 @@ TextureImporter:
       name: sloth_after_win_0
       rect:
         serializedVersion: 2
-        x: 395
-        y: 179
-        width: 1130
-        height: 759
+        x: 114
+        y: 126
+        width: 1695
+        height: 876
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

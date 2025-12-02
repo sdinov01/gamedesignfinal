@@ -8,6 +8,7 @@ public class RhythmManager : MonoBehaviour
     public Transform center;
     public Transform player;
 
+    //public float bpm = 118f;
     public float bpm = 118f;
     public KnifeController[] knives;
 
@@ -20,11 +21,13 @@ public class RhythmManager : MonoBehaviour
     private KnifeController thisknife;
 
     private int nextIndex = 0; // for spawn time
-    public List<float> spawnTimes = new List<float>(); 
+    public List<float> spawnTimes = new List<float>(); //manually assiagned attack
     public float attackDelay = 1.2f;
     public AudioSource musicSource;
     public healthBar health;
     private bool musicStarted = false;
+
+    private int beatKnifeIndex = 0; //for beat attack
 
 
     void Start()
@@ -49,15 +52,28 @@ public class RhythmManager : MonoBehaviour
         }
         
         // //let it follow the beat
-        // timer += Time.deltaTime;
-        // if (timer >= beatInterval)
-        // {
-        //     timer -= beatInterval;
-        //     beatCount++;
+        timer += Time.deltaTime;
+        if (timer >= beatInterval)
+        {
+            timer -= beatInterval;
+            //beatCounter++;
+            TriggerBeatKnife();
 
-        //     HandleBeat(beatCount);
-        // }
+            //HandleBeat(beatCount);
+        }
     
+    }
+    void TriggerBeatKnife()
+    {
+        if (knives.Length == 0) return;
+
+        KnifeController knife = knives[beatKnifeIndex];
+
+        // Beat: less damage than spawn time attack
+        knife.TriggerBeatAttack();
+
+        // follow the order of knifes
+        beatKnifeIndex = (beatKnifeIndex + 1) % knives.Length;
     }
 
     // void HandleBeat(int beat)
@@ -102,14 +118,11 @@ public class RhythmManager : MonoBehaviour
     {
         Color original = sr.color;
 
-        // 变红
         sr.color = Color.red;
         yield return new WaitForSeconds(0.3f);
 
-        // 变回原来的颜色
         sr.color = original;
 
-        // 攻击
         knife.TriggerAttack();
     }
 

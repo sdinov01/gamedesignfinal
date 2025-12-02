@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Rendering.Universal;
 
 public class RhythmManager : MonoBehaviour
 {
@@ -70,29 +71,12 @@ public class RhythmManager : MonoBehaviour
         KnifeController knife = knives[beatKnifeIndex];
 
         // Beat: less damage than spawn time attack
+        StartCoroutine(FlashThenAttack(knife));
         knife.TriggerBeatAttack();
 
         // follow the order of knifes
         beatKnifeIndex = (beatKnifeIndex + 1) % knives.Length;
     }
-
-    // void HandleBeat(int beat)
-    // {
-    // //     for (int i = 0; i < spawnTimes.Count; i++)
-    // //     {
-    //     int beatInBar = ((beat - 1) % 4) + 1; 
-
-    //     if (beat <= 4)
-    //     {
-    //         if (beatInBar == 4)
-    //             TriggerNextKnife();
-    //     }
-    //     else
-    //     {
-    //         if (beatInBar == 2 || beatInBar == 4)
-    //             TriggerNextKnife();
-    //     }
-    // }
 
     public void TriggerNextKnife()
     {
@@ -102,7 +86,8 @@ public class RhythmManager : MonoBehaviour
             if (knife.sectorIndex == sector)
             {
                 sr = knife.self.GetComponent<SpriteRenderer>();
-                StartCoroutine(FlashThenAttack(knife,sr));
+                //StartCoroutine(FlashThenAttack(knife,sr));
+                StartCoroutine(FlashThenAttack(knife));
                 //thisknife = knife;
                 // StartCoroutine (sequence (sr.color, Color.red));
                 // StartColorLerp (sr.color, Color.red);
@@ -114,17 +99,57 @@ public class RhythmManager : MonoBehaviour
             }
         }
     }
-    IEnumerator FlashThenAttack(KnifeController knife, SpriteRenderer sr)
+    //flash red color
+    // IEnumerator FlashThenAttack(KnifeController knife, SpriteRenderer sr)
+    // {
+    //     Color original = sr.color;
+
+    //     sr.color = Color.red;
+    //     yield return new WaitForSeconds(0.3f);
+
+    //     sr.color = original;
+
+    //     knife.TriggerAttack();
+    // }
+
+    IEnumerator FlashThenAttack(KnifeController knife)
     {
-        Color original = sr.color;
+        //light become brighter
+        if (knife.knifeLight != null)
+        {
+            StartCoroutine(LightFlash(knife.knifeLight));
+        }
 
-        sr.color = Color.red;
         yield return new WaitForSeconds(0.3f);
-
-        sr.color = original;
-
         knife.TriggerAttack();
     }
+
+    IEnumerator LightFlash(Light2D light)
+    {
+        float start = 0.7f;
+        float end = 2.1f;
+        float t = 0f;
+
+        // brighter
+        while (t < 0.3f)
+        {
+            t += Time.deltaTime;
+            light.intensity = Mathf.Lerp(start, end, t / 0.15f);
+            yield return null;
+        }
+
+        // return back
+        t = 0f;
+        while (t < 0.3f)
+        {
+            t += Time.deltaTime;
+            light.intensity = Mathf.Lerp(end, start, t / 0.15f);
+            yield return null;
+        }
+
+        light.intensity = start;
+    }
+
 
     int GetPlayerSector()
     {

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Rendering.Universal;
 
 public class KnifeController : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class KnifeController : MonoBehaviour
     public float angle;
 
     private float currentDamage = 10f;  
+    public Light2D knifeLight;
 
     void Awake()
     {

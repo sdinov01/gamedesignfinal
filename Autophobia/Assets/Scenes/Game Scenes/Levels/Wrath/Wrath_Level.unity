@@ -480,6 +480,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+      propertyPath: knifeLight
+      value: 
+      objectReference: {fileID: 837314712}
+    - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: sectorIndex
       value: 0
       objectReference: {fileID: 0}
@@ -908,6 +912,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577217196}
   m_CullTransparentMesh: 1
+--- !u!114 &643257385 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1093506729228585457, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+  m_PrefabInstance: {fileID: 1296272316}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &707334213 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1093506729228585457, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+  m_PrefabInstance: {fileID: 7253798494901733087}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &711434100 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8781087769505588749, guid: 34bf1c99d5d104f6990deb6f7e853678, type: 3}
@@ -945,6 +971,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3548351645995841935, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
   m_PrefabInstance: {fileID: 1296272316}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &837314712 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1093506729228585457, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+  m_PrefabInstance: {fileID: 473051493}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &842842523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1188,6 +1225,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22697ad938e864f9a9685157cc2eff01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &910423217 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1093506729228585457, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+  m_PrefabInstance: {fileID: 1293681102}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &916022118 stripped
@@ -1584,6 +1632,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+      propertyPath: knifeLight
+      value: 
+      objectReference: {fileID: 1151172709}
+    - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: sectorIndex
       value: 3
       objectReference: {fileID: 0}
@@ -1696,6 +1748,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+--- !u!114 &1107874700 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1093506729228585457, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+  m_PrefabInstance: {fileID: 1720577538}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1111675680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1981,6 +2044,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manager: {fileID: 916022120}
   stepIndex: 0
+--- !u!114 &1151172709 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1093506729228585457, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+  m_PrefabInstance: {fileID: 1076406711}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1282710637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2078,6 +2152,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+      propertyPath: knifeLight
+      value: 
+      objectReference: {fileID: 910423217}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: sectorIndex
       value: 4
@@ -2215,6 +2293,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+      propertyPath: knifeLight
+      value: 
+      objectReference: {fileID: 643257385}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: sectorIndex
       value: 1
@@ -3540,6 +3622,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+      propertyPath: knifeLight
+      value: 
+      objectReference: {fileID: 1107874700}
     - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: sectorIndex
       value: 2
@@ -5080,6 +5166,10 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 1841383950}
+    - target: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
+      propertyPath: knifeLight
+      value: 
+      objectReference: {fileID: 707334213}
     - target: {fileID: 1477205625512115585, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.07

@@ -57,7 +57,6 @@ public class handMovement : MonoBehaviour
                     rotationIndex++;
                     rotationAmt = (rotationAmount[rotationIndex] * 2) % 360;
                     currentDuration = rotationDuration[rotationIndex];
-                    //firstRotation = true;
                 }
             }
             /* Perform rotation and shift so it touches two slices now. */
@@ -70,7 +69,6 @@ public class handMovement : MonoBehaviour
                 rotationAmt -= 15;
                 firstRotation = false;
             }
-            Debug.Log("first rotation");
             yield return StartCoroutine(PerformRotation(rotationAmt, currentDuration));
             currentRotation++;
         }

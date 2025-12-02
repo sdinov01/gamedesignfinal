@@ -12,6 +12,8 @@ public class gluttonyIntro : MonoBehaviour
     [SerializeField] private Image background;
     [SerializeField] private TMP_Text skip;
     [SerializeField] private spiderHealthAndDmg spiderHealth;
+    [SerializeField] private Image timeBar;
+    private TimeBar timeBarFill;
     /* Delay before the song is played */
     public float musicDelay = 23f;
     public float fadeTime = 1.5f;
@@ -22,6 +24,7 @@ public class gluttonyIntro : MonoBehaviour
 
     void Start()
     {
+        timeBarFill = timeBar.GetComponent<TimeBar>();
         /* Default */
         musicDelay = 23f;
         skipTutorial = false;
@@ -31,6 +34,11 @@ public class gluttonyIntro : MonoBehaviour
         goodLuck.enabled = false;
         /* Start the tutorial messages */
         tutorialRoutine = StartCoroutine(TutorialMessage());
+        if (timeBar != null)
+        {
+            Debug.Log("Time bar is not null");
+            StartCoroutine(startBar());
+        }
     }
 
     /* Make intro skippable */
@@ -58,6 +66,7 @@ public class gluttonyIntro : MonoBehaviour
 
             // Immediately fade background out
             background.enabled = false;
+            musicDelay = Time.timeSinceLevelLoad;
         }
     }
 
@@ -150,5 +159,18 @@ public class gluttonyIntro : MonoBehaviour
     public float StartTime()
     {
         return musicDelay;
+    }
+
+
+    private IEnumerator startBar()
+    {
+        /* Begin after tutorial/skip */
+        Debug.Log("musicDelay " + musicDelay);
+        yield return new WaitUntil(() => Time.timeSinceLevelLoad >= musicDelay);
+
+        /* Begin song Courotine fill bar */
+        timeBarFill.SetDuration(audioSource.clip.length);
+        timeBarFill.BeginTime();
+        Debug.Log("should start time bar");
     }
 }

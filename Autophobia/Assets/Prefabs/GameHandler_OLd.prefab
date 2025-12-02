@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 144332633308594881}
-  - component: {fileID: 6518947248842858701}
   - component: {fileID: 2794278237332296444}
   - component: {fileID: 7982067757948750536}
   m_Layer: 0
@@ -34,28 +33,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6518947248842858701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3276832814261720227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4edc995b51de64dcb93982aef6e84fb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactables: {fileID: 0}
-  T1Panel: {fileID: 0}
-  T1Group: {fileID: 0}
-  T1Start: {fileID: 0}
-  T2Panel: {fileID: 0}
-  T2Group: {fileID: 0}
-  T2Start: {fileID: 0}
-  audiomanager: {fileID: 0}
-  lci: {fileID: 0}
-  fadeInTime: 2
 --- !u!114 &2794278237332296444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4acd3d9387ac04d138409f6303d9658f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantfail: 1
   SceneFadeOut: {fileID: 0}
-  trackLengthSeconds: 95
   timer: {fileID: 0}
   pointsneeded: 4
   SM: {fileID: 0}

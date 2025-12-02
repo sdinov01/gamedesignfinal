@@ -48,12 +48,19 @@ MonoBehaviour:
   fullFrameImage: {fileID: 0}
   textUI: {fileID: 0}
   lines:
-  - line: 
-    frame: {fileID: 0}
-  - line: 
-    frame: {fileID: 0}
-  - line: 
-    frame: {fileID: 0}
+  - line: "I don\u2019t want to go in here."
+    frame: {fileID: -3292079166836579254, guid: 68adf40b6c2c845bbbed9849b5bf3669, type: 3}
+  - line: Whooooooooo is at ma tente?!
+    frame: {fileID: -5840379816752467025, guid: c1851fddcf40a49efacdfabdbdab66c0, type: 3}
+  - line: A visitorrr to ma maison?!
+    frame: {fileID: -5840379816752467025, guid: c1851fddcf40a49efacdfabdbdab66c0, type: 3}
+  - line: "It will cost you for a peeeek at my treasures, but I\u2019m le most geeeenerous
+      sin in town!!"
+    frame: {fileID: -5840379816752467025, guid: c1851fddcf40a49efacdfabdbdab66c0, type: 3}
+  - line: "No we\u2019re fine\u2014"
+    frame: {fileID: -3292079166836579254, guid: 68adf40b6c2c845bbbed9849b5bf3669, type: 3}
+  - line: Regardez!!
+    frame: {fileID: -5840379816752467025, guid: c1851fddcf40a49efacdfabdbdab66c0, type: 3}
   typeDelay: 0.02
   flipInterval: 0.08
   advanceKey: 32
@@ -71,6 +78,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764376074b5add446bfc33f7bfe4aed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: 
+  levelName: Pride_Level
   winSceneName: 
-  dm: {fileID: 0}
+  dm: {fileID: 7778790694537391651}

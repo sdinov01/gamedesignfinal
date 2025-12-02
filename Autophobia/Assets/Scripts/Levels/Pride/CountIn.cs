@@ -19,6 +19,9 @@ public class CountIn : MonoBehaviour
     public SpriteRenderer centercircle;
     public GameObject S0;
 
+
+    [SerializeField] private TimeBar timeBar;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -54,5 +57,8 @@ public class CountIn : MonoBehaviour
         music.gameObject.SetActive (true);
         prideart.enabled = true;
         centercircle.color = Color.white;
+
+        timeBar.SetDuration(music.clip.length);
+        timeBar.BeginTime();
     }
 }

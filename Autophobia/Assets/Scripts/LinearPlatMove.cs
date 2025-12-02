@@ -183,7 +183,7 @@ public class linearPlatMove : MonoBehaviour
         } else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) {
             target = GetTargetPlatform(current.up);
 
-        } else if (Input.GetKeyDown(KeyCode.J)) {
+        } else if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) {
             target = GetTargetPlatform(current.down);
             FlipColor();
         }

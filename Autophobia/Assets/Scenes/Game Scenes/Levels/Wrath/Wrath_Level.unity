@@ -1144,7 +1144,7 @@ MonoBehaviour:
   handSprite: {fileID: 1818113445}
   center: {fileID: 2014785276}
   player: {fileID: 1839682699}
-  bpm: 50
+  bpm: 100
   knives:
   - {fileID: 568709166}
   - {fileID: 297203121}

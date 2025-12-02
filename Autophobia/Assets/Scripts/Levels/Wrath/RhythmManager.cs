@@ -9,7 +9,7 @@ public class RhythmManager : MonoBehaviour
     public Transform player;
 
     //public float bpm = 118f;
-    public float bpm = 118f;
+    public float bpm = 100f;
     public KnifeController[] knives;
 
     private float beatInterval;

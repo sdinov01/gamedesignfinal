@@ -11,7 +11,7 @@ public class spiderMovement : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
 
-    // 🔹 Global pulse state (shared by all spiders)
+    /* All spiders vulnerable and pulse when true */
     private static bool isPulsingGlobal = false;
     private static float pulseEndTime = 0f;
 
@@ -19,6 +19,13 @@ public class spiderMovement : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
+
+        /* Spiders face direction of movement */
+        Vector3 movement = origin.position - destination.position;
+        float angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg;
+
+        transform.rotation = Quaternion.Euler(0, 0, angle - 180f);
+        
     }
 
     void Update()

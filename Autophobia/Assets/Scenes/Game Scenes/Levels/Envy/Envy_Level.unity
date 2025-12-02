@@ -184,10 +184,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Spiders are invulnerable until the "chomp" is heard, and they pulse to
-    further signal vulnerability. You are not required to kill the spiders, but it
-    is easier to navigate if they are dead. Press space when you touch them to kill
-    them.
+  m_text: 'The white ones heal, the black ones damage. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7cda735c1bfc24a41befe94988fa90fe, type: 2}
   m_sharedMaterial: {fileID: 9060165477165037049, guid: 7cda735c1bfc24a41befe94988fa90fe, type: 2}
@@ -1866,56 +1863,8 @@ MonoBehaviour:
   - {fileID: 557409814}
   audioSource: {fileID: 1908021268}
   gluttonyIntroHandler: {fileID: 836761431}
-  pulseTimeStamps:
-  - 2
-  - 4
-  - 6
-  - 10
-  - 12
-  - 14
-  - 18.5
-  - 20.5
-  - 22.5
-  - 24
-  - 38
-  - 40
-  - 42
-  - 44
-  - 46
-  - 48
-  - 50
-  - 52
-  - 58
-  - 60
-  - 62
-  - 64
-  - 66
-  - 68
-  pulseDuration:
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 4
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  pulseTimeStamps: []
+  pulseDuration: []
   spider1Spawn:
   - 6
   - 8

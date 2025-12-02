@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4209386749199603900}
   - component: {fileID: 8076814475183528024}
   - component: {fileID: 6756237700082869466}
+  - component: {fileID: -914712100877846403}
+  - component: {fileID: -2277159269732649792}
   m_Layer: 0
   m_Name: Bird_Heal
   m_TagString: Untagged
@@ -123,4 +125,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beeff714832eaaa4380361d0db1e94b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 1
+--- !u!114 &-914712100877846403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706212057920428625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d5934a5fd48122448d762c5c67a4c21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitDuration: 1
+  healAmt: 1
+--- !u!70 &-2277159269732649792
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706212057920428625}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 4.1399994, y: 4.0899997}
+  m_Direction: 0

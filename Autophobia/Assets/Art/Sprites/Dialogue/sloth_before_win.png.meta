@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sloth_before_win_0: -2667150162034865305
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

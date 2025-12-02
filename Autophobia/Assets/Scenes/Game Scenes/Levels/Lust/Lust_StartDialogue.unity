@@ -429,6 +429,10 @@ PrefabInstance:
       propertyPath: lines.Array.data[12].frame
       value: 
       objectReference: {fileID: -1587774502087477889, guid: bf8e686f8ded8461c93556ed7a0b56ca, type: 3}
+    - target: {fileID: 8350621656080273941, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: levelName
+      value: Lust_Level
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

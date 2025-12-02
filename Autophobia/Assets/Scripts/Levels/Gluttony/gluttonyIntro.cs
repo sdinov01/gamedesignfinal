@@ -13,7 +13,7 @@ public class gluttonyIntro : MonoBehaviour
     [SerializeField] private TMP_Text skip;
     [SerializeField] private spiderHealthAndDmg spiderHealth;
     /* Delay before the song is played */
-    public float musicDelay = 27f;
+    public float musicDelay = 23f;
     public float fadeTime = 1.5f;
     public float fadeDelay = 11f;
 
@@ -23,7 +23,7 @@ public class gluttonyIntro : MonoBehaviour
     void Start()
     {
         /* Default */
-        musicDelay = 27f;
+        musicDelay = 23f;
         skipTutorial = false;
         audioSource.Stop();
         audioSource.PlayDelayed(musicDelay);

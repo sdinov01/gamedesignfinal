@@ -1,17 +1,19 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class HoverToPlayAnimation : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class HoverToPlayAnimation : MonoBehaviour, IPointerEnterHandler
 {
-    public Animator anim;
+    private Animator anim;
+
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+        anim.Play("idle", -1, 0f);
+    }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        anim.SetTrigger("Show");
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        anim.SetTrigger("Hide");
+        Debug.Log("get into");
+        anim.Play("door_anim", -1, 0f);
     }
 }

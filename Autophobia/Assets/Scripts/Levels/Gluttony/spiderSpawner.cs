@@ -37,7 +37,8 @@ public class spiderSpawner : MonoBehaviour
 
 
     /* Determines when to start spawning and pulsing */
-    private float startTime = 14.5f;
+    //private float startTime = 14.5f;
+    private float startTime = 23f;
     private bool skippedAlready = false;
 
     [SerializeField] private TimeBar timeBar;
@@ -49,7 +50,8 @@ public class spiderSpawner : MonoBehaviour
 
         StartCoroutine(SpawnWhileAudioPlaying());
         skippedAlready = false;
-        startTime = 14.5f;
+        //startTime = 14.5f;
+        startTime = 23f;
         spawnIndices = new int[spawns.Length];
         spawnTimes = new float[spawns.Length][];
         /* Add the spawns manually */

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bf8e686f8ded8461c93556ed7a0b56ca
+guid: 1e401aaaae0ae9f4f8fe920f464edcb4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1587774502087477889
-    second: lustbase_0
+      213: -3704031834525336396
+    second: greed_before_win_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lustbase_0
+      name: greed_before_win_0
       rect:
         serializedVersion: 2
-        x: 383
-        y: 144
-        width: 1166
-        height: 909
+        x: 295
+        y: 104
+        width: 1332
+        height: 949
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7537a3b08717f9e0800000000000000
-      internalID: -1587774502087477889
+      spriteID: 4bcf06adba2a89cc0800000000000000
+      internalID: -3704031834525336396
       vertices: []
       indices: 
       edges: []

@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 55128c0344f51497d9b3e7d7d9a3177a
+guid: 0b489a88d83685a498dbe42f0bb7ee21
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7490726380793290371
-    second: gluttonybox2_0
+      213: 8931938465687217399
+    second: gluttony_after_win_0
   - first:
-      213: -4317522697319423073
-    second: gluttonybox2_1
+      213: -988170297649189436
+    second: gluttony_after_win_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -99,11 +99,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gluttonybox2_0
+      name: gluttony_after_win_0
       rect:
         serializedVersion: 2
         x: 385
@@ -118,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38ed4dca4f764f760800000000000000
-      internalID: 7490726380793290371
+      spriteID: 7f42fea06be94fb70800000000000000
+      internalID: 8931938465687217399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gluttonybox2_1
+      name: gluttony_after_win_1
       rect:
         serializedVersion: 2
         x: 879
@@ -140,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f93e6946bf31514c0800000000000000
-      internalID: -4317522697319423073
+      spriteID: 4cd270f89505942f0800000000000000
+      internalID: -988170297649189436
       vertices: []
       indices: 
       edges: []

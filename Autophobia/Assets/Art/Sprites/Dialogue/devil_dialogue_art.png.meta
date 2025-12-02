@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 3869bb068cf3d490c8a1d7001bfb2a79
+guid: a1c4a411b3f3ef44f80321a20a6446ac
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6137863723577726146
-    second: pridebox1_0
+      213: -7875862043816725885
+    second: devil_dialogue_art_0
+  - first:
+      213: 7425406585737433474
+    second: devil_dialogue_art_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +99,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pridebox1_0
+      name: devil_dialogue_art_0
       rect:
         serializedVersion: 2
-        x: 390
-        y: 194
-        width: 1143
-        height: 821
+        x: 512
+        y: 693
+        width: 163
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e3ba464967de1daa0800000000000000
-      internalID: -6137863723577726146
+      spriteID: 3827252033153b290800000000000000
+      internalID: -7875862043816725885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: devil_dialogue_art_1
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 201
+        width: 1100
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281d9bfb2f75c0760800000000000000
+      internalID: 7425406585737433474
       vertices: []
       indices: 
       edges: []

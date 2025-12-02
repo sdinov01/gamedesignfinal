@@ -19,7 +19,7 @@ EditorBuildSettings:
     guid: 1d5dd13d2d61730448fe343ae12c3953
   - enabled: 1
     path: Assets/Scenes/Game Scenes/Levels/Envy/Envy_Level.unity
-    guid: 044c0a008b355a84fb9e47f2b153e9c1
+    guid: a76b46cd9aeba4c46ada6c7614e9cdaf
   - enabled: 1
     path: Assets/Scenes/Game Scenes/Levels/Gluttony/Gluttony_Level.unity
     guid: 471258b0097dce24e8900554e555d656

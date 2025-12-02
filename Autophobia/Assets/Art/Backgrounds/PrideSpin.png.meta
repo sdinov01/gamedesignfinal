@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 659dd6f65797748bfb03d3d8cbe8b748
+guid: e47432c9e9fc24dbab234d329fe39b2e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8060396104083226304
-    second: Beginning_10082_0
+      213: 5708238252958109616
+    second: PrideSpin_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Beginning_10082_0
+      name: PrideSpin_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1280
-        height: 720
+        x: 301
+        y: 8
+        width: 693
+        height: 696
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0414d2bf278b32090800000000000000
-      internalID: -8060396104083226304
+      spriteID: 0bf4dd0927cb73f40800000000000000
+      internalID: 5708238252958109616
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Beginning_10082_0: -8060396104083226304
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

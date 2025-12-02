@@ -15,6 +15,9 @@ TagManager:
   - HealSpider
   - PrideHitbox
   - ColorSource
+  - AudioParser
+  - Spinner
+  - OuterSpinner
   layers:
   - Default
   - TransparentFX

@@ -11,6 +11,7 @@ public class BallLifetime : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
     private Color affected;
+    public  IsAffected hurtbox;
     public bool canHurt = false;
 
     void Start()
@@ -28,6 +29,17 @@ public class BallLifetime : MonoBehaviour
         }
 
         affected    = GameObject.FindWithTag("ColorSource").GetComponent<SpriteRenderer>().color;
+
+        if (transform.parent != null)
+        {
+            GameObject Container = transform.parent.parent.gameObject;
+            Transform hitboxTransform = Container.transform.Find("Hitbox");
+    
+            if (hitboxTransform != null)
+            {
+                hurtbox = hitboxTransform.GetComponent<IsAffected>();
+            }
+        }
     }
 
     void OnEnable()
@@ -69,6 +81,7 @@ public class BallLifetime : MonoBehaviour
         
         if (beatsRemaining <= 0)
         {
+            hurtbox.StartDMG();
             EndLife();
         }
     }

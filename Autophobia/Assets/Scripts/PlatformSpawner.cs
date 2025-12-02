@@ -24,6 +24,8 @@ public class PlatformSpawner : MonoBehaviour
     private     int[]       stageEndFlags = {11, 19, 27, 35, 43, 52};
     private     int[]       stageEndIndex = {12, 20, 28, 36, 44, 53};
 
+    private     IsAffected  hurtbox;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -38,11 +40,20 @@ public class PlatformSpawner : MonoBehaviour
     void SpawnBall()
     {
         previdx = index;
-        while (index == previdx)
+        // while ((index == previdx) && !hurtbox.affected)
+        // {
+        //     index = UnityEngine.Random.Range (0, 8);
+        //     hurtbox = spawnpoints[index].transform.parent.gameObject.transform.Find("Hitbox").GetComponent<IsAffected>();
+        // }
+        // ball = Instantiate (ballspawn, spawnpoints[index].transform);
+        do
         {
-            index = UnityEngine.Random.Range (0, 8);
+            index = UnityEngine.Random.Range(0, 8);
+            hurtbox = spawnpoints[index].transform.parent.gameObject.transform.Find("Hitbox").GetComponent<IsAffected>();
         }
+        while (index == previdx || hurtbox.contactDMG);
         ball = Instantiate (ballspawn, spawnpoints[index].transform);
+
     }
 
     // Update is called once per frame

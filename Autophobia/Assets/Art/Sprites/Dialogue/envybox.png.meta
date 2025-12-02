@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 659dd6f65797748bfb03d3d8cbe8b748
+guid: 6c343674f770245fb92ffe8628af8e34
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8060396104083226304
-    second: Beginning_10082_0
+      213: -6224750999758158801
+    second: envybox_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Beginning_10082_0
+      name: envybox_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1280
-        height: 720
+        x: 245
+        y: 141
+        width: 1277
+        height: 737
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0414d2bf278b32090800000000000000
-      internalID: -8060396104083226304
+      spriteID: f24482422fd3d99a0800000000000000
+      internalID: -6224750999758158801
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Beginning_10082_0: -8060396104083226304
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

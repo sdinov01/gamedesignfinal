@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 659dd6f65797748bfb03d3d8cbe8b748
+guid: c1851fddcf40a49efacdfabdbdab66c0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8060396104083226304
-    second: Beginning_10082_0
+      213: -5840379816752467025
+    second: pridebox_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Beginning_10082_0
+      name: pridebox_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1280
-        height: 720
+        x: 390
+        y: 194
+        width: 1159
+        height: 821
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0414d2bf278b32090800000000000000
-      internalID: -8060396104083226304
+      spriteID: fa3bb15108dc2fea0800000000000000
+      internalID: -5840379816752467025
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Beginning_10082_0: -8060396104083226304
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

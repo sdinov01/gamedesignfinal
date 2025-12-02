@@ -3,8 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class ConditionalEnd : MonoBehaviour
 {
+    public bool cantfail;
     public GameObject SceneFadeOut;
-    public float trackLengthSeconds;
     public Timer timer;
 
     public int pointsneeded;
@@ -23,7 +23,8 @@ public class ConditionalEnd : MonoBehaviour
         if ((timer.time >= 92) && !scenecalled)
         {
             scenecalled = true;
-            if (SM.successes >= pointsneeded )
+
+            if ((SM.successes >= pointsneeded) || cantfail)
             {
                 SceneEnding.GetComponent<endscene>().didwin = true;
             }

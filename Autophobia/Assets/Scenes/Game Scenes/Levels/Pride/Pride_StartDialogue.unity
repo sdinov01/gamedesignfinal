@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueController
       objectReference: {fileID: 0}
+    - target: {fileID: 2116406378926649947, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6071110766707382623, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: m_LocalPosition.x
       value: 347
@@ -178,7 +182,7 @@ PrefabInstance:
     - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: fullFrameImage
       value: 
-      objectReference: {fileID: 145405109}
+      objectReference: {fileID: 0}
     - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: lines.Array.size
       value: 6
@@ -358,17 +362,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1719281809319858905, guid: 5a9dfd5cbf6187f4a991ee96795195e4, type: 3}
   m_PrefabInstance: {fileID: 145405107}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &145405109 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 28896944258328721, guid: 5a9dfd5cbf6187f4a991ee96795195e4, type: 3}
-  m_PrefabInstance: {fileID: 145405107}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &515349138
 PrefabInstance:
   m_ObjectHideFlags: 0

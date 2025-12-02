@@ -48,7 +48,7 @@ public class PauseMenuHandler : MonoBehaviour {
 
         public void Pause(){
                 if (!GameisPaused){
-                        image.SetActive(false);
+                        if (image != null) {image.SetActive(false);}
                         pauseButton.SetActive(false);
                         pauseMenuUI.SetActive(true);
                         Button1.SetActive(false);
@@ -83,7 +83,7 @@ public class PauseMenuHandler : MonoBehaviour {
                 //Debug.Log("Clicked resume button");
                 pauseAnimObject.SetActive(false);
                 pauseMenuUI.SetActive(false);
-                image.SetActive(true);
+                if (image != null) {image.SetActive(true);}
                 pauseButton.SetActive(true);
                 Time.timeScale = 1f;
                 AudioListener.pause = false;

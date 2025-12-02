@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beginning_hover_anime060_0: 7758132174254709487
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

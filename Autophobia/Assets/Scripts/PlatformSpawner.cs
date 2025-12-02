@@ -66,11 +66,11 @@ public class PlatformSpawner : MonoBehaviour
             measureIndex++;
             nextM += M.measureint;
             //  Stage 1 : 6 balls, 4 points to win
-            if ((measureIndex < 12) && ((measureIndex % 2)) == 1) {
+            if ((measureIndex < 12) && ((measureIndex % 4) < 3)) {
                 SpawnBall();
             //  Stage 2 : 6 balls, 5 points to win
-            } else if ((measureIndex < 20) && (measureIndex > 11) && ((measureIndex % 4) < 3)) {
-                SpawnBall();
+            } else if ((measureIndex < 20) && (measureIndex > 11) && ((measureIndex % 2) == 1)) {
+                StartCoroutine(MType2());
             //  Stage 3 : 8 balls, 6 points to win
             } else if ((measureIndex < 28) && (measureIndex > 19)) {
                 SpawnBall();
@@ -136,8 +136,16 @@ public class PlatformSpawner : MonoBehaviour
     {
         SpawnBall();
         yield return new WaitForSeconds ((float)M.beatint);
+        SpawnBall(); 
+    }
+
+    IEnumerator MType2()
+    {
         SpawnBall();
-        
+        yield return new WaitForSeconds ((float)M.Hbeatint);
+        SpawnBall();
+        yield return new WaitForSeconds ((float)M.beatint);
+        SpawnBall();
     }
     // IEnumerator WaitFor (float f)
     // {

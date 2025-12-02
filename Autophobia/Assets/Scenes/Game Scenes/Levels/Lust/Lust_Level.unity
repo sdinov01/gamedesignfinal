@@ -544,7 +544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e23e1cd030492408a85cfd26c6a74e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  platform: {fileID: 0}
+  platform: {fileID: 260998229}
   left: []
   right: []
   up:
@@ -729,7 +729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e23e1cd030492408a85cfd26c6a74e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  platform: {fileID: 0}
+  platform: {fileID: 703588849}
   left: []
   right: []
   up:
@@ -1250,7 +1250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e23e1cd030492408a85cfd26c6a74e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  platform: {fileID: 0}
+  platform: {fileID: 1460344700}
   left: []
   right: []
   up:
@@ -1476,15 +1476,15 @@ PrefabInstance:
     - target: {fileID: 1108470116804574765, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
       propertyPath: 'platformObjects.Array.data[1]'
       value: 
-      objectReference: {fileID: 1460344700}
+      objectReference: {fileID: 703588849}
     - target: {fileID: 1108470116804574765, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
       propertyPath: 'platformObjects.Array.data[2]'
       value: 
-      objectReference: {fileID: 703588849}
+      objectReference: {fileID: 2144513117}
     - target: {fileID: 1108470116804574765, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
       propertyPath: 'platformObjects.Array.data[3]'
       value: 
-      objectReference: {fileID: 2144513117}
+      objectReference: {fileID: 1460344700}
     - target: {fileID: 1108470116804574765, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
       propertyPath: 'platformObjects.Array.data[4]'
       value: 
@@ -2171,7 +2171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e23e1cd030492408a85cfd26c6a74e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  platform: {fileID: 0}
+  platform: {fileID: 2144513117}
   left: []
   right: []
   up:

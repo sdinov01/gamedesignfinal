@@ -12,9 +12,11 @@ public class greedIntro : MonoBehaviour
     [SerializeField] private TimeBar timeBar;
     [SerializeField] private TMP_Text skip;
 
+    public CountIn countin;
+
     /* Default time will be 14.5 seconds after the scene is opened */
     private float beginTime = 14.5f;
-    private float tutorialMSGDur = 7f;
+    private float tutorialMSGDur = 10f;
     private Coroutine tutorialCoroutine;
     private bool skipTutorial = false;
     private float fadeDuration = 2f;
@@ -27,7 +29,11 @@ public class greedIntro : MonoBehaviour
         backgroundImage.enabled = true;
         /* Start the tutorial */
         tutorialCoroutine = StartCoroutine(handleTutorial());
-        StartCoroutine(startBar());
+
+        if (timeBar != null)
+        {
+           StartCoroutine(startBar()); 
+        }
     }
 
     private IEnumerator startBar()
@@ -98,6 +104,14 @@ public class greedIntro : MonoBehaviour
         StartCoroutine(fadeImage(backgroundImage, fadeDuration));
         StartCoroutine(fadeText(goodLuck, fadeDuration));
         StartCoroutine(fadeText(skip, fadeDuration));
+        StartCoroutine(BeginCountIn());
+    }
+
+    private IEnumerator BeginCountIn()
+    {
+        countin.enabled = true;
+        yield return null;
+        this.enabled = false;
     }
 
     private IEnumerator fadeImage(Image image, float duration)

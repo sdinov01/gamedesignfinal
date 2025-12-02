@@ -809,17 +809,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2028045c66cd6874389e6553b05c7eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullFrameImage: {fileID: 1122071123}
+  fullFrameImage: {fileID: 28896945528155419}
   textUI: {fileID: 1727174514}
   lines:
   - line: Feed us.
-    frame: {fileID: 671686197075892656, guid: 73c83a2eac3330547aa779861a565f8c, type: 3}
+    frame: {fileID: 754733754751692570, guid: c8e89842a544d4415bc8c34809a4e8fe, type: 3}
   - line: Our hunger cannot be quelled.
-    frame: {fileID: 671686197075892656, guid: 9b1e8f7af2b5ade47a0254b1b37d0ac6, type: 3}
+    frame: {fileID: 6232523577789975543, guid: 7d34daf72758c4a72a93ed921c3b7bfa, type: 3}
   - line: "There\u2019s millions of us, we all long to feast."
-    frame: {fileID: 671686197075892656, guid: b4aabd3b0e0d3a34c9a7abe4fac368b1, type: 3}
+    frame: {fileID: 6232523577789975543, guid: 7d34daf72758c4a72a93ed921c3b7bfa, type: 3}
   - line: Watch out--
-    frame: {fileID: 671686197075892656, guid: b4aabd3b0e0d3a34c9a7abe4fac368b1, type: 3}
+    frame: {fileID: 6232523577789975543, guid: 7d34daf72758c4a72a93ed921c3b7bfa, type: 3}
   typeDelay: 0.02
   flipInterval: 0.08
   advanceKey: 32

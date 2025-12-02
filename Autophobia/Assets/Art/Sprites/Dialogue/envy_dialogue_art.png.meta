@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      envy_dialogue_art_0: -2791914081847426382
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

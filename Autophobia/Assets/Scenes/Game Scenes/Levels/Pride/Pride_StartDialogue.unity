@@ -183,6 +183,30 @@ PrefabInstance:
       propertyPath: fullFrameImage
       value: 
       objectReference: {fileID: 1890195026}
+    - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: lines.Array.data[0].frame
+      value: 
+      objectReference: {fileID: -7875862043816725885, guid: a1c4a411b3f3ef44f80321a20a6446ac, type: 3}
+    - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: lines.Array.data[1].frame
+      value: 
+      objectReference: {fileID: -5144925568100834179, guid: 89d6cfa5825301b4aba2023b37f9d5cc, type: 3}
+    - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: lines.Array.data[2].frame
+      value: 
+      objectReference: {fileID: -5144925568100834179, guid: 89d6cfa5825301b4aba2023b37f9d5cc, type: 3}
+    - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: lines.Array.data[3].frame
+      value: 
+      objectReference: {fileID: -5144925568100834179, guid: 89d6cfa5825301b4aba2023b37f9d5cc, type: 3}
+    - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: lines.Array.data[4].frame
+      value: 
+      objectReference: {fileID: -7875862043816725885, guid: a1c4a411b3f3ef44f80321a20a6446ac, type: 3}
+    - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: lines.Array.data[5].frame
+      value: 
+      objectReference: {fileID: -5144925568100834179, guid: 89d6cfa5825301b4aba2023b37f9d5cc, type: 3}
     - target: {fileID: 8350621656080273941, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: levelName
       value: PrideV2

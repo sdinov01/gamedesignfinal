@@ -1383,8 +1383,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 0
+      time: -0.016002655
+      value: -0.0009536743
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1392,8 +1392,17 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.9888916
-      value: 0.09591293
+      time: 0.55889976
+      value: 0.09072297
+      inSlope: -0.14278269
+      outSlope: -0.14278269
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.96691895
+      value: 0.0020446777
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1504,7 +1513,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4896698686123452952, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
       propertyPath: m_Radius
-      value: 9.555022
+      value: 7.8753376
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896698686123452952, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.20996094
       objectReference: {fileID: 0}
     - target: {fileID: 4896698686123452952, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
       propertyPath: m_Offset.y
@@ -1608,8 +1621,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1acb32ac2a5d5a2408813b7b86c4a25e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lip1: {fileID: 0}
-  lip2: {fileID: 0}
+  lip1: {fileID: 5476129976979755212, guid: ac0446df1da58442f9e1918130043e5a, type: 3}
+  lip2: {fileID: 4580307930278375516, guid: 767cb204035ef42ae8de01f49a66769e, type: 3}
   spawns:
   - {fileID: 1762975431}
   - {fileID: 1762975431}
@@ -1640,11 +1653,22 @@ MonoBehaviour:
   - 6
   - 7
   lipSpawn4:
-  - 0
+  - 1
+  - 2
+  - 3
   - 5
+  - 6
+  - 7
+  - 8
   otherLipSpawn1:
   - 2
   - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
   otherLipSpawn2:
   - 5
   - 7
@@ -1656,6 +1680,8 @@ MonoBehaviour:
   - 8
   timeBar: {fileID: 1550033469}
   health: {fileID: 2068962260}
+  orientation: -90
+  orientation2: -180
 --- !u!1 &1702627957
 GameObject:
   m_ObjectHideFlags: 0

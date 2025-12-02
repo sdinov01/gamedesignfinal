@@ -61,6 +61,7 @@ public class spiderSpawner : MonoBehaviour
         spawnTimes[3] = spider4Spawn;
         if (SceneManager.GetActiveScene().name == "Envy_Level")
         {
+            Debug.Log("adding heal spiders");
             spawnTimes[4] = healSpiderSpawn1;
             spawnTimes[5] = healSpiderSpawn2;
             spawnTimes[6] = healSpiderSpawn3;

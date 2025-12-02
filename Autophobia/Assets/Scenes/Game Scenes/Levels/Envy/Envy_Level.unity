@@ -2837,6 +2837,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bird
       objectReference: {fileID: 0}
+    - target: {fileID: 6380782479066897595, guid: fa0ca82e1c0ba475fa8b28e63abff001, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7300779140058869727, guid: fa0ca82e1c0ba475fa8b28e63abff001, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7300779140058869727, guid: fa0ca82e1c0ba475fa8b28e63abff001, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 815395477
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2915,6 +2927,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bird_Heal
       objectReference: {fileID: 0}
+    - target: {fileID: 706212057920428625, guid: 69bfa1946bef646ac8d9a09f45931def, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7896270422038630827, guid: 69bfa1946bef646ac8d9a09f45931def, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.1306209
@@ -2954,6 +2970,14 @@ PrefabInstance:
     - target: {fileID: 7896270422038630827, guid: 69bfa1946bef646ac8d9a09f45931def, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8076814475183528024, guid: 69bfa1946bef646ac8d9a09f45931def, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8076814475183528024, guid: 69bfa1946bef646ac8d9a09f45931def, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 815395477
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

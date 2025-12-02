@@ -95,10 +95,9 @@ public class KnifeController : MonoBehaviour
         Vector3 dir = -transform.up;
         Vector3 target = basePos + dir * attackDistance;
 
-        float beatSpeed = attackSpeed * 0.6f;
         while (Vector3.Distance(transform.position, target) > 0.01f)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target, beatSpeed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, target, attackSpeed * Time.deltaTime);
             yield return null;
         }
 

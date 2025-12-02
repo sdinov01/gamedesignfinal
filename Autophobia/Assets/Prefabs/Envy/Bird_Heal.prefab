@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitDuration: 1
-  healAmt: 2
+  healAmt: 3
 --- !u!70 &-2277159269732649792
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

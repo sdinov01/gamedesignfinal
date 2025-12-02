@@ -6,10 +6,10 @@ public class LustCountIn : MonoBehaviour
     public TextMeshProUGUI countInText;
     public GameObject redboss;
     public GameObject purpleboss;
-    public GameObject audio;
     public GameObject platforms;
     public ModularAudioHandler M;
-    public GameObject interactables;
+    public GameObject activationGroup;
+    public AudioSource music;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -40,10 +40,19 @@ public class LustCountIn : MonoBehaviour
     void ActivateAll()
     {
         // redboss.SetActive  (true);
-        platforms.SetActive (true);
-        purpleboss.SetActive (true);
-        audio.SetActive (true);
-        redboss.SetActive  (true);
-        
+        // platforms.SetActive (true);
+        if (activationGroup != null)
+        {
+            activationGroup.SetActive (true);
+        }
+        if (purpleboss != null)
+        {
+            purpleboss.SetActive (true);
+        }
+        if (redboss != null)
+        {
+            redboss.SetActive  (true);
+        }
+        music.Play();
     }
 }

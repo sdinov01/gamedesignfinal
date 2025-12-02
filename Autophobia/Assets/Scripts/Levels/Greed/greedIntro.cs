@@ -13,6 +13,7 @@ public class greedIntro : MonoBehaviour
     [SerializeField] private TMP_Text skip;
 
     public CountIn countin;
+    public LustCountIn lci;
 
     /* Default time will be 14.5 seconds after the scene is opened */
     private float beginTime = 14.5f;
@@ -62,6 +63,11 @@ public class greedIntro : MonoBehaviour
             skip.enabled = false;
             backgroundImage.enabled = false;
 
+        
+            StartCoroutine(BeginCountIn());
+            
+
+
             /* Update beginning time for time stamps later */
             beginTime = Time.timeSinceLevelLoad + 2f;
         }   
@@ -109,7 +115,14 @@ public class greedIntro : MonoBehaviour
 
     private IEnumerator BeginCountIn()
     {
-        countin.enabled = true;
+        if (countin != null)
+        {
+            countin.enabled = true;
+        }
+        if (lci != null)
+        {
+            lci.enabled = true;
+        }
         yield return null;
         this.enabled = false;
     }
@@ -158,4 +171,5 @@ public class greedIntro : MonoBehaviour
     {
         return beginTime;
     }
+
 }

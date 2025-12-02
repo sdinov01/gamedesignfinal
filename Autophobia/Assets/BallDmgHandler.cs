@@ -9,6 +9,7 @@ public class BallDmgHandler : MonoBehaviour
     private Collider2D playercollider;
     public bool hascollided = false;
     private healthBar HB;
+    private AudioSource sfx;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,7 +18,8 @@ public class BallDmgHandler : MonoBehaviour
         ballLifetime    = GetComponent<BallLifetime>();
         thiscollider    = transform.GetComponent<Collider2D>();
         playercollider  = player.GetComponent<Collider2D>();
-        HB               = GameObject.FindWithTag("HealthBar").GetComponent<healthBar>();
+        HB              = GameObject.FindWithTag("HealthBar").GetComponent<healthBar>();
+        sfx             = GameObject.FindWithTag("SFX").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -28,6 +30,7 @@ public class BallDmgHandler : MonoBehaviour
         if (colliderin && ballLifetime.canHurt && !hascollided)
         {
             HB.takeDamage (10f);
+            sfx.Play();
             ballLifetime.EndLife();
             hascollided = true;
         }

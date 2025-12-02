@@ -120,7 +120,7 @@ public class linearPlatMove : MonoBehaviour
             target = GetTargetPlatform(current.right);
 
 
-            if (SceneManager.GetActiveScene().name == "PrideV2")
+            if (SceneManager.GetActiveScene().name == "Pride_Level")
             {
                 RotateISpinner(-IspinnerRotationAmount);
                 RotateOSpinner(OspinnerRotationAmount);
@@ -129,7 +129,7 @@ public class linearPlatMove : MonoBehaviour
         } else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) {
             target = GetTargetPlatform(current.left);
 
-            if (SceneManager.GetActiveScene().name == "PrideV2")
+            if (SceneManager.GetActiveScene().name == "Pride_Level")
             {
                 RotateISpinner(IspinnerRotationAmount);
                 RotateOSpinner(-OspinnerRotationAmount);
@@ -140,7 +140,7 @@ public class linearPlatMove : MonoBehaviour
 
         } else if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) {
             target = GetTargetPlatform(current.down);
-            if (SceneManager.GetActiveScene().name == "PrideV2")
+            if (SceneManager.GetActiveScene().name == "Pride_Level")
             {
                 FlipColor();
             }

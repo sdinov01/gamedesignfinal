@@ -13,6 +13,8 @@ public class gluttonyIntro : MonoBehaviour
     [SerializeField] private TMP_Text skip;
     [SerializeField] private spiderHealthAndDmg spiderHealth;
     [SerializeField] private Image timeBar;
+    [SerializeField] private LustCountIn countin;
+
     private TimeBar timeBarFill;
     /* Delay before the song is played */
     public float musicDelay = 23f;
@@ -28,8 +30,11 @@ public class gluttonyIntro : MonoBehaviour
         /* Default */
         musicDelay = 23f;
         skipTutorial = false;
-        audioSource.Stop();
-        audioSource.PlayDelayed(musicDelay);
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+            audioSource.PlayDelayed(musicDelay);
+        }
         tutorial.enabled = true;
         goodLuck.enabled = false;
         /* Start the tutorial messages */
@@ -51,8 +56,13 @@ public class gluttonyIntro : MonoBehaviour
             {
                 StopCoroutine(tutorialRoutine);
             }
-            audioSource.Stop();
-            audioSource.Play();
+            if (audioSource != null)
+            {
+                audioSource.Stop();
+                audioSource.Play();
+            }
+            // audioSource.Stop();
+            // audioSource.Play();
 
             // Instantly hide tutorial & good luck, then fade background
             tutorial.color = new Color(tutorial.color.r, tutorial.color.g, tutorial.color.b, 0);
@@ -67,6 +77,10 @@ public class gluttonyIntro : MonoBehaviour
             // Immediately fade background out
             background.enabled = false;
             musicDelay = Time.timeSinceLevelLoad;
+            if (countin != null)
+            {
+                countin.enabled = true;
+            }
         }
     }
 
@@ -89,6 +103,11 @@ public class gluttonyIntro : MonoBehaviour
         StartCoroutine(FadeOut(skip));
         StartCoroutine(FadeOutImage(background));
         yield return new WaitForSeconds(fadeTime);
+        if (countin != null)
+        {
+            countin.enabled = true;
+        }
+        this.enabled = false;
     }
     private IEnumerator FadeIn(TMP_Text text)
     {
@@ -161,8 +180,7 @@ public class gluttonyIntro : MonoBehaviour
         return musicDelay;
     }
 
-
-    private IEnumerator startBar()
+    public IEnumerator startBar()
     {
         /* Begin after tutorial/skip */
         Debug.Log("musicDelay " + musicDelay);

@@ -28,7 +28,6 @@ public class LustCountIn : MonoBehaviour
         countInText.text = go;
         yield return new WaitForSeconds ((float)M.beat2int);
         ActivateAll();
-        countInText.gameObject.SetActive (false);
         // interactables.SetActive (true);
 
     }
@@ -41,6 +40,7 @@ public class LustCountIn : MonoBehaviour
     {
         // redboss.SetActive  (true);
         // platforms.SetActive (true);
+        countInText.gameObject.SetActive (false);
         if (activationGroup != null)
         {
             activationGroup.SetActive (true);

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b1c083f317fc844658b11a3f8b1d501d
+guid: 1a5efddffef54f241b23728002f9bb37
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8414027969879575781
-    second: wrathbox2_0
+      213: -8998969377859876603
+    second: greed_after_win_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wrathbox2_0
+      name: greed_after_win_0
       rect:
         serializedVersion: 2
-        x: 386
-        y: 145
-        width: 1148
-        height: 903
+        x: 295
+        y: 104
+        width: 1332
+        height: 949
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b13702d042e5b3b80800000000000000
-      internalID: -8414027969879575781
+      spriteID: 5094b08870d3d1380800000000000000
+      internalID: -8998969377859876603
       vertices: []
       indices: 
       edges: []
@@ -134,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      wrathbox2_0: -8414027969879575781
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

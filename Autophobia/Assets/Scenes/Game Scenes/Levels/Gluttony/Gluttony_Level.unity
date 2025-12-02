@@ -952,6 +952,7 @@ MonoBehaviour:
   background: {fileID: 1860445096}
   skip: {fileID: 1282148960}
   spiderHealth: {fileID: 3383082427837304278, guid: a7fa7ea3f345ed34eb50f18911ef0538, type: 3}
+  timeBar: {fileID: 1550033471}
   musicDelay: 23
   fadeTime: 1.5
   fadeDelay: 11
@@ -1990,6 +1991,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fd174be03800014fbc81076238480ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1550033471 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6273131707241877298, guid: 0fb1dba6e32c38241b51917b851196b4, type: 3}
+  m_PrefabInstance: {fileID: 141256605035163322}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1565470259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2036,7 +2048,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4896698686123452952, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
       propertyPath: m_Radius
-      value: 9.555022
+      value: 7.9805803
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896698686123452952, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.04498005
       objectReference: {fileID: 0}
     - target: {fileID: 4896698686123452952, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
       propertyPath: m_Offset.y
@@ -2579,6 +2595,7 @@ MonoBehaviour:
   healSpiderSpawn4: []
   timeBar: {fileID: 1550033469}
   health: {fileID: 2068962258}
+  startingRotation: 0
 --- !u!1 &1652067971
 GameObject:
   m_ObjectHideFlags: 0

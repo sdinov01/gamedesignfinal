@@ -7,6 +7,7 @@ public class SentChildren : MonoBehaviour
     public Transform destination;
     private float moveSpeed = 20f;
     public float smoothness = 0.1f;
+    public bool rotate;
 
     public int ccount;
     
@@ -23,6 +24,11 @@ public class SentChildren : MonoBehaviour
             {
                 Destroy (child.gameObject);
             }
+            // if (rotate && child.rotation.z != 0)
+            // {
+                // Debug.Log ("Child rotated");
+                child.Rotate (0f, 0f, 0.35f, Space.World);
+            // }
 
             child.position = Vector3.MoveTowards(child.position, destination.position, smoothness * Time.deltaTime * moveSpeed);
         }

@@ -24,7 +24,9 @@ public class BossShooter : MonoBehaviour
     public FiringPhase[] phases;
 
     [Header("Projectile")]
-    public GameObject BossProjectile;               
+    public GameObject BossProjectile;           
+    public GameObject RedLip;
+    public GameObject BlueLip;    
 
     public float[] laneTravelDistances;
 
@@ -174,7 +176,14 @@ public class BossShooter : MonoBehaviour
         spawnPosition.z = -1f;
         
         // Instantiate at position spawn point
-        GameObject projObj = Instantiate(BossProjectile, spawnPosition, Quaternion.identity);
+        Quaternion q = Quaternion.identity;
+        if (BossProjectile == BlueLip)
+        {
+            Debug.Log ("Spawning a Blue Projectile");
+            q = new Quaternion (0f, 0f, 45f, 1f);
+        }
+
+        GameObject projObj = Instantiate(BossProjectile, spawnPosition, q);
         // Parents the spawned object with the fire point
         projObj.transform.SetParent(firePoints[laneIndex], true);
 

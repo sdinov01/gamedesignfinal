@@ -16,7 +16,7 @@ public class CircleSpawner_new : MonoBehaviour
     private int nextIndex = 0; //for spawn time
 
     private float idleIntensity = 0.16f;
-    private float activeIntensity = 1f;
+    private float activeIntensity = 0.8f;
     private float lightFadeTime = 1.09f;
 
     void Start()
@@ -40,7 +40,8 @@ public class CircleSpawner_new : MonoBehaviour
             }
             eyes[spawnPlace[index]].Trigger(triggerTime); 
             StartCoroutine(AnimateLight(lights[spawnPlace[index]]));
-            index = (index + 1) % eyes.Length;
+            index = (index + 1);
+            // % eyes.Length;
         }
     }
     IEnumerator AnimateLight(Light2D light)

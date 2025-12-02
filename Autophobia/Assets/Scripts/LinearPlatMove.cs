@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 /* Array of platform objects to be made into Platform class objects */
 
@@ -103,89 +104,46 @@ public class linearPlatMove : MonoBehaviour
         return null;
     }
 
-
-    // void Update()
-    // {
-    //     Platform target = null;
-
-    //     // =======================
-    //     // MOVEMENTS
-    //     // =======================
-
-    //     if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
-    //     {
-    //         target = GetTargetPlatform(platforms[currPosition].right);
-    //     }
-    //     else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
-    //     {
-    //         target = GetTargetPlatform(platforms[currPosition].left);
-    //     }
-    //     else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
-    //     {
-    //         target = GetTargetPlatform(platforms[currPosition].up);
-    //     }
-    //     else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
-    //     {
-    //         target = GetTargetPlatform(platforms[currPosition].down);
-    //     }
-
-    //     // =======================
-    //     // PROCESS MOVEMENT
-    //     // =======================
-
-    //     if (target != null)
-    //     {
-    //         // Move to new platform index
-    //         currPosition = System.Array.IndexOf(platforms, target);
-    //         canMove = true;
-    //     }
-
-    //     // Always update tween origin AFTER checking movement
-    //     tweenOrigin = player.transform.position;
-
-    //     // =======================
-    //     // NO MOVEMENT: Snap player to current platform
-    //     // =======================
-    //     if (!canMove)
-    //     {
-    //         GameObject currPlatform = platformObjects[currPosition];
-    //         Vector3 targetPos = new Vector3(
-    //             currPlatform.transform.position.x,
-    //             currPlatform.transform.position.y + offset,
-    //             player.transform.position.z
-    //         );
-
-    //         player.transform.position = targetPos;
-    //     }
-    // }
     void Update()
     {
         if (currPosition < 0 || currPosition >= platforms.Length)
-            return; // safety
+            return;
 
         Platform target = null;
         Platform current = platforms[currPosition];
 
         if (current == null)
-            return; // safety
+            return; 
 
         if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
             target = GetTargetPlatform(current.right);
-            RotateISpinner(-IspinnerRotationAmount);
-            RotateOSpinner(OspinnerRotationAmount);
+
+
+            if (SceneManager.GetActiveScene().name == "PrideV2")
+            {
+                RotateISpinner(-IspinnerRotationAmount);
+                RotateOSpinner(OspinnerRotationAmount);
+            }
 
         } else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) {
             target = GetTargetPlatform(current.left);
-            RotateISpinner(IspinnerRotationAmount);
-            RotateOSpinner(-OspinnerRotationAmount);
+
+            if (SceneManager.GetActiveScene().name == "PrideV2")
+            {
+                RotateISpinner(IspinnerRotationAmount);
+                RotateOSpinner(-OspinnerRotationAmount);
+            }
 
         } else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) {
             target = GetTargetPlatform(current.up);
 
         } else if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) {
             target = GetTargetPlatform(current.down);
-            FlipColor();
+            if (SceneManager.GetActiveScene().name == "PrideV2")
+            {
+                FlipColor();
+            }
         }
         if (target != null)
         {

@@ -119,12 +119,12 @@ TextureImporter:
       name: devil_dialogue_art_0
       rect:
         serializedVersion: 2
-        x: 512
-        y: 693
-        width: 163
-        height: 234
+        x: 85
+        y: 154
+        width: 1749
+        height: 877
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -144,9 +144,9 @@ TextureImporter:
         x: 412
         y: 201
         width: 1100
-        height: 482
+        height: 729
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,8 +163,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []

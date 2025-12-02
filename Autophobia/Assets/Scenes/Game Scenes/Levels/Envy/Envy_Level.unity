@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 50}
   m_SizeDelta: {x: 1000, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7156103
@@ -184,20 +184,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Spiders are invulnerable until the "chomp" is heard, and they pulse to
-    further signal vulnerability. You are not required to kill the spiders, but it
-    is easier to navigate if they are dead. Press space when you touch them to kill
-    them.
+  m_text: 'The white ones heal, the black ones damage. '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7cda735c1bfc24a41befe94988fa90fe, type: 2}
+  m_sharedMaterial: {fileID: 9060165477165037049, guid: 7cda735c1bfc24a41befe94988fa90fe, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -306,6 +303,10 @@ PrefabInstance:
     - target: {fileID: 653210004214283744, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 653210004214283744, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2576638760144512333, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
       propertyPath: m_Pivot.x
@@ -443,22 +444,22 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2576638760144512333, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
-      insertIndex: -1
+      insertIndex: 2
       addedObject: {fileID: 2068962254}
     - targetCorrespondingSourceObject: {fileID: 2576638760144512333, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
-      insertIndex: -1
+      insertIndex: 3
       addedObject: {fileID: 1787033107}
     - targetCorrespondingSourceObject: {fileID: 2576638760144512333, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1282148962}
-    - targetCorrespondingSourceObject: {fileID: 2576638760144512333, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
-      insertIndex: -1
+      insertIndex: 4
       addedObject: {fileID: 1860445095}
     - targetCorrespondingSourceObject: {fileID: 2576638760144512333, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
-      insertIndex: -1
+      insertIndex: 5
+      addedObject: {fileID: 1282148962}
+    - targetCorrespondingSourceObject: {fileID: 2576638760144512333, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
+      insertIndex: 6
       addedObject: {fileID: 7156102}
     - targetCorrespondingSourceObject: {fileID: 2576638760144512333, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
-      insertIndex: -1
+      insertIndex: 7
       addedObject: {fileID: 1183140605}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f885b3984ba824b4a9544cec15907f02, type: 3}
@@ -510,9 +511,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2794278237332296444, guid: bfe2c38e2e132c24c8f2bead3f321aed, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3276832814261720227, guid: bfe2c38e2e132c24c8f2bead3f321aed, type: 3}
       propertyPath: m_Name
       value: GameHandler
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982067757948750536, guid: bfe2c38e2e132c24c8f2bead3f321aed, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -771,6 +780,7 @@ MonoBehaviour:
   background: {fileID: 1860445096}
   skip: {fileID: 1282148960}
   spiderHealth: {fileID: 3383082427837304278, guid: a7fa7ea3f345ed34eb50f18911ef0538, type: 3}
+  timeBar: {fileID: 0}
   musicDelay: 15
   fadeTime: 2
   fadeDelay: 7
@@ -989,15 +999,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Good luck!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7cda735c1bfc24a41befe94988fa90fe, type: 2}
+  m_sharedMaterial: {fileID: 9060165477165037049, guid: 7cda735c1bfc24a41befe94988fa90fe, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1218,8 +1228,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Shift to skip
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7cda735c1bfc24a41befe94988fa90fe, type: 2}
+  m_sharedMaterial: {fileID: 9060165477165037049, guid: 7cda735c1bfc24a41befe94988fa90fe, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1832,8 +1842,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6fc2b9ea1adb5f4bbd2604a985ab697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 2130984167284008389, guid: a7fa7ea3f345ed34eb50f18911ef0538, type: 3}
-  enemy2: {fileID: 134357489319068374, guid: 28274d46352e05f40a8b24dba53b0255, type: 3}
+  enemy: {fileID: 6380782479066897595, guid: 5294fc3acd35452469133a0955f431ae, type: 3}
+  enemy2: {fileID: 706212057920428625, guid: 0c83393f7177fbd418da927954470f82, type: 3}
   spawns:
   - {fileID: 1762975431}
   - {fileID: 762916264}
@@ -1854,56 +1864,8 @@ MonoBehaviour:
   - {fileID: 557409814}
   audioSource: {fileID: 1908021268}
   gluttonyIntroHandler: {fileID: 836761431}
-  pulseTimeStamps:
-  - 2
-  - 4
-  - 6
-  - 10
-  - 12
-  - 14
-  - 18.5
-  - 20.5
-  - 22.5
-  - 24
-  - 38
-  - 40
-  - 42
-  - 44
-  - 46
-  - 48
-  - 50
-  - 52
-  - 58
-  - 60
-  - 62
-  - 64
-  - 66
-  - 68
-  pulseDuration:
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 4
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  pulseTimeStamps: []
+  pulseDuration: []
   spider1Spawn:
   - 6
   - 8
@@ -2196,6 +2158,7 @@ MonoBehaviour:
   - 2
   timeBar: {fileID: 1550033469}
   health: {fileID: 2068962258}
+  startingRotation: 0
 --- !u!1 &1762975430
 GameObject:
   m_ObjectHideFlags: 0
@@ -2313,7 +2276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.61057705, g: 0.71102226, b: 0.8553459, a: 0.7490196}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2349,7 +2312,7 @@ GameObject:
   - component: {fileID: 1908021267}
   - component: {fileID: 1908021268}
   m_Layer: 0
-  m_Name: Gluttony Music
+  m_Name: Envy Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2380,8 +2343,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f2f9ae5517e888643bf69e2d99f41c64, type: 3}
-  m_Resource: {fileID: 8300000, guid: f2f9ae5517e888643bf69e2d99f41c64, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6fc62a015d232492994962cc623853c4, type: 3}
+  m_Resource: {fileID: 8300000, guid: 6fc62a015d232492994962cc623853c4, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

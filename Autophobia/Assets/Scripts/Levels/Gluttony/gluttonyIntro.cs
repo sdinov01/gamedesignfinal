@@ -12,6 +12,8 @@ public class gluttonyIntro : MonoBehaviour
     [SerializeField] private Image background;
     [SerializeField] private TMP_Text skip;
     [SerializeField] private spiderHealthAndDmg spiderHealth;
+    [SerializeField] private Image timeBar;
+    private TimeBar timeBarFill;
     /* Delay before the song is played */
     public float musicDelay = 23f;
     public float fadeTime = 1.5f;
@@ -22,6 +24,7 @@ public class gluttonyIntro : MonoBehaviour
 
     void Start()
     {
+        timeBarFill = timeBar.GetComponent<TimeBar>();
         /* Default */
         musicDelay = 23f;
         skipTutorial = false;
@@ -31,6 +34,11 @@ public class gluttonyIntro : MonoBehaviour
         goodLuck.enabled = false;
         /* Start the tutorial messages */
         tutorialRoutine = StartCoroutine(TutorialMessage());
+        if (timeBar != null)
+        {
+            Debug.Log("Time bar is not null");
+            StartCoroutine(startBar());
+        }
     }
 
     /* Make intro skippable */
@@ -43,8 +51,8 @@ public class gluttonyIntro : MonoBehaviour
             {
                 StopCoroutine(tutorialRoutine);
             }
-            audioSource.Stop();   // cancels scheduled/playing clip
-            audioSource.Play();   // start right now
+            audioSource.Stop();
+            audioSource.Play();
 
             // Instantly hide tutorial & good luck, then fade background
             tutorial.color = new Color(tutorial.color.r, tutorial.color.g, tutorial.color.b, 0);
@@ -58,6 +66,7 @@ public class gluttonyIntro : MonoBehaviour
 
             // Immediately fade background out
             background.enabled = false;
+            musicDelay = Time.timeSinceLevelLoad;
         }
     }
 
@@ -72,13 +81,13 @@ public class gluttonyIntro : MonoBehaviour
         if (skipTutorial) yield break;
 
         yield return StartCoroutine(FadeIn(goodLuck));
-        //goodLuck.enabled = true;
         yield return new WaitForSeconds(2f);
         if (skipTutorial) yield break;
         StartCoroutine(FadeOut(goodLuck));
-        background.gameObject.SetActive(false);
-        //StartCoroutine(FadeOutImage(background));
+        //background.gameObject.SetActive(false);
+        if (skipTutorial) yield break;
         StartCoroutine(FadeOut(skip));
+        StartCoroutine(FadeOutImage(background));
         yield return new WaitForSeconds(fadeTime);
     }
     private IEnumerator FadeIn(TMP_Text text)
@@ -99,27 +108,27 @@ public class gluttonyIntro : MonoBehaviour
 
         text.color = new Color(c.r, c.g, c.b, 1);
     }
-    // private IEnumerator FadeOutImage(Image background)
-    // {
-    //     Color c = background.color;
-    //     float startAlpha = c.a;
-    //     float t = 0;
+    private IEnumerator FadeOutImage(Image background)
+    {
+        Color c = background.color;
+        float startAlpha = c.a;
+        float t = 0;
 
-    //     while (t < fadeTime)
-    //     {
-    //         if (skipTutorial)
-    //         {
-    //             break;
-    //         }
-    //         t += Time.deltaTime;
-    //         float alpha = Mathf.Lerp(startAlpha, 0, t / fadeTime);
-    //         background.color = new Color(c.r, c.g, c.b, alpha);
-    //         yield return null;
-    //     }
+        while (t < fadeTime)
+        {
+            if (skipTutorial)
+            {
+                break;
+            }
+            t += Time.deltaTime;
+            float alpha = Mathf.Lerp(startAlpha, 0, t / fadeTime);
+            background.color = new Color(c.r, c.g, c.b, alpha);
+            yield return null;
+        }
 
-    //     background.color = new Color(c.r, c.g, c.b, 0);
-    //     background.enabled = false;
-    // }
+        background.color = new Color(c.r, c.g, c.b, 0);
+        background.enabled = false;
+    }
     private IEnumerator FadeOut(TMP_Text text)
     {
         Color c = text.color;
@@ -145,5 +154,23 @@ public class gluttonyIntro : MonoBehaviour
     public bool SkippedTutorial()
     {
         return skipTutorial;
+    }
+
+    public float StartTime()
+    {
+        return musicDelay;
+    }
+
+
+    private IEnumerator startBar()
+    {
+        /* Begin after tutorial/skip */
+        Debug.Log("musicDelay " + musicDelay);
+        yield return new WaitUntil(() => Time.timeSinceLevelLoad >= musicDelay);
+
+        /* Begin song Courotine fill bar */
+        timeBarFill.SetDuration(audioSource.clip.length);
+        timeBarFill.BeginTime();
+        Debug.Log("should start time bar");
     }
 }

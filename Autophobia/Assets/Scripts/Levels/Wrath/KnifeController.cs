@@ -1,10 +1,11 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Rendering.Universal;
 
 public class KnifeController : MonoBehaviour
 {
     public int sectorIndex;
-    public float attackDistance = 1.2f;
+    public float attackDistance = 1.5f;
     public float attackSpeed = 8f;
     public float returnSpeed = 8f;
     public bool canStart = false;
@@ -17,6 +18,9 @@ public class KnifeController : MonoBehaviour
 
     public Transform center; 
     public float angle;
+
+    private float currentDamage = 10f;  
+    public Light2D knifeLight;
 
     void Awake()
     {
@@ -39,7 +43,7 @@ public class KnifeController : MonoBehaviour
         isAttacking = true;
         
         Vector3 dir = -transform.up; 
-        Vector3 target = basePos - dir * attackDistance;
+        Vector3 target = basePos + dir * attackDistance;
 
 
         while (Vector3.Distance(transform.position, target) > 0.01f)
@@ -64,7 +68,7 @@ public class KnifeController : MonoBehaviour
         if (Time.time - lastHitTime < 0.6f) return;
         lastHitTime = Time.time;
         Debug.Log("take damage"); 
-        health.takeDamage(10f);
+        health.takeDamage(currentDamage);
     }
 
     void ResetCollider()
@@ -72,5 +76,40 @@ public class KnifeController : MonoBehaviour
         Collider2D col = GetComponent<Collider2D>();
         col.enabled = false;
         col.enabled = true; 
+    }
+
+
+//for beat attack
+    public void TriggerBeatAttack()
+    {
+        if (!canStart) return;
+        if (!isAttacking)
+            StartCoroutine(DoBeatAttack());
+    }
+
+    IEnumerator DoBeatAttack()
+    {
+        isAttacking = true;
+        currentDamage = 4f;
+
+        Vector3 dir = -transform.up;
+        Vector3 target = basePos + dir * attackDistance;
+
+        float beatSpeed = attackSpeed * 0.6f;
+        while (Vector3.Distance(transform.position, target) > 0.01f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, target, beatSpeed * Time.deltaTime);
+            yield return null;
+        }
+
+        while (Vector3.Distance(transform.position, basePos) > 0.01f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, basePos, returnSpeed * Time.deltaTime);
+            yield return null;
+        }
+
+        ResetCollider();
+        currentDamage = 10f;
+        isAttacking = false;
     }
 }

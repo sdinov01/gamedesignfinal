@@ -119,12 +119,12 @@ TextureImporter:
       name: gluttony_after_win_0
       rect:
         serializedVersion: 2
-        x: 385
-        y: 163
-        width: 1150
-        height: 318
+        x: 87
+        y: 129
+        width: 1745
+        height: 926
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -146,7 +146,7 @@ TextureImporter:
         width: 636
         height: 598
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3936c4fa30f7a8f4dae1a2542e75a5b2
     internalID: 0
     vertices: []
     indices: 

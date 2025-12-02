@@ -11,30 +11,35 @@ public class spiderMovement : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
 
-    // 🔹 Global pulse state (shared by all spiders)
+    /* All spiders vulnerable and pulse when true */
     private static bool isPulsingGlobal = false;
     private static float pulseEndTime = 0f;
+    private float startingOrientation = 0f;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
+
+        /* Spiders face direction of movement. */
+        Vector3 movement = origin.position - destination.position;
+        float angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg;
+
+        transform.rotation = Quaternion.Euler(0, 0, startingOrientation + angle - 180f);
+        
     }
 
     void Update()
     {
         /* Always moves now */
         Move();
-        // If a global pulse is active
         if (isPulsingGlobal)
         {
-            // Turn red and don't move
             if (gameObject.tag == "Spider")
             {
-                spriteRenderer.color = Color.red;
+                spriteRenderer.color = Color.green;
             }
 
-            // End of pulse?
             if (Time.time >= pulseEndTime)
             {
                 isPulsingGlobal = false;
@@ -72,5 +77,10 @@ public class spiderMovement : MonoBehaviour
         this.destination = destination;
         this.origin = origin;
         transform.position = new Vector3(origin.position.x, origin.position.y, 0f);
+    }
+
+    public void SetStartingOrientation(float orientation)
+    {
+        startingOrientation = orientation;
     }
 }

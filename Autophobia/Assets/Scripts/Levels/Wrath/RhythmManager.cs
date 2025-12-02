@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Rendering.Universal;
 
 public class RhythmManager : MonoBehaviour
 {
@@ -8,7 +9,8 @@ public class RhythmManager : MonoBehaviour
     public Transform center;
     public Transform player;
 
-    public float bpm = 118f;
+    //public float bpm = 118f;
+    public float bpm = 100f;
     public KnifeController[] knives;
 
     private float beatInterval;
@@ -20,11 +22,13 @@ public class RhythmManager : MonoBehaviour
     private KnifeController thisknife;
 
     private int nextIndex = 0; // for spawn time
-    public List<float> spawnTimes = new List<float>(); 
+    public List<float> spawnTimes = new List<float>(); //manually assiagned attack
     public float attackDelay = 1.2f;
     public AudioSource musicSource;
     public healthBar health;
     private bool musicStarted = false;
+
+    private int beatKnifeIndex = 0; //for beat attack
 
 
     void Start()
@@ -49,34 +53,30 @@ public class RhythmManager : MonoBehaviour
         }
         
         // //let it follow the beat
-        // timer += Time.deltaTime;
-        // if (timer >= beatInterval)
-        // {
-        //     timer -= beatInterval;
-        //     beatCount++;
+        timer += Time.deltaTime;
+        if (timer >= beatInterval)
+        {
+            timer -= beatInterval;
+            //beatCounter++;
+            TriggerBeatKnife();
 
-        //     HandleBeat(beatCount);
-        // }
+            //HandleBeat(beatCount);
+        }
     
     }
+    void TriggerBeatKnife()
+    {
+        if (knives.Length == 0) return;
 
-    // void HandleBeat(int beat)
-    // {
-    // //     for (int i = 0; i < spawnTimes.Count; i++)
-    // //     {
-    //     int beatInBar = ((beat - 1) % 4) + 1; 
+        KnifeController knife = knives[beatKnifeIndex];
 
-    //     if (beat <= 4)
-    //     {
-    //         if (beatInBar == 4)
-    //             TriggerNextKnife();
-    //     }
-    //     else
-    //     {
-    //         if (beatInBar == 2 || beatInBar == 4)
-    //             TriggerNextKnife();
-    //     }
-    // }
+        // Beat: less damage than spawn time attack
+        StartCoroutine(FlashThenAttack(knife));
+        knife.TriggerBeatAttack();
+
+        // follow the order of knifes
+        beatKnifeIndex = (beatKnifeIndex + 1) % knives.Length;
+    }
 
     public void TriggerNextKnife()
     {
@@ -86,7 +86,8 @@ public class RhythmManager : MonoBehaviour
             if (knife.sectorIndex == sector)
             {
                 sr = knife.self.GetComponent<SpriteRenderer>();
-                StartCoroutine(FlashThenAttack(knife,sr));
+                //StartCoroutine(FlashThenAttack(knife,sr));
+                StartCoroutine(FlashThenAttack(knife));
                 //thisknife = knife;
                 // StartCoroutine (sequence (sr.color, Color.red));
                 // StartColorLerp (sr.color, Color.red);
@@ -98,20 +99,57 @@ public class RhythmManager : MonoBehaviour
             }
         }
     }
-    IEnumerator FlashThenAttack(KnifeController knife, SpriteRenderer sr)
+    //flash red color
+    // IEnumerator FlashThenAttack(KnifeController knife, SpriteRenderer sr)
+    // {
+    //     Color original = sr.color;
+
+    //     sr.color = Color.red;
+    //     yield return new WaitForSeconds(0.3f);
+
+    //     sr.color = original;
+
+    //     knife.TriggerAttack();
+    // }
+
+    IEnumerator FlashThenAttack(KnifeController knife)
     {
-        Color original = sr.color;
+        //light become brighter
+        if (knife.knifeLight != null)
+        {
+            StartCoroutine(LightFlash(knife.knifeLight));
+        }
 
-        // 变红
-        sr.color = Color.red;
         yield return new WaitForSeconds(0.3f);
-
-        // 变回原来的颜色
-        sr.color = original;
-
-        // 攻击
         knife.TriggerAttack();
     }
+
+    IEnumerator LightFlash(Light2D light)
+    {
+        float start = 0.7f;
+        float end = 2.1f;
+        float t = 0f;
+
+        // brighter
+        while (t < 0.3f)
+        {
+            t += Time.deltaTime;
+            light.intensity = Mathf.Lerp(start, end, t / 0.15f);
+            yield return null;
+        }
+
+        // return back
+        t = 0f;
+        while (t < 0.3f)
+        {
+            t += Time.deltaTime;
+            light.intensity = Mathf.Lerp(end, start, t / 0.15f);
+            yield return null;
+        }
+
+        light.intensity = start;
+    }
+
 
     int GetPlayerSector()
     {

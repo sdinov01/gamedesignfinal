@@ -116,10 +116,10 @@ TextureImporter:
       name: envy_dialogue_art_0
       rect:
         serializedVersion: 2
-        x: 61
-        y: 100
-        width: 1642
-        height: 875
+        x: 76
+        y: 157
+        width: 1627
+        height: 818
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

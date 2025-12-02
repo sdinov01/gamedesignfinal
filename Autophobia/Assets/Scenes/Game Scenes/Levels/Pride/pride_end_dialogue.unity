@@ -663,6 +663,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 682802186}
     - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: lines.Array.data[0].line
       value: And that was only le beginning?!
       objectReference: {fileID: 0}
@@ -675,17 +679,25 @@ PrefabInstance:
       value: "(Let\u2019s just leave.)"
       objectReference: {fileID: 0}
     - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: lines.Array.data[4].line
+      value: Regardez!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: lines.Array.data[0].frame
       value: 
-      objectReference: {fileID: 671686197075892656, guid: b4aabd3b0e0d3a34c9a7abe4fac368b1, type: 3}
+      objectReference: {fileID: -6431693778623316281, guid: 1df3313a9c8c3fb41b54a46ca7cd6c35, type: 3}
     - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: lines.Array.data[1].frame
       value: 
-      objectReference: {fileID: 671686197075892656, guid: b4aabd3b0e0d3a34c9a7abe4fac368b1, type: 3}
+      objectReference: {fileID: -6431693778623316281, guid: 1df3313a9c8c3fb41b54a46ca7cd6c35, type: 3}
     - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: lines.Array.data[2].frame
       value: 
-      objectReference: {fileID: 671686197075892656, guid: 3f8bd2e0fef76354faaadd2fc8ab72b7, type: 3}
+      objectReference: {fileID: -7875862043816725885, guid: a1c4a411b3f3ef44f80321a20a6446ac, type: 3}
+    - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: lines.Array.data[4].frame
+      value: 
+      objectReference: {fileID: -5840379816752467025, guid: c1851fddcf40a49efacdfabdbdab66c0, type: 3}
     - target: {fileID: 8350621656080273941, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: dm
       value: 

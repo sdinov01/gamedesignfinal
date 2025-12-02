@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gluttony Hands_0: -8694959289776147907
+      Gluttony Hands_1: -2915078400716644500
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

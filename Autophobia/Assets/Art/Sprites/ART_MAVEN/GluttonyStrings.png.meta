@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GluttonyStrings_0: 1255968566495480127
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

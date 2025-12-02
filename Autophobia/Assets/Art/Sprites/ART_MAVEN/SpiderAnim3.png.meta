@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpiderAnim3_0: 7817702649756812820
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

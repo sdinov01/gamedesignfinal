@@ -180,6 +180,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2039472837}
     - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
+      propertyPath: lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: lines.Array.data[0].line
       value: 'DAMMIT. COCKROACHES SERIOUSLY PISS ME OFF. '
       objectReference: {fileID: 0}
@@ -194,15 +198,15 @@ PrefabInstance:
     - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: lines.Array.data[0].frame
       value: 
-      objectReference: {fileID: 671686197075892656, guid: 9b1e8f7af2b5ade47a0254b1b37d0ac6, type: 3}
+      objectReference: {fileID: -7346289934988705157, guid: 7f729dcc44c2bb943af834654d4760de, type: 3}
     - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: lines.Array.data[1].frame
       value: 
-      objectReference: {fileID: 671686197075892656, guid: 9b1e8f7af2b5ade47a0254b1b37d0ac6, type: 3}
+      objectReference: {fileID: -7346289934988705157, guid: 7f729dcc44c2bb943af834654d4760de, type: 3}
     - target: {fileID: 7778790694537391651, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: lines.Array.data[2].frame
       value: 
-      objectReference: {fileID: 671686197075892656, guid: 9b1e8f7af2b5ade47a0254b1b37d0ac6, type: 3}
+      objectReference: {fileID: -7346289934988705157, guid: 7f729dcc44c2bb943af834654d4760de, type: 3}
     - target: {fileID: 8350621656080273941, guid: fe7e04c1f0a6aef4ca39787b20899c43, type: 3}
       propertyPath: dm
       value: 

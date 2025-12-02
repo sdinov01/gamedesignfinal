@@ -34,6 +34,14 @@ public class RhythmManager : MonoBehaviour
     void Start()
     {
         beatInterval = 60f / bpm;
+        StartCoroutine(WaitForMusicToStart());
+    }
+
+    IEnumerator WaitForMusicToStart()
+    {
+        while (musicSource.time <= 0.01f)
+            yield return null;
+        Play();
     }
 
     void Update()
@@ -193,6 +201,11 @@ public class RhythmManager : MonoBehaviour
     {
         musicSource.Play();
         musicStarted = true;
+
+        foreach (var k in knives)
+        {
+            k.canStart = true;
+        }
     }
     
     void checkMusicEnd()

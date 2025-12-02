@@ -405,7 +405,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87233872}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -414,7 +414,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.000061035156, y: 0.000030517578}
   m_SizeDelta: {x: 1300, y: 750}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &87233874
@@ -430,14 +430,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.6509804}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7482667652216324306, guid: 4ac0b0a0bce94cf4293623b0899d99b5, type: 3}
+  m_Sprite: {fileID: -8060396104083226304, guid: 659dd6f65797748bfb03d3d8cbe8b748, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1966,8 +1966,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Good Luck!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7cda735c1bfc24a41befe94988fa90fe, type: 2}
+  m_sharedMaterial: {fileID: 9060165477165037049, guid: 7cda735c1bfc24a41befe94988fa90fe, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2877,8 +2877,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Shift to skip
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7cda735c1bfc24a41befe94988fa90fe, type: 2}
+  m_sharedMaterial: {fileID: 9060165477165037049, guid: 7cda735c1bfc24a41befe94988fa90fe, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2970,7 +2970,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -540, y: -330}
+  m_AnchoredPosition: {x: -498, y: -284}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1274170620
@@ -3648,8 +3648,8 @@ MonoBehaviour:
   m_text: 'The hour hand will make certain areas of the clock dangerous. You are
     the minute hand that is to avoid these areas. '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7cda735c1bfc24a41befe94988fa90fe, type: 2}
+  m_sharedMaterial: {fileID: 9060165477165037049, guid: 7cda735c1bfc24a41befe94988fa90fe, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3758,6 +3758,7 @@ GameObject:
   - component: {fileID: 1706556085}
   - component: {fileID: 1706556084}
   - component: {fileID: 1706556086}
+  - component: {fileID: 1706556087}
   m_Layer: 0
   m_Name: Sound Manager
   m_TagString: Untagged
@@ -3884,7 +3885,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706556083}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25df7e35a21d06d4f973d9c127f07fbd, type: 3}
   m_Name: 
@@ -3895,6 +3896,28 @@ MonoBehaviour:
   goodLuck: {fileID: 820066003}
   timeBar: {fileID: 1640705511}
   skip: {fileID: 1210795949}
+  countin: {fileID: 0}
+--- !u!114 &1706556087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706556083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a08c0f9e26894544ea078741ebcad787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1706556084}
+  tutorial: {fileID: 1602948722}
+  goodLuck: {fileID: 820066003}
+  background: {fileID: 87233874}
+  skip: {fileID: 1210795949}
+  spiderHealth: {fileID: 0}
+  musicDelay: 23
+  fadeTime: 1.5
+  fadeDelay: 11
 --- !u!1 &1708285869
 GameObject:
   m_ObjectHideFlags: 0

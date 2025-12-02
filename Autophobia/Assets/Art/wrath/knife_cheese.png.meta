@@ -284,7 +284,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      knife_cheese_0: -6863298771728406524
+      knife_cheese_1: 8049933491277729499
+      knife_cheese_2: -3181670599094827297
+      knife_cheese_3: 3595670720511769439
+      knife_cheese_4: -1794573663221865011
+      knife_cheese_5: -7453643488744984879
+      knife_cheese_6: -5061300168995072192
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

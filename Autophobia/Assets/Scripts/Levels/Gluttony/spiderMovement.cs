@@ -33,16 +33,13 @@ public class spiderMovement : MonoBehaviour
     {
         /* Always moves now */
         Move();
-        // If a global pulse is active
         if (isPulsingGlobal)
         {
-            // Turn red and don't move
             if (gameObject.tag == "Spider")
             {
-                spriteRenderer.color = Color.red;
+                spriteRenderer.color = Color.green;
             }
 
-            // End of pulse?
             if (Time.time >= pulseEndTime)
             {
                 isPulsingGlobal = false;

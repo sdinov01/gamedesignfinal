@@ -42,6 +42,9 @@ public class LustSpawner : MonoBehaviour
     [SerializeField] private TimeBar timeBar;
     public healthBar health;
 
+    public float orientation;
+    public float orientation2;
+
 
     private void Start()
     {
@@ -119,6 +122,13 @@ public class LustSpawner : MonoBehaviour
 
         spiderMovement move = newSpider.GetComponent<spiderMovement>();
         move.SetOriginAndDestination(origin, destination);
+        if (heal)
+        {
+            move.SetStartingOrientation(orientation2);
+        } else
+        {
+            move.SetStartingOrientation(orientation);
+        }
     }
 
     void Update()

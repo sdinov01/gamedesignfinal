@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GluttonyFull_0: 754733754751692570
+      GluttonyFull_1: 6077943259282014352
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

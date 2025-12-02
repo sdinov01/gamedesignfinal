@@ -13,7 +13,12 @@ public class HoverToPlayAnimation : MonoBehaviour, IPointerEnterHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("get into");
+        AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
+        if (stateInfo.IsName("door_anim"))
+        {
+            return;
+        }
+        
         anim.Play("door_anim", -1, 0f);
     }
 }

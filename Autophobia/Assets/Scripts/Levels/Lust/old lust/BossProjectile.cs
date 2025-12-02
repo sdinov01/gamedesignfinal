@@ -5,33 +5,30 @@ using System.Collections.Generic;
 public class BossProjectile : MonoBehaviour
 {
     public float speed = 2f;             
-    public float lifetime = 5f;         
+    public float lifetime = 100f;         
     public float hitWindow = 0.2f;        
-    public Vector2 direction = Vector2.right;
 
     public float travelDistance;
 
     private float spawnTime;
-    private Vector3 startPos;
     private bool clickedOnce = false;
     float hitDamage = 2f;
 
     [Header("Colliders and player finder")]
-    public GameObject player;
+    private GameObject player;
     public GameObject healthbar;
     public healthBar hbscript;
     public Collider2D thiscollider;
     public Collider2D playercollider;
     public SpriteRenderer sprite;
-    public bool RedOrPurple;
-    public Sprite Red;
-    public Sprite Purple;
+    // public bool RedOrBlue;
+    // public Sprite Red;
+    // public Sprite Blue;
     private bool CanScore = true;
 
     void Start()
     {
         spawnTime           = Time.time;
-        startPos            = transform.position;
         player              = GameObject.FindWithTag("Player");
         healthbar           = GameObject.FindWithTag("HealthBar");
         hbscript            = healthbar.GetComponent<healthBar>();
@@ -41,14 +38,14 @@ public class BossProjectile : MonoBehaviour
         Destroy(gameObject, lifetime + hitWindow);
 
         sprite              = transform.GetChild(0).GetComponent<SpriteRenderer>();
-        if (sprite.sprite == Red)
-        {
-            RedOrPurple = true;
-        } 
-        else
-        {
-            RedOrPurple = false;
-        }
+        // if (sprite.sprite == Red)
+        // {
+        //     RedOrBlue = true;
+        // } 
+        // else
+        // {
+        //     RedOrBlue = false;
+        // }
         
     }
 
@@ -57,22 +54,27 @@ public class BossProjectile : MonoBehaviour
         float age = Time.time - spawnTime;
         float t = Mathf.Clamp01(age / lifetime);
 
-        Vector3 dir3D = ((Vector3)direction).normalized;
-        Vector3 targetPos = startPos + dir3D * travelDistance;
+        if (t >= 1)
+        {
+            Destroy(gameObject);
+        }
 
-        transform.position = Vector3.Lerp(startPos, targetPos, t);
+        // Vector3 dir3D = ((Vector3)direction).normalized;
+        // Vector3 targetPos = startPos + dir3D * travelDistance;
+
+        // transform.position = Vector3.Lerp(startPos, targetPos, t);
 
         if (thiscollider.IsTouching(playercollider))
         {
-            if (RedOrPurple)
-            {
+            // if (RedOrBlue)
+            
                 hbscript.takeDamage ((float)10);
                 Destroy(gameObject);   // Destroy projectile after hit
-            }
-            else
-            {
+            
+            // else
+            // {
                 CanScore = true;
-            }
+            // }
         }
         else
         {

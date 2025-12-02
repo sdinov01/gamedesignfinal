@@ -5,24 +5,37 @@ using System.Collections.Generic;
 public class SentChildren : MonoBehaviour
 {
     public Transform destination;
-    public float moveSpeed = 5f;
+    private float moveSpeed = 20f;
     public float smoothness = 0.1f;
 
     public int ccount;
     
     private List<Transform> children = new List<Transform>();
     private bool isMoving = false;
-    
+
     void Update()
     {
-        ccount = transform.childCount;
-        if (ccount != 0 )
+        if (destination == null) return;
+    
+        foreach (Transform child in transform)
         {
-            for (int i = 0; i < ccount; i++)
+            if (child.position == destination.position)
             {
-                children[i].position = Vector3.Lerp(children[i].position, destination.position, smoothness * Time.deltaTime * moveSpeed);
+                Destroy (child.gameObject);
             }
+
+            child.position = Vector3.MoveTowards(child.position, destination.position, smoothness * Time.deltaTime * moveSpeed);
         }
+
+
+        // ccount = transform.childCount;
+        // if (ccount != 0 )
+        // {
+        //     for (int i = 0; i < ccount; i++)
+        //     {
+        //         children[i].position = Vector3.Lerp(children[i].position, destination.position, smoothness * Time.deltaTime * moveSpeed);
+        //     }
+        // }
         
 
         // if (isMoving)

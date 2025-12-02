@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// One "phase" of the boss firing pattern
 [System.Serializable]
 public class FiringPhase
 {
@@ -179,19 +178,19 @@ public class BossShooter : MonoBehaviour
         // Parents the spawned object with the fire point
         projObj.transform.SetParent(firePoints[laneIndex], true);
 
-        BossProjectile proj = projObj.GetComponent<BossProjectile>();
+        // BossProjectile proj = projObj.GetComponent<BossProjectile>();
 
-        if (proj == null)
-        {
-            Debug.LogError("BossShooter: Spawned projectile does not have a BossProjectile component!");
-            Destroy(projObj);
-            return;
-        }
+        // if (proj == null)
+        // {
+        //     Debug.LogError("BossShooter: Spawned projectile does not have a BossProjectile component!");
+        //     Destroy(projObj);
+        //     return;
+        // }
 
         // Initialize projectile properties
-        Vector2 shootDir = (Vector2)firePoint.right;
-        proj.direction = shootDir.normalized;
-        proj.speed = phase.projectileSpeed;
+        // Vector2 shootDir = (Vector2)firePoint.right;
+        // proj.direction = shootDir.normalized;
+        // proj.speed = phase.projectileSpeed;
 
         // Set travel distance based on lane
         float distance = 0f;
@@ -200,11 +199,11 @@ public class BossShooter : MonoBehaviour
             distance = laneTravelDistances[laneIndex];
         }
 
-        proj.travelDistance = distance;
-        proj.lifetime = distance / proj.speed;
+        // proj.travelDistance = distance;
+        // proj.lifetime = distance / proj.speed;
         
         // Add to appropriate lane list
-        AddProjectileToLane(laneIndex, proj);
+        // AddProjectileToLane(laneIndex, proj);
     }
 
     private void AddProjectileToLane(int laneIndex, BossProjectile proj)

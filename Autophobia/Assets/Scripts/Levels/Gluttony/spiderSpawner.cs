@@ -51,7 +51,7 @@ public class spiderSpawner : MonoBehaviour
         StartCoroutine(SpawnWhileAudioPlaying());
         skippedAlready = false;
         //startTime = 14.5f;
-        startTime = 23f;
+        startTime = gluttonyIntroHandler.GetComponent<gluttonyIntro>().StartTime();
         spawnIndices = new int[spawns.Length];
         spawnTimes = new float[spawns.Length][];
         /* Add the spawns manually */
@@ -59,10 +59,13 @@ public class spiderSpawner : MonoBehaviour
         spawnTimes[1] = spider2Spawn;
         spawnTimes[2] = spider3Spawn;
         spawnTimes[3] = spider4Spawn;
-        spawnTimes[4] = healSpiderSpawn1;
-        spawnTimes[5] = healSpiderSpawn2;
-        spawnTimes[6] = healSpiderSpawn3;
-        spawnTimes[7] = healSpiderSpawn4;
+        if (SceneManager.GetActiveScene().name == "Envy_Level")
+        {
+            spawnTimes[4] = healSpiderSpawn1;
+            spawnTimes[5] = healSpiderSpawn2;
+            spawnTimes[6] = healSpiderSpawn3;
+            spawnTimes[7] = healSpiderSpawn4;
+        }
     }
 
     private IEnumerator SpawnWhileAudioPlaying()
@@ -71,9 +74,9 @@ public class spiderSpawner : MonoBehaviour
         yield return new WaitUntil(() => Time.timeSinceLevelLoad >= startTime);
 
         /* Begin song Courotine fill bar */
+        Debug.Log("PLAYING");
         timeBar.SetDuration(audioSource.clip.length);
         timeBar.BeginTime();
-        float finishSong = startTime + audioSource.clip.length;
 
         while (audioSource.time < audioSource.clip.length)
         {
@@ -81,22 +84,25 @@ public class spiderSpawner : MonoBehaviour
             for (int spawner = 0; spawner < spawns.Length; spawner++)
             {
                 /* Retrieve the index for the spawn time */
-                int toSpawn = spawnIndices[spawner];
-                /* This index must be a valid index */
-                if (toSpawn <  spawnTimes[spawner].Length - 1)
+                if (spawnIndices[spawner] != null)
                 {
-                    /* Retrieve the spawn time using the index */
-                    float time = convertToSecond(spawnTimes[spawner][toSpawn]);
-                    /* Check if it is time to spawn that spider */
-                    if (Time.timeSinceLevelLoad >= time)
+                    int toSpawn = spawnIndices[spawner];
+                    /* This index must be a valid index */
+                    if (toSpawn < spawnTimes[spawner].Length - 1)
                     {
-                        /* If it is time, spawn the spider and assign its origin and destination */
-                        SpawnSpider(spawns[spawner], destinations[spawner], (spawner >= 4));
-                        Debug.Log("SPAWNED SPIDER");
-                        /* Update the index */
-                        spawnIndices[spawner]++;
+                        /* Retrieve the spawn time using the index */
+                        float time = spawnTimes[spawner][toSpawn];
+                        /* Check if it is time to spawn that spider */
+                        if (audioSource.time >= time)
+                        {
+                            /* If it is time, spawn the spider and assign its origin and destination */
+                            SpawnSpider(spawns[spawner], destinations[spawner], (spawner >= 4));
+                            /* Update the index */
+                            spawnIndices[spawner]++;
+                        }
                     }
                 }
+                
             }     
             yield return null;
 
@@ -125,8 +131,8 @@ public class spiderSpawner : MonoBehaviour
 
     void Update()
     {
-        checkMusicEnd();
-        
+        startTime = gluttonyIntroHandler.GetComponent<gluttonyIntro>().StartTime();
+
         /* If the tutorial is skipped, make it the new start time */
         if (gluttonyIntroHandler.GetComponent<gluttonyIntro>().SkippedTutorial() && !skippedAlready)
         {
@@ -140,10 +146,10 @@ public class spiderSpawner : MonoBehaviour
         }
 
         /* Convert time stamp in song to second to pulse */
-        float pulseTime = convertToSecond(pulseTimeStamps[currentTime]);
+        float pulseTime = pulseTimeStamps[currentTime];
 
         /* Time to do pulse */
-        if (Time.timeSinceLevelLoad >= pulseTime)
+        if (audioSource.time >= pulseTime)
         {
             spiderMovement.TriggerPulse(pulseDuration[currentTime]);
             currentTime++;
@@ -161,29 +167,6 @@ public class spiderSpawner : MonoBehaviour
         return second;
     }
 
-    void checkMusicEnd()
-    {    
-
-        if (!audioSource.isPlaying) 
-        {
-            if (health.healthLeft() > 0 && audioSource.time >= audioSource.clip.length - 0.1f) 
-            {
-                Debug.Log("end");
-                string sceneName = SceneManager.GetActiveScene().name;
-                if (sceneName == "Gluttony_Level")
-                {
-                    UnityEngine.SceneManagement.SceneManager.LoadScene("gluttony_end_dialogue");
-                } else if (sceneName == "Lust_Level")
-                {
-                    UnityEngine.SceneManagement.SceneManager.LoadScene("lust_end_dialogue");
-                } else if (sceneName == "Envy_Level")
-                {
-                    //UnityEngine.SceneManagement.SceneManager.LoadScene("gluttony_end_dialogue");
-                    // does not exist yet please add.
-                }
-            }
-        }
-    }
    
 
 }

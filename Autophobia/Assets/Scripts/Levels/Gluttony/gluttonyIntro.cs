@@ -24,6 +24,7 @@ public class gluttonyIntro : MonoBehaviour
     {
         /* Default */
         musicDelay = 23f;
+        /* Gluttony */
         skipTutorial = false;
         audioSource.Stop();
         audioSource.PlayDelayed(musicDelay);
@@ -43,8 +44,8 @@ public class gluttonyIntro : MonoBehaviour
             {
                 StopCoroutine(tutorialRoutine);
             }
-            audioSource.Stop();   // cancels scheduled/playing clip
-            audioSource.Play();   // start right now
+            audioSource.Stop();
+            audioSource.Play();
 
             // Instantly hide tutorial & good luck, then fade background
             tutorial.color = new Color(tutorial.color.r, tutorial.color.g, tutorial.color.b, 0);
@@ -72,13 +73,13 @@ public class gluttonyIntro : MonoBehaviour
         if (skipTutorial) yield break;
 
         yield return StartCoroutine(FadeIn(goodLuck));
-        //goodLuck.enabled = true;
         yield return new WaitForSeconds(2f);
         if (skipTutorial) yield break;
         StartCoroutine(FadeOut(goodLuck));
-        background.gameObject.SetActive(false);
-        //StartCoroutine(FadeOutImage(background));
+        //background.gameObject.SetActive(false);
+        if (skipTutorial) yield break;
         StartCoroutine(FadeOut(skip));
+        StartCoroutine(FadeOutImage(background));
         yield return new WaitForSeconds(fadeTime);
     }
     private IEnumerator FadeIn(TMP_Text text)
@@ -99,27 +100,27 @@ public class gluttonyIntro : MonoBehaviour
 
         text.color = new Color(c.r, c.g, c.b, 1);
     }
-    // private IEnumerator FadeOutImage(Image background)
-    // {
-    //     Color c = background.color;
-    //     float startAlpha = c.a;
-    //     float t = 0;
+    private IEnumerator FadeOutImage(Image background)
+    {
+        Color c = background.color;
+        float startAlpha = c.a;
+        float t = 0;
 
-    //     while (t < fadeTime)
-    //     {
-    //         if (skipTutorial)
-    //         {
-    //             break;
-    //         }
-    //         t += Time.deltaTime;
-    //         float alpha = Mathf.Lerp(startAlpha, 0, t / fadeTime);
-    //         background.color = new Color(c.r, c.g, c.b, alpha);
-    //         yield return null;
-    //     }
+        while (t < fadeTime)
+        {
+            if (skipTutorial)
+            {
+                break;
+            }
+            t += Time.deltaTime;
+            float alpha = Mathf.Lerp(startAlpha, 0, t / fadeTime);
+            background.color = new Color(c.r, c.g, c.b, alpha);
+            yield return null;
+        }
 
-    //     background.color = new Color(c.r, c.g, c.b, 0);
-    //     background.enabled = false;
-    // }
+        background.color = new Color(c.r, c.g, c.b, 0);
+        background.enabled = false;
+    }
     private IEnumerator FadeOut(TMP_Text text)
     {
         Color c = text.color;
@@ -145,5 +146,10 @@ public class gluttonyIntro : MonoBehaviour
     public bool SkippedTutorial()
     {
         return skipTutorial;
+    }
+
+    public float StartTime()
+    {
+        return musicDelay;
     }
 }

@@ -43,6 +43,9 @@ public class spiderSpawner : MonoBehaviour
 
     [SerializeField] private TimeBar timeBar;
     public healthBar health;
+
+    /* By default (Gluttony facing right) the startingRotation is 0. */
+    public float startingRotation = 0f;
    
 
     private void Start()
@@ -61,11 +64,19 @@ public class spiderSpawner : MonoBehaviour
         spawnTimes[3] = spider4Spawn;
         if (SceneManager.GetActiveScene().name == "Envy_Level")
         {
-            Debug.Log("adding heal spiders");
             spawnTimes[4] = healSpiderSpawn1;
             spawnTimes[5] = healSpiderSpawn2;
             spawnTimes[6] = healSpiderSpawn3;
             spawnTimes[7] = healSpiderSpawn4;
+        }
+
+        /* Different levels have objects of different starting orientation. Gluttony will have default (facing right) 
+         * and in all other levels using this script the object must be transformed to face right */
+
+        /* In envy, the birds begin facing up. */
+        if (SceneManager.GetActiveScene().name == "Envy_Level")
+        {
+            startingRotation = -90f;
         }
     }
 
@@ -75,7 +86,6 @@ public class spiderSpawner : MonoBehaviour
         yield return new WaitUntil(() => Time.timeSinceLevelLoad >= startTime);
 
         /* Begin song Courotine fill bar */
-        Debug.Log("PLAYING");
         timeBar.SetDuration(audioSource.clip.length);
         timeBar.BeginTime();
 
@@ -103,6 +113,7 @@ public class spiderSpawner : MonoBehaviour
                         }
                     }
                 }
+               
                 
             }     
             yield return null;
@@ -117,6 +128,7 @@ public class spiderSpawner : MonoBehaviour
         if (heal && enemy2 != null)
         {
             newSpider = Instantiate(enemy2, origin.position, Quaternion.identity);
+            
         } else if (enemy != null)
         {
             newSpider = Instantiate(enemy, origin.position, Quaternion.identity);
@@ -128,6 +140,7 @@ public class spiderSpawner : MonoBehaviour
 
         spiderMovement move = newSpider.GetComponent<spiderMovement>();
         move.SetOriginAndDestination(origin, destination);
+        move.SetStartingOrientation(startingRotation);
     }
 
     void Update()

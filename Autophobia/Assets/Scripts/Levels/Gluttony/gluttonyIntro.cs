@@ -24,7 +24,6 @@ public class gluttonyIntro : MonoBehaviour
     {
         /* Default */
         musicDelay = 23f;
-        /* Gluttony */
         skipTutorial = false;
         audioSource.Stop();
         audioSource.PlayDelayed(musicDelay);

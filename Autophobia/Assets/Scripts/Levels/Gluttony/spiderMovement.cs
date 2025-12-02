@@ -14,17 +14,18 @@ public class spiderMovement : MonoBehaviour
     /* All spiders vulnerable and pulse when true */
     private static bool isPulsingGlobal = false;
     private static float pulseEndTime = 0f;
+    private float startingOrientation = 0f;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
 
-        /* Spiders face direction of movement */
+        /* Spiders face direction of movement. */
         Vector3 movement = origin.position - destination.position;
         float angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg;
 
-        transform.rotation = Quaternion.Euler(0, 0, angle - 180f);
+        transform.rotation = Quaternion.Euler(0, 0, startingOrientation + angle - 180f);
         
     }
 
@@ -79,5 +80,10 @@ public class spiderMovement : MonoBehaviour
         this.destination = destination;
         this.origin = origin;
         transform.position = new Vector3(origin.position.x, origin.position.y, 0f);
+    }
+
+    public void SetStartingOrientation(float orientation)
+    {
+        startingOrientation = orientation;
     }
 }

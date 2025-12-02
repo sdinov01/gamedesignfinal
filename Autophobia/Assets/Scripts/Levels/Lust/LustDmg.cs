@@ -3,18 +3,22 @@ using System.Collections;
 
 public class LustDMG : MonoBehaviour
 {
-    private SpriteRenderer renderer;
+    private Animator anim;
     private healthBar health;
     private cameraShake camShake;
+
+
 
     public float hitDuration;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        renderer = this.GetComponent<SpriteRenderer>();
+        anim = this.GetComponent<Animator>();
         health = GameObject.FindWithTag("HealthBar").GetComponent<healthBar>();
         camShake = GameObject.FindWithTag("MainCamera").GetComponent<cameraShake>();
     }
+
+
 
 
     void OnTriggerEnter2D(Collider2D collision)

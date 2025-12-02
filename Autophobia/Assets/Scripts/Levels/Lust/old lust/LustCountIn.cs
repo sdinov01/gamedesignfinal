@@ -10,6 +10,7 @@ public class LustCountIn : MonoBehaviour
     public ModularAudioHandler M;
     public GameObject activationGroup;
     public AudioSource music;
+    public TimeBar tb;
 
     public bool IsLust;
     public GameObject bluelight;
@@ -68,6 +69,9 @@ public class LustCountIn : MonoBehaviour
         {
             redboss.SetActive  (true);
         }
+        tb.SetDuration(music.clip.length);
+        tb.BeginTime();
         music.Play();
+        
     }
 }

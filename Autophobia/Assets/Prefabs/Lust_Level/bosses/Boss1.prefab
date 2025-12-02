@@ -45,7 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {fileID: 0}
-  moveSpeed: 5
   smoothness: 0.1
   ccount: 0
 --- !u!1 &3665355071248995263
@@ -93,7 +92,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {fileID: 0}
-  moveSpeed: 5
   smoothness: 0.1
   ccount: 0
 --- !u!1 &7985484968529948320
@@ -236,6 +234,8 @@ MonoBehaviour:
     projectileSpeed: 2
     multi: 1
   BossProjectile: {fileID: 6219313965639358485, guid: 9db0743ad55514959bc65c00452509a8, type: 3}
+  RedLip: {fileID: 1420986695091369816, guid: e1d631f86649d4b08b8ef176ee792482, type: 3}
+  BlueLip: {fileID: 6219313965639358485, guid: 9db0743ad55514959bc65c00452509a8, type: 3}
   laneTravelDistances:
   - 5.73
   - 6.08
@@ -289,7 +289,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {fileID: 0}
-  moveSpeed: 5
   smoothness: 0.1
   ccount: 0
 --- !u!1 &9186844570777803252
@@ -337,6 +336,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {fileID: 0}
-  moveSpeed: 5
   smoothness: 0.1
   ccount: 0

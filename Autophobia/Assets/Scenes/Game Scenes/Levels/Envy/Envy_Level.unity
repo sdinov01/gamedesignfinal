@@ -611,6 +611,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!1 &477714835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 477714836}
+  m_Layer: 0
+  m_Name: random
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &477714836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477714835}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &557409813
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,6 +812,7 @@ MonoBehaviour:
   skip: {fileID: 1282148960}
   spiderHealth: {fileID: 3383082427837304278, guid: a7fa7ea3f345ed34eb50f18911ef0538, type: 3}
   timeBar: {fileID: 0}
+  countin: {fileID: 0}
   musicDelay: 15
   fadeTime: 2
   fadeDelay: 7
@@ -1868,12 +1900,72 @@ MonoBehaviour:
   pulseDuration: []
   spider1Spawn:
   - 6
+  - 8
+  - 10
+  - 12
+  - 14
+  - 15.25
+  - 15.75
+  - 16.25
+  - 24.25
   spider2Spawn:
   - 0
+  - 8
+  - 10
+  - 12
+  - 14
+  - 15
+  - 15.5
+  - 16
+  - 16.5
+  - 17
+  - 17.5
+  - 18
+  - 18.5
+  - 19
+  - 19.5
   spider3Spawn:
   - 2
+  - 8
+  - 10
+  - 12
+  - 14
+  - 16
+  - 18
+  - 20
+  - 22
+  - 24
+  - 26
+  - 28
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46
   spider4Spawn:
   - 4
+  - 8
+  - 10
+  - 12
+  - 14
+  - 16
+  - 18
+  - 20
+  - 22
+  - 24
+  - 26
+  - 28
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  - 44
   healSpiderSpawn1:
   - 0
   - 2
@@ -2548,3 +2640,4 @@ SceneRoots:
   - {fileID: 1595698598}
   - {fileID: 836761432}
   - {fileID: 5148150751542591336}
+  - {fileID: 477714836}

@@ -3072,6 +3072,7 @@ MonoBehaviour:
   timeBar: {fileID: 2043496130}
   skip: {fileID: 963747366}
   countin: {fileID: 1299507816}
+  lci: {fileID: 0}
 --- !u!1001 &1303077197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6213,15 +6214,15 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1216111713}
+  - {fileID: 1454942124}
   - {fileID: 8761468110034633582}
-  - {fileID: 7935987264994269935}
   - {fileID: 1787890286001369488}
   - {fileID: 8922181210376053539}
   - {fileID: 3762006731058803664}
   - {fileID: 7016266977088934015}
   - {fileID: 963747365}
   - {fileID: 5718356199981785468}
-  - {fileID: 1454942124}
+  - {fileID: 7935987264994269935}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

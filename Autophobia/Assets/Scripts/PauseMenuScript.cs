@@ -69,7 +69,7 @@ public class PauseMenuHandler : MonoBehaviour {
         }
         IEnumerator ShowButtonAfterDelay()
         {
-                yield return new WaitForSecondsRealtime(1.5f);
+                yield return new WaitForSecondsRealtime(1.2f);
                 Debug.Log("delay");
                 Button1.SetActive(true);
                 Button2.SetActive(true);

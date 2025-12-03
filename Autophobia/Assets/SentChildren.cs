@@ -27,7 +27,7 @@ public class SentChildren : MonoBehaviour
             // if (rotate && child.rotation.z != 0)
             // {
                 // Debug.Log ("Child rotated");
-                child.Rotate (0f, 0f, 0.35f, Space.World);
+                // child.Rotate (0f, 0f, 0.35f, Space.World);
             // }
 
             child.position = Vector3.MoveTowards(child.position, destination.position, smoothness * Time.deltaTime * moveSpeed);

@@ -171,6 +171,8 @@ public class BossShooter : MonoBehaviour
 
     private void SpawnProjectileFrom(Transform firePoint, int laneIndex, FiringPhase phase)
     {
+        if (laneIndex > 3) { return; }
+
         // Get position spawn point
         Vector3 spawnPosition = firePoint.position;
         spawnPosition.z = -1f;

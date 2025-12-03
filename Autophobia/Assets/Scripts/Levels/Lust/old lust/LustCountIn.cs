@@ -3,6 +3,7 @@ using TMPro;
 using System.Collections;
 public class LustCountIn : MonoBehaviour
 {
+    public GameObject[] toActivate;
     public TextMeshProUGUI countInText;
     public GameObject redboss;
     public GameObject purpleboss;
@@ -54,24 +55,28 @@ public class LustCountIn : MonoBehaviour
     }
     void ActivateAll()
     {
+        for (int i = 0; i < toActivate.Length; i++)
+        {
+            Ainn (toActivate[i]);
+        }
+
         // redboss.SetActive  (true);
         // platforms.SetActive (true);
         countInText.gameObject.SetActive (false);
-        if (activationGroup != null)
-        {
-            activationGroup.SetActive (true);
-        }
-        if (purpleboss != null)
-        {
-            purpleboss.SetActive (true);
-        }
-        if (redboss != null)
-        {
-            redboss.SetActive  (true);
-        }
+        // Ainn (activationGroup);
+        Ainn (purpleboss);
+        Ainn (redboss);
         tb.SetDuration(music.clip.length);
         tb.BeginTime();
         music.Play();
         
+    }
+
+    private void Ainn (GameObject g)
+    {
+        if (g != null)
+        {
+            g.SetActive (true);
+        }
     }
 }

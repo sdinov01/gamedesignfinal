@@ -953,6 +953,7 @@ MonoBehaviour:
   skip: {fileID: 1282148960}
   spiderHealth: {fileID: 3383082427837304278, guid: a7fa7ea3f345ed34eb50f18911ef0538, type: 3}
   timeBar: {fileID: 1550033471}
+  countin: {fileID: 0}
   musicDelay: 23
   fadeTime: 1.5
   fadeDelay: 11

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 083af0a8eda5d46259fc359c76458a21
+guid: 9eeb8c4390b6749f6a5f1f0358472add
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 347392025909717502
-    second: slothselector_0
+      213: -1617242693077335154
+    second: level_selecback_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: slothselector_0
+      name: level_selecback_0
       rect:
         serializedVersion: 2
-        x: 1126
-        y: 83
-        width: 415
-        height: 434
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef9e62ef43f22d400800000000000000
-      internalID: 347392025909717502
+      spriteID: e838783d6566e89e0800000000000000
+      internalID: -1617242693077335154
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      slothselector_0: 347392025909717502
+      level_selecback_0: -1617242693077335154
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

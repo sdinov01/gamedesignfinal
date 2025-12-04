@@ -20,8 +20,15 @@ public class linearPlatMove : MonoBehaviour
     private float tweenElapsed = 0;
     private float tweenSpeed = 10f;
     private bool canMove = false;
+
+
+    private bool SpinnersActive;
+
+
     private GameObject Ispinner;
+    private bool ISfound;
     private GameObject Ospinner;
+    private bool OSfound;
 
     private float IspinnerRotationAmount = 45f; 
     private float IspinnerTargetRotation;
@@ -40,10 +47,12 @@ public class linearPlatMove : MonoBehaviour
         platforms = new Platform[platformObjects.Length];
         currPosition = 0;
 
-        Ispinner = GameObject.FindWithTag("Spinner");
+        SpinnersActive = false;
+
+        // Ispinner = GameObject.FindWithTag("Spinner");
         Icolor = new Color(0.576f, 0.345f, 0.345f);
 
-        Ospinner = GameObject.FindWithTag("OuterSpinner");
+        // Ospinner = GameObject.FindWithTag("OuterSpinner");
         Ocolor = new Color(0.459f, 0.078f, 0.800f);
 
         bool valid = true;
@@ -106,6 +115,26 @@ public class linearPlatMove : MonoBehaviour
 
     void Update()
     {
+        if (!ISfound)
+        {
+            if (GameObject.FindWithTag("Spinner") != null)
+            {
+                Ispinner = GameObject.FindWithTag("Spinner");
+            }
+            ISfound = true;
+        }
+        if (!OSfound)
+        {
+            if (GameObject.FindWithTag("OuterSpinner") != null)
+            {
+                Ospinner = GameObject.FindWithTag("OuterSpinner");
+
+            }
+            OSfound = true;
+        }
+
+
+
         if (currPosition < 0 || currPosition >= platforms.Length)
             return;
 
@@ -140,7 +169,8 @@ public class linearPlatMove : MonoBehaviour
 
         } else if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) {
             target = GetTargetPlatform(current.down);
-            if (SceneManager.GetActiveScene().name == "Pride_Level")
+
+            if ((SceneManager.GetActiveScene().name == "Pride_Level") && SpinnersActive)
             {
                 FlipColor();
             }
@@ -163,25 +193,29 @@ public class linearPlatMove : MonoBehaviour
             );
             player.transform.position = targetPos;
         }
-        if (Ispinner != null)
+
+        if (SpinnersActive)
         {
-            float currentZ = Ispinner.transform.eulerAngles.z;
-            float newZ = Mathf.LerpAngle(currentZ, IspinnerTargetRotation, Time.deltaTime * IspinnerRotationSpeed);
-            Ispinner.transform.eulerAngles = new Vector3(
-                Ispinner.transform.eulerAngles.x,
-                Ispinner.transform.eulerAngles.y,
-                newZ
-            );
-        }
-        if (Ospinner != null)
-        {
-            float currentZ = Ospinner.transform.eulerAngles.z;
-            float newZ = Mathf.LerpAngle(currentZ, OspinnerTargetRotation, Time.deltaTime * OspinnerRotationSpeed);
-            Ospinner.transform.eulerAngles = new Vector3(
-                Ospinner.transform.eulerAngles.x,
-                Ospinner.transform.eulerAngles.y,
-                newZ
-            );
+            if (Ispinner != null)
+            {
+                float currentZ = Ispinner.transform.eulerAngles.z;
+                float newZ = Mathf.LerpAngle(currentZ, IspinnerTargetRotation, Time.deltaTime * IspinnerRotationSpeed);
+                Ispinner.transform.eulerAngles = new Vector3(
+                    Ispinner.transform.eulerAngles.x,
+                    Ispinner.transform.eulerAngles.y,
+                    newZ
+                );
+            }
+            if (Ospinner != null)
+            {
+                float currentZ = Ospinner.transform.eulerAngles.z;
+                float newZ = Mathf.LerpAngle(currentZ, OspinnerTargetRotation, Time.deltaTime * OspinnerRotationSpeed);
+                Ospinner.transform.eulerAngles = new Vector3(
+                    Ospinner.transform.eulerAngles.x,
+                    Ospinner.transform.eulerAngles.y,
+                    newZ
+                );
+            }
         }
     }
 
@@ -245,7 +279,11 @@ public class linearPlatMove : MonoBehaviour
         // Ocolor = temp;
     }
 
-
+    public void CountInComplete(){
+        Ispinner = GameObject.FindWithTag("Spinner");
+        Ospinner = GameObject.FindWithTag("OuterSpinner");
+        SpinnersActive = true;
+    }
 
     public int getCurrPosition() {
         return currPosition;

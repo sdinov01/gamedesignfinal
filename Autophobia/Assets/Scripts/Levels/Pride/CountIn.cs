@@ -19,6 +19,13 @@ public class CountIn : MonoBehaviour
     public SpriteRenderer centercircle;
     public GameObject S0;
 
+    public GameObject innerSpin;
+    public GameObject buffer;
+    public GameObject outerSpin;
+
+
+    public linearPlatMove lpm;
+
 
     [SerializeField] private TimeBar timeBar;
 
@@ -33,15 +40,22 @@ public class CountIn : MonoBehaviour
     {
         countInText.text = s3;
         yield return new WaitForSeconds ((float)M.beat2int);
+        innerSpin.SetActive (true);
         countInText.text = s2;
         Instantiate (ball, S0.transform);
         yield return new WaitForSeconds ((float)M.beat2int);
+        buffer.SetActive (true);
         countInText.text = s1;
-        // ball.SetActive(true);
-
         yield return new WaitForSeconds ((float)M.beat2int);
+        outerSpin.SetActive (true);
         countInText.text = go;
         yield return new WaitForSeconds ((float)M.beat2int);
+
+        if (lpm != null)
+        {
+            lpm.CountInComplete();
+        }
+
         ActivateAll();
         countInText.gameObject.SetActive (false);
     }

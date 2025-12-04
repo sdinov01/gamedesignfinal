@@ -17,12 +17,24 @@ public class PauseMenuHandler : MonoBehaviour {
         public GameObject image;
         public GameObject pauseButton;
 
+
+        public GameObject AudioGroup;
+
+
+        public AudioSource mMusic;
+        public AudioSource mOpen;
+        public AudioSource mClose;
+
+
         public GameObject Button1;
         public GameObject Button2;
         public GameObject Button3;
         public GameObject Button4;
         public GameObject Button5;
         public GameObject Button6;
+
+        
+        private bool stopsMusic;
 
 
         void Awake(){
@@ -31,7 +43,27 @@ public class PauseMenuHandler : MonoBehaviour {
                         sliderVolumeCtrl.value = musicSource.volume;
                         sliderVolumeCtrl.onValueChanged.AddListener(SetVolume);
                 }
+                stopsMusic = (mMusic != null);
         }
+
+
+        void PauseGameAudio(){
+                if (AudioGroup != null){
+                        foreach (Transform child in AudioGroup.transform)
+                        {
+                                child.gameObject.GetComponent<AudioSource>().Pause();
+                        }
+                }
+        }
+        void ResumeGameAudio(){
+                if (AudioGroup != null){
+                        foreach (Transform child in AudioGroup.transform)
+                        {
+                                child.gameObject.GetComponent<AudioSource>().UnPause();
+                        }
+                }
+        }
+
 
         void Start(){
                 pauseMenuUI.SetActive(false);
@@ -59,10 +91,12 @@ public class PauseMenuHandler : MonoBehaviour {
                         Button6.SetActive(false);
 
                         pauseAnimObject.SetActive(true);
+                        openAndPlay();
                         StartCoroutine(ShowButtonAfterDelay());
 
+                        PauseGameAudio();
                         Time.timeScale = 0f;
-                        AudioListener.pause = true;
+                        // AudioListener.pause = true;
                         GameisPaused = true;}
                 else { Resume (); }
                 //NOTE: This function is for the pause button
@@ -85,8 +119,11 @@ public class PauseMenuHandler : MonoBehaviour {
                 pauseMenuUI.SetActive(false);
                 if (image != null) {image.SetActive(true);}
                 pauseButton.SetActive(true);
+                mClose.Play();
                 Time.timeScale = 1f;
-                AudioListener.pause = false;
+                stopMMusic();
+                ResumeGameAudio();
+                // AudioListener.pause = false;
                 GameisPaused = false;
         }
 
@@ -104,7 +141,7 @@ public class PauseMenuHandler : MonoBehaviour {
                 Time.timeScale = 1f;
                 SceneManager.LoadScene("Menu_Scene");
                 /* Unpauses audio */
-                AudioListener.pause = false;
+                // AudioListener.pause = false;
                 // Please also reset all static variables here, for new games!
         }
 
@@ -113,7 +150,7 @@ public class PauseMenuHandler : MonoBehaviour {
                 Time.timeScale = 1f;
                 SceneManager.LoadScene("Level_Select_Scene");
                 /* Unpauses audio */
-                AudioListener.pause = false;
+                // AudioListener.pause = false;
                 // Please also reset all static variables here, for new games!
         }
 
@@ -124,5 +161,41 @@ public class PauseMenuHandler : MonoBehaviour {
                 #else
                 Application.Quit();
                 #endif
+        }
+        private void stopMMusic(){
+                StartCoroutine(FadeMusic(mMusic, 0f, 0.75f));
+        }
+
+        private void openAndPlay(){
+                // StartCoroutine(StaggerPlay());
+                mOpen.Play();
+                if (stopsMusic)
+                {
+                        mMusic.Play();
+                        StartCoroutine(FadeMusic(mMusic, 0.4f, 5f));
+                }
+                // mMusic.Play();
+                // StartCoroutine(FadeMusic(mMusic, 0.4f, 5f));
+        }
+        // private IEnumerator StaggerPlay(){
+        //         mOpen.Play();
+        //         // yield return new WaitForSecondsRealtime(0.8f);
+        //         // mMusic.Play();
+        //         Start
+        // }
+
+        private IEnumerator FadeMusic(AudioSource audio, float targetVolume, float duration)
+        {
+                float startVolume = audio.volume;
+                float elapsed = 0f;
+                while (elapsed < duration){
+                        elapsed += Time.unscaledDeltaTime;
+                        audio.volume = Mathf.Lerp(startVolume, targetVolume, elapsed / duration);
+                        yield return null;
+                }
+                audio.volume = targetVolume;
+                if (targetVolume == 0f){
+                        audio.Stop();
+                }
         }
 }

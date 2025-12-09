@@ -3,15 +3,17 @@ using System.Collections;
 
 public class spiderHealthAndDmg : MonoBehaviour
 {
-    private SpriteRenderer renderer;
-    private healthBar health;
+    private SpriteRenderer  renderer;
+    private healthBar       health;
+    private AudioSource     SFX;
 
     public float hitDuration;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        renderer = this.GetComponent<SpriteRenderer>();
-        health = GameObject.FindWithTag("HealthBar").GetComponent<healthBar>();
+        renderer    = this.GetComponent<SpriteRenderer>();
+        health      = GameObject.FindWithTag("HealthBar").GetComponent<healthBar>();
+        SFX         = GameObject.FindWithTag("SFX").GetComponent<AudioSource>();
     }
 
 
@@ -20,7 +22,7 @@ public class spiderHealthAndDmg : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             /* Spider is vulnerable when red */
-            if (renderer.color == Color.red)
+            if (renderer.color == Color.green)
             {
                 StartCoroutine(PlayerHit());
             }
@@ -40,6 +42,8 @@ public class spiderHealthAndDmg : MonoBehaviour
             timeElapsed += Time.deltaTime;
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                health.healDamage(1.2f);
+                SFX.Play();
                 Destroy(gameObject);
             }
             yield return null;

@@ -36,6 +36,9 @@ public class spiderSpawner : MonoBehaviour
     private int currentTime = 0;
 
 
+    private GameObject player;
+
+
     /* Determines when to start spawning and pulsing */
     //private float startTime = 14.5f;
     private float startTime = 23f;
@@ -50,6 +53,7 @@ public class spiderSpawner : MonoBehaviour
 
     private void Start()
     {
+        player = GameObject.FindWithTag ("Player");
 
         StartCoroutine(SpawnWhileAudioPlaying());
         skippedAlready = false;
@@ -165,11 +169,24 @@ public class spiderSpawner : MonoBehaviour
         /* Time to do pulse */
         if (audioSource.time >= pulseTime)
         {
-            spiderMovement.TriggerPulse(pulseDuration[currentTime]);
+            float t = pulseDuration[currentTime];
+            spiderMovement.TriggerPulse(t);
             currentTime++;
+            StartCoroutine(PulsePlayerReact(t));
         }
-       
-        
+    }
+
+    private IEnumerator PulsePlayerReact(float f)
+    {
+        SpriteRenderer  SR  = player.transform.Find("Pulse").GetComponent<SpriteRenderer>();
+        spiral          s   = player.GetComponent<spiral>();
+        Color       start   = SR.color;
+
+        SR.color = Color.green;
+        s.ChangeDir();
+        yield return new WaitForSeconds(f);
+        SR.color    = start;
+        s.ChangeDir();
     }
 
     private float convertToSecond(float timeStamp)

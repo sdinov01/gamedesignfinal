@@ -29,4 +29,9 @@ public class spiral : MonoBehaviour
             RC.Rotate (0f, 0f, rotoSpeed, Space.Self);
         }
     }
+
+    public void ChangeDir()
+    {
+        clockwise = !clockwise;
+    }
 }

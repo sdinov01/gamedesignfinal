@@ -1,83 +1,90 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-
 public class SentChildren : MonoBehaviour
 {
     public Transform destination;
-    private float moveSpeed = 20f;
-    public float smoothness = 0.1f;
+    public float moveDuration = 2f; // Time in seconds for movement
     public bool rotate;
-
-    public int ccount;
     
-    private List<Transform> children = new List<Transform>();
-    private bool isMoving = false;
-
+    private Dictionary<Transform, ChildMovement> childMovements = new Dictionary<Transform, ChildMovement>();
+    
+    private class ChildMovement
+    {
+        public Vector3 startPosition;
+        public float elapsedTime;
+        public bool isMoving;
+        
+        public ChildMovement(Vector3 start)
+        {
+            startPosition = start;
+            elapsedTime = 0f;
+            isMoving = true;
+        }
+    }
+    
     void Update()
     {
         if (destination == null) return;
-    
+        
+        List<Transform> toRemove = new List<Transform>();
+        
         foreach (Transform child in transform)
         {
-            if (child.position == destination.position)
+            // Initialize movement data if not exists
+            if (!childMovements.ContainsKey(child))
             {
-                Destroy (child.gameObject);
+                childMovements[child] = new ChildMovement(child.position);
             }
-            // if (rotate && child.rotation.z != 0)
+            
+            ChildMovement movement = childMovements[child];
+            
+            if (movement.isMoving)
+            {
+                movement.elapsedTime += Time.deltaTime;
+                float t = Mathf.Clamp01(movement.elapsedTime / moveDuration);
+                
+                // Smooth interpolation (ease in-out)
+                t = t * t * (3f - 2f * t);
+                
+                child.position = Vector3.Lerp(movement.startPosition, destination.position, t);
+                
+                // Check if reached destination
+                if (t >= 1f)
+                {
+                    toRemove.Add(child);
+                }
+            }
+            
+            // Optional rotation
+            // if (rotate && child.rotation.eulerAngles.z != 0)
             // {
-                // Debug.Log ("Child rotated");
-                // child.Rotate (0f, 0f, 0.35f, Space.World);
+            //     child.Rotate(0f, 0f, 0.35f, Space.World);
             // }
-
-            child.position = Vector3.MoveTowards(child.position, destination.position, smoothness * Time.deltaTime * moveSpeed);
         }
-
-
-        // ccount = transform.childCount;
-        // if (ccount != 0 )
-        // {
-        //     for (int i = 0; i < ccount; i++)
-        //     {
-        //         children[i].position = Vector3.Lerp(children[i].position, destination.position, smoothness * Time.deltaTime * moveSpeed);
-        //     }
-        // }
         
-
-        // if (isMoving)
-        // {
-        //     MoveChildren();
-        // }
+        // Destroy children that reached destination
+        foreach (Transform child in toRemove)
+        {
+            childMovements.Remove(child);
+            Destroy(child.gameObject);
+        }
     }
     
     public void StartMoving()
     {
-        children.Clear();
+        childMovements.Clear();
         foreach (Transform child in transform)
         {
-            children.Add(child);
+            childMovements[child] = new ChildMovement(child.position);
         }
-        isMoving = true;
     }
     
-    public void StopMoving()
+    public void ResetChild(Transform child)
     {
-        isMoving = false;
-    }
-    
-    private void MoveChildren()
-    {
-        if (children.Count == 0 || destination == null) return;
-        
-        for (int i = children.Count - 1; i >= 0; i--)
+        if (childMovements.ContainsKey(child))
         {
-            if (children[i] == null)
-            {
-                children.RemoveAt(i);
-                continue;
-            }
-            
-            children[i].position = Vector3.Lerp(children[i].position, destination.position, smoothness * Time.deltaTime * moveSpeed);
+            childMovements[child] = new ChildMovement(child.position);
         }
     }
 }

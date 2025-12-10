@@ -1254,6 +1254,7 @@ MonoBehaviour:
   activationGroup: {fileID: 1367576130}
   music: {fileID: 1908021268}
   tb: {fileID: 1550033469}
+  countInTB: {fileID: 0}
   IsLust: 1
   bluelight: {fileID: 461474050}
   whitelight: {fileID: 1981243056}
@@ -1463,12 +1464,90 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phases:
-  - name: 
-    beatsBetweenShots: 0
-    lanePattern: 
-    beatsInPhase: 0
-    projectileSpeed: 0
+  - name: Lane1fire
+    beatsBetweenShots: 4
+    lanePattern: 00000000
+    beatsInPhase: 4
+    projectileSpeed: 4
     multi: 0
+  - name: Lane2fire
+    beatsBetweenShots: 4
+    lanePattern: 01000000
+    beatsInPhase: 4
+    projectileSpeed: 4
+    multi: 0
+  - name: Lane3fire
+    beatsBetweenShots: 4
+    lanePattern: 02000000
+    beatsInPhase: 4
+    projectileSpeed: 4
+    multi: 0
+  - name: Lane4fire
+    beatsBetweenShots: 4
+    lanePattern: 03000000
+    beatsInPhase: 4
+    projectileSpeed: 4
+    multi: 0
+  - name: Lane1-2
+    beatsBetweenShots: 2
+    lanePattern: 0000000001000000
+    beatsInPhase: 4
+    projectileSpeed: 4
+    multi: 0
+  - name: Lane2-3
+    beatsBetweenShots: 2
+    lanePattern: 0100000002000000
+    beatsInPhase: 4
+    projectileSpeed: 4
+    multi: 0
+  - name: Lane3-4
+    beatsBetweenShots: 2
+    lanePattern: 0200000003000000
+    beatsInPhase: 4
+    projectileSpeed: 4
+    multi: 0
+  - name: Lane1-4
+    beatsBetweenShots: 2
+    lanePattern: 0300000001000000
+    beatsInPhase: 4
+    projectileSpeed: 4
+    multi: 0
+  - name: Lane123
+    beatsBetweenShots: 1
+    lanePattern: 000000000100000002000000
+    beatsInPhase: 1
+    projectileSpeed: 4
+    multi: 1
+  - name: Lane234
+    beatsBetweenShots: 1
+    lanePattern: 010000000200000003000000
+    beatsInPhase: 1
+    projectileSpeed: 4
+    multi: 1
+  - name: Lane14oneshot
+    beatsBetweenShots: 1
+    lanePattern: 0000000003000000
+    beatsInPhase: 1
+    projectileSpeed: 4
+    multi: 1
+  - name: Lane23oneshot
+    beatsBetweenShots: 1
+    lanePattern: 0100000002000000
+    beatsInPhase: 1
+    projectileSpeed: 4
+    multi: 1
+  - name: Lane12oneshot
+    beatsBetweenShots: 1
+    lanePattern: 0000000001000000
+    beatsInPhase: 1
+    projectileSpeed: 4
+    multi: 1
+  - name: Lane34oneshot
+    beatsBetweenShots: 1
+    lanePattern: 0200000003000000
+    beatsInPhase: 1
+    projectileSpeed: 4
+    multi: 1
 --- !u!4 &1073457449
 Transform:
   m_ObjectHideFlags: 0
@@ -3136,20 +3215,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1310897459}
     - target: {fileID: 1618299594091372904, guid: 9791f3a26d769442a893b8f57abc82a1, type: 3}
+      propertyPath: BFP
+      value: 
+      objectReference: {fileID: 1073457448}
+    - target: {fileID: 1618299594091372904, guid: 9791f3a26d769442a893b8f57abc82a1, type: 3}
       propertyPath: phases.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1618299594091372904, guid: 9791f3a26d769442a893b8f57abc82a1, type: 3}
       propertyPath: phaseOrder.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1618299594091372904, guid: 9791f3a26d769442a893b8f57abc82a1, type: 3}
       propertyPath: 'phaseOrder.Array.data[0]'
-      value: 1
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1618299594091372904, guid: 9791f3a26d769442a893b8f57abc82a1, type: 3}
       propertyPath: 'phaseOrder.Array.data[1]'
-      value: 0
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618299594091372904, guid: 9791f3a26d769442a893b8f57abc82a1, type: 3}
+      propertyPath: 'phaseOrder.Array.data[2]'
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618299594091372904, guid: 9791f3a26d769442a893b8f57abc82a1, type: 3}
+      propertyPath: 'phaseOrder.Array.data[3]'
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1618299594091372904, guid: 9791f3a26d769442a893b8f57abc82a1, type: 3}
       propertyPath: 'phaseOrder.Array.data[16]'
@@ -4080,6 +4171,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1310897459}
     - target: {fileID: 6019371634224898657, guid: 708e944026f3342ffa904952524be94a, type: 3}
+      propertyPath: BFP
+      value: 
+      objectReference: {fileID: 1073457448}
+    - target: {fileID: 6019371634224898657, guid: 708e944026f3342ffa904952524be94a, type: 3}
       propertyPath: RedLip
       value: 
       objectReference: {fileID: 1420986695091369816, guid: e1d631f86649d4b08b8ef176ee792482, type: 3}
@@ -4091,6 +4186,26 @@ PrefabInstance:
       propertyPath: BossProjectile
       value: 
       objectReference: {fileID: 1420986695091369816, guid: e1d631f86649d4b08b8ef176ee792482, type: 3}
+    - target: {fileID: 6019371634224898657, guid: 708e944026f3342ffa904952524be94a, type: 3}
+      propertyPath: phaseOrder.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019371634224898657, guid: 708e944026f3342ffa904952524be94a, type: 3}
+      propertyPath: 'phaseOrder.Array.data[0]'
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019371634224898657, guid: 708e944026f3342ffa904952524be94a, type: 3}
+      propertyPath: 'phaseOrder.Array.data[1]'
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019371634224898657, guid: 708e944026f3342ffa904952524be94a, type: 3}
+      propertyPath: 'phaseOrder.Array.data[2]'
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019371634224898657, guid: 708e944026f3342ffa904952524be94a, type: 3}
+      propertyPath: 'phaseOrder.Array.data[3]'
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6340257439183156359, guid: 708e944026f3342ffa904952524be94a, type: 3}
       propertyPath: m_Name
       value: Boss2
@@ -4118,9 +4233,9 @@ SceneRoots:
   - {fileID: 4715889427525911858}
   - {fileID: 836761432}
   - {fileID: 1917931891}
+  - {fileID: 1073457449}
   - {fileID: 1367576131}
   - {fileID: 5148150751542591336}
   - {fileID: 1702627960}
   - {fileID: 502893458}
   - {fileID: 1106726207}
-  - {fileID: 1073457449}

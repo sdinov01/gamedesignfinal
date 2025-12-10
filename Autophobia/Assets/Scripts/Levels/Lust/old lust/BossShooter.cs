@@ -21,7 +21,8 @@ public class BossShooter : MonoBehaviour
     public Transform[] firePoints; 
 
     [Header("Phases")]
-    public FiringPhase[] phases;
+    // private static List<FiringPhase> phases = new List<FiringPhase>();
+    public BossFiringPhases BFP;
 
     [Header("Projectile")]
     public GameObject BossProjectile;           
@@ -45,6 +46,8 @@ public class BossShooter : MonoBehaviour
 
     private void Start()
     {
+
+
         secondsPerBeat = (float)m.beatint;
         POlen = phaseOrder.Length;
         POindex = 0;
@@ -60,11 +63,14 @@ public class BossShooter : MonoBehaviour
         StartCoroutine(BeatRoutine());
     }
 
+    private void PopulatePhases()
+    {
 
+    }
 
     private bool ValidateSetup()
     {
-        if (phases == null || phases.Length == 0)
+        if (BFP.phases == null || BFP.phases.Length == 0)
         {
             Debug.LogError("BossShooter: No phases defined!");
             return false;
@@ -87,8 +93,8 @@ public class BossShooter : MonoBehaviour
 
     private void SetPhase(int phaseIndex)
     {
-        currentPhaseIndex = Mathf.Clamp(phaseIndex, 0, phases.Length - 1);
-        FiringPhase phase = phases[currentPhaseIndex];
+        currentPhaseIndex = Mathf.Clamp(phaseIndex, 0, BFP.phases.Length - 1);
+        FiringPhase phase = BFP.phases[currentPhaseIndex];
 
         beatInPhase = 0;
 
@@ -108,7 +114,7 @@ public class BossShooter : MonoBehaviour
     {
         while (true)
         {
-            FiringPhase phase = phases[currentPhaseIndex];
+            FiringPhase phase = BFP.phases[currentPhaseIndex];
 
             // if (phase.lanePattern.Length == 0)
             // {

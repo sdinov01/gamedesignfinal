@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 public class LustCountIn : MonoBehaviour
@@ -12,6 +13,7 @@ public class LustCountIn : MonoBehaviour
     public GameObject activationGroup;
     public AudioSource music;
     public TimeBar tb;
+    public Image countInTB;
 
     public bool IsLust;
     public GameObject bluelight;
@@ -26,6 +28,7 @@ public class LustCountIn : MonoBehaviour
 
     IEnumerator Countdown (string s3, string s2, string s1, string go)
     {
+        Ainn (countInTB);
         // interactables.SetActive (false);
         countInText.text = s3;
         EnableIfTrue (IsLust, bluelight);
@@ -41,6 +44,7 @@ public class LustCountIn : MonoBehaviour
         yield return new WaitForSeconds ((float)M.beat2int);
         ActivateAll();
         // interactables.SetActive (true);
+        Dinn (countInTB);
 
     }
 
@@ -77,6 +81,21 @@ public class LustCountIn : MonoBehaviour
         if (g != null)
         {
             g.SetActive (true);
+        }
+    }
+    private void Ainn (Image g)
+    {
+        if (g != null)
+        {
+            g.enabled = true;
+        }
+    }
+
+    private void Dinn (Image g)
+    {
+        if (g != null)
+        {
+            g.enabled = false;
         }
     }
 }

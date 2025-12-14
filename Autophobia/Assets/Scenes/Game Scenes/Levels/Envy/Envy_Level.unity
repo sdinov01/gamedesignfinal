@@ -1697,7 +1697,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -520, y: -340}
+  m_AnchoredPosition: {x: -490.1, y: -304.2}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1334300478
@@ -1712,6 +1712,10 @@ PrefabInstance:
       propertyPath: AudioGroup
       value: 
       objectReference: {fileID: 1707209027}
+    - target: {fileID: 4205713991614458530, guid: f75eade68301845219dd10b11e3041f3, type: 3}
+      propertyPath: musicSource
+      value: 
+      objectReference: {fileID: 1908021268}
     - target: {fileID: 8199431236341904674, guid: f75eade68301845219dd10b11e3041f3, type: 3}
       propertyPath: m_Name
       value: PAUSEMENU_HANDLER (1)

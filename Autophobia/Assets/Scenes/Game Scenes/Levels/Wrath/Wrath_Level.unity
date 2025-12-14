@@ -1609,6 +1609,7 @@ MonoBehaviour:
   skip: {fileID: 1268103155}
   spiderHealth: {fileID: 0}
   timeBar: {fileID: 1656479311}
+  countin: {fileID: 0}
   musicDelay: 23
   fadeTime: 1.5
   fadeDelay: 11
@@ -1697,6 +1698,7 @@ MonoBehaviour:
   - {fileID: 889240688}
   - {fileID: 1393361654}
   spawnTimes:
+  - 1.2
   - 6.15
   - 14.25
   - 23.85
@@ -2999,7 +3001,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1383809213}
   - component: {fileID: 1383809214}
-  - component: {fileID: 1383809216}
   - component: {fileID: 1383809215}
   m_Layer: 0
   m_Name: ground 6
@@ -3124,20 +3125,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1383809216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383809212}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33b93e429130f40cf8de9be21909a718, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 0}
-  stepIndex: 0
 --- !u!114 &1393361654 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1152126205429224260, guid: e7edb6483ac9f477591a0797665f2f39, type: 3}
@@ -4182,7 +4169,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1700861540}
   - component: {fileID: 1700861541}
-  - component: {fileID: 1700861543}
   - component: {fileID: 1700861542}
   m_Layer: 0
   m_Name: ground 4
@@ -4307,20 +4293,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1700861543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1700861539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33b93e429130f40cf8de9be21909a718, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 0}
-  stepIndex: 0
 --- !u!1 &1720441851
 GameObject:
   m_ObjectHideFlags: 0
@@ -4858,7 +4830,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1838832627}
   - component: {fileID: 1838832628}
-  - component: {fileID: 1838832630}
   - component: {fileID: 1838832629}
   m_Layer: 0
   m_Name: ground 2
@@ -4983,20 +4954,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1838832630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838832626}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33b93e429130f40cf8de9be21909a718, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 0}
-  stepIndex: 0
 --- !u!1 &1839682679 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1348311540491034965, guid: 367a35f5394a24632a6463bfd90f0739, type: 3}
@@ -5623,7 +5580,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2126874938}
   - component: {fileID: 2126874939}
-  - component: {fileID: 2126874941}
   - component: {fileID: 2126874940}
   m_Layer: 0
   m_Name: ground 5
@@ -5748,20 +5704,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2126874941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2126874937}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33b93e429130f40cf8de9be21909a718, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 0}
-  stepIndex: 0
 --- !u!1001 &819885621615396344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5997,7 +5939,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8379408485686115772, guid: 879e2a52471694dcfbd66c25b115f87b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

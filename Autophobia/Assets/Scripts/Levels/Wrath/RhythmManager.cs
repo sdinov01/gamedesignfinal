@@ -61,30 +61,30 @@ public class RhythmManager : MonoBehaviour
         }
         
         // //let it follow the beat
-        timer += Time.deltaTime;
-        if (timer >= beatInterval)
-        {
-            timer -= beatInterval;
-            //beatCounter++;
-            TriggerBeatKnife();
+        // timer += Time.deltaTime;
+        // if (timer >= beatInterval)
+        // {
+        //     timer -= beatInterval;
+        //     //beatCounter++;
+        //     TriggerBeatKnife();
 
-            //HandleBeat(beatCount);
-        }
+        //     //HandleBeat(beatCount);
+        // }
     
     }
-    void TriggerBeatKnife()
-    {
-        if (knives.Length == 0) return;
+    // void TriggerBeatKnife()
+    // {
+    //     if (knives.Length == 0) return;
 
-        KnifeController knife = knives[beatKnifeIndex];
+    //     KnifeController knife = knives[beatKnifeIndex];
 
-        // Beat: less damage than spawn time attack
-        StartCoroutine(FlashThenAttack(knife));
-        knife.TriggerBeatAttack();
+    //     // Beat: less damage than spawn time attack
+    //     StartCoroutine(FlashThenAttack(knife));
+    //     knife.TriggerBeatAttack();
 
-        // follow the order of knifes
-        beatKnifeIndex = (beatKnifeIndex + 1) % knives.Length;
-    }
+    //     // follow the order of knifes
+    //     beatKnifeIndex = (beatKnifeIndex + 1) % knives.Length;
+    // }
 
     public void TriggerNextKnife()
     {

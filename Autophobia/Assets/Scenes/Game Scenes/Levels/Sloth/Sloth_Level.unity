@@ -129,6 +129,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2967412}
   - component: {fileID: 2967411}
+  - component: {fileID: 2967414}
+  - component: {fileID: 2967413}
   m_Layer: 0
   m_Name: AUDIO_Sloth_
   m_TagString: Untagged
@@ -248,6 +250,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2967413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2967410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc2f11a44bc84423bf4a388f297206e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countInText: {fileID: 1560977740}
+  slothCenterLight: {fileID: 1651608169}
+  eyegroup1:
+  - {fileID: 600485382}
+  - {fileID: 883883138}
+  - {fileID: 346060135}
+  eyegroup2:
+  - {fileID: 1780222770}
+  - {fileID: 2025424616}
+  - {fileID: 1330890949}
+  music: {fileID: 2967411}
+--- !u!114 &2967414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2967410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3db41cb32e84deba625bd408629bc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2967411}
+  tutorial: {fileID: 785848822}
+  goodLuck: {fileID: 1576338545}
+  background: {fileID: 649689209}
+  skip: {fileID: 1547517339}
+  timeBar: {fileID: 382358507}
+  countdown: {fileID: 2967413}
+  fadeTime: 1.5
+  fadeDelay: 11
 --- !u!1 &4781282 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7900254055907941593, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
@@ -276,7 +322,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4781282}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a08c0f9e26894544ea078741ebcad787, type: 3}
   m_Name: 
@@ -299,7 +345,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4781282}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8fc2f11a44bc84423bf4a388f297206e, type: 3}
   m_Name: 
@@ -604,7 +650,7 @@ MonoBehaviour:
   - 74.667
   - 77.333
   bpm: 90
-  spawnPlace: 0000000001000000020000000300000004000000050000000100000003000000050000000400000002000000000000000500000004000000030000000200000001000000010000000200000003000000040000000500000000000000010000000100000000000000000000000100000002000000030000000400000005000000040000000300000002000000
+  spawnPlace: 0000000001000000020000000300000004000000050000000000000002000000040000000300000002000000000000000500000004000000030000000200000001000000010000000200000003000000040000000500000000000000010000000100000000000000000000000100000002000000030000000400000005000000040000000300000002000000
 --- !u!1 &150246001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2740,7 +2786,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3871168113896595417, guid: 30b882d0775c54ed88cc97bb0966d4bc, type: 3}
   m_PrefabInstance: {fileID: 125363529}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2025424616}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7f5ac91bd8284fda83a89db19a34fa1, type: 3}
@@ -4592,6 +4638,11 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &2025424616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6439132859630361528, guid: 30b882d0775c54ed88cc97bb0966d4bc, type: 3}
+  m_PrefabInstance: {fileID: 125363529}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2052886826
 GameObject:
   m_ObjectHideFlags: 0
@@ -4996,6 +5047,14 @@ PrefabInstance:
     - target: {fileID: 6103659334473594709, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -36
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129283245912783780, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129283245912783780, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 291
       objectReference: {fileID: 0}
     - target: {fileID: 6138726575825378806, guid: d990229a09d247b4d83c1b5df83f2915, type: 3}
       propertyPath: m_AnchorMax.y

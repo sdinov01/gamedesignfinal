@@ -19,7 +19,7 @@ public class KnifeController : MonoBehaviour
     public Transform center; 
     public float angle;
 
-    private float currentDamage = 10f;  
+    private float currentDamage = 14f;  
     public Light2D knifeLight;
 
     void Awake()

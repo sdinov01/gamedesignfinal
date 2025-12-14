@@ -26,6 +26,7 @@ public class gluttonyIntro : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("Intro Start time = " + Time.timeSinceLevelLoad);
         timeBarFill = timeBar.GetComponent<TimeBar>();
         /* Default */
         musicDelay = 23f;

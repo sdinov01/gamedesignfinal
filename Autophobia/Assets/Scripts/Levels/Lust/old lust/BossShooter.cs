@@ -5,12 +5,13 @@ using UnityEngine;
 [System.Serializable]
 public class FiringPhase
 {
-    public string name;               
-    public int beatsBetweenShots = 1; 
-    public int[] lanePattern;    
-    public int beatsInPhase = 16;     
-    public float projectileSpeed = 2f;   
-    public bool  multi;
+    public string   name;               
+    public int      beatsBetweenShots = 1; 
+    public int[]    lanePattern;    
+    public int      beatsInPhase = 16;     
+    public float    projectileSpeed = 2f;   
+    public bool     multi;
+    public bool     dontFire;
 }
 
 public class BossShooter : MonoBehaviour
@@ -40,19 +41,23 @@ public class BossShooter : MonoBehaviour
     public  int     POlen;
     public  int     POindex;
 
+    public int      POcycles;
+    private bool    isFirstCycle;
+
     private int currentPhaseIndex = 0;
     private float secondsPerBeat = 0f;
     private int beatInPhase = 0;      
 
     private void Start()
     {
-
-
         secondsPerBeat = (float)m.beatint;
         POlen = phaseOrder.Length;
         POindex = 0;
 
-        // currentPhaseIndex = phaseOrder[POindex];
+
+        POcycles = 0;
+        isFirstCycle = true;
+
 
         if (!ValidateSetup())
         {
@@ -60,6 +65,8 @@ public class BossShooter : MonoBehaviour
             return;
         }
         SetPhase(0);
+
+        //  Start BeatRoutine()
         StartCoroutine(BeatRoutine());
     }
 
@@ -103,10 +110,28 @@ public class BossShooter : MonoBehaviour
 
    private void AdvancePhase()
     {
-        POindex = (POindex + 1) % POlen;
+        if (POindex == 0)
+        {
+            if (isFirstCycle)
+            {
+                isFirstCycle = false;
+            }
+            else
+            {
+                POcycles++;
+            }
+        }
+
+        if ((POcycles < 1) && (POindex == 59))
+        {
+            POindex = 0;
+        }
+        else
+        {
+            POindex = (POindex + 1) % POlen;
+        }
+
         int next = phaseOrder[POindex];
-
-
         SetPhase(next);
     }
 
@@ -144,6 +169,8 @@ public class BossShooter : MonoBehaviour
 
     private void FireOnBeat(FiringPhase phase)
     {
+        if (phase.dontFire) { return; }
+
         int interval = Mathf.Max(1, phase.beatsBetweenShots);
         int shotsSoFar = (beatInPhase - 1) / interval;
         int patternIndex = shotsSoFar % phase.lanePattern.Length;

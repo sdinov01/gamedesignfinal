@@ -21,8 +21,9 @@ public class SentChildren : MonoBehaviour
             elapsedTime = 0f;
             isMoving = true;
         }
+
     }
-    
+
     void Update()
     {
         if (destination == null) return;
@@ -50,10 +51,17 @@ public class SentChildren : MonoBehaviour
                 child.position = Vector3.Lerp(movement.startPosition, destination.position, t);
                 
                 // Check if reached destination
+
                 if (t >= 1f)
                 {
-                    toRemove.Add(child);
+                    childMovements.Remove(child);
+                    Destroy(child.gameObject);
                 }
+
+                // if (t >= 1f)
+                // {
+                //     toRemove.Add(child);
+                // }
             }
             
             // Optional rotation

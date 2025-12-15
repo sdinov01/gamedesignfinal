@@ -60,7 +60,7 @@ public class DialogueLoader : MonoBehaviour
                     break;
                 case "envy_end_dialogue":
                     if (levelTracker.envyComplete) {
-                        SceneManager.LoadScene(winSceneName);
+                        SceneManager.LoadScene("Gluttony_end_dialogue");
                     }
                     break;
             }

@@ -54,6 +54,9 @@ public class PauseMenuHandler : MonoBehaviour {
                                 child.gameObject.GetComponent<AudioSource>().Pause();
                         }
                 }
+                if (musicSource != null) {
+                        musicSource.Pause();
+                }
         }
         void ResumeGameAudio(){
                 if (AudioGroup != null){
@@ -61,6 +64,9 @@ public class PauseMenuHandler : MonoBehaviour {
                         {
                                 child.gameObject.GetComponent<AudioSource>().UnPause();
                         }
+                }
+                if (musicSource != null) {
+                        musicSource.UnPause();
                 }
         }
 

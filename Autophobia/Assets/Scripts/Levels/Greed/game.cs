@@ -10,7 +10,7 @@ public class game : MonoBehaviour
     /* greedIntro to get starting time */
     [SerializeField] private greedIntro intro;
     [SerializeField] private handMovement hourMovement;
-    private float startTime = 14.5f;
+    private float startTime = 12.5f;
     [SerializeField] private AudioSource audio;
     [SerializeField] private Image fillAmount;
     private Coroutine performRotationCoroutine;

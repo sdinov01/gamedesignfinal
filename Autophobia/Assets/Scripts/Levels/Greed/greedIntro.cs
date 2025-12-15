@@ -1,175 +1,195 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 using System.Collections;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class greedIntro : MonoBehaviour
 {
-    [SerializeField] private Image backgroundImage;
-    [SerializeField] private AudioSource audio;
+    [SerializeField] private AudioSource audioSource;
     [SerializeField] private TMP_Text tutorial;
     [SerializeField] private TMP_Text goodLuck;
-    [SerializeField] private TimeBar timeBar;
+    [SerializeField] private Image background;
     [SerializeField] private TMP_Text skip;
+    [SerializeField] private spiderHealthAndDmg spiderHealth;
+    [SerializeField] private Image timeBar;
+    [SerializeField] private LustCountIn countin;
 
-    public CountIn countin;
-    public LustCountIn lci;
+    private TimeBar timeBarFill;
+    /* Delay before the song is played */
+    public float musicDelay = 23f;
+    public float fadeTime = 1.5f;
+    public float fadeDelay = 11f;
 
-    /* Default time will be 14.5 seconds after the scene is opened */
-    private float beginTime = 14.5f;
-    private float tutorialMSGDur = 10f;
-    private Coroutine tutorialCoroutine;
+    private Coroutine tutorialRoutine;
     private bool skipTutorial = false;
-    private float fadeDuration = 2f;
 
     void Start()
     {
-        /* Set the texts and image to be visible or invisible */
+        Debug.Log("Intro Start time = " + Time.timeSinceLevelLoad);
+        timeBarFill = timeBar.GetComponent<TimeBar>();
+        /* Default */
+        musicDelay = 23f;
+        skipTutorial = false;
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+            audioSource.PlayDelayed(musicDelay);
+        }
         tutorial.enabled = true;
         goodLuck.enabled = false;
-        backgroundImage.enabled = true;
-        /* Start the tutorial */
-        tutorialCoroutine = StartCoroutine(handleTutorial());
-
+        /* Start the tutorial messages */
+        tutorialRoutine = StartCoroutine(TutorialMessage());
         if (timeBar != null)
         {
-           StartCoroutine(startBar()); 
+            Debug.Log("Time bar is not null");
+            StartCoroutine(startBar());
         }
     }
 
-    private IEnumerator startBar()
-    {
-        /* Begin after tutorial/skip */
-        yield return new WaitUntil(() => Time.timeSinceLevelLoad >= beginTime);
-
-        /* Begin song Courotine fill bar */
-        timeBar.SetDuration(audio.clip.length);
-        timeBar.BeginTime();
-        audio.Play();
-    }
-
+    /* Make intro skippable */
     void Update()
     {
-        /* If left/right shift is pressed, skip tutorial */
         if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) && !skipTutorial)
         {
-            /* Stop the tutorial coroutine */
             skipTutorial = true;
-            StopCoroutine(tutorialCoroutine);
+            if (tutorialRoutine != null)
+            {
+                StopCoroutine(tutorialRoutine);
+            }
+            if (audioSource != null)
+            {
+                audioSource.Stop();
+                audioSource.Play();
+            }
+            // audioSource.Stop();
+            // audioSource.Play();
 
-            /* Disable texts and background immediately */
+            // Instantly hide tutorial & good luck, then fade background
+            tutorial.color = new Color(tutorial.color.r, tutorial.color.g, tutorial.color.b, 0);
             tutorial.enabled = false;
+
+            goodLuck.color = new Color(goodLuck.color.r, goodLuck.color.g, goodLuck.color.b, 0);
             goodLuck.enabled = false;
+
+            skip.color = new Color(skip.color.r, skip.color.g, skip.color.b, 0);
             skip.enabled = false;
-            backgroundImage.enabled = false;
 
-        
-            StartCoroutine(BeginCountIn());
-            
-
-
-            /* Update beginning time for time stamps later */
-            beginTime = Time.timeSinceLevelLoad + 2f;
-        }   
+            // Immediately fade background out
+            background.enabled = false;
+            musicDelay = Time.timeSinceLevelLoad;
+            if (countin != null)
+            {
+                countin.enabled = true;
+            }
+        }
     }
 
-    private IEnumerator handleTutorial()
+    private IEnumerator TutorialMessage()
     {
-        if (skipTutorial)
-        {
-            yield break;
-        }
-        /* Enable tutorial screen for tutorialMSGdur seconds */
-        tutorial.enabled = true;
-        yield return new WaitForSeconds(tutorialMSGDur);
-        if (skipTutorial)
-        {
-            yield break;
-        }
-        /* Fade the text away */
-        StartCoroutine(fadeText(tutorial, fadeDuration));
-        if (skipTutorial)
-        {
-            yield break;
-        }
+        yield return StartCoroutine(FadeIn(tutorial));
 
-        /* Enable good luck message for half the duration of the tutorial */
-        yield return new WaitForSeconds(fadeDuration);
-        if (skipTutorial)
-        {
-            yield break;
-        }
-        goodLuck.enabled = true;
-        yield return new WaitForSeconds(tutorialMSGDur / 2);
+        yield return new WaitForSeconds(fadeDelay);
+        if (skipTutorial) yield break;
+        StartCoroutine(FadeOut(tutorial));
+        yield return new WaitForSeconds(2.5f);
+        if (skipTutorial) yield break;
 
-        if (skipTutorial)
-        {
-            yield break;
-        }
-        /* Fade the good luck text and background */
-        StartCoroutine(fadeImage(backgroundImage, fadeDuration));
-        StartCoroutine(fadeText(goodLuck, fadeDuration));
-        StartCoroutine(fadeText(skip, fadeDuration));
-        StartCoroutine(BeginCountIn());
-    }
-
-    private IEnumerator BeginCountIn()
-    {
+        yield return StartCoroutine(FadeIn(goodLuck));
+        yield return new WaitForSeconds(2f);
+        if (skipTutorial) yield break;
+        StartCoroutine(FadeOut(goodLuck));
+        //background.gameObject.SetActive(false);
+        if (skipTutorial) yield break;
+        StartCoroutine(FadeOut(skip));
+        StartCoroutine(FadeOutImage(background));
+        yield return new WaitForSeconds(fadeTime);
         if (countin != null)
         {
             countin.enabled = true;
         }
-        if (lci != null)
-        {
-            lci.enabled = true;
-        }
-        yield return null;
         this.enabled = false;
     }
-
-    private IEnumerator fadeImage(Image image, float duration)
+    private IEnumerator FadeIn(TMP_Text text)
     {
-        Color c = image.color;
+        text.enabled = true;
+        Color c = text.color;
+        float t = 0;
+
+        while (t < fadeTime)
+        {
+            if (skipTutorial) yield break;
+
+            t += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, 1, t / fadeTime);
+            text.color = new Color(c.r, c.g, c.b, alpha);
+            yield return null;
+        }
+
+        text.color = new Color(c.r, c.g, c.b, 1);
+    }
+    private IEnumerator FadeOutImage(Image background)
+    {
+        Color c = background.color;
         float startAlpha = c.a;
-        float timeElapsed = 0;
-        while (timeElapsed < duration)
+        float t = 0;
+
+        while (t < fadeTime)
         {
             if (skipTutorial)
             {
-                yield break;
+                break;
             }
-            timeElapsed += Time.deltaTime;
-            float alpha = Mathf.Lerp(startAlpha, 0, timeElapsed / duration);
-            image.color = new Color(c.r, c.g, c.b, alpha);
+            t += Time.deltaTime;
+            float alpha = Mathf.Lerp(startAlpha, 0, t / fadeTime);
+            background.color = new Color(c.r, c.g, c.b, alpha);
             yield return null;
-
         }
-        image.enabled = false;
-    }
 
-    private IEnumerator fadeText(TMP_Text text, float duration)
+        background.color = new Color(c.r, c.g, c.b, 0);
+        background.enabled = false;
+    }
+    private IEnumerator FadeOut(TMP_Text text)
     {
         Color c = text.color;
         float startAlpha = c.a;
-        float timeElapsed = 0;
-        while (timeElapsed < duration)
+        float t = 0;
+
+        while (t < fadeTime)
         {
             if (skipTutorial)
             {
-                yield break;
+                break;
             }
-            timeElapsed += Time.deltaTime;
-            float alpha = Mathf.Lerp(startAlpha, 0, timeElapsed / duration);
+            t += Time.deltaTime;
+            float alpha = Mathf.Lerp(startAlpha, 0, t / fadeTime);
             text.color = new Color(c.r, c.g, c.b, alpha);
             yield return null;
-
         }
+
+        text.color = new Color(c.r, c.g, c.b, 0);
         text.enabled = false;
+    }
+
+    public bool SkippedTutorial()
+    {
+        return skipTutorial;
     }
 
     public float StartTime()
     {
-        return beginTime;
+        return musicDelay;
     }
 
+    public IEnumerator startBar()
+    {
+        /* Begin after tutorial/skip */
+        Debug.Log("musicDelay " + musicDelay);
+        yield return new WaitUntil(() => Time.timeSinceLevelLoad >= musicDelay);
+
+        /* Begin song Courotine fill bar */
+        timeBarFill.SetDuration(audioSource.clip.length-15f);
+        timeBarFill.BeginTime();
+        Debug.Log("should start time bar");
+    }
 }

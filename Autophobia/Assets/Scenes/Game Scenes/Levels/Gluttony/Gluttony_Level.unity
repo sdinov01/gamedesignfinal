@@ -781,6 +781,10 @@ PrefabInstance:
       propertyPath: AudioGroup
       value: 
       objectReference: {fileID: 1044500078}
+    - target: {fileID: 4205713991614458530, guid: f75eade68301845219dd10b11e3041f3, type: 3}
+      propertyPath: musicSource
+      value: 
+      objectReference: {fileID: 1908021268}
     - target: {fileID: 8199431236341904674, guid: f75eade68301845219dd10b11e3041f3, type: 3}
       propertyPath: m_Name
       value: PAUSEMENU_HANDLER (1)

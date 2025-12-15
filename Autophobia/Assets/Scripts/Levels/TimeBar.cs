@@ -40,7 +40,7 @@ public class TimeBar : MonoBehaviour
     private IEnumerator startTime()
     {
         float timeElapsed = 0f;
-        while (timeElapsed < duration)
+        while (timeElapsed < this.duration)
         {
             timeElapsed += Time.deltaTime;
             progressBar.fillAmount = timeElapsed / duration;

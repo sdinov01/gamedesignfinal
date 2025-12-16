@@ -920,7 +920,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -4308,7 +4308,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1731202047658833104, guid: 0fb1dba6e32c38241b51917b851196b4, type: 3}
       propertyPath: winScene
-      value: Lust_end_dialogue
+      value: lust_end_dialogue
       objectReference: {fileID: 0}
     - target: {fileID: 4913656608639110948, guid: 0fb1dba6e32c38241b51917b851196b4, type: 3}
       propertyPath: m_Pivot.x

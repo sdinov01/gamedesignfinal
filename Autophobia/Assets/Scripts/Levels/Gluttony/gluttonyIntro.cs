@@ -30,6 +30,10 @@ public class gluttonyIntro : MonoBehaviour
         timeBarFill = timeBar.GetComponent<TimeBar>();
         /* Default */
         musicDelay = 23f;
+        if (SceneManager.GetActiveScene().name == "Gluttony_Level")
+        {
+            musicDelay += 4f;
+        }
         skipTutorial = false;
         if (audioSource != null)
         {
@@ -60,7 +64,7 @@ public class gluttonyIntro : MonoBehaviour
             if (audioSource != null)
             {
                 audioSource.Stop();
-                audioSource.Play();
+                audioSource.PlayDelayed(4f);
             }
             // audioSource.Stop();
             // audioSource.Play();

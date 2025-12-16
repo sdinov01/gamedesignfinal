@@ -253,6 +253,7 @@ public class RhythmManager : MonoBehaviour
         {
             if (health.healthLeft() > 0 && musicSource.time >= musicSource.clip.length - 0.1f) 
             {
+                levelTracker.wrathComplete = true;
                 Debug.Log("end");
                 UnityEngine.SceneManagement.SceneManager.LoadScene("wrath_end_dialogue");
             }

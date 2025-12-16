@@ -33,6 +33,7 @@ public class game : MonoBehaviour
         }
         if (fillAmount.fillAmount == 1f && Time.timeSinceLevelLoad > startTime)
         {
+            Debug.Log("Greed Complete");
             levelTracker.greedComplete = true;
         }
 

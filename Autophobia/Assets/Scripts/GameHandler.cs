@@ -86,6 +86,7 @@ public class GameHandler : MonoBehaviour
             if (health.healthLeft() > 0 && musicSource.time >= musicSource.clip.length - 0.1f) 
             {
                 Debug.Log("end");
+                levelTracker.slothComplete = true;
                 UnityEngine.SceneManagement.SceneManager.LoadScene("sloth_end_dialogue");
             }
         }

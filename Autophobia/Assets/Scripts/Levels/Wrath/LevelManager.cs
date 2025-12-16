@@ -13,6 +13,7 @@ public class LevelManager : MonoBehaviour
         if (!music.isPlaying && playerHealth.healthLeft() > 0 && t.step2 && !t.startup)
         {
             levelCompleted = true;
+            levelTracker.wrathComplete = true;
             CompleteLevel();
         }
     }

@@ -9,6 +9,7 @@ public class levelTracker : MonoBehaviour
     public static bool greedComplete;
     public static bool gluttonyComplete;
     public static bool lustComplete;
+    private static bool introPlayed = false;
 
     void Start()
     {

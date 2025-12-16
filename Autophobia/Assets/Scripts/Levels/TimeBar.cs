@@ -51,6 +51,7 @@ public class TimeBar : MonoBehaviour
 
     private IEnumerator endScene()
     {   
+        Debug.Log("winScene = " + winScene);
         switch (winScene)
         {
             case "wrath_end_dialogue":

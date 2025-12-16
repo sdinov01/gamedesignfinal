@@ -3,25 +3,23 @@ using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 using System.IO;
 using System.Collections;
-using UnityEngine.UI;
-using TMPro;
 
 public class introAnimation : MonoBehaviour
 {
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] private VideoPlayer videoPlayer;
     [SerializeField] private levelTracker level;
     private static bool played = false;
     private string sceneName;
-    [SerializeField] private TMP_Text skip;
 
-    private FadeTextOrImage fadeFunction;
 
+    // Update is called once per frame
 
     void Awake()
     {
+        // Turn off Play On Awake in the inspector
         if (SceneManager.GetActiveScene().name == "Intro_Animation")
         {
-            /* Retrieve .mp4 for intro animation and play it */
             videoPlayer.playOnAwake = false;
 
             string path = Path.Combine(Application.streamingAssetsPath, "output.mp4");
@@ -30,18 +28,18 @@ public class introAnimation : MonoBehaviour
             videoPlayer.errorReceived += (player, msg) => Debug.LogError("VideoPlayer error: " + msg);
             videoPlayer.prepareCompleted += (player) =>
             {
+                Debug.Log("Prepared, playing: " + videoPlayer.url);
                 videoPlayer.Play();
             };
 
+            Debug.Log("Preparing: " + videoPlayer.url);
             videoPlayer.Prepare();
         }
     }
 
     void Start()
     {
-        fadeFunction = new FadeTextOrImage();
-        StartCoroutine(Delay());
-
+        
     }
     void Update()
     {
@@ -50,10 +48,6 @@ public class introAnimation : MonoBehaviour
             played = true;
         }
         if (played && !videoPlayer.isPlaying)
-        {
-            SceneManager.LoadScene("Level_Select_Scene");
-        }
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
         {
             SceneManager.LoadScene("Level_Select_Scene");
         }
@@ -66,8 +60,7 @@ public class introAnimation : MonoBehaviour
 
     private IEnumerator Delay()
     {
-        yield return new WaitForSeconds(5f);
-        StartCoroutine(fadeFunction.fadeText(skip, 2f));
+        yield return new WaitForSeconds(2f);
     }
 
 }

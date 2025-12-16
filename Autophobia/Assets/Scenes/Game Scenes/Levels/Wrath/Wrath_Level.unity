@@ -937,7 +937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4913656608639110948, guid: 0fb1dba6e32c38241b51917b851196b4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.4595132
+      value: 0.47129557
       objectReference: {fileID: 0}
     - target: {fileID: 4913656608639110948, guid: 0fb1dba6e32c38241b51917b851196b4, type: 3}
       propertyPath: m_LocalScale.z
@@ -973,11 +973,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4913656608639110948, guid: 0fb1dba6e32c38241b51917b851196b4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -2
+      value: 1.7588
       objectReference: {fileID: 0}
     - target: {fileID: 4913656608639110948, guid: 0fb1dba6e32c38241b51917b851196b4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -349
+      value: -341.34998
       objectReference: {fileID: 0}
     - target: {fileID: 4913656608639110948, guid: 0fb1dba6e32c38241b51917b851196b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

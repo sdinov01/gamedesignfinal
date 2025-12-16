@@ -21,11 +21,9 @@ public class KnifeController : MonoBehaviour
 
     private float currentDamage = 14f;  
     public Light2D knifeLight;
-    private Renderer knifeRenderer;
 
     void Awake()
     {
-        knifeRenderer = GetComponent<Renderer>();
         basePos = transform.position;
         self    = gameObject;
 
@@ -117,13 +115,11 @@ public class KnifeController : MonoBehaviour
 
     public void Show()
     {
-        knifeRenderer.enabled = true;
-        //self.SetActive(true);
+        self.SetActive(true);
     }
 
     public void Hide()
     {
-        knifeRenderer.enabled = false;
-        //self.SetActive(false);
+        self.SetActive(false);
     }
 }

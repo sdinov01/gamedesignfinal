@@ -43,7 +43,7 @@ public class levelHandler : MonoBehaviour
         /* If wrath is complete, sloth and greed are available */
         if (levelTracker.wrathComplete)
         {
-            //Debug.Log("wrath complete");
+            Debug.Log("wrath complete");
             prideButton.interactable = true;
             greedButton.interactable = true;
             prideSelect.color = new Color(1f, 1f, 1f, 1f);

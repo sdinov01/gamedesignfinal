@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
+using System.IO;
+using System.Collections;
 
 public class introAnimation : MonoBehaviour
 {
@@ -9,21 +11,42 @@ public class introAnimation : MonoBehaviour
     [SerializeField] private levelTracker level;
     private static bool played = false;
     private string sceneName;
-    
+
 
     // Update is called once per frame
 
+    void Awake()
+    {
+        // Turn off Play On Awake in the inspector
+        if (SceneManager.GetActiveScene().name == "Intro_Animation")
+        {
+            videoPlayer.playOnAwake = false;
+
+            string path = Path.Combine(Application.streamingAssetsPath, "output.mp4");
+            videoPlayer.url = path;
+
+            videoPlayer.errorReceived += (player, msg) => Debug.LogError("VideoPlayer error: " + msg);
+            videoPlayer.prepareCompleted += (player) =>
+            {
+                Debug.Log("Prepared, playing: " + videoPlayer.url);
+                videoPlayer.Play();
+            };
+
+            Debug.Log("Preparing: " + videoPlayer.url);
+            videoPlayer.Prepare();
+        }
+    }
+
     void Start()
     {
-        sceneName = SceneManager.GetActiveScene().name;
-        if (sceneName == "Intro_Animation")
-        {
-            videoPlayer.Play();
-            played = true;
-        }
+        
     }
     void Update()
     {
+        if (videoPlayer.isPlaying && !played)
+        {
+            played = true;
+        }
         if (played && !videoPlayer.isPlaying)
         {
             SceneManager.LoadScene("Level_Select_Scene");
@@ -34,4 +57,10 @@ public class introAnimation : MonoBehaviour
     {
         return played;
     }
+
+    private IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(2f);
+    }
+
 }

@@ -259,7 +259,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -1913,7 +1913,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -1922,7 +1922,79 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      envy_tutorial_0: 2811222947985180204
+      envy_tutorial_1: 459804670154913958
+      envy_tutorial_10: -5644811943340088670
+      envy_tutorial_11: -406316967463323247
+      envy_tutorial_12: 5747360621162966670
+      envy_tutorial_13: 1347181668771792332
+      envy_tutorial_14: 4299367331056477138
+      envy_tutorial_15: -2798076952117449423
+      envy_tutorial_16: -4594738178845325506
+      envy_tutorial_17: 6294971839753110818
+      envy_tutorial_18: 1782337069041924305
+      envy_tutorial_19: -7388611602363506217
+      envy_tutorial_2: -8629411672544633485
+      envy_tutorial_20: -4966276074303551386
+      envy_tutorial_21: -9157995274775960320
+      envy_tutorial_22: -5538846287797278105
+      envy_tutorial_23: -5945364924117148749
+      envy_tutorial_24: -7264495777806176513
+      envy_tutorial_25: -8724452305636024516
+      envy_tutorial_26: -4880722120716658843
+      envy_tutorial_27: -6975040089119363190
+      envy_tutorial_28: -3731219423577963004
+      envy_tutorial_29: 3565053975369295027
+      envy_tutorial_3: -8469136170849368721
+      envy_tutorial_30: 585011317739472066
+      envy_tutorial_31: -4316235904205769305
+      envy_tutorial_32: 7011020235225031665
+      envy_tutorial_33: 2030957012986138219
+      envy_tutorial_34: -3998353280148796055
+      envy_tutorial_35: 5965501001229963708
+      envy_tutorial_36: -3949453549292509617
+      envy_tutorial_37: -8366001001446253442
+      envy_tutorial_38: -2090814124557492347
+      envy_tutorial_39: 82377191601180701
+      envy_tutorial_4: -3366358665500595166
+      envy_tutorial_40: 3541030975935854114
+      envy_tutorial_41: -547453130687409618
+      envy_tutorial_42: -8011740431438564722
+      envy_tutorial_43: -5238345582041237415
+      envy_tutorial_44: 5038755536587739482
+      envy_tutorial_45: 2103153984571345470
+      envy_tutorial_46: -4918462530758829973
+      envy_tutorial_47: 8661341507585099966
+      envy_tutorial_48: -6722539533622169833
+      envy_tutorial_49: -9024917972082432536
+      envy_tutorial_5: -6867773779755114044
+      envy_tutorial_50: 8958255736279612099
+      envy_tutorial_51: 4406252771683022984
+      envy_tutorial_52: 280431096232562417
+      envy_tutorial_53: -8373702689003999132
+      envy_tutorial_54: -5975706489041089280
+      envy_tutorial_55: 6310139678605224449
+      envy_tutorial_56: -7300807359454045396
+      envy_tutorial_57: -2729137460719482102
+      envy_tutorial_58: 968157873928794418
+      envy_tutorial_59: 4576527617787578702
+      envy_tutorial_6: -8295824611808669943
+      envy_tutorial_60: 6625346791611337352
+      envy_tutorial_61: 6468705720635906573
+      envy_tutorial_62: 7237523133964118658
+      envy_tutorial_63: -7562785061106073868
+      envy_tutorial_64: -3807321449032114451
+      envy_tutorial_65: -1693977538659938116
+      envy_tutorial_66: -4542628426957291261
+      envy_tutorial_67: -3087997873630279330
+      envy_tutorial_68: 8028589016442607247
+      envy_tutorial_69: -6932858268823233920
+      envy_tutorial_7: 9188282958418168346
+      envy_tutorial_70: -380173035759772495
+      envy_tutorial_71: 9101314995782694413
+      envy_tutorial_8: -7816595126300339131
+      envy_tutorial_9: 7531794234009299437
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

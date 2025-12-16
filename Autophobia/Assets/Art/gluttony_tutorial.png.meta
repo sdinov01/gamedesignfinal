@@ -271,7 +271,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -2013,7 +2013,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -2022,7 +2022,83 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gluttony_tutorial_0: 980957163329836378
+      gluttony_tutorial_1: -1732499274340797833
+      gluttony_tutorial_10: -139513329214910765
+      gluttony_tutorial_11: -701424088012947726
+      gluttony_tutorial_12: -3287911377834756296
+      gluttony_tutorial_13: -2054189613619313475
+      gluttony_tutorial_14: 3965850399581016575
+      gluttony_tutorial_15: -4068087240380036145
+      gluttony_tutorial_16: 1535895199955959782
+      gluttony_tutorial_17: 5144767589345899568
+      gluttony_tutorial_18: 1356249125315507222
+      gluttony_tutorial_19: 908172736922380021
+      gluttony_tutorial_2: -7705780843096231475
+      gluttony_tutorial_20: -2943031625903783518
+      gluttony_tutorial_21: -6774053754212933064
+      gluttony_tutorial_22: 4619227860234290788
+      gluttony_tutorial_23: -1322393633784898100
+      gluttony_tutorial_24: 2567128728466179923
+      gluttony_tutorial_25: -5272953426389300990
+      gluttony_tutorial_26: 713883651539585474
+      gluttony_tutorial_27: 315678285344293050
+      gluttony_tutorial_28: 7436486450943486727
+      gluttony_tutorial_29: -1342426511955651085
+      gluttony_tutorial_3: -7041416861582917007
+      gluttony_tutorial_30: 9010495770655612151
+      gluttony_tutorial_31: 8362329285673556921
+      gluttony_tutorial_32: 4905818878731542551
+      gluttony_tutorial_33: -3833077393907566890
+      gluttony_tutorial_34: 116048951884131477
+      gluttony_tutorial_35: 6172180741153045365
+      gluttony_tutorial_36: -2403551734330008494
+      gluttony_tutorial_37: 4565303025718555390
+      gluttony_tutorial_38: -3320129036574430253
+      gluttony_tutorial_39: -3376433422073533821
+      gluttony_tutorial_4: -1433631784422106765
+      gluttony_tutorial_40: -4917411829870292931
+      gluttony_tutorial_41: 3818441157093379951
+      gluttony_tutorial_42: -3243123645020799397
+      gluttony_tutorial_43: -5339145379075004018
+      gluttony_tutorial_44: 2648280939600984356
+      gluttony_tutorial_45: -575129997563373686
+      gluttony_tutorial_46: -2187185333374495251
+      gluttony_tutorial_47: 3983264479878512319
+      gluttony_tutorial_48: 3179012839640518296
+      gluttony_tutorial_49: 483973539583571922
+      gluttony_tutorial_5: -6298006855666307516
+      gluttony_tutorial_50: -5073495184271948031
+      gluttony_tutorial_51: -4861425127856957186
+      gluttony_tutorial_52: 278675061081436285
+      gluttony_tutorial_53: -2512317450756207713
+      gluttony_tutorial_54: -7396836050567957267
+      gluttony_tutorial_55: 2958428007239713113
+      gluttony_tutorial_56: -6456847481225771006
+      gluttony_tutorial_57: 2534292822774080181
+      gluttony_tutorial_58: -3920452960517206696
+      gluttony_tutorial_59: 8423237455992602715
+      gluttony_tutorial_6: -5519072993172443284
+      gluttony_tutorial_60: -8280221107079642682
+      gluttony_tutorial_61: -4511698532028382950
+      gluttony_tutorial_62: -5501075200317141756
+      gluttony_tutorial_63: -4895390506065087702
+      gluttony_tutorial_64: -1521901148963439343
+      gluttony_tutorial_65: -2604733335775095650
+      gluttony_tutorial_66: 5602311363483001870
+      gluttony_tutorial_67: -6768846937143334260
+      gluttony_tutorial_68: 1744385566536476513
+      gluttony_tutorial_69: 87445040459458570
+      gluttony_tutorial_7: 325315149722432108
+      gluttony_tutorial_70: -7597947301195672832
+      gluttony_tutorial_71: -9009188807929285837
+      gluttony_tutorial_72: -2221967298526474562
+      gluttony_tutorial_73: 5766439545735610387
+      gluttony_tutorial_74: -58656180736455863
+      gluttony_tutorial_75: 3545542427207497814
+      gluttony_tutorial_8: 1131201727957374597
+      gluttony_tutorial_9: 5108882189846063347
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

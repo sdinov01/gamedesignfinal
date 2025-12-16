@@ -178,7 +178,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -1238,7 +1238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -1247,7 +1247,52 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lust_tutorial_0: -441455483009607518
+      Lust_tutorial_1: -4372451618020398315
+      Lust_tutorial_10: 567056244465438490
+      Lust_tutorial_11: -2146819684540270130
+      Lust_tutorial_12: -3384675808415678387
+      Lust_tutorial_13: -3196639930319577733
+      Lust_tutorial_14: 8418023592034023253
+      Lust_tutorial_15: 619366065133843323
+      Lust_tutorial_16: -1646176946776074602
+      Lust_tutorial_17: -3132579626562504197
+      Lust_tutorial_18: -8760706347439296060
+      Lust_tutorial_19: 2010119296748233639
+      Lust_tutorial_2: -2329106107459626445
+      Lust_tutorial_20: -8572391935517657130
+      Lust_tutorial_21: -6778548903658280791
+      Lust_tutorial_22: -7484944165777065439
+      Lust_tutorial_23: 2008424528497782945
+      Lust_tutorial_24: 241548942299996305
+      Lust_tutorial_25: 2192997001244912706
+      Lust_tutorial_26: 1840143425560579167
+      Lust_tutorial_27: 928500359777292148
+      Lust_tutorial_28: 6671266448448167527
+      Lust_tutorial_29: 4158354888928299554
+      Lust_tutorial_3: 3929651910159272285
+      Lust_tutorial_30: -1323314972124567231
+      Lust_tutorial_31: 3049980584277320098
+      Lust_tutorial_32: -8168445199495003515
+      Lust_tutorial_33: 544145348689529317
+      Lust_tutorial_34: -8572101634795765403
+      Lust_tutorial_35: 4207070615994066139
+      Lust_tutorial_36: -7719827703258641881
+      Lust_tutorial_37: -348453070346054665
+      Lust_tutorial_38: -6682540221899340197
+      Lust_tutorial_39: -2664175697697263845
+      Lust_tutorial_4: -7125441514205625423
+      Lust_tutorial_40: 2576398296164667465
+      Lust_tutorial_41: 4478794419779678382
+      Lust_tutorial_42: -1043863498388660219
+      Lust_tutorial_43: 2137527837118508598
+      Lust_tutorial_44: -1225224706895127021
+      Lust_tutorial_5: -8319968376694197879
+      Lust_tutorial_6: 3870539437945912484
+      Lust_tutorial_7: 1634797498689414226
+      Lust_tutorial_8: 8204599197383009837
+      Lust_tutorial_9: -2730549130075681756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -5385,6 +5385,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1563198380}
     m_Modifications:
+    - target: {fileID: 3091233217827739858, guid: f75eade68301845219dd10b11e3041f3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -544
+      objectReference: {fileID: 0}
     - target: {fileID: 4205713991614458530, guid: f75eade68301845219dd10b11e3041f3, type: 3}
       propertyPath: AudioGroup
       value: 

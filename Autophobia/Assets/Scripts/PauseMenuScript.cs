@@ -8,7 +8,7 @@ using UnityEngine.Audio;
 
 public class PauseMenuHandler : MonoBehaviour {
 
-        public bool GameisPaused = false;
+        public static bool GameisPaused = false;
         public GameObject pauseMenuUI;
         public AudioSource musicSource;
         public float volumeLevel = 1.0f;
@@ -204,4 +204,5 @@ public class PauseMenuHandler : MonoBehaviour {
                         audio.Stop();
                 }
         }
+
 }

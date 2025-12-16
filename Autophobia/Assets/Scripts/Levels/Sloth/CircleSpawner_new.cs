@@ -17,7 +17,8 @@ public class CircleSpawner_new : MonoBehaviour
 
     private float idleIntensity = 0.16f;
     private float activeIntensity = 0.8f;
-    private float lightFadeTime = 1.09f;
+    private float lightFadeTime = 0.4f;
+    //float lightEarly = 0.3f;
 
     void Start()
     {
@@ -31,15 +32,22 @@ public class CircleSpawner_new : MonoBehaviour
 
         for (int i = 0; i < spawnTimes.Count; i++)
         {
-            float targetTime = spawnTimes[i]; 
+            float targetTime = spawnTimes[i];  //when eye fully closed
             float triggerTime = targetTime - 1.09f; // play animation 1.09 earlier
+            float lightTriggerTime = targetTime - 1.5f;
+            while (musicSource.time < lightTriggerTime)
+            {
+                yield return null;
+            }
+            StartCoroutine(AnimateLight(lights[spawnPlace[index]]));
 
             while (musicSource.time < triggerTime)
             {
                 yield return null;
             }
-            eyes[spawnPlace[index]].Trigger(triggerTime); 
-            StartCoroutine(AnimateLight(lights[spawnPlace[index]]));
+            //when music time > trigger time
+            eyes[spawnPlace[index]].Trigger(triggerTime); //eye starts to close at trigger time
+            //StartCoroutine(AnimateLight(lights[spawnPlace[index]]));
             index = (index + 1);
             // % eyes.Length;
         }

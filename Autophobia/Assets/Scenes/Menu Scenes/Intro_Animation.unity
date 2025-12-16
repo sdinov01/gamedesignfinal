@@ -347,8 +347,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Intro Animation Prefab
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3046255610414509155, guid: af1cc2c75634f054fbb7f774001ef04f, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

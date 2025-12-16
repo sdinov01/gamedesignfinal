@@ -9,7 +9,6 @@ using TMPro;
 public class introAnimation : MonoBehaviour
 {
     [SerializeField] private VideoPlayer videoPlayer;
-    [SerializeField] private levelTracker level;
     private static bool played = false;
     private string sceneName;
     [SerializeField] private TMP_Text skip;
@@ -48,10 +47,6 @@ public class introAnimation : MonoBehaviour
         if (videoPlayer.isPlaying && !played)
         {
             played = true;
-        }
-        if (played && !videoPlayer.isPlaying)
-        {
-            SceneManager.LoadScene("Level_Select_Scene");
         }
         if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
         {

@@ -1346,7 +1346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c843f7311bae6349be2af8a62ff0abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameisPaused: 0
   pauseMenuUI: {fileID: 972677749784922565}
   musicSource: {fileID: 0}
   volumeLevel: 1
@@ -1354,6 +1353,10 @@ MonoBehaviour:
   pauseAnimObject: {fileID: 2670121892447274615}
   image: {fileID: 0}
   pauseButton: {fileID: 8643447622020948384}
+  AudioGroup: {fileID: 0}
+  mMusic: {fileID: 0}
+  mOpen: {fileID: 0}
+  mClose: {fileID: 0}
   Button1: {fileID: 4128920606840167266}
   Button2: {fileID: 7628296585043857088}
   Button3: {fileID: 8290592497416901189}
@@ -1444,7 +1447,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &4169313204338741966
 MonoBehaviour:
   m_ObjectHideFlags: 0

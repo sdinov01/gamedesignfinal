@@ -3614,7 +3614,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1731202047658833104, guid: 0fb1dba6e32c38241b51917b851196b4, type: 3}
       propertyPath: winScene
-      value: envy_end_dialogue
+      value: End_Scene
       objectReference: {fileID: 0}
     - target: {fileID: 4913656608639110948, guid: 0fb1dba6e32c38241b51917b851196b4, type: 3}
       propertyPath: m_Pivot.x

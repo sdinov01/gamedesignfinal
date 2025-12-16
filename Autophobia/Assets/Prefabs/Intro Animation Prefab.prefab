@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 1169512705096727605}
   - component: {fileID: 266320423996126179}
   - component: {fileID: 8883908571496352142}
-  m_Layer: 0
+  - component: {fileID: 3046255610414509155}
+  m_Layer: 3
   m_Name: Intro Animation Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +42,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6329514085021530089}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 8baf4d38831cfd04181ab802591a5d4f, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 088697bb7a9921f43a266f60c177fb91, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -63,10 +64,10 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
-  m_WaitForFirstFrame: 1
+  m_WaitForFirstFrame: 0
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
 --- !u!114 &8883908571496352142
@@ -82,4 +83,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 266320423996126179}
-  level: {fileID: 0}
+  level: {fileID: 3046255610414509155}
+--- !u!114 &3046255610414509155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6329514085021530089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98b98700a0b44ee4ab57d3e0e431c550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

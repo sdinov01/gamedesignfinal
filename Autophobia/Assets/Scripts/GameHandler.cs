@@ -19,6 +19,8 @@ public class GameHandler : MonoBehaviour
     public AudioSource musicSource;
     public healthBar health;
     //private bool musicStarted = false;
+
+    [SerializeField] private introAnimation introAnim;
     public void SetCurrentCircle(Circle c)
     {
         currentCircle = c;
@@ -56,7 +58,12 @@ public class GameHandler : MonoBehaviour
     }
 
     public void PlayGame(){
-        SceneManager.LoadScene("Level_Select_Scene");
+        //SceneManager.LoadScene("Level_Select_Scene");
+        if (!introAnim.HasPlayed())
+        {
+            SceneManager.LoadScene("Intro_Animation");
+        }
+        
         // Please also reset all static variables here, for new games!
     }
 

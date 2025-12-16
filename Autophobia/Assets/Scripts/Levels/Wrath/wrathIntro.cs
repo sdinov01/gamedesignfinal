@@ -46,7 +46,7 @@ public class wrathIntro : MonoBehaviour
 
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) && !skipTutorial)
+        if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) && !skipTutorial && !PauseMenuHandler.GameisPaused)
         {
             skipTutorial = true;
 

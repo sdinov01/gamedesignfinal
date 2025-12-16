@@ -56,7 +56,7 @@ public class prideIntro : MonoBehaviour
     void Update()
     {
         /* If left/right shift is pressed, skip tutorial */
-        if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) && !skipTutorial)
+        if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) && !skipTutorial && !PauseMenuHandler.GameisPaused)
         {
             /* Stop the tutorial coroutine */
             skipTutorial = true;

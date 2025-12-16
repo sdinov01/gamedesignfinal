@@ -26,8 +26,8 @@ public class greedIntro : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Intro Start time = " + Time.timeSinceLevelLoad);
         timeBarFill = timeBar.GetComponent<TimeBar>();
+        timeBarFill.SetDuration(audioSource.clip.length);
         /* Default */
         musicDelay = 23f;
         skipTutorial = false;
@@ -42,7 +42,6 @@ public class greedIntro : MonoBehaviour
         tutorialRoutine = StartCoroutine(TutorialMessage());
         if (timeBar != null)
         {
-            Debug.Log("Time bar is not null");
             StartCoroutine(startBar());
         }
     }
@@ -62,10 +61,6 @@ public class greedIntro : MonoBehaviour
                 audioSource.Stop();
                 audioSource.Play();
             }
-            // audioSource.Stop();
-            // audioSource.Play();
-
-            // Instantly hide tutorial & good luck, then fade background
             tutorial.enabled = false;
 
             goodLuck.color = new Color(goodLuck.color.r, goodLuck.color.g, goodLuck.color.b, 0);
@@ -74,7 +69,6 @@ public class greedIntro : MonoBehaviour
             skip.color = new Color(skip.color.r, skip.color.g, skip.color.b, 0);
             skip.enabled = false;
 
-            // Immediately fade background out
             background.enabled = false;
             musicDelay = Time.timeSinceLevelLoad;
             if (countin != null)
@@ -98,7 +92,6 @@ public class greedIntro : MonoBehaviour
         yield return new WaitForSeconds(2f);
         if (skipTutorial) yield break;
         StartCoroutine(FadeOut(goodLuck));
-        //background.gameObject.SetActive(false);
         if (skipTutorial) yield break;
         StartCoroutine(FadeOut(skip));
         StartCoroutine(FadeOutImage(background));
@@ -203,12 +196,10 @@ public class greedIntro : MonoBehaviour
     public IEnumerator startBar()
     {
         /* Begin after tutorial/skip */
-        Debug.Log("musicDelay " + musicDelay);
         yield return new WaitUntil(() => Time.timeSinceLevelLoad >= musicDelay);
 
         /* Begin song Courotine fill bar */
-        timeBarFill.SetDuration(audioSource.clip.length-15f);
+        timeBarFill.SetDuration(audioSource.clip.length);
         timeBarFill.BeginTime();
-        Debug.Log("should start time bar");
     }
 }

@@ -26,7 +26,6 @@ public class gluttonyIntro : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Intro Start time = " + Time.timeSinceLevelLoad);
         timeBarFill = timeBar.GetComponent<TimeBar>();
         /* Default */
         musicDelay = 23f;
@@ -46,7 +45,6 @@ public class gluttonyIntro : MonoBehaviour
         tutorialRoutine = StartCoroutine(TutorialMessage());
         if (timeBar != null)
         {
-            Debug.Log("Time bar is not null");
             StartCoroutine(startBar());
         }
     }
@@ -66,10 +64,6 @@ public class gluttonyIntro : MonoBehaviour
                 audioSource.Stop();
                 audioSource.PlayDelayed(4f);
             }
-            // audioSource.Stop();
-            // audioSource.Play();
-
-            // Instantly hide tutorial & good luck, then fade background
             tutorial.enabled = false;
 
             goodLuck.color = new Color(goodLuck.color.r, goodLuck.color.g, goodLuck.color.b, 0);
@@ -78,7 +72,6 @@ public class gluttonyIntro : MonoBehaviour
             skip.color = new Color(skip.color.r, skip.color.g, skip.color.b, 0);
             skip.enabled = false;
 
-            // Immediately fade background out
             background.enabled = false;
             musicDelay = Time.timeSinceLevelLoad;
             if (countin != null)
@@ -102,7 +95,6 @@ public class gluttonyIntro : MonoBehaviour
         yield return new WaitForSeconds(2f);
         if (skipTutorial) yield break;
         StartCoroutine(FadeOut(goodLuck));
-        //background.gameObject.SetActive(false);
         if (skipTutorial) yield break;
         StartCoroutine(FadeOut(skip));
         StartCoroutine(FadeOutImage(background));
@@ -207,12 +199,10 @@ public class gluttonyIntro : MonoBehaviour
     public IEnumerator startBar()
     {
         /* Begin after tutorial/skip */
-        Debug.Log("musicDelay " + musicDelay);
         yield return new WaitUntil(() => Time.timeSinceLevelLoad >= musicDelay);
 
         /* Begin song Courotine fill bar */
-        timeBarFill.SetDuration(audioSource.clip.length);
+        timeBarFill.SetDuration(audioSource.clip.length + 4f);
         timeBarFill.BeginTime();
-        Debug.Log("should start time bar");
     }
 }

@@ -58,7 +58,7 @@ public class GameHandler : MonoBehaviour
     }
 
     public void PlayGame(){
-        //
+        //SceneManager.LoadScene("Level_Select_Scene");
         if (!introAnim.HasPlayed())
         {
             SceneManager.LoadScene("Intro_Animation");
@@ -76,10 +76,6 @@ public class GameHandler : MonoBehaviour
         SceneManager.LoadScene("Credits_Scene");
         // Please also reset all static variables here, for new games!
     }
-
-    public void SceneSelect() {
-        SceneManager.LoadScene("Level_Select_Scene");
-    } 
 
     public void QuitGame(){
             #if UNITY_EDITOR

@@ -583,10 +583,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3046255610414509155, guid: af1cc2c75634f054fbb7f774001ef04f, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6329514085021530089, guid: af1cc2c75634f054fbb7f774001ef04f, type: 3}
       propertyPath: m_Name
       value: Intro Animation Prefab

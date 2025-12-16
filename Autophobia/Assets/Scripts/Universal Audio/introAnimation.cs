@@ -9,6 +9,7 @@ using TMPro;
 public class introAnimation : MonoBehaviour
 {
     [SerializeField] private VideoPlayer videoPlayer;
+    [SerializeField] private levelTracker level;
     private static bool played = false;
     private string sceneName;
     [SerializeField] private TMP_Text skip;

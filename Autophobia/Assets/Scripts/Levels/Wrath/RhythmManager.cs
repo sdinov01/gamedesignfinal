@@ -54,7 +54,7 @@ public class RhythmManager : MonoBehaviour
 
         if (musicSource.time >= targetTime)
         {
-            Debug.Log("trigger next knife");
+            //Debug.Log("trigger next knife");
             TriggerNextKnife();
             nextIndex++;
         }
@@ -254,7 +254,7 @@ public class RhythmManager : MonoBehaviour
             if (health.healthLeft() > 0 && musicSource.time >= musicSource.clip.length - 0.1f) 
             {
                 levelTracker.wrathComplete = true;
-                Debug.Log("end");
+                //Debug.Log("end");
                 UnityEngine.SceneManagement.SceneManager.LoadScene("wrath_end_dialogue");
             }
         }

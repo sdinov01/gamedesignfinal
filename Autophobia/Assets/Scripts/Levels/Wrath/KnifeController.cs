@@ -67,7 +67,7 @@ public class KnifeController : MonoBehaviour
         if (!other.CompareTag("Player")) return;
         if (Time.time - lastHitTime < 0.6f) return;
         lastHitTime = Time.time;
-        Debug.Log("take damage"); 
+        //Debug.Log("take damage"); 
         health.takeDamage(currentDamage);
     }
 

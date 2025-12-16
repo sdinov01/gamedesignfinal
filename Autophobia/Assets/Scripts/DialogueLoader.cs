@@ -24,7 +24,7 @@ public class DialogueLoader : MonoBehaviour
         }
 
         if (winSceneName != "") {
-            Debug.Log(winSceneName);
+            //Debug.Log(winSceneName);
             switch (winSceneName)
             {
                 case "wrath_end_dialogue":
@@ -61,7 +61,7 @@ public class DialogueLoader : MonoBehaviour
                     break;
                 case "envy_end_dialogue":
                     if (levelTracker.envyComplete) {
-                        Debug.Log("Scene loads");
+                        //Debug.Log("Scene loads");
                         SceneManager.LoadScene("End_Scene");
                     }
                     break;

@@ -119,6 +119,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &218387423
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,6 +395,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of fc1fb15 (made it so going back to main menu doesnt reset progress)
 --- !u!1 &2021259639
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,4 +601,3 @@ SceneRoots:
   m_Roots:
   - {fileID: 2021259642}
   - {fileID: 4893078696960767527}
-  - {fileID: 218387424}

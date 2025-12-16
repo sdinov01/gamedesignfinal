@@ -67,7 +67,7 @@ public class introAnimation : MonoBehaviour
     private IEnumerator Delay()
     {
         yield return new WaitForSeconds(5f);
-        StartCoroutine(fadeFunction.fadeText(skip, 1f));
+        StartCoroutine(fadeFunction.fadeText(skip, 2f));
     }
 
 }

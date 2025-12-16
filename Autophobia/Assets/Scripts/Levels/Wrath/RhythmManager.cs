@@ -36,7 +36,6 @@ public class RhythmManager : MonoBehaviour
         beatInterval = 60f / bpm;
         StartCoroutine(WaitForMusicToStart());
     }
-
     IEnumerator WaitForMusicToStart()
     {
         while (musicSource.time <= 0.01f)
@@ -88,11 +87,18 @@ public class RhythmManager : MonoBehaviour
 
     public void TriggerNextKnife()
     {
+        foreach (var knife in knives)
+        {
+            knife.Hide();
+        }
+
         int sector = GetPlayerSector();
         foreach (var knife in knives)
         {
+
             if (knife.sectorIndex == sector)
             {
+                knife.Show();
                 sr = knife.self.GetComponent<SpriteRenderer>();
                 //StartCoroutine(FlashThenAttack(knife,sr));
                 StartCoroutine(FlashThenAttack(knife));
@@ -102,7 +108,6 @@ public class RhythmManager : MonoBehaviour
                 // StartCoroutine (ColorFlash());
                 
                 //knife.TriggerAttack();
-                
                 return; 
             }
         }
@@ -130,6 +135,8 @@ public class RhythmManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.3f);
         knife.TriggerAttack();
+        yield return new WaitForSeconds(1.6f);
+        knife.Hide();
     }
 
     IEnumerator LightFlash(Light2D light)

@@ -1145,7 +1145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a08c0f9e26894544ea078741ebcad787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1908021268}
   tutorial: {fileID: 7156104}
   goodLuck: {fileID: 1183140603}
   background: {fileID: 1860445096}
@@ -3762,7 +3762,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058546417}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e35ccd2683944e69aa287e892849048, type: 3}
   m_Name: 

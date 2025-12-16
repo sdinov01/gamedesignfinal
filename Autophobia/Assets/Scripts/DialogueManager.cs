@@ -43,7 +43,7 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
-        bool pressed = Input.GetKeyDown(advanceKey) || (clickToAdvance && Input.GetMouseButtonDown(0));
+        bool pressed = !PauseMenuHandler.GameisPaused && (Input.GetKeyDown(advanceKey) || (clickToAdvance && Input.GetMouseButtonDown(0)));
         if (!pressed) return;
 
         if (isTyping)

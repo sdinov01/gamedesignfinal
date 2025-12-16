@@ -8,6 +8,7 @@ public class LevelManager : MonoBehaviour
     private bool levelCompleted = false;
     public TutorialManager t;
 
+    //h
     void Update()
     {
         if (!music.isPlaying && playerHealth.healthLeft() > 0 && t.step2 && !t.startup)

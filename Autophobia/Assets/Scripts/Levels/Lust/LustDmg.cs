@@ -7,6 +7,9 @@ public class LustDMG : MonoBehaviour
     private healthBar health;
     private cameraShake camShake;
 
+    private bool takingDamage = false;
+    public float damageDuration;
+
 
 
     public float hitDuration;
@@ -23,11 +26,42 @@ public class LustDMG : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        /* Prevents weird repetitive damage */
+        if (takingDamage)
+        {
+            return;
+        }
         if (collision.CompareTag("Player"))
         {
-            health.takeDamage(1.5f);
-            camShake.SetShake(true);
+            StartCoroutine(TakeDamage());
         }
+    }
+
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        /* Prevents weird repetitive damage */
+        if (takingDamage)
+        {
+            return;
+        }
+        if (collision.CompareTag("Player"))
+        {
+            StartCoroutine(TakeDamage());
+        }
+    }
+
+    private IEnumerator TakeDamage()
+    {
+        takingDamage = true;
+        float elapsed = 0f;
+        health.takeDamage(1.5f);
+        camShake.SetShake(true);
+        while (elapsed < damageDuration)
+        {
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        takingDamage = false;
     }
 
 }

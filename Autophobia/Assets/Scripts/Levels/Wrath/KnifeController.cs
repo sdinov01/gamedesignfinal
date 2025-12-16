@@ -112,4 +112,14 @@ public class KnifeController : MonoBehaviour
         currentDamage = 10f;
         isAttacking = false;
     }
+
+    public void Show()
+    {
+        self.SetActive(true);
+    }
+
+    public void Hide()
+    {
+        self.SetActive(false);
+    }
 }

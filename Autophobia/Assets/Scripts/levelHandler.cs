@@ -30,11 +30,6 @@ public class levelHandler : MonoBehaviour
         gluttonyButton.interactable = false;
         lustButton.interactable = false;
 
-        levelTracker.wrathComplete = true;
-        levelTracker.prideComplete = true;
-        levelTracker.greedComplete = true;
-        levelTracker.slothComplete = true;
-
         gluttonySelect.color = new Color(0.6f, 0.6f, 0.6f, 1f);
         prideSelect.color = new Color(0.6f, 0.6f, 0.6f, 1f);
         slothSelect.color = new Color(0.6f, 0.6f, 0.6f, 1f);

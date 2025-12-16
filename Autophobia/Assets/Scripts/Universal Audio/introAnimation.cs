@@ -51,6 +51,10 @@ public class introAnimation : MonoBehaviour
         {
             SceneManager.LoadScene("Level_Select_Scene");
         }
+        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+        {
+            SceneManager.LoadScene("Level_Select_Scene");
+        }
     }
 
     public bool HasPlayed()

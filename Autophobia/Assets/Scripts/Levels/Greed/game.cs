@@ -12,7 +12,8 @@ public class game : MonoBehaviour
     [SerializeField] private handMovement hourMovement;
     private float startTime = 12.5f;
     [SerializeField] private AudioSource audio;
-    [SerializeField] private Image fillAmount;
+    //[SerializeField] private Image fillAmount;
+    //[SerializeField] private timeBar time;
     private Coroutine performRotationCoroutine;
 
     void Start()
@@ -23,20 +24,10 @@ public class game : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /* Update start time */
-        float newTime = intro.StartTime();
-        if (newTime != startTime)
+        if (audio.time >= audio.clip.length)
         {
-            startTime = newTime;
-            StopCoroutine(performRotationCoroutine);
-            StartCoroutine(hourMovement.performRotations());
-        }
-        if (fillAmount.fillAmount == 1f && Time.timeSinceLevelLoad > startTime)
-        {
-            Debug.Log("Greed Complete");
             levelTracker.greedComplete = true;
         }
 
     }
-
 }

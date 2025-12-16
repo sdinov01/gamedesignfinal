@@ -2977,7 +2977,6 @@ MonoBehaviour:
   intro: {fileID: 0}
   hourMovement: {fileID: 1584120215}
   audio: {fileID: 1706556084}
-  fillAmount: {fileID: 1640705512}
 --- !u!4 &1142959081
 Transform:
   m_ObjectHideFlags: 0
@@ -3924,6 +3923,8 @@ MonoBehaviour:
   - 0.1
   - 0.1
   - 0.75
+  - 0.75
+  - 0.75
   rotationTimes:
   - 0
   - 2
@@ -4053,6 +4054,7 @@ MonoBehaviour:
   - 90
   - 92
   - 96
+  - 98
   audio: {fileID: 1706556084}
   rm: {fileID: 0}
 --- !u!61 &1584120216

@@ -6,7 +6,7 @@ using TMPro;
 public class wrathIntro : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private TMP_Text tutorial;
+    [SerializeField] private Image tutorial;
     [SerializeField] private TMP_Text goodLuck;
     [SerializeField] private Image background;
     [SerializeField] private TMP_Text skip;
@@ -56,7 +56,8 @@ public class wrathIntro : MonoBehaviour
             }
 
             // UI disappear immediately when skip
-            HideTextInstant(tutorial);
+            //HideTextInstant(tutorial);
+            HideImageInstant(tutorial);
             HideTextInstant(goodLuck);
             HideTextInstant(skip);
             background.enabled = false;
@@ -67,12 +68,12 @@ public class wrathIntro : MonoBehaviour
 
     private IEnumerator TutorialMessage()
     {
-        yield return StartCoroutine(FadeIn(tutorial));
+        yield return StartCoroutine(FadeInImg(tutorial));
 
         yield return new WaitForSeconds(fadeDelay);
         if (skipTutorial) yield break;
 
-        StartCoroutine(FadeOut(tutorial));
+        StartCoroutine(FadeOutImage(tutorial));
         yield return new WaitForSeconds(2.5f);
         if (skipTutorial) yield break;
 
@@ -99,6 +100,24 @@ public class wrathIntro : MonoBehaviour
         timeBarFill.BeginTime();
     }
 
+    private IEnumerator FadeInImg(Image text)
+    {
+        text.enabled = true;
+        Color c = text.color;
+        float t = 0;
+
+        while (t < fadeTime)
+        {
+            if (skipTutorial) yield break;
+
+            t += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, 1, t / fadeTime);
+            text.color = new Color(c.r, c.g, c.b, alpha);
+            yield return null;
+        }
+
+        text.color = new Color(c.r, c.g, c.b, 1);
+    }
 
     private IEnumerator FadeIn(TMP_Text text)
     {
@@ -163,5 +182,10 @@ public class wrathIntro : MonoBehaviour
     {
         text.color = new Color(text.color.r, text.color.g, text.color.b, 0);
         text.enabled = false;
+    }
+
+    void HideImageInstant(Image img)
+    {
+        img.enabled = false;
     }
 }

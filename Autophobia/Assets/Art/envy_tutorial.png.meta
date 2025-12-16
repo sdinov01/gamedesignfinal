@@ -1,0 +1,1930 @@
+fileFormatVersion: 2
+guid: 1bb4c51cf7d9e8243837da938a0dcf4a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2811222947985180204
+    second: envy_tutorial_0
+  - first:
+      213: 459804670154913958
+    second: envy_tutorial_1
+  - first:
+      213: -8629411672544633485
+    second: envy_tutorial_2
+  - first:
+      213: -8469136170849368721
+    second: envy_tutorial_3
+  - first:
+      213: -3366358665500595166
+    second: envy_tutorial_4
+  - first:
+      213: -6867773779755114044
+    second: envy_tutorial_5
+  - first:
+      213: -8295824611808669943
+    second: envy_tutorial_6
+  - first:
+      213: 9188282958418168346
+    second: envy_tutorial_7
+  - first:
+      213: -7816595126300339131
+    second: envy_tutorial_8
+  - first:
+      213: 7531794234009299437
+    second: envy_tutorial_9
+  - first:
+      213: -5644811943340088670
+    second: envy_tutorial_10
+  - first:
+      213: -406316967463323247
+    second: envy_tutorial_11
+  - first:
+      213: 5747360621162966670
+    second: envy_tutorial_12
+  - first:
+      213: 1347181668771792332
+    second: envy_tutorial_13
+  - first:
+      213: 4299367331056477138
+    second: envy_tutorial_14
+  - first:
+      213: -2798076952117449423
+    second: envy_tutorial_15
+  - first:
+      213: -4594738178845325506
+    second: envy_tutorial_16
+  - first:
+      213: 6294971839753110818
+    second: envy_tutorial_17
+  - first:
+      213: 1782337069041924305
+    second: envy_tutorial_18
+  - first:
+      213: -7388611602363506217
+    second: envy_tutorial_19
+  - first:
+      213: -4966276074303551386
+    second: envy_tutorial_20
+  - first:
+      213: -9157995274775960320
+    second: envy_tutorial_21
+  - first:
+      213: -5538846287797278105
+    second: envy_tutorial_22
+  - first:
+      213: -5945364924117148749
+    second: envy_tutorial_23
+  - first:
+      213: -7264495777806176513
+    second: envy_tutorial_24
+  - first:
+      213: -8724452305636024516
+    second: envy_tutorial_25
+  - first:
+      213: -4880722120716658843
+    second: envy_tutorial_26
+  - first:
+      213: -6975040089119363190
+    second: envy_tutorial_27
+  - first:
+      213: -3731219423577963004
+    second: envy_tutorial_28
+  - first:
+      213: 3565053975369295027
+    second: envy_tutorial_29
+  - first:
+      213: 585011317739472066
+    second: envy_tutorial_30
+  - first:
+      213: -4316235904205769305
+    second: envy_tutorial_31
+  - first:
+      213: 7011020235225031665
+    second: envy_tutorial_32
+  - first:
+      213: 2030957012986138219
+    second: envy_tutorial_33
+  - first:
+      213: -3998353280148796055
+    second: envy_tutorial_34
+  - first:
+      213: 5965501001229963708
+    second: envy_tutorial_35
+  - first:
+      213: -3949453549292509617
+    second: envy_tutorial_36
+  - first:
+      213: -8366001001446253442
+    second: envy_tutorial_37
+  - first:
+      213: -2090814124557492347
+    second: envy_tutorial_38
+  - first:
+      213: 82377191601180701
+    second: envy_tutorial_39
+  - first:
+      213: 3541030975935854114
+    second: envy_tutorial_40
+  - first:
+      213: -547453130687409618
+    second: envy_tutorial_41
+  - first:
+      213: -8011740431438564722
+    second: envy_tutorial_42
+  - first:
+      213: -5238345582041237415
+    second: envy_tutorial_43
+  - first:
+      213: 5038755536587739482
+    second: envy_tutorial_44
+  - first:
+      213: 2103153984571345470
+    second: envy_tutorial_45
+  - first:
+      213: -4918462530758829973
+    second: envy_tutorial_46
+  - first:
+      213: 8661341507585099966
+    second: envy_tutorial_47
+  - first:
+      213: -6722539533622169833
+    second: envy_tutorial_48
+  - first:
+      213: -9024917972082432536
+    second: envy_tutorial_49
+  - first:
+      213: 8958255736279612099
+    second: envy_tutorial_50
+  - first:
+      213: 4406252771683022984
+    second: envy_tutorial_51
+  - first:
+      213: 280431096232562417
+    second: envy_tutorial_52
+  - first:
+      213: -8373702689003999132
+    second: envy_tutorial_53
+  - first:
+      213: -5975706489041089280
+    second: envy_tutorial_54
+  - first:
+      213: 6310139678605224449
+    second: envy_tutorial_55
+  - first:
+      213: -7300807359454045396
+    second: envy_tutorial_56
+  - first:
+      213: -2729137460719482102
+    second: envy_tutorial_57
+  - first:
+      213: 968157873928794418
+    second: envy_tutorial_58
+  - first:
+      213: 4576527617787578702
+    second: envy_tutorial_59
+  - first:
+      213: 6625346791611337352
+    second: envy_tutorial_60
+  - first:
+      213: 6468705720635906573
+    second: envy_tutorial_61
+  - first:
+      213: 7237523133964118658
+    second: envy_tutorial_62
+  - first:
+      213: -7562785061106073868
+    second: envy_tutorial_63
+  - first:
+      213: -3807321449032114451
+    second: envy_tutorial_64
+  - first:
+      213: -1693977538659938116
+    second: envy_tutorial_65
+  - first:
+      213: -4542628426957291261
+    second: envy_tutorial_66
+  - first:
+      213: -3087997873630279330
+    second: envy_tutorial_67
+  - first:
+      213: 8028589016442607247
+    second: envy_tutorial_68
+  - first:
+      213: -6932858268823233920
+    second: envy_tutorial_69
+  - first:
+      213: -380173035759772495
+    second: envy_tutorial_70
+  - first:
+      213: 9101314995782694413
+    second: envy_tutorial_71
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: envy_tutorial_0
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 1521
+        width: 47
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c26451f6068730720800000000000000
+      internalID: 2811222947985180204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_1
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1537
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a836ae49ed816600800000000000000
+      internalID: 459804670154913958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_2
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1480
+        width: 96
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d1e5dedcb2e3880800000000000000
+      internalID: -8629411672544633485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_3
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1489
+        width: 66
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f658c162685977a80800000000000000
+      internalID: -8469136170849368721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_4
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1498
+        width: 100
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c674421aa4841d0800000000000000
+      internalID: -3366358665500595166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_5
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1503
+        width: 104
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c164f36224c0b0a0800000000000000
+      internalID: -6867773779755114044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_6
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1559
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f833ef77f4fdc80800000000000000
+      internalID: -8295824611808669943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_7
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 1554
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1a4a484ba6538f70800000000000000
+      internalID: 9188282958418168346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_8
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1143
+        width: 235
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54491df8520e58390800000000000000
+      internalID: -7816595126300339131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_9
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 1380
+        width: 57
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de9a57f53fe468860800000000000000
+      internalID: 7531794234009299437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_10
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 1362
+        width: 70
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a2e45de17999a1b0800000000000000
+      internalID: -5644811943340088670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_11
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 1367
+        width: 44
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1997220fed87c5af0800000000000000
+      internalID: -406316967463323247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_12
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 1378
+        width: 96
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8eac7cb80ab2cf40800000000000000
+      internalID: 5747360621162966670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_13
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 1385
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc58f0f079622b210800000000000000
+      internalID: 1347181668771792332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_14
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 1380
+        width: 153
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d36a8efecb6aab30800000000000000
+      internalID: 4299367331056477138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_15
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 1388
+        width: 106
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13de4de36db3b29d0800000000000000
+      internalID: -2798076952117449423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_16
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 1385
+        width: 67
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37cff568f53c30c0800000000000000
+      internalID: -4594738178845325506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_17
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 1387
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 225429b398b3c5750800000000000000
+      internalID: 6294971839753110818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_18
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 1228
+        width: 66
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d8314efe122cb810800000000000000
+      internalID: 1782337069041924305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_19
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 1231
+        width: 46
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d12bc9e4e0667990800000000000000
+      internalID: -7388611602363506217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_20
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 1283
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6688d9e093e341bb0800000000000000
+      internalID: -4966276074303551386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_21
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 1231
+        width: 52
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 005e54891d348e080800000000000000
+      internalID: -9157995274775960320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_22
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 1233
+        width: 90
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76a2a56b5a01223b0800000000000000
+      internalID: -5538846287797278105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_23
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 1237
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb1ee5f912dd7da0800000000000000
+      internalID: -5945364924117148749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_24
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 1237
+        width: 76
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffea98b34935f2b90800000000000000
+      internalID: -7264495777806176513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_25
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 1237
+        width: 87
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3f1ab62ad48ce680800000000000000
+      internalID: -8724452305636024516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_26
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 1243
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 567da432711344cb0800000000000000
+      internalID: -4880722120716658843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_27
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 1239
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f6ee98efda33f90800000000000000
+      internalID: -6975040089119363190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_28
+      rect:
+        serializedVersion: 2
+        x: 2105
+        y: 1238
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406099ef3bb083cc0800000000000000
+      internalID: -3731219423577963004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_29
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 1275
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b42bfeb3bd997130800000000000000
+      internalID: 3565053975369295027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_30
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 1238
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c4c177a1b06e1800800000000000000
+      internalID: 585011317739472066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_31
+      rect:
+        serializedVersion: 2
+        x: 2209
+        y: 1178
+        width: 82
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a537034056a914c0800000000000000
+      internalID: -4316235904205769305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_32
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 1230
+        width: 62
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f3e9a902c52c4160800000000000000
+      internalID: 7011020235225031665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_33
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 1240
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e802194a86f2c10800000000000000
+      internalID: 2030957012986138219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_34
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 864
+        width: 351
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d863a30eef288c0800000000000000
+      internalID: -3998353280148796055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_35
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 820
+        width: 223
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb19c85dd87b9c250800000000000000
+      internalID: 5965501001229963708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_36
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 887
+        width: 306
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f46a3890ce8b039c0800000000000000
+      internalID: -3949453549292509617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_37
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 1062
+        width: 108
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7cdb360a6ef5eb80800000000000000
+      internalID: -8366001001446253442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_38
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 1066
+        width: 82
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58f916e91afebf2e0800000000000000
+      internalID: -2090814124557492347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_39
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 1065
+        width: 65
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d109bfa8e99a42100800000000000000
+      internalID: 82377191601180701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_40
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 1065
+        width: 77
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226bf4359e4442130800000000000000
+      internalID: 3541030975935854114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_41
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 1059
+        width: 89
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e229336374e0768f0800000000000000
+      internalID: -547453130687409618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_42
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 1064
+        width: 238
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e82387f868490d090800000000000000
+      internalID: -8011740431438564722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_43
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 1025
+        width: 219
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958f1b37278ad47b0800000000000000
+      internalID: -5238345582041237415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_44
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 992
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a51585cc6714de540800000000000000
+      internalID: 5038755536587739482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_45
+      rect:
+        serializedVersion: 2
+        x: 2539
+        y: 1010
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a825ee767ef2d10800000000000000
+      internalID: 2103153984571345470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_46
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 892
+        width: 192
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b681d0d236c1ebbb0800000000000000
+      internalID: -4918462530758829973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_47
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 828
+        width: 85
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb8c4fd1634433870800000000000000
+      internalID: 8661341507585099966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_48
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 893
+        width: 196
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f2ee569edb4b2a0800000000000000
+      internalID: -6722539533622169833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_49
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 885
+        width: 92
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e5ecf2abec01c280800000000000000
+      internalID: -9024917972082432536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_50
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 882
+        width: 88
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca3d08112e125c70800000000000000
+      internalID: 8958255736279612099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_51
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 890
+        width: 149
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8883fbeec87262d30800000000000000
+      internalID: 4406252771683022984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_52
+      rect:
+        serializedVersion: 2
+        x: 2276
+        y: 893
+        width: 80
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe4ae2a89a44e300800000000000000
+      internalID: 280431096232562417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_53
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 753
+        width: 84
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 460fe2725c1aacb80800000000000000
+      internalID: -8373702689003999132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_54
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 754
+        width: 148
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d85bedb96021da0800000000000000
+      internalID: -5975706489041089280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_55
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 759
+        width: 71
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10aac5aea9e129750800000000000000
+      internalID: 6310139678605224449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_56
+      rect:
+        serializedVersion: 2
+        x: 1842
+        y: 756
+        width: 77
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b1f2e43625eaa90800000000000000
+      internalID: -7300807359454045396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_57
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 762
+        width: 76
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b8a9660f7202ad0800000000000000
+      internalID: -2729137460719482102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_58
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 763
+        width: 89
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231f502f4769f6d00800000000000000
+      internalID: 968157873928794418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_59
+      rect:
+        serializedVersion: 2
+        x: 2193
+        y: 757
+        width: 169
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e494ef2fe97138f30800000000000000
+      internalID: 4576527617787578702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_60
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 775
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a84cbedc5f1fb50800000000000000
+      internalID: 6625346791611337352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_61
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 608
+        width: 143
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a5a0b849575c950800000000000000
+      internalID: 6468705720635906573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_62
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 501
+        width: 58
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a6a9db1f8d07460800000000000000
+      internalID: 7237523133964118658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_63
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 479
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe34286e079b0790800000000000000
+      internalID: -7562785061106073868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_64
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 513
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee17bc605da92bc0800000000000000
+      internalID: -3807321449032114451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_65
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 506
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb01fa65768cd78e0800000000000000
+      internalID: -1693977538659938116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_66
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 503
+        width: 75
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3018e98738755f0c0800000000000000
+      internalID: -4542628426957291261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_67
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 438
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e590b1b7b4a3525d0800000000000000
+      internalID: -3087997873630279330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_68
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 259
+        width: 976
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f861aa45c274b6f60800000000000000
+      internalID: 8028589016442607247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_69
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 333
+        width: 29
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a59a8e22a89cf90800000000000000
+      internalID: -6932858268823233920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_70
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 205
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bc5b5263aa59baf0800000000000000
+      internalID: -380173035759772495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envy_tutorial_71
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 175
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06309094cd5e4e70800000000000000
+      internalID: 9101314995782694413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

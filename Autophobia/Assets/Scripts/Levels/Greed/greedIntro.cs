@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class greedIntro : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private TMP_Text tutorial;
+    [SerializeField] private Image tutorial;
     [SerializeField] private TMP_Text goodLuck;
     [SerializeField] private Image background;
     [SerializeField] private TMP_Text skip;
@@ -66,7 +66,6 @@ public class greedIntro : MonoBehaviour
             // audioSource.Play();
 
             // Instantly hide tutorial & good luck, then fade background
-            tutorial.color = new Color(tutorial.color.r, tutorial.color.g, tutorial.color.b, 0);
             tutorial.enabled = false;
 
             goodLuck.color = new Color(goodLuck.color.r, goodLuck.color.g, goodLuck.color.b, 0);
@@ -87,11 +86,11 @@ public class greedIntro : MonoBehaviour
 
     private IEnumerator TutorialMessage()
     {
-        yield return StartCoroutine(FadeIn(tutorial));
+        yield return StartCoroutine(FadeInImg(tutorial));
 
         yield return new WaitForSeconds(fadeDelay);
         if (skipTutorial) yield break;
-        StartCoroutine(FadeOut(tutorial));
+        StartCoroutine(FadeOutImage(tutorial));
         yield return new WaitForSeconds(2.5f);
         if (skipTutorial) yield break;
 
@@ -110,6 +109,26 @@ public class greedIntro : MonoBehaviour
         }
         this.enabled = false;
     }
+
+    private IEnumerator FadeInImg(Image text)
+    {
+        text.enabled = true;
+        Color c = text.color;
+        float t = 0;
+
+        while (t < fadeTime)
+        {
+            if (skipTutorial) yield break;
+
+            t += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, 1, t / fadeTime);
+            text.color = new Color(c.r, c.g, c.b, alpha);
+            yield return null;
+        }
+
+        text.color = new Color(c.r, c.g, c.b, 1);
+    }
+
     private IEnumerator FadeIn(TMP_Text text)
     {
         text.enabled = true;

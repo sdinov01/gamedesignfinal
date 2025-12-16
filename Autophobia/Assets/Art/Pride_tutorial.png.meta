@@ -1,0 +1,1690 @@
+fileFormatVersion: 2
+guid: 666d53936f762b04e96ec1c7d016487e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -888373258533268848
+    second: Pride_tutorial_0
+  - first:
+      213: -2576324558980683545
+    second: Pride_tutorial_1
+  - first:
+      213: -8401612608314089978
+    second: Pride_tutorial_2
+  - first:
+      213: -4506977755677772866
+    second: Pride_tutorial_3
+  - first:
+      213: -1409509938268659780
+    second: Pride_tutorial_4
+  - first:
+      213: 2276111890671651977
+    second: Pride_tutorial_5
+  - first:
+      213: -6613582328824002913
+    second: Pride_tutorial_6
+  - first:
+      213: 2582523858580164364
+    second: Pride_tutorial_7
+  - first:
+      213: -7003564136646739403
+    second: Pride_tutorial_8
+  - first:
+      213: 7730706769524924111
+    second: Pride_tutorial_9
+  - first:
+      213: 8347430638369585196
+    second: Pride_tutorial_10
+  - first:
+      213: -214427342229541950
+    second: Pride_tutorial_11
+  - first:
+      213: -3071609250836143916
+    second: Pride_tutorial_12
+  - first:
+      213: -2066952644422902066
+    second: Pride_tutorial_13
+  - first:
+      213: -734497520538939999
+    second: Pride_tutorial_14
+  - first:
+      213: -4014587123127060103
+    second: Pride_tutorial_15
+  - first:
+      213: 2162254550030732354
+    second: Pride_tutorial_16
+  - first:
+      213: -121805700044333168
+    second: Pride_tutorial_17
+  - first:
+      213: -1848445141962324111
+    second: Pride_tutorial_18
+  - first:
+      213: 7661639393109032600
+    second: Pride_tutorial_19
+  - first:
+      213: -715799313363223978
+    second: Pride_tutorial_20
+  - first:
+      213: 6543268295333919099
+    second: Pride_tutorial_21
+  - first:
+      213: -5597524593073985949
+    second: Pride_tutorial_22
+  - first:
+      213: 6688696020253267721
+    second: Pride_tutorial_23
+  - first:
+      213: -3437755259854581542
+    second: Pride_tutorial_24
+  - first:
+      213: 3414792281592970226
+    second: Pride_tutorial_25
+  - first:
+      213: 7164049341805806407
+    second: Pride_tutorial_26
+  - first:
+      213: 5626454378337872794
+    second: Pride_tutorial_27
+  - first:
+      213: 7463887014928184931
+    second: Pride_tutorial_28
+  - first:
+      213: 594311892145353039
+    second: Pride_tutorial_29
+  - first:
+      213: -1573804477075449935
+    second: Pride_tutorial_30
+  - first:
+      213: -3430725678455170011
+    second: Pride_tutorial_31
+  - first:
+      213: 7033493014123777746
+    second: Pride_tutorial_32
+  - first:
+      213: -3147231481624042211
+    second: Pride_tutorial_33
+  - first:
+      213: -5691262309383151761
+    second: Pride_tutorial_34
+  - first:
+      213: 3330411248972782140
+    second: Pride_tutorial_35
+  - first:
+      213: 4617445687088702245
+    second: Pride_tutorial_36
+  - first:
+      213: 1344109404276184136
+    second: Pride_tutorial_37
+  - first:
+      213: 1896017673035394112
+    second: Pride_tutorial_38
+  - first:
+      213: -4295513990638035833
+    second: Pride_tutorial_39
+  - first:
+      213: -7251438012282294577
+    second: Pride_tutorial_40
+  - first:
+      213: 5259870255366151011
+    second: Pride_tutorial_41
+  - first:
+      213: 1955570922253089700
+    second: Pride_tutorial_42
+  - first:
+      213: -146535358988524270
+    second: Pride_tutorial_43
+  - first:
+      213: 8036622732790373480
+    second: Pride_tutorial_44
+  - first:
+      213: -3095671765891244122
+    second: Pride_tutorial_45
+  - first:
+      213: 3677344658713372049
+    second: Pride_tutorial_46
+  - first:
+      213: -6811552510050859198
+    second: Pride_tutorial_47
+  - first:
+      213: 7180899101643942638
+    second: Pride_tutorial_48
+  - first:
+      213: -6750033669416136836
+    second: Pride_tutorial_49
+  - first:
+      213: -3914104386607736071
+    second: Pride_tutorial_50
+  - first:
+      213: 2166507402032660811
+    second: Pride_tutorial_51
+  - first:
+      213: 6972652047779105527
+    second: Pride_tutorial_52
+  - first:
+      213: -8541537639586403686
+    second: Pride_tutorial_53
+  - first:
+      213: -121858686847809388
+    second: Pride_tutorial_54
+  - first:
+      213: 4099022761127042290
+    second: Pride_tutorial_55
+  - first:
+      213: -4116741670925488368
+    second: Pride_tutorial_56
+  - first:
+      213: 3961674411905600488
+    second: Pride_tutorial_57
+  - first:
+      213: -1430247766337945821
+    second: Pride_tutorial_58
+  - first:
+      213: 6935464853757361421
+    second: Pride_tutorial_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pride_tutorial_0
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1549
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0921b296a3ddba3f0800000000000000
+      internalID: -888373258533268848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_1
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 1571
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e867dba67e0f3cd0800000000000000
+      internalID: -2576324558980683545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_2
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1489
+        width: 66
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60edefca8d9776b80800000000000000
+      internalID: -8401612608314089978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_3
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1498
+        width: 100
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb33d363c9ff371c0800000000000000
+      internalID: -4506977755677772866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_4
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1503
+        width: 104
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf1d16dd2a607ce0800000000000000
+      internalID: -1409509938268659780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_5
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1565
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98cc68884bf569f10800000000000000
+      internalID: 2276111890671651977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_6
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 1560
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9605a589e5d734a0800000000000000
+      internalID: -6613582328824002913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_7
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1480
+        width: 96
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0f44ae34c7f6d320800000000000000
+      internalID: 2582523858580164364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_8
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 1364
+        width: 77
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a718136875ece90800000000000000
+      internalID: -7003564136646739403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_9
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 1365
+        width: 54
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce9d3c09dcf84b60800000000000000
+      internalID: 7730706769524924111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_10
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1389
+        width: 66
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c283b3360f708d370800000000000000
+      internalID: 8347430638369585196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_11
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1374
+        width: 72
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cbe644e773360df0800000000000000
+      internalID: -214427342229541950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_12
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 1365
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d0ab1319a37f55d0800000000000000
+      internalID: -3071609250836143916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_13
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1420
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece5e956585b053e0800000000000000
+      internalID: -2066952644422902066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_14
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 1364
+        width: 103
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad0fd7856a8ec5f0800000000000000
+      internalID: -734497520538939999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_15
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 1429
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 979772e18425948c0800000000000000
+      internalID: -4014587123127060103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_16
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 1379
+        width: 75
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ccd80ae0fd10e10800000000000000
+      internalID: 2162254550030732354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_17
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 1362
+        width: 35
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f5d357c524f4ef0800000000000000
+      internalID: -121805700044333168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_18
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 1366
+        width: 71
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1770a86dfe00956e0800000000000000
+      internalID: -1848445141962324111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_19
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1409
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89e37675f6c935a60800000000000000
+      internalID: 7661639393109032600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_20
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 1370
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a34842158f016f0800000000000000
+      internalID: -715799313363223978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_21
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 1319
+        width: 95
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b79347dc8db5eca50800000000000000
+      internalID: 6543268295333919099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_22
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 1364
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366ef402a099152b0800000000000000
+      internalID: -5597524593073985949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_23
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1355
+        width: 110
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907d3c9979503dc50800000000000000
+      internalID: 6688696020253267721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_24
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 1317
+        width: 126
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad013af1ec3aa40d0800000000000000
+      internalID: -3437755259854581542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_25
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1143
+        width: 235
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fb381edc77c36f20800000000000000
+      internalID: 3414792281592970226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_26
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 1359
+        width: 168
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 743c4bb6be0db6360800000000000000
+      internalID: 7164049341805806407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_27
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 1367
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b25c5627e251e40800000000000000
+      internalID: 5626454378337872794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_28
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1232
+        width: 190
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366f178d1bd059760800000000000000
+      internalID: 7463887014928184931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_29
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 1236
+        width: 136
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f413d11648b6f3800800000000000000
+      internalID: 594311892145353039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_30
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 1176
+        width: 149
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b79ffd9a29b82ae0800000000000000
+      internalID: -1573804477075449935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_31
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 1219
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52c5ed51c2d9360d0800000000000000
+      internalID: -3430725678455170011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_32
+      rect:
+        serializedVersion: 2
+        x: 2107
+        y: 1238
+        width: 237
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de0a0d91acfb9160800000000000000
+      internalID: 7033493014123777746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_33
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 887
+        width: 306
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d156fd764a9c254d0800000000000000
+      internalID: -3147231481624042211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_34
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 1046
+        width: 180
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6fd5ad45139401b0800000000000000
+      internalID: -5691262309383151761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_35
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 1079
+        width: 188
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3adcfab26ff73e20800000000000000
+      internalID: 3330411248972782140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_36
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 1085
+        width: 288
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 523e49c5366741040800000000000000
+      internalID: 4617445687088702245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_37
+      rect:
+        serializedVersion: 2
+        x: 2146
+        y: 1088
+        width: 59
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844d42db16c37a210800000000000000
+      internalID: 1344109404276184136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_38
+      rect:
+        serializedVersion: 2
+        x: 2206
+        y: 1090
+        width: 93
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c23213702005a10800000000000000
+      internalID: 1896017673035394112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_39
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 1024
+        width: 245
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c9c4cb8c44364c0800000000000000
+      internalID: -4295513990638035833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_40
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 864
+        width: 351
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce262f2c87bd5b90800000000000000
+      internalID: -7251438012282294577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_41
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 820
+        width: 223
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b1eb71120def840800000000000000
+      internalID: 5259870255366151011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_42
+      rect:
+        serializedVersion: 2
+        x: 2513
+        y: 1071
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab7af98465932b10800000000000000
+      internalID: 1955570922253089700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_43
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 1040
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215647c0ed667fdf0800000000000000
+      internalID: -146535358988524270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_44
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 865
+        width: 75
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86c9ccdabc1d78f60800000000000000
+      internalID: 8036622732790373480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_45
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 823
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af98d43ee6f905d0800000000000000
+      internalID: -3095671765891244122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_46
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 865
+        width: 233
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1956a43db7d880330800000000000000
+      internalID: 3677344658713372049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_47
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 936
+        width: 35
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2478f7dc4118871a0800000000000000
+      internalID: -6811552510050859198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_48
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 848
+        width: 103
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeaa869dfada7a360800000000000000
+      internalID: 7180899101643942638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_49
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 858
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f468014201352a0800000000000000
+      internalID: -6750033669416136836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_50
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 872
+        width: 79
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa92765cce4ea9c0800000000000000
+      internalID: -3914104386607736071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_51
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 868
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b414965e00bf01e10800000000000000
+      internalID: 2166507402032660811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_52
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 571
+        width: 148
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa06424816d3c060800000000000000
+      internalID: 6972652047779105527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_53
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 697
+        width: 85
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ae2d495cc567980800000000000000
+      internalID: -8541537639586403686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_54
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 696
+        width: 67
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49804a18b221f4ef0800000000000000
+      internalID: -121858686847809388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_55
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 696
+        width: 80
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fcd733db77a2e830800000000000000
+      internalID: 4099022761127042290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_56
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 690
+        width: 92
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f207003456ed6c0800000000000000
+      internalID: -4116741670925488368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_57
+      rect:
+        serializedVersion: 2
+        x: 1878
+        y: 695
+        width: 250
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb436543e1baf630800000000000000
+      internalID: 3961674411905600488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_58
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 654
+        width: 230
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32f71aafb3db62ce0800000000000000
+      internalID: -1430247766337945821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pride_tutorial_59
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 438
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0df960f988bf3060800000000000000
+      internalID: 6935464853757361421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pride_tutorial_0: -888373258533268848
+      Pride_tutorial_1: -2576324558980683545
+      Pride_tutorial_10: 8347430638369585196
+      Pride_tutorial_11: -214427342229541950
+      Pride_tutorial_12: -3071609250836143916
+      Pride_tutorial_13: -2066952644422902066
+      Pride_tutorial_14: -734497520538939999
+      Pride_tutorial_15: -4014587123127060103
+      Pride_tutorial_16: 2162254550030732354
+      Pride_tutorial_17: -121805700044333168
+      Pride_tutorial_18: -1848445141962324111
+      Pride_tutorial_19: 7661639393109032600
+      Pride_tutorial_2: -8401612608314089978
+      Pride_tutorial_20: -715799313363223978
+      Pride_tutorial_21: 6543268295333919099
+      Pride_tutorial_22: -5597524593073985949
+      Pride_tutorial_23: 6688696020253267721
+      Pride_tutorial_24: -3437755259854581542
+      Pride_tutorial_25: 3414792281592970226
+      Pride_tutorial_26: 7164049341805806407
+      Pride_tutorial_27: 5626454378337872794
+      Pride_tutorial_28: 7463887014928184931
+      Pride_tutorial_29: 594311892145353039
+      Pride_tutorial_3: -4506977755677772866
+      Pride_tutorial_30: -1573804477075449935
+      Pride_tutorial_31: -3430725678455170011
+      Pride_tutorial_32: 7033493014123777746
+      Pride_tutorial_33: -3147231481624042211
+      Pride_tutorial_34: -5691262309383151761
+      Pride_tutorial_35: 3330411248972782140
+      Pride_tutorial_36: 4617445687088702245
+      Pride_tutorial_37: 1344109404276184136
+      Pride_tutorial_38: 1896017673035394112
+      Pride_tutorial_39: -4295513990638035833
+      Pride_tutorial_4: -1409509938268659780
+      Pride_tutorial_40: -7251438012282294577
+      Pride_tutorial_41: 5259870255366151011
+      Pride_tutorial_42: 1955570922253089700
+      Pride_tutorial_43: -146535358988524270
+      Pride_tutorial_44: 8036622732790373480
+      Pride_tutorial_45: -3095671765891244122
+      Pride_tutorial_46: 3677344658713372049
+      Pride_tutorial_47: -6811552510050859198
+      Pride_tutorial_48: 7180899101643942638
+      Pride_tutorial_49: -6750033669416136836
+      Pride_tutorial_5: 2276111890671651977
+      Pride_tutorial_50: -3914104386607736071
+      Pride_tutorial_51: 2166507402032660811
+      Pride_tutorial_52: 6972652047779105527
+      Pride_tutorial_53: -8541537639586403686
+      Pride_tutorial_54: -121858686847809388
+      Pride_tutorial_55: 4099022761127042290
+      Pride_tutorial_56: -4116741670925488368
+      Pride_tutorial_57: 3961674411905600488
+      Pride_tutorial_58: -1430247766337945821
+      Pride_tutorial_59: 6935464853757361421
+      Pride_tutorial_6: -6613582328824002913
+      Pride_tutorial_7: 2582523858580164364
+      Pride_tutorial_8: -7003564136646739403
+      Pride_tutorial_9: 7730706769524924111
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1586 @@
+fileFormatVersion: 2
+guid: 96cec4496de923a4f9d94d0d858563e7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7978429043348459813
+    second: greed_tutorial_0
+  - first:
+      213: -4206506376796072226
+    second: greed_tutorial_1
+  - first:
+      213: -2814833582218122493
+    second: greed_tutorial_2
+  - first:
+      213: 8181643750149036880
+    second: greed_tutorial_3
+  - first:
+      213: 2753705776698190591
+    second: greed_tutorial_4
+  - first:
+      213: -9154778592905923973
+    second: greed_tutorial_5
+  - first:
+      213: -8316572112608972751
+    second: greed_tutorial_6
+  - first:
+      213: 1071221090092842056
+    second: greed_tutorial_7
+  - first:
+      213: 370747915185612186
+    second: greed_tutorial_8
+  - first:
+      213: 4492633286904586452
+    second: greed_tutorial_9
+  - first:
+      213: -186802852357624398
+    second: greed_tutorial_10
+  - first:
+      213: 3262354317930155686
+    second: greed_tutorial_11
+  - first:
+      213: -4416320568736400412
+    second: greed_tutorial_12
+  - first:
+      213: -6146080629804028545
+    second: greed_tutorial_13
+  - first:
+      213: -6452503487477164726
+    second: greed_tutorial_14
+  - first:
+      213: -8435906242863719958
+    second: greed_tutorial_15
+  - first:
+      213: 903470659059575386
+    second: greed_tutorial_16
+  - first:
+      213: 729620368364249222
+    second: greed_tutorial_17
+  - first:
+      213: -5432531826924968681
+    second: greed_tutorial_18
+  - first:
+      213: -8725935391523420618
+    second: greed_tutorial_19
+  - first:
+      213: 3671195925732441202
+    second: greed_tutorial_20
+  - first:
+      213: 1011860920874907814
+    second: greed_tutorial_21
+  - first:
+      213: -6147215717746305143
+    second: greed_tutorial_22
+  - first:
+      213: 401756969330131132
+    second: greed_tutorial_23
+  - first:
+      213: -1132348586382103038
+    second: greed_tutorial_24
+  - first:
+      213: 654886762057588545
+    second: greed_tutorial_25
+  - first:
+      213: 4267801454663455286
+    second: greed_tutorial_26
+  - first:
+      213: 6163414948257054786
+    second: greed_tutorial_27
+  - first:
+      213: 602026620746428336
+    second: greed_tutorial_28
+  - first:
+      213: -6365875542093571808
+    second: greed_tutorial_29
+  - first:
+      213: 6033328677616657962
+    second: greed_tutorial_30
+  - first:
+      213: -195478490674047170
+    second: greed_tutorial_31
+  - first:
+      213: -581241397258767523
+    second: greed_tutorial_32
+  - first:
+      213: 1117653421506648599
+    second: greed_tutorial_33
+  - first:
+      213: 2699136948439828745
+    second: greed_tutorial_34
+  - first:
+      213: 6029218407480679535
+    second: greed_tutorial_35
+  - first:
+      213: -2422491280868046943
+    second: greed_tutorial_36
+  - first:
+      213: -6244997837152623291
+    second: greed_tutorial_37
+  - first:
+      213: -5987151200905668843
+    second: greed_tutorial_38
+  - first:
+      213: 7961180973336198080
+    second: greed_tutorial_39
+  - first:
+      213: -8410946103309774615
+    second: greed_tutorial_40
+  - first:
+      213: 5648334111910577539
+    second: greed_tutorial_41
+  - first:
+      213: 9031435213023544056
+    second: greed_tutorial_42
+  - first:
+      213: 4882892840367102571
+    second: greed_tutorial_43
+  - first:
+      213: 2435108696601849796
+    second: greed_tutorial_44
+  - first:
+      213: -937218833482916929
+    second: greed_tutorial_45
+  - first:
+      213: -2214480348484651362
+    second: greed_tutorial_46
+  - first:
+      213: 2839247060555559345
+    second: greed_tutorial_47
+  - first:
+      213: 5709496037332974286
+    second: greed_tutorial_48
+  - first:
+      213: -1815573077997424083
+    second: greed_tutorial_49
+  - first:
+      213: 3714354113494383474
+    second: greed_tutorial_50
+  - first:
+      213: -2025171953106604594
+    second: greed_tutorial_51
+  - first:
+      213: -3944851085739752205
+    second: greed_tutorial_52
+  - first:
+      213: -1897140963615667036
+    second: greed_tutorial_53
+  - first:
+      213: 5007743268107737714
+    second: greed_tutorial_54
+  - first:
+      213: 841021925673269753
+    second: greed_tutorial_55
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: greed_tutorial_0
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1549
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 521d17281f219be60800000000000000
+      internalID: 7978429043348459813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_1
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 1571
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed697a1ccbc7f95c0800000000000000
+      internalID: -4206506376796072226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_2
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1489
+        width: 66
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b6c0645c3bfe8d0800000000000000
+      internalID: -2814833582218122493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_3
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1499
+        width: 100
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05b9d6e74a90b8170800000000000000
+      internalID: 8181643750149036880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_4
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1503
+        width: 104
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa690c60d0273620800000000000000
+      internalID: 2753705776698190591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_5
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1565
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72fd74bf51b3f080800000000000000
+      internalID: -9154778592905923973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_6
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 1560
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130b5070ab9959c80800000000000000
+      internalID: -8316572112608972751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_7
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1480
+        width: 95
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84cf3e6e7edbdde00800000000000000
+      internalID: 1071221090092842056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_8
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1144
+        width: 235
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a95ead9b349252500800000000000000
+      internalID: 370747915185612186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_9
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1389
+        width: 66
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d02b04eb2a095e30800000000000000
+      internalID: 4492633286904586452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_10
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1374
+        width: 72
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bda136abc7586df0800000000000000
+      internalID: -186802852357624398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_11
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 1359
+        width: 168
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae40bba7f5364d20800000000000000
+      internalID: 3262354317930155686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_12
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 1197
+        width: 82
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb373667d316b2c0800000000000000
+      internalID: -4416320568736400412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_13
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1195
+        width: 120
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d2f930b3cb4baa0800000000000000
+      internalID: -6146080629804028545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_14
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 1205
+        width: 51
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4554f4d34a1476a0800000000000000
+      internalID: -6452503487477164726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_15
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 1209
+        width: 89
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae99b9ba7f3adea80800000000000000
+      internalID: -8435906242863719958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_16
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 1209
+        width: 143
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5aeb3217c5c98c00800000000000000
+      internalID: 903470659059575386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_17
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 1211
+        width: 160
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680ad3dfbd1202a00800000000000000
+      internalID: 729620368364249222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_18
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 1219
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71522211615cb94b0800000000000000
+      internalID: -5432531826924968681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_19
+      rect:
+        serializedVersion: 2
+        x: 2107
+        y: 1238
+        width: 237
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 636cc3f4eff37e680800000000000000
+      internalID: -8725935391523420618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_20
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 1131
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27cb42e5e35b2f230800000000000000
+      internalID: 3671195925732441202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_21
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 1074
+        width: 67
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a839de752ada0e00800000000000000
+      internalID: 1011860920874907814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_22
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 1066
+        width: 242
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9879802cfd3b0baa0800000000000000
+      internalID: -6147215717746305143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_23
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 1085
+        width: 288
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0c5f2c5d3539500800000000000000
+      internalID: 401756969330131132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_24
+      rect:
+        serializedVersion: 2
+        x: 2146
+        y: 1088
+        width: 59
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e67cac5f61940f0800000000000000
+      internalID: -1132348586382103038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_25
+      rect:
+        serializedVersion: 2
+        x: 2206
+        y: 1090
+        width: 93
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f5c845a00a61900800000000000000
+      internalID: 654886762057588545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_26
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 1024
+        width: 245
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6325c1dafc64a3b30800000000000000
+      internalID: 4267801454663455286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_27
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 864
+        width: 351
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 240c1328d39d88550800000000000000
+      internalID: 6163414948257054786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_28
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 820
+        width: 223
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf6bea9504da5800800000000000000
+      internalID: 602026620746428336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_29
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 887
+        width: 306
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0295a2d1cedd7a7a0800000000000000
+      internalID: -6365875542093571808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_30
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 1071
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a26a4826770bab350800000000000000
+      internalID: 6033328677616657962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_31
+      rect:
+        serializedVersion: 2
+        x: 2513
+        y: 1071
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37d4223955894df0800000000000000
+      internalID: -195478490674047170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_32
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 865
+        width: 75
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d53b3ab57040fe7f0800000000000000
+      internalID: -581241397258767523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_33
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 832
+        width: 146
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a57e28dd3b28f00800000000000000
+      internalID: 1117653421506648599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_34
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 865
+        width: 233
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90943e301c2457520800000000000000
+      internalID: 2699136948439828745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_35
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 936
+        width: 35
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6cd12b82361ca350800000000000000
+      internalID: 6029218407480679535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_36
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 848
+        width: 103
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a70164d305916ed0800000000000000
+      internalID: -2422491280868046943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_37
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 858
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5456f65fd8f4559a0800000000000000
+      internalID: -6244997837152623291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_38
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 872
+        width: 79
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517d67d34bd59eca0800000000000000
+      internalID: -5987151200905668843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_39
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 868
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb7d444aebcb7e60800000000000000
+      internalID: 7961180973336198080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_40
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 830
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0d3470511564b80800000000000000
+      internalID: -8410946103309774615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_41
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 781
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 385c629d2f9e26e40800000000000000
+      internalID: 5648334111910577539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_42
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 776
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f20934c97a165d70800000000000000
+      internalID: 9031435213023544056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_43
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 571
+        width: 93
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6a116aea2583c340800000000000000
+      internalID: 4882892840367102571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_44
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 715
+        width: 65
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cfea62357e3bc120800000000000000
+      internalID: 2435108696601849796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_45
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 779
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbbd171cf645ef2f0800000000000000
+      internalID: -937218833482916929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_46
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 774
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e963d7a1bd59441e0800000000000000
+      internalID: -2214480348484651362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_47
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 699
+        width: 190
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b17cf99828076720800000000000000
+      internalID: 2839247060555559345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_48
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 695
+        width: 141
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca7bbf45643c3f40800000000000000
+      internalID: 5709496037332974286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_49
+      rect:
+        serializedVersion: 2
+        x: 2338
+        y: 688
+        width: 111
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d227336a7e9cdc6e0800000000000000
+      internalID: -1815573077997424083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_50
+      rect:
+        serializedVersion: 2
+        x: 2244
+        y: 687
+        width: 65
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27bf7d003690c8330800000000000000
+      internalID: 3714354113494383474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_51
+      rect:
+        serializedVersion: 2
+        x: 2309
+        y: 752
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd2ff5a6d425e3e0800000000000000
+      internalID: -2025171953106604594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_52
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 699
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f40ba696d21149c0800000000000000
+      internalID: -3944851085739752205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_53
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 696
+        width: 90
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ac88d658500ca5e0800000000000000
+      internalID: -1897140963615667036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_54
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 627
+        width: 81
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a5aed58f31f7540800000000000000
+      internalID: 5007743268107737714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_tutorial_55
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 438
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9f1184cf8ebab00800000000000000
+      internalID: 841021925673269753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      greed_tutorial_0: 7978429043348459813
+      greed_tutorial_1: -4206506376796072226
+      greed_tutorial_10: -186802852357624398
+      greed_tutorial_11: 3262354317930155686
+      greed_tutorial_12: -4416320568736400412
+      greed_tutorial_13: -6146080629804028545
+      greed_tutorial_14: -6452503487477164726
+      greed_tutorial_15: -8435906242863719958
+      greed_tutorial_16: 903470659059575386
+      greed_tutorial_17: 729620368364249222
+      greed_tutorial_18: -5432531826924968681
+      greed_tutorial_19: -8725935391523420618
+      greed_tutorial_2: -2814833582218122493
+      greed_tutorial_20: 3671195925732441202
+      greed_tutorial_21: 1011860920874907814
+      greed_tutorial_22: -6147215717746305143
+      greed_tutorial_23: 401756969330131132
+      greed_tutorial_24: -1132348586382103038
+      greed_tutorial_25: 654886762057588545
+      greed_tutorial_26: 4267801454663455286
+      greed_tutorial_27: 6163414948257054786
+      greed_tutorial_28: 602026620746428336
+      greed_tutorial_29: -6365875542093571808
+      greed_tutorial_3: 8181643750149036880
+      greed_tutorial_30: 6033328677616657962
+      greed_tutorial_31: -195478490674047170
+      greed_tutorial_32: -581241397258767523
+      greed_tutorial_33: 1117653421506648599
+      greed_tutorial_34: 2699136948439828745
+      greed_tutorial_35: 6029218407480679535
+      greed_tutorial_36: -2422491280868046943
+      greed_tutorial_37: -6244997837152623291
+      greed_tutorial_38: -5987151200905668843
+      greed_tutorial_39: 7961180973336198080
+      greed_tutorial_4: 2753705776698190591
+      greed_tutorial_40: -8410946103309774615
+      greed_tutorial_41: 5648334111910577539
+      greed_tutorial_42: 9031435213023544056
+      greed_tutorial_43: 4882892840367102571
+      greed_tutorial_44: 2435108696601849796
+      greed_tutorial_45: -937218833482916929
+      greed_tutorial_46: -2214480348484651362
+      greed_tutorial_47: 2839247060555559345
+      greed_tutorial_48: 5709496037332974286
+      greed_tutorial_49: -1815573077997424083
+      greed_tutorial_5: -9154778592905923973
+      greed_tutorial_50: 3714354113494383474
+      greed_tutorial_51: -2025171953106604594
+      greed_tutorial_52: -3944851085739752205
+      greed_tutorial_53: -1897140963615667036
+      greed_tutorial_54: 5007743268107737714
+      greed_tutorial_55: 841021925673269753
+      greed_tutorial_6: -8316572112608972751
+      greed_tutorial_7: 1071221090092842056
+      greed_tutorial_8: 370747915185612186
+      greed_tutorial_9: 4492633286904586452
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

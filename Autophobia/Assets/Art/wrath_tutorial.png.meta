@@ -1,0 +1,1326 @@
+fileFormatVersion: 2
+guid: 65f395dae3f5cb34f9adff8f9c4bf5a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -952225223751922057
+    second: wrath_tutorial_0
+  - first:
+      213: 1573282735684114219
+    second: wrath_tutorial_1
+  - first:
+      213: -3579885625379421035
+    second: wrath_tutorial_2
+  - first:
+      213: -2190407237699755698
+    second: wrath_tutorial_3
+  - first:
+      213: 3386119820864971766
+    second: wrath_tutorial_4
+  - first:
+      213: -7469065773048177631
+    second: wrath_tutorial_5
+  - first:
+      213: 7877264213542522405
+    second: wrath_tutorial_6
+  - first:
+      213: 8518350375516484585
+    second: wrath_tutorial_7
+  - first:
+      213: 801006861495804231
+    second: wrath_tutorial_8
+  - first:
+      213: 5659452462743314983
+    second: wrath_tutorial_9
+  - first:
+      213: -3629775259810311827
+    second: wrath_tutorial_10
+  - first:
+      213: 9205943292580754719
+    second: wrath_tutorial_11
+  - first:
+      213: -7559664249111472449
+    second: wrath_tutorial_12
+  - first:
+      213: 7573851673152041645
+    second: wrath_tutorial_13
+  - first:
+      213: 2684954131849850839
+    second: wrath_tutorial_14
+  - first:
+      213: 7244669646244689708
+    second: wrath_tutorial_15
+  - first:
+      213: -1928472600366190231
+    second: wrath_tutorial_16
+  - first:
+      213: 7928707719155560045
+    second: wrath_tutorial_17
+  - first:
+      213: -6349538370310580057
+    second: wrath_tutorial_18
+  - first:
+      213: -9204106461414242392
+    second: wrath_tutorial_19
+  - first:
+      213: 1375944773528920875
+    second: wrath_tutorial_20
+  - first:
+      213: 7190206427046260473
+    second: wrath_tutorial_21
+  - first:
+      213: -1381299087171717225
+    second: wrath_tutorial_22
+  - first:
+      213: 8915488681632353213
+    second: wrath_tutorial_23
+  - first:
+      213: 1456092029933280651
+    second: wrath_tutorial_24
+  - first:
+      213: -5977527484792897837
+    second: wrath_tutorial_25
+  - first:
+      213: 6763549423689130694
+    second: wrath_tutorial_26
+  - first:
+      213: -8069500822616535629
+    second: wrath_tutorial_27
+  - first:
+      213: -4647425627283319908
+    second: wrath_tutorial_28
+  - first:
+      213: 5581385649658218662
+    second: wrath_tutorial_29
+  - first:
+      213: 2534647743910449331
+    second: wrath_tutorial_30
+  - first:
+      213: -3608659926493494535
+    second: wrath_tutorial_31
+  - first:
+      213: 7395181577567902319
+    second: wrath_tutorial_32
+  - first:
+      213: 3732204843264231865
+    second: wrath_tutorial_33
+  - first:
+      213: -4377643053851139448
+    second: wrath_tutorial_34
+  - first:
+      213: -4254006994332526956
+    second: wrath_tutorial_35
+  - first:
+      213: 3153640869320753824
+    second: wrath_tutorial_36
+  - first:
+      213: -1628029289684871148
+    second: wrath_tutorial_37
+  - first:
+      213: -282804885086800763
+    second: wrath_tutorial_38
+  - first:
+      213: -835586807707591728
+    second: wrath_tutorial_39
+  - first:
+      213: -6141950251446393271
+    second: wrath_tutorial_40
+  - first:
+      213: -8207875352147569284
+    second: wrath_tutorial_41
+  - first:
+      213: -8648783340228746976
+    second: wrath_tutorial_42
+  - first:
+      213: -3249793077530712729
+    second: wrath_tutorial_43
+  - first:
+      213: -1710800010211500972
+    second: wrath_tutorial_44
+  - first:
+      213: -4314672745051000266
+    second: wrath_tutorial_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wrath_tutorial_0
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1527
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e8910443409c2f0800000000000000
+      internalID: -952225223751922057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_1
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1547
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27d4bfff4c65d510800000000000000
+      internalID: 1573282735684114219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_2
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1480
+        width: 96
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5948bb2adf0b15ec0800000000000000
+      internalID: -3579885625379421035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_3
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1489
+        width: 66
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41267bf83c1a91e0800000000000000
+      internalID: -2190407237699755698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_4
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1498
+        width: 100
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f3e091690aedfe20800000000000000
+      internalID: 3386119820864971766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_5
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1503
+        width: 104
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c5f61904c885890800000000000000
+      internalID: -7469065773048177631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_6
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1565
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e4912111aa15d60800000000000000
+      internalID: 7877264213542522405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_7
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 1561
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3b9fcc882473670800000000000000
+      internalID: 8518350375516484585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_8
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1143
+        width: 235
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741ab122f7fbd1b00800000000000000
+      internalID: 801006861495804231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_9
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 1374
+        width: 65
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7226601a70a6a8e40800000000000000
+      internalID: 5659452462743314983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_10
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1362
+        width: 71
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d615180f1a270adc0800000000000000
+      internalID: -3629775259810311827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_11
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1125
+        width: 92
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f157aa046a412cf70800000000000000
+      internalID: 9205943292580754719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_12
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 1174
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb69d721b6da61790800000000000000
+      internalID: -7559664249111472449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_13
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 1125
+        width: 146
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da2b9bff7f9bb1960800000000000000
+      internalID: 7573851673152041645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_14
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 1120
+        width: 84
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dfa023be8fd24520800000000000000
+      internalID: 2684954131849850839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_15
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 1186
+        width: 37
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c27387bc8ac3a8460800000000000000
+      internalID: 7244669646244689708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_16
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 1128
+        width: 41
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96179103360bc35e0800000000000000
+      internalID: -1928472600366190231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_17
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 1122
+        width: 43
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e2a2899ad680e60800000000000000
+      internalID: 7928707719155560045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_18
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 988
+        width: 185
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8dce55e78e1e7a0800000000000000
+      internalID: -6349538370310580057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_19
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 1049
+        width: 113
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7c68450f1744080800000000000000
+      internalID: -9204106461414242392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_20
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 1128
+        width: 140
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b232fb04b76581310800000000000000
+      internalID: 1375944773528920875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_21
+      rect:
+        serializedVersion: 2
+        x: 2202
+        y: 1126
+        width: 168
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fea2d966aeb8c360800000000000000
+      internalID: 7190206427046260473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_22
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 1122
+        width: 55
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 797fe847cc3a4dce0800000000000000
+      internalID: -1381299087171717225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_23
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 1131
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb46bb38bd2abb70800000000000000
+      internalID: 8915488681632353213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_24
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 1128
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d537c8cf3153410800000000000000
+      internalID: 1456092029933280651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_25
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 864
+        width: 351
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3def8c14c6e8b0da0800000000000000
+      internalID: -5977527484792897837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_26
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 820
+        width: 223
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2e9c3bd54fcdd50800000000000000
+      internalID: 6763549423689130694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_27
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 887
+        width: 306
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd083181cf530090800000000000000
+      internalID: -8069500822616535629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_28
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 1040
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c931bbdd307018fb0800000000000000
+      internalID: -4647425627283319908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_29
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 975
+        width: 249
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8475a4da0157d40800000000000000
+      internalID: 5581385649658218662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_30
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 865
+        width: 75
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b01786a1b0ec2320800000000000000
+      internalID: 2534647743910449331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_31
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 823
+        width: 146
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f20b269ae67bedc0800000000000000
+      internalID: -3608659926493494535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_32
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 865
+        width: 233
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a9274a676f0a660800000000000000
+      internalID: 7395181577567902319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_33
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 936
+        width: 35
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9c1c7e7847bc330800000000000000
+      internalID: 3732204843264231865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_34
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 848
+        width: 103
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8822fb516dc7f33c0800000000000000
+      internalID: -4377643053851139448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_35
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 858
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49658c66d2bb6f4c0800000000000000
+      internalID: -4254006994332526956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_36
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 872
+        width: 79
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a2840579abf3cb20800000000000000
+      internalID: 3153640869320753824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_37
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 868
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 418d6689cf31869e0800000000000000
+      internalID: -1628029289684871148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_38
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 571
+        width: 148
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 584f7a39476431cf0800000000000000
+      internalID: -282804885086800763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_39
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 697
+        width: 85
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db169bb9366764f0800000000000000
+      internalID: -835586807707591728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_40
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 696
+        width: 67
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946aa6aa9c863caa0800000000000000
+      internalID: -6141950251446393271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_41
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 696
+        width: 80
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c755f8abad4c71e80800000000000000
+      internalID: -8207875352147569284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_42
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 690
+        width: 92
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0216952106959f780800000000000000
+      internalID: -8648783340228746976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_43
+      rect:
+        serializedVersion: 2
+        x: 1878
+        y: 695
+        width: 250
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76522440a6a66e2d0800000000000000
+      internalID: -3249793077530712729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_44
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 654
+        width: 230
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45cdb9574740248e0800000000000000
+      internalID: -1710800010211500972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wrath_tutorial_45
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 438
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 632fc2d9ff33f14c0800000000000000
+      internalID: -4314672745051000266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      wrath_tutorial_0: -952225223751922057
+      wrath_tutorial_1: 1573282735684114219
+      wrath_tutorial_10: -3629775259810311827
+      wrath_tutorial_11: 9205943292580754719
+      wrath_tutorial_12: -7559664249111472449
+      wrath_tutorial_13: 7573851673152041645
+      wrath_tutorial_14: 2684954131849850839
+      wrath_tutorial_15: 7244669646244689708
+      wrath_tutorial_16: -1928472600366190231
+      wrath_tutorial_17: 7928707719155560045
+      wrath_tutorial_18: -6349538370310580057
+      wrath_tutorial_19: -9204106461414242392
+      wrath_tutorial_2: -3579885625379421035
+      wrath_tutorial_20: 1375944773528920875
+      wrath_tutorial_21: 7190206427046260473
+      wrath_tutorial_22: -1381299087171717225
+      wrath_tutorial_23: 8915488681632353213
+      wrath_tutorial_24: 1456092029933280651
+      wrath_tutorial_25: -5977527484792897837
+      wrath_tutorial_26: 6763549423689130694
+      wrath_tutorial_27: -8069500822616535629
+      wrath_tutorial_28: -4647425627283319908
+      wrath_tutorial_29: 5581385649658218662
+      wrath_tutorial_3: -2190407237699755698
+      wrath_tutorial_30: 2534647743910449331
+      wrath_tutorial_31: -3608659926493494535
+      wrath_tutorial_32: 7395181577567902319
+      wrath_tutorial_33: 3732204843264231865
+      wrath_tutorial_34: -4377643053851139448
+      wrath_tutorial_35: -4254006994332526956
+      wrath_tutorial_36: 3153640869320753824
+      wrath_tutorial_37: -1628029289684871148
+      wrath_tutorial_38: -282804885086800763
+      wrath_tutorial_39: -835586807707591728
+      wrath_tutorial_4: 3386119820864971766
+      wrath_tutorial_40: -6141950251446393271
+      wrath_tutorial_41: -8207875352147569284
+      wrath_tutorial_42: -8648783340228746976
+      wrath_tutorial_43: -3249793077530712729
+      wrath_tutorial_44: -1710800010211500972
+      wrath_tutorial_45: -4314672745051000266
+      wrath_tutorial_5: -7469065773048177631
+      wrath_tutorial_6: 7877264213542522405
+      wrath_tutorial_7: 8518350375516484585
+      wrath_tutorial_8: 801006861495804231
+      wrath_tutorial_9: 5659452462743314983
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

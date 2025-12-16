@@ -1,0 +1,1898 @@
+fileFormatVersion: 2
+guid: 0824477e9b9b0bd44a462ed1fff0a885
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3729147305969911544
+    second: sloth_tutorial_0
+  - first:
+      213: 6929756086894805719
+    second: sloth_tutorial_1
+  - first:
+      213: -7406452373933261131
+    second: sloth_tutorial_2
+  - first:
+      213: -1019279125784687236
+    second: sloth_tutorial_3
+  - first:
+      213: -5341195273296597430
+    second: sloth_tutorial_4
+  - first:
+      213: -1415425099313808605
+    second: sloth_tutorial_5
+  - first:
+      213: -2347743381567341454
+    second: sloth_tutorial_6
+  - first:
+      213: 3425432948568947866
+    second: sloth_tutorial_7
+  - first:
+      213: 1237905194279663091
+    second: sloth_tutorial_8
+  - first:
+      213: -1403311797410455751
+    second: sloth_tutorial_9
+  - first:
+      213: -148512455899077540
+    second: sloth_tutorial_10
+  - first:
+      213: 1901691838711568906
+    second: sloth_tutorial_11
+  - first:
+      213: -2479873245576719150
+    second: sloth_tutorial_12
+  - first:
+      213: 1413550023622305557
+    second: sloth_tutorial_13
+  - first:
+      213: 4910905193312118942
+    second: sloth_tutorial_14
+  - first:
+      213: -1155353970522158333
+    second: sloth_tutorial_15
+  - first:
+      213: -6120366399477290877
+    second: sloth_tutorial_16
+  - first:
+      213: 4455045853195053225
+    second: sloth_tutorial_17
+  - first:
+      213: -4545108924424907851
+    second: sloth_tutorial_18
+  - first:
+      213: 4165272425697158937
+    second: sloth_tutorial_19
+  - first:
+      213: 3758573757694194277
+    second: sloth_tutorial_20
+  - first:
+      213: 5745975748344398050
+    second: sloth_tutorial_21
+  - first:
+      213: 1890475708572162019
+    second: sloth_tutorial_22
+  - first:
+      213: 4105492947843256480
+    second: sloth_tutorial_23
+  - first:
+      213: -4539704104511608552
+    second: sloth_tutorial_24
+  - first:
+      213: 1575343216775582243
+    second: sloth_tutorial_25
+  - first:
+      213: 4016170892653446324
+    second: sloth_tutorial_26
+  - first:
+      213: -3750274512727397320
+    second: sloth_tutorial_27
+  - first:
+      213: -64916175147874483
+    second: sloth_tutorial_28
+  - first:
+      213: -1110028997805689267
+    second: sloth_tutorial_29
+  - first:
+      213: -6189949682824558067
+    second: sloth_tutorial_30
+  - first:
+      213: 3092882055915487942
+    second: sloth_tutorial_31
+  - first:
+      213: -6883483410948267054
+    second: sloth_tutorial_32
+  - first:
+      213: 2106886400465925106
+    second: sloth_tutorial_33
+  - first:
+      213: 902075688178550096
+    second: sloth_tutorial_34
+  - first:
+      213: 2877758666719477777
+    second: sloth_tutorial_35
+  - first:
+      213: 527018879687374508
+    second: sloth_tutorial_36
+  - first:
+      213: 8993154533254570797
+    second: sloth_tutorial_37
+  - first:
+      213: 5709074530757381079
+    second: sloth_tutorial_38
+  - first:
+      213: 8051113555699127516
+    second: sloth_tutorial_39
+  - first:
+      213: 91754429576560182
+    second: sloth_tutorial_40
+  - first:
+      213: -3796762857666009305
+    second: sloth_tutorial_41
+  - first:
+      213: 4585367344479850408
+    second: sloth_tutorial_42
+  - first:
+      213: 3977650888612499571
+    second: sloth_tutorial_43
+  - first:
+      213: 3417073543275600665
+    second: sloth_tutorial_44
+  - first:
+      213: -3236902849099631263
+    second: sloth_tutorial_45
+  - first:
+      213: 2814824985771144958
+    second: sloth_tutorial_46
+  - first:
+      213: -6299974646145796761
+    second: sloth_tutorial_47
+  - first:
+      213: -9034865477066198626
+    second: sloth_tutorial_48
+  - first:
+      213: -4444543246572441923
+    second: sloth_tutorial_49
+  - first:
+      213: -3808870057572465336
+    second: sloth_tutorial_50
+  - first:
+      213: 875207765305009188
+    second: sloth_tutorial_51
+  - first:
+      213: -1980744272483090334
+    second: sloth_tutorial_52
+  - first:
+      213: -6389256477492098513
+    second: sloth_tutorial_53
+  - first:
+      213: 1193227055917721157
+    second: sloth_tutorial_54
+  - first:
+      213: -5180708153640912874
+    second: sloth_tutorial_55
+  - first:
+      213: 3236250598894805425
+    second: sloth_tutorial_56
+  - first:
+      213: 6660444436529808531
+    second: sloth_tutorial_57
+  - first:
+      213: 7025686959591315500
+    second: sloth_tutorial_58
+  - first:
+      213: -1809205153145131506
+    second: sloth_tutorial_59
+  - first:
+      213: -3965354051655758431
+    second: sloth_tutorial_60
+  - first:
+      213: 4652200482588037102
+    second: sloth_tutorial_61
+  - first:
+      213: 1893214036021026823
+    second: sloth_tutorial_62
+  - first:
+      213: -6223978420405160121
+    second: sloth_tutorial_63
+  - first:
+      213: -1912839157243484920
+    second: sloth_tutorial_64
+  - first:
+      213: -6494802285702581859
+    second: sloth_tutorial_65
+  - first:
+      213: 2827838469898589149
+    second: sloth_tutorial_66
+  - first:
+      213: -5740874586228488482
+    second: sloth_tutorial_67
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sloth_tutorial_0
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 1521
+        width: 47
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 809fe8878486f3cc0800000000000000
+      internalID: -3729147305969911544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_1
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1537
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2477312707b2060800000000000000
+      internalID: 6929756086894805719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_2
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1480
+        width: 96
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5befbd59ecef63990800000000000000
+      internalID: -7406452373933261131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_3
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1489
+        width: 66
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d02a4190bcad1f0800000000000000
+      internalID: -1019279125784687236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_4
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1498
+        width: 100
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4e2923a23340e5b0800000000000000
+      internalID: -5341195273296597430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_5
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1503
+        width: 104
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b7a351f566b5ce0800000000000000
+      internalID: -1415425099313808605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_6
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1559
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c77e555d32b6fd0800000000000000
+      internalID: -2347743381567341454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_7
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 1554
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9cfe553e15998f20800000000000000
+      internalID: 3425432948568947866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_8
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1143
+        width: 235
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f576aa273ced2110800000000000000
+      internalID: 1237905194279663091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_9
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 1380
+        width: 57
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f1c36fa5f668ce0800000000000000
+      internalID: -1403311797410455751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_10
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 1362
+        width: 70
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c542a6d45b060fdf0800000000000000
+      internalID: -148512455899077540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_11
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 1332
+        width: 83
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a99a6d6aa246a10800000000000000
+      internalID: 1901691838711568906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_12
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 1329
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4976d0c68b59dd0800000000000000
+      internalID: -2479873245576719150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_13
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 1321
+        width: 68
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517a046d140fd9310800000000000000
+      internalID: 1413550023622305557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_14
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 1307
+        width: 113
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e986df4114a072440800000000000000
+      internalID: 4910905193312118942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_15
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 1311
+        width: 85
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b80356fab57ffe0800000000000000
+      internalID: -1155353970522158333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_16
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 1310
+        width: 67
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3886befcf27101ba0800000000000000
+      internalID: -6120366399477290877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_17
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 1310
+        width: 80
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8a4c1899083dd30800000000000000
+      internalID: 4455045853195053225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_18
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 1309
+        width: 250
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b31236a3878ce0c0800000000000000
+      internalID: -4545108924424907851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_19
+      rect:
+        serializedVersion: 2
+        x: 2165
+        y: 1268
+        width: 230
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 917a86ed3350ec930800000000000000
+      internalID: 4165272425697158937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_20
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 1292
+        width: 123
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562b7793be2292430800000000000000
+      internalID: 3758573757694194277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_21
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 1304
+        width: 92
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e0c318ef7ecdbf40800000000000000
+      internalID: 5745975748344398050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_22
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 1135
+        width: 150
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e7d2f904a15c3a10800000000000000
+      internalID: 1890475708572162019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_23
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 1145
+        width: 56
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a091109514a9f830800000000000000
+      internalID: 4105492947843256480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_24
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 1141
+        width: 58
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 819e3395b2bbff0c0800000000000000
+      internalID: -4539704104511608552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_25
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 1142
+        width: 122
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322da332f4ebcd510800000000000000
+      internalID: 1575343216775582243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_26
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 1135
+        width: 185
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b44fd5f52e4cb730800000000000000
+      internalID: 4016170892653446324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_27
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 1135
+        width: 210
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83caea2533954fbc0800000000000000
+      internalID: -3750274512727397320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_28
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 1187
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d474228251f591ff0800000000000000
+      internalID: -64916175147874483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_29
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 1097
+        width: 105
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d46b867f1826890f0800000000000000
+      internalID: -1110028997805689267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_30
+      rect:
+        serializedVersion: 2
+        x: 2339
+        y: 1088
+        width: 135
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a43b92f81e81aa0800000000000000
+      internalID: -6189949682824558067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_31
+      rect:
+        serializedVersion: 2
+        x: 2462
+        y: 1141
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2c503d7df1cea20800000000000000
+      internalID: 3092882055915487942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_32
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 1145
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d36229de44f870a0800000000000000
+      internalID: -6883483410948267054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_33
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 864
+        width: 351
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f37fd9b40a2d3d10800000000000000
+      internalID: 2106886400465925106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_34
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 820
+        width: 223
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055066a1f01d48c00800000000000000
+      internalID: 902075688178550096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_35
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 887
+        width: 306
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110cd17a24adfe720800000000000000
+      internalID: 2877758666719477777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_36
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 1018
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca6b0b9f0e8505700800000000000000
+      internalID: 527018879687374508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_37
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 914
+        width: 200
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2325d4766a1ecc70800000000000000
+      internalID: 8993154533254570797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_38
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 846
+        width: 89
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db060aa905ba3f40800000000000000
+      internalID: 5709074530757381079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_39
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 915
+        width: 205
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd457cd4f1d4bbf60800000000000000
+      internalID: 8051113555699127516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_40
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 906
+        width: 95
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63eba75ea2af54100800000000000000
+      internalID: 91754429576560182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_41
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 903
+        width: 92
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 727ab6c0c403f4bc0800000000000000
+      internalID: -3796762857666009305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_42
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 911
+        width: 156
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8afc5643e4f72af30800000000000000
+      internalID: 4585367344479850408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_43
+      rect:
+        serializedVersion: 2
+        x: 2309
+        y: 915
+        width: 84
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 370d340a864733730800000000000000
+      internalID: 3977650888612499571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_44
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 608
+        width: 143
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91bd35e7842eb6f20800000000000000
+      internalID: 3417073543275600665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_45
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 726
+        width: 94
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16577f232063413d0800000000000000
+      internalID: -3236902849099631263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_46
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 683
+        width: 208
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef678c53964401720800000000000000
+      internalID: 2814824985771144958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_47
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 728
+        width: 60
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7653382207ef198a0800000000000000
+      internalID: -6299974646145796761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_48
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 722
+        width: 41
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e917706a7b5bd9280800000000000000
+      internalID: -9034865477066198626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_49
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 720
+        width: 59
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe2037277fc152c0800000000000000
+      internalID: -4444543246572441923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_50
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 722
+        width: 93
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84585c6ecdc242bc0800000000000000
+      internalID: -3808870057572465336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_51
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 747
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4242ba353dc552c00800000000000000
+      internalID: 875207765305009188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_52
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 725
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26081cf149bf284e0800000000000000
+      internalID: -1980744272483090334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_53
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 691
+        width: 104
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a4830e51dc457a0800000000000000
+      internalID: -6389256477492098513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_54
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 720
+        width: 60
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5466c547fa13f8010800000000000000
+      internalID: 1193227055917721157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_55
+      rect:
+        serializedVersion: 2
+        x: 2174
+        y: 720
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6187341026d6a18b0800000000000000
+      internalID: -5180708153640912874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_56
+      rect:
+        serializedVersion: 2
+        x: 2289
+        y: 726
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b12547f5c879ec20800000000000000
+      internalID: 3236250598894805425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_57
+      rect:
+        serializedVersion: 2
+        x: 2316
+        y: 668
+        width: 195
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394069d2de6ae6c50800000000000000
+      internalID: 6660444436529808531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_58
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 501
+        width: 58
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c28d889e011408160800000000000000
+      internalID: 7025686959591315500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_59
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 479
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e6af0bf7964e6e0800000000000000
+      internalID: -1809205153145131506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_60
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 513
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad0766df7b38f8c0800000000000000
+      internalID: -3965354051655758431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_61
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 506
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef8f84c0bfef8040800000000000000
+      internalID: 4652200482588037102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_62
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 503
+        width: 75
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70021d4922c064a10800000000000000
+      internalID: 1893214036021026823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_63
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 438
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 747bd0a4a9cff99a0800000000000000
+      internalID: -6223978420405160121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_64
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 259
+        width: 976
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8056b00dbea3475e0800000000000000
+      internalID: -1912839157243484920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_65
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 333
+        width: 29
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d917d4a6bb3ddd5a0800000000000000
+      internalID: -6494802285702581859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_66
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 205
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd35d781b108e3720800000000000000
+      internalID: 2827838469898589149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sloth_tutorial_67
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 175
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed688c3faf05450b0800000000000000
+      internalID: -5740874586228488482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sloth_tutorial_0: -3729147305969911544
+      sloth_tutorial_1: 6929756086894805719
+      sloth_tutorial_10: -148512455899077540
+      sloth_tutorial_11: 1901691838711568906
+      sloth_tutorial_12: -2479873245576719150
+      sloth_tutorial_13: 1413550023622305557
+      sloth_tutorial_14: 4910905193312118942
+      sloth_tutorial_15: -1155353970522158333
+      sloth_tutorial_16: -6120366399477290877
+      sloth_tutorial_17: 4455045853195053225
+      sloth_tutorial_18: -4545108924424907851
+      sloth_tutorial_19: 4165272425697158937
+      sloth_tutorial_2: -7406452373933261131
+      sloth_tutorial_20: 3758573757694194277
+      sloth_tutorial_21: 5745975748344398050
+      sloth_tutorial_22: 1890475708572162019
+      sloth_tutorial_23: 4105492947843256480
+      sloth_tutorial_24: -4539704104511608552
+      sloth_tutorial_25: 1575343216775582243
+      sloth_tutorial_26: 4016170892653446324
+      sloth_tutorial_27: -3750274512727397320
+      sloth_tutorial_28: -64916175147874483
+      sloth_tutorial_29: -1110028997805689267
+      sloth_tutorial_3: -1019279125784687236
+      sloth_tutorial_30: -6189949682824558067
+      sloth_tutorial_31: 3092882055915487942
+      sloth_tutorial_32: -6883483410948267054
+      sloth_tutorial_33: 2106886400465925106
+      sloth_tutorial_34: 902075688178550096
+      sloth_tutorial_35: 2877758666719477777
+      sloth_tutorial_36: 527018879687374508
+      sloth_tutorial_37: 8993154533254570797
+      sloth_tutorial_38: 5709074530757381079
+      sloth_tutorial_39: 8051113555699127516
+      sloth_tutorial_4: -5341195273296597430
+      sloth_tutorial_40: 91754429576560182
+      sloth_tutorial_41: -3796762857666009305
+      sloth_tutorial_42: 4585367344479850408
+      sloth_tutorial_43: 3977650888612499571
+      sloth_tutorial_44: 3417073543275600665
+      sloth_tutorial_45: -3236902849099631263
+      sloth_tutorial_46: 2814824985771144958
+      sloth_tutorial_47: -6299974646145796761
+      sloth_tutorial_48: -9034865477066198626
+      sloth_tutorial_49: -4444543246572441923
+      sloth_tutorial_5: -1415425099313808605
+      sloth_tutorial_50: -3808870057572465336
+      sloth_tutorial_51: 875207765305009188
+      sloth_tutorial_52: -1980744272483090334
+      sloth_tutorial_53: -6389256477492098513
+      sloth_tutorial_54: 1193227055917721157
+      sloth_tutorial_55: -5180708153640912874
+      sloth_tutorial_56: 3236250598894805425
+      sloth_tutorial_57: 6660444436529808531
+      sloth_tutorial_58: 7025686959591315500
+      sloth_tutorial_59: -1809205153145131506
+      sloth_tutorial_6: -2347743381567341454
+      sloth_tutorial_60: -3965354051655758431
+      sloth_tutorial_61: 4652200482588037102
+      sloth_tutorial_62: 1893214036021026823
+      sloth_tutorial_63: -6223978420405160121
+      sloth_tutorial_64: -1912839157243484920
+      sloth_tutorial_65: -6494802285702581859
+      sloth_tutorial_66: 2827838469898589149
+      sloth_tutorial_67: -5740874586228488482
+      sloth_tutorial_7: 3425432948568947866
+      sloth_tutorial_8: 1237905194279663091
+      sloth_tutorial_9: -1403311797410455751
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

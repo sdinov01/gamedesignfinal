@@ -7,8 +7,8 @@ public class prideIntro : MonoBehaviour
 {
     [SerializeField] private Image backgroundImage;
     [SerializeField] private AudioSource audio;
-    [SerializeField] private TMP_Text tutorial;
-    [SerializeField] private TMP_Text goodLuck;
+    [SerializeField] private Image tutorial;
+    [SerializeField] private Image background;
     [SerializeField] private TimeBar timeBar;
     [SerializeField] private TMP_Text skip;
 
@@ -18,18 +18,23 @@ public class prideIntro : MonoBehaviour
     /* Default time will be 14.5 seconds after the scene is opened */
     private float beginTime = 14.5f;
     private float tutorialMSGDur = 10f;
+    
+    private float fadeDuration = 2f;
+
+    public float fadeTime = 1.5f;
+    public float fadeDelay = 11f;
+
     private Coroutine tutorialCoroutine;
     private bool skipTutorial = false;
-    private float fadeDuration = 2f;
+    private bool musicStarted = false; 
 
     void Start()
     {
         /* Set the texts and image to be visible or invisible */
         tutorial.enabled = true;
-        goodLuck.enabled = false;
         backgroundImage.enabled = true;
         /* Start the tutorial */
-        tutorialCoroutine = StartCoroutine(handleTutorial());
+        tutorialCoroutine = StartCoroutine(TutorialMessage());
 
         if (timeBar != null)
         {
@@ -55,13 +60,16 @@ public class prideIntro : MonoBehaviour
         {
             /* Stop the tutorial coroutine */
             skipTutorial = true;
-            StopCoroutine(tutorialCoroutine);
+
+            if (tutorialCoroutine != null)
+            {
+                StopCoroutine(tutorialCoroutine);
+            }
 
             /* Disable texts and background immediately */
-            tutorial.enabled = false;
-            goodLuck.enabled = false;
-            skip.enabled = false;
-            backgroundImage.enabled = false;
+            HideImageInstant(tutorial);
+            HideTextInstant(skip);
+            background.enabled = false;
 
         
             StartCoroutine(BeginCountIn());
@@ -73,44 +81,23 @@ public class prideIntro : MonoBehaviour
         }   
     }
 
-    private IEnumerator handleTutorial()
+    private IEnumerator TutorialMessage()
     {
-        if (skipTutorial)
-        {
-            yield break;
-        }
-        /* Enable tutorial screen for tutorialMSGdur seconds */
-        tutorial.enabled = true;
-        yield return new WaitForSeconds(tutorialMSGDur);
-        if (skipTutorial)
-        {
-            yield break;
-        }
-        /* Fade the text away */
-        StartCoroutine(fadeText(tutorial, fadeDuration));
-        if (skipTutorial)
-        {
-            yield break;
-        }
+        yield return StartCoroutine(FadeInImg(tutorial));
 
-        /* Enable good luck message for half the duration of the tutorial */
-        yield return new WaitForSeconds(fadeDuration);
-        if (skipTutorial)
-        {
-            yield break;
-        }
-        goodLuck.enabled = true;
-        yield return new WaitForSeconds(tutorialMSGDur / 2);
+        yield return new WaitForSeconds(fadeDelay);
+        if (skipTutorial) yield break;
 
-        if (skipTutorial)
-        {
-            yield break;
-        }
-        /* Fade the good luck text and background */
-        StartCoroutine(fadeImage(backgroundImage, fadeDuration));
-        StartCoroutine(fadeText(goodLuck, fadeDuration));
-        StartCoroutine(fadeText(skip, fadeDuration));
-        StartCoroutine(BeginCountIn());
+        StartCoroutine(FadeOutImage(tutorial));
+        yield return new WaitForSeconds(2.5f);
+        if (skipTutorial) yield break;
+
+        StartCoroutine(FadeOut(skip));
+        StartCoroutine(FadeOutImage(background));
+
+        yield return new WaitForSeconds(fadeTime);
+        if (skipTutorial) yield break;
+
     }
 
     private IEnumerator BeginCountIn()
@@ -128,44 +115,93 @@ public class prideIntro : MonoBehaviour
         this.enabled = false;
     }
 
-    private IEnumerator fadeImage(Image image, float duration)
+   private IEnumerator FadeInImg(Image text)
     {
-        Color c = image.color;
-        float startAlpha = c.a;
-        float timeElapsed = 0;
-        while (timeElapsed < duration)
-        {
-            if (skipTutorial)
-            {
-                yield break;
-            }
-            timeElapsed += Time.deltaTime;
-            float alpha = Mathf.Lerp(startAlpha, 0, timeElapsed / duration);
-            image.color = new Color(c.r, c.g, c.b, alpha);
-            yield return null;
+        text.enabled = true;
+        Color c = text.color;
+        float t = 0;
 
+        while (t < fadeTime)
+        {
+            if (skipTutorial) yield break;
+
+            t += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, 1, t / fadeTime);
+            text.color = new Color(c.r, c.g, c.b, alpha);
+            yield return null;
         }
-        image.enabled = false;
+
+        text.color = new Color(c.r, c.g, c.b, 1);
     }
 
-    private IEnumerator fadeText(TMP_Text text, float duration)
+    private IEnumerator FadeIn(TMP_Text text)
+    {
+        text.enabled = true;
+        Color c = text.color;
+        float t = 0;
+
+        while (t < fadeTime)
+        {
+            if (skipTutorial) yield break;
+
+            t += Time.deltaTime;
+            float alpha = Mathf.Lerp(0, 1, t / fadeTime);
+            text.color = new Color(c.r, c.g, c.b, alpha);
+            yield return null;
+        }
+
+        text.color = new Color(c.r, c.g, c.b, 1);
+    }
+
+    private IEnumerator FadeOut(TMP_Text text)
     {
         Color c = text.color;
         float startAlpha = c.a;
-        float timeElapsed = 0;
-        while (timeElapsed < duration)
+        float t = 0;
+
+        while (t < fadeTime)
         {
-            if (skipTutorial)
-            {
-                yield break;
-            }
-            timeElapsed += Time.deltaTime;
-            float alpha = Mathf.Lerp(startAlpha, 0, timeElapsed / duration);
+            if (skipTutorial) break;
+
+            t += Time.deltaTime;
+            float alpha = Mathf.Lerp(startAlpha, 0, t / fadeTime);
             text.color = new Color(c.r, c.g, c.b, alpha);
             yield return null;
-
         }
+
+        text.color = new Color(c.r, c.g, c.b, 0);
         text.enabled = false;
+    }
+
+    private IEnumerator FadeOutImage(Image img)
+    {
+        Color c = img.color;
+        float startAlpha = c.a;
+        float t = 0;
+
+        while (t < fadeTime)
+        {
+            if (skipTutorial) break;
+
+            t += Time.deltaTime;
+            float alpha = Mathf.Lerp(startAlpha, 0, t / fadeTime);
+            img.color = new Color(c.r, c.g, c.b, alpha);
+            yield return null;
+        }
+
+        img.color = new Color(c.r, c.g, c.b, 0);
+        img.enabled = false;
+    }
+
+    void HideTextInstant(TMP_Text text)
+    {
+        text.color = new Color(text.color.r, text.color.g, text.color.b, 0);
+        text.enabled = false;
+    }
+
+    void HideImageInstant(Image img)
+    {
+        img.enabled = false;
     }
 
     public float StartTime()

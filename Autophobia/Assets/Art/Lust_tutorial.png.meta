@@ -1,0 +1,1255 @@
+fileFormatVersion: 2
+guid: 25beb2b529e0aac4fb1a06ec889d8a23
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -441455483009607518
+    second: Lust_tutorial_0
+  - first:
+      213: -4372451618020398315
+    second: Lust_tutorial_1
+  - first:
+      213: -2329106107459626445
+    second: Lust_tutorial_2
+  - first:
+      213: 3929651910159272285
+    second: Lust_tutorial_3
+  - first:
+      213: -7125441514205625423
+    second: Lust_tutorial_4
+  - first:
+      213: -8319968376694197879
+    second: Lust_tutorial_5
+  - first:
+      213: 3870539437945912484
+    second: Lust_tutorial_6
+  - first:
+      213: 1634797498689414226
+    second: Lust_tutorial_7
+  - first:
+      213: 8204599197383009837
+    second: Lust_tutorial_8
+  - first:
+      213: -2730549130075681756
+    second: Lust_tutorial_9
+  - first:
+      213: 567056244465438490
+    second: Lust_tutorial_10
+  - first:
+      213: -2146819684540270130
+    second: Lust_tutorial_11
+  - first:
+      213: -3384675808415678387
+    second: Lust_tutorial_12
+  - first:
+      213: -3196639930319577733
+    second: Lust_tutorial_13
+  - first:
+      213: 8418023592034023253
+    second: Lust_tutorial_14
+  - first:
+      213: 619366065133843323
+    second: Lust_tutorial_15
+  - first:
+      213: -1646176946776074602
+    second: Lust_tutorial_16
+  - first:
+      213: -3132579626562504197
+    second: Lust_tutorial_17
+  - first:
+      213: -8760706347439296060
+    second: Lust_tutorial_18
+  - first:
+      213: 2010119296748233639
+    second: Lust_tutorial_19
+  - first:
+      213: -8572391935517657130
+    second: Lust_tutorial_20
+  - first:
+      213: -6778548903658280791
+    second: Lust_tutorial_21
+  - first:
+      213: -7484944165777065439
+    second: Lust_tutorial_22
+  - first:
+      213: 2008424528497782945
+    second: Lust_tutorial_23
+  - first:
+      213: 241548942299996305
+    second: Lust_tutorial_24
+  - first:
+      213: 2192997001244912706
+    second: Lust_tutorial_25
+  - first:
+      213: 1840143425560579167
+    second: Lust_tutorial_26
+  - first:
+      213: 928500359777292148
+    second: Lust_tutorial_27
+  - first:
+      213: 6671266448448167527
+    second: Lust_tutorial_28
+  - first:
+      213: 4158354888928299554
+    second: Lust_tutorial_29
+  - first:
+      213: -1323314972124567231
+    second: Lust_tutorial_30
+  - first:
+      213: 3049980584277320098
+    second: Lust_tutorial_31
+  - first:
+      213: -8168445199495003515
+    second: Lust_tutorial_32
+  - first:
+      213: 544145348689529317
+    second: Lust_tutorial_33
+  - first:
+      213: -8572101634795765403
+    second: Lust_tutorial_34
+  - first:
+      213: 4207070615994066139
+    second: Lust_tutorial_35
+  - first:
+      213: -7719827703258641881
+    second: Lust_tutorial_36
+  - first:
+      213: -348453070346054665
+    second: Lust_tutorial_37
+  - first:
+      213: -6682540221899340197
+    second: Lust_tutorial_38
+  - first:
+      213: -2664175697697263845
+    second: Lust_tutorial_39
+  - first:
+      213: 2576398296164667465
+    second: Lust_tutorial_40
+  - first:
+      213: 4478794419779678382
+    second: Lust_tutorial_41
+  - first:
+      213: -1043863498388660219
+    second: Lust_tutorial_42
+  - first:
+      213: 2137527837118508598
+    second: Lust_tutorial_43
+  - first:
+      213: -1225224706895127021
+    second: Lust_tutorial_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lust_tutorial_0
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1549
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8501fb392afd9f0800000000000000
+      internalID: -441455483009607518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_1
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 1571
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51bef4e6b6ee153c0800000000000000
+      internalID: -4372451618020398315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_2
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1490
+        width: 66
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33a1dacd55a5dafd0800000000000000
+      internalID: -2329106107459626445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_3
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1498
+        width: 100
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d598af3979de88630800000000000000
+      internalID: 3929651910159272285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_4
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1503
+        width: 104
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b3c3fde1b85d1d90800000000000000
+      internalID: -7125441514205625423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_5
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1565
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981b8aca7d8898c80800000000000000
+      internalID: -8319968376694197879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_6
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 1560
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4acf7ef9c1be6b530800000000000000
+      internalID: 3870539437945912484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_7
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1480
+        width: 96
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 254641dd9a7ffa610800000000000000
+      internalID: 1634797498689414226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_8
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1143
+        width: 235
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d26287c00879cd170800000000000000
+      internalID: 8204599197383009837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_9
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1389
+        width: 66
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c461488042b1ad0800000000000000
+      internalID: -2730549130075681756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_10
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1374
+        width: 72
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f870366a69ed700800000000000000
+      internalID: 567056244465438490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_11
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 1359
+        width: 168
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9392a0fd6f432e0800000000000000
+      internalID: -2146819684540270130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_12
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1148
+        width: 64
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d408687f8473701d0800000000000000
+      internalID: -3384675808415678387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_13
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 1210
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7dd87e7be043a3d0800000000000000
+      internalID: -3196639930319577733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_14
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 1162
+        width: 81
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557bb0a3bd3d2d470800000000000000
+      internalID: 8418023592034023253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_15
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1169
+        width: 62
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b73fb3a972e689800800000000000000
+      internalID: 619366065133843323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_16
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 1218
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69699f9e9ca9729e0800000000000000
+      internalID: -1646176946776074602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_17
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 1221
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf9bd104d67d684d0800000000000000
+      internalID: -3132579626562504197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_18
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 1153
+        width: 56
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1fe534ef7bb6680800000000000000
+      internalID: -8760706347439296060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_19
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 1122
+        width: 63
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a326dea9d065eb10800000000000000
+      internalID: 2010119296748233639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_20
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1162
+        width: 149
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d7fb0004feb80980800000000000000
+      internalID: -8572391935517657130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_21
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 1157
+        width: 58
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8a5d8bfa1cde1a0800000000000000
+      internalID: -6778548903658280791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_22
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 1149
+        width: 99
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ab93b20f2202890800000000000000
+      internalID: -7484944165777065439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_23
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 1143
+        width: 19
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a0ba43b77b5fdb10800000000000000
+      internalID: 2008424528497782945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_24
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 1155
+        width: 114
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 190a9a5bb772a5300800000000000000
+      internalID: 241548942299996305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_25
+      rect:
+        serializedVersion: 2
+        x: 2331
+        y: 1147
+        width: 142
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24c23b457271f6e10800000000000000
+      internalID: 2192997001244912706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_26
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 864
+        width: 351
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c0f4032b0898910800000000000000
+      internalID: 1840143425560579167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_27
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 820
+        width: 223
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47f09566822b2ec00800000000000000
+      internalID: 928500359777292148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_28
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 887
+        width: 305
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e1cbd2d79159c50800000000000000
+      internalID: 6671266448448167527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_29
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 571
+        width: 116
+        height: 488
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a84945db175b930800000000000000
+      internalID: 4158354888928299554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_30
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 980
+        width: 131
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1492f884b04a2ade0800000000000000
+      internalID: -1323314972124567231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_31
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 980
+        width: 152
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a120b19e25b35a20800000000000000
+      internalID: 3049980584277320098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_32
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 967
+        width: 143
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5820bdc8e5ad3ae80800000000000000
+      internalID: -8168445199495003515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_33
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 974
+        width: 56
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e902d6cf413d8700800000000000000
+      internalID: 544145348689529317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_34
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 1022
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5610477eaf6c90980800000000000000
+      internalID: -8572101634795765403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_35
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 978
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd46f4b6f64826a30800000000000000
+      internalID: 4207070615994066139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_36
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 1019
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a8c04fa99add490800000000000000
+      internalID: -7719827703258641881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_37
+      rect:
+        serializedVersion: 2
+        x: 2268
+        y: 976
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f3112957cb0a2bf0800000000000000
+      internalID: -348453070346054665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_38
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 973
+        width: 87
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b560e64e219d243a0800000000000000
+      internalID: -6682540221899340197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_39
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 988
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1fa68f7152f60bd0800000000000000
+      internalID: -2664175697697263845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_40
+      rect:
+        serializedVersion: 2
+        x: 2083
+        y: 976
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94011da999431c320800000000000000
+      internalID: 2576398296164667465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_41
+      rect:
+        serializedVersion: 2
+        x: 2248
+        y: 978
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea038fc8bcfd72e30800000000000000
+      internalID: 4478794419779678382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_42
+      rect:
+        serializedVersion: 2
+        x: 2309
+        y: 976
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5002c88cda37381f0800000000000000
+      internalID: -1043863498388660219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_43
+      rect:
+        serializedVersion: 2
+        x: 2309
+        y: 656
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e25f42e360aad10800000000000000
+      internalID: 2137527837118508598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lust_tutorial_44
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 438
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31edb7fde902ffee0800000000000000
+      internalID: -1225224706895127021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

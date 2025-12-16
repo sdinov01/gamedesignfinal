@@ -1,0 +1,2030 @@
+fileFormatVersion: 2
+guid: c64632b6b551b49438f4b8a08651c7fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 980957163329836378
+    second: gluttony_tutorial_0
+  - first:
+      213: -1732499274340797833
+    second: gluttony_tutorial_1
+  - first:
+      213: -7705780843096231475
+    second: gluttony_tutorial_2
+  - first:
+      213: -7041416861582917007
+    second: gluttony_tutorial_3
+  - first:
+      213: -1433631784422106765
+    second: gluttony_tutorial_4
+  - first:
+      213: -6298006855666307516
+    second: gluttony_tutorial_5
+  - first:
+      213: -5519072993172443284
+    second: gluttony_tutorial_6
+  - first:
+      213: 325315149722432108
+    second: gluttony_tutorial_7
+  - first:
+      213: 1131201727957374597
+    second: gluttony_tutorial_8
+  - first:
+      213: 5108882189846063347
+    second: gluttony_tutorial_9
+  - first:
+      213: -139513329214910765
+    second: gluttony_tutorial_10
+  - first:
+      213: -701424088012947726
+    second: gluttony_tutorial_11
+  - first:
+      213: -3287911377834756296
+    second: gluttony_tutorial_12
+  - first:
+      213: -2054189613619313475
+    second: gluttony_tutorial_13
+  - first:
+      213: 3965850399581016575
+    second: gluttony_tutorial_14
+  - first:
+      213: -4068087240380036145
+    second: gluttony_tutorial_15
+  - first:
+      213: 1535895199955959782
+    second: gluttony_tutorial_16
+  - first:
+      213: 5144767589345899568
+    second: gluttony_tutorial_17
+  - first:
+      213: 1356249125315507222
+    second: gluttony_tutorial_18
+  - first:
+      213: 908172736922380021
+    second: gluttony_tutorial_19
+  - first:
+      213: -2943031625903783518
+    second: gluttony_tutorial_20
+  - first:
+      213: -6774053754212933064
+    second: gluttony_tutorial_21
+  - first:
+      213: 4619227860234290788
+    second: gluttony_tutorial_22
+  - first:
+      213: -1322393633784898100
+    second: gluttony_tutorial_23
+  - first:
+      213: 2567128728466179923
+    second: gluttony_tutorial_24
+  - first:
+      213: -5272953426389300990
+    second: gluttony_tutorial_25
+  - first:
+      213: 713883651539585474
+    second: gluttony_tutorial_26
+  - first:
+      213: 315678285344293050
+    second: gluttony_tutorial_27
+  - first:
+      213: 7436486450943486727
+    second: gluttony_tutorial_28
+  - first:
+      213: -1342426511955651085
+    second: gluttony_tutorial_29
+  - first:
+      213: 9010495770655612151
+    second: gluttony_tutorial_30
+  - first:
+      213: 8362329285673556921
+    second: gluttony_tutorial_31
+  - first:
+      213: 4905818878731542551
+    second: gluttony_tutorial_32
+  - first:
+      213: -3833077393907566890
+    second: gluttony_tutorial_33
+  - first:
+      213: 116048951884131477
+    second: gluttony_tutorial_34
+  - first:
+      213: 6172180741153045365
+    second: gluttony_tutorial_35
+  - first:
+      213: -2403551734330008494
+    second: gluttony_tutorial_36
+  - first:
+      213: 4565303025718555390
+    second: gluttony_tutorial_37
+  - first:
+      213: -3320129036574430253
+    second: gluttony_tutorial_38
+  - first:
+      213: -3376433422073533821
+    second: gluttony_tutorial_39
+  - first:
+      213: -4917411829870292931
+    second: gluttony_tutorial_40
+  - first:
+      213: 3818441157093379951
+    second: gluttony_tutorial_41
+  - first:
+      213: -3243123645020799397
+    second: gluttony_tutorial_42
+  - first:
+      213: -5339145379075004018
+    second: gluttony_tutorial_43
+  - first:
+      213: 2648280939600984356
+    second: gluttony_tutorial_44
+  - first:
+      213: -575129997563373686
+    second: gluttony_tutorial_45
+  - first:
+      213: -2187185333374495251
+    second: gluttony_tutorial_46
+  - first:
+      213: 3983264479878512319
+    second: gluttony_tutorial_47
+  - first:
+      213: 3179012839640518296
+    second: gluttony_tutorial_48
+  - first:
+      213: 483973539583571922
+    second: gluttony_tutorial_49
+  - first:
+      213: -5073495184271948031
+    second: gluttony_tutorial_50
+  - first:
+      213: -4861425127856957186
+    second: gluttony_tutorial_51
+  - first:
+      213: 278675061081436285
+    second: gluttony_tutorial_52
+  - first:
+      213: -2512317450756207713
+    second: gluttony_tutorial_53
+  - first:
+      213: -7396836050567957267
+    second: gluttony_tutorial_54
+  - first:
+      213: 2958428007239713113
+    second: gluttony_tutorial_55
+  - first:
+      213: -6456847481225771006
+    second: gluttony_tutorial_56
+  - first:
+      213: 2534292822774080181
+    second: gluttony_tutorial_57
+  - first:
+      213: -3920452960517206696
+    second: gluttony_tutorial_58
+  - first:
+      213: 8423237455992602715
+    second: gluttony_tutorial_59
+  - first:
+      213: -8280221107079642682
+    second: gluttony_tutorial_60
+  - first:
+      213: -4511698532028382950
+    second: gluttony_tutorial_61
+  - first:
+      213: -5501075200317141756
+    second: gluttony_tutorial_62
+  - first:
+      213: -4895390506065087702
+    second: gluttony_tutorial_63
+  - first:
+      213: -1521901148963439343
+    second: gluttony_tutorial_64
+  - first:
+      213: -2604733335775095650
+    second: gluttony_tutorial_65
+  - first:
+      213: 5602311363483001870
+    second: gluttony_tutorial_66
+  - first:
+      213: -6768846937143334260
+    second: gluttony_tutorial_67
+  - first:
+      213: 1744385566536476513
+    second: gluttony_tutorial_68
+  - first:
+      213: 87445040459458570
+    second: gluttony_tutorial_69
+  - first:
+      213: -7597947301195672832
+    second: gluttony_tutorial_70
+  - first:
+      213: -9009188807929285837
+    second: gluttony_tutorial_71
+  - first:
+      213: -2221967298526474562
+    second: gluttony_tutorial_72
+  - first:
+      213: 5766439545735610387
+    second: gluttony_tutorial_73
+  - first:
+      213: -58656180736455863
+    second: gluttony_tutorial_74
+  - first:
+      213: 3545542427207497814
+    second: gluttony_tutorial_75
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gluttony_tutorial_0
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 1539
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a55562cb75f0d9d00800000000000000
+      internalID: 980957163329836378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1545
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7727b43d61de4f7e0800000000000000
+      internalID: -1732499274340797833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_2
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1480
+        width: 96
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc13d3276219f0590800000000000000
+      internalID: -7705780843096231475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_3
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1489
+        width: 66
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17287e1ebacd74e90800000000000000
+      internalID: -7041416861582917007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_4
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1498
+        width: 100
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3799fcedc77ba1ce0800000000000000
+      internalID: -1433631784422106765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_5
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1503
+        width: 104
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ee80f022cf898a0800000000000000
+      internalID: -6298006855666307516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_6
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1557
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6f2180aa505863b0800000000000000
+      internalID: -5519072993172443284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_7
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 1557
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c623243b760c38400800000000000000
+      internalID: 325315149722432108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_8
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1143
+        width: 235
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 586153c6af5d2bf00800000000000000
+      internalID: 1131201727957374597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_9
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1381
+        width: 59
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f8281d984566e640800000000000000
+      internalID: 5108882189846063347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_10
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1383
+        width: 66
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3de86b2cd59501ef0800000000000000
+      internalID: -139513329214910765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_11
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 1332
+        width: 83
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fef51d128a0446f0800000000000000
+      internalID: -701424088012947726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_12
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 1329
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837b13f950efe52d0800000000000000
+      internalID: -3287911377834756296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_13
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 1321
+        width: 68
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db48ce21e6d0e73e0800000000000000
+      internalID: -2054189613619313475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_14
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 1307
+        width: 113
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff11e5b2de7890730800000000000000
+      internalID: 3965850399581016575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_15
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 1311
+        width: 85
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcb49d165304b87c0800000000000000
+      internalID: -4068087240380036145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_16
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 1310
+        width: 67
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef3a9dfb88905510800000000000000
+      internalID: 1535895199955959782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_17
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 1310
+        width: 80
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 034b7e64dd2e56740800000000000000
+      internalID: 5144767589345899568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_18
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 1309
+        width: 250
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6147d5dc46d52d210800000000000000
+      internalID: 1356249125315507222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_19
+      rect:
+        serializedVersion: 2
+        x: 2165
+        y: 1268
+        width: 230
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f6e3f2ea4a7a9c00800000000000000
+      internalID: 908172736922380021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_20
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 1292
+        width: 123
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1c34f34504827d0800000000000000
+      internalID: -2943031625903783518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_21
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 1304
+        width: 92
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 832acb2400abdf1a0800000000000000
+      internalID: -6774053754212933064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_22
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 1072
+        width: 125
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4664ad1e34bca1040800000000000000
+      internalID: 4619227860234290788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_23
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1085
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd53051ff9e5ade0800000000000000
+      internalID: -1322393633784898100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_24
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 1131
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3574de03af540a320800000000000000
+      internalID: 2567128728466179923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_25
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1085
+        width: 72
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20903e6cbc4b2d6b0800000000000000
+      internalID: -5272953426389300990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_26
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 1084
+        width: 81
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c9c9f4166938e900800000000000000
+      internalID: 713883651539585474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_27
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 1083
+        width: 36
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab0404d5ab3816400800000000000000
+      internalID: 315678285344293050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_28
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 1082
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70bed75e605b33760800000000000000
+      internalID: 7436486450943486727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_29
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 1075
+        width: 93
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f511d9233ebe5de0800000000000000
+      internalID: -1342426511955651085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_30
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 1131
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc561ce926bb0d70800000000000000
+      internalID: 9010495770655612151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_31
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 1092
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb1b670e26fc0470800000000000000
+      internalID: 8362329285673556921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_32
+      rect:
+        serializedVersion: 2
+        x: 2021
+        y: 1084
+        width: 119
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 710e23f2748f41440800000000000000
+      internalID: 4905818878731542551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_33
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 887
+        width: 306
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d63f833b6c2ecac0800000000000000
+      internalID: -3833077393907566890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_34
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 1088
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c2c9928e94c9100800000000000000
+      internalID: 116048951884131477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_35
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 1078
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b3fe5beadf7a550800000000000000
+      internalID: 6172180741153045365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_36
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 1081
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c5cf3ae6ed4aed0800000000000000
+      internalID: -2403551734330008494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_37
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 1042
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef278f3f9e63b5f30800000000000000
+      internalID: 4565303025718555390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_38
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 1080
+        width: 56
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db65866b388ce1d0800000000000000
+      internalID: -3320129036574430253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_39
+      rect:
+        serializedVersion: 2
+        x: 2141
+        y: 1021
+        width: 185
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38aec8511bf7421d0800000000000000
+      internalID: -3376433422073533821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_40
+      rect:
+        serializedVersion: 2
+        x: 2301
+        y: 1046
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30174a8ef7d1cbb0800000000000000
+      internalID: -4917411829870292931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_41
+      rect:
+        serializedVersion: 2
+        x: 2378
+        y: 1049
+        width: 134
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f484c5004ddf430800000000000000
+      internalID: 3818441157093379951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_42
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 864
+        width: 351
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5e7dd74a3c1ef2d0800000000000000
+      internalID: -3243123645020799397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_43
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 820
+        width: 223
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89e014d09b87e5b0800000000000000
+      internalID: -5339145379075004018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_44
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 882
+        width: 168
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429ba5ebb7590c420800000000000000
+      internalID: 2648280939600984356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_45
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 882
+        width: 206
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87509b705ab408f0800000000000000
+      internalID: -575129997563373686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_46
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 875
+        width: 95
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de5d44a078e85a1e0800000000000000
+      internalID: -2187185333374495251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_47
+      rect:
+        serializedVersion: 2
+        x: 2294
+        y: 965
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbef691b0f5674730800000000000000
+      internalID: 3983264479878512319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_48
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 879
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ecd23a55f1e1c20800000000000000
+      internalID: 3179012839640518296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_49
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 934
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7319bbe5b67b600800000000000000
+      internalID: 483973539583571922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_50
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 858
+        width: 91
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 107c0dba2035799b0800000000000000
+      internalID: -5073495184271948031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_51
+      rect:
+        serializedVersion: 2
+        x: 2183
+        y: 855
+        width: 88
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef89de76a9fb88cb0800000000000000
+      internalID: -4861425127856957186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_52
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 863
+        width: 149
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70f487dd7d0ed300800000000000000
+      internalID: 278675061081436285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_53
+      rect:
+        serializedVersion: 2
+        x: 2412
+        y: 867
+        width: 80
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b49a0e694722dd0800000000000000
+      internalID: -2512317450756207713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_54
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 882
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de4f7185dc8295990800000000000000
+      internalID: -7396836050567957267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_55
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 875
+        width: 78
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951071129927e0920800000000000000
+      internalID: 2958428007239713113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_56
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 883
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20889a8fc6ba466a0800000000000000
+      internalID: -6456847481225771006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_57
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 608
+        width: 143
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2654225ed9b2320800000000000000
+      internalID: 2534292822774080181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_58
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 703
+        width: 76
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d4eb9cdc0c799c0800000000000000
+      internalID: -3920452960517206696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_59
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 691
+        width: 155
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b50443786d955e470800000000000000
+      internalID: 8423237455992602715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_60
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 700
+        width: 171
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c183da06ceb61d80800000000000000
+      internalID: -8280221107079642682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_61
+      rect:
+        serializedVersion: 2
+        x: 1771
+        y: 655
+        width: 183
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a110cc0d61a3361c0800000000000000
+      internalID: -4511698532028382950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_62
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 694
+        width: 169
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40dc262504148a3b0800000000000000
+      internalID: -5501075200317141756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_63
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 698
+        width: 71
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23bb298544101cb0800000000000000
+      internalID: -4895390506065087702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_64
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 701
+        width: 54
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d76c8e7fe11eae0800000000000000
+      internalID: -1521901148963439343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_65
+      rect:
+        serializedVersion: 2
+        x: 2342
+        y: 703
+        width: 174
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94d182e4d02adbd0800000000000000
+      internalID: -2604733335775095650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_66
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 501
+        width: 58
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e04e985b0886fbd40800000000000000
+      internalID: 5602311363483001870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_67
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 479
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8aa494d2993012a0800000000000000
+      internalID: -6768846937143334260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_68
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 513
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 167a9bc3e6d453810800000000000000
+      internalID: 1744385566536476513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_69
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 506
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08a4fd0dcaa63100800000000000000
+      internalID: 87445040459458570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_70
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 503
+        width: 75
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003181a6f2bae8690800000000000000
+      internalID: -7597947301195672832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_71
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 438
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33333fc038ee8f280800000000000000
+      internalID: -9009188807929285837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_72
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 259
+        width: 976
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe8bc4b38cf921e0800000000000000
+      internalID: -2221967298526474562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_73
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 333
+        width: 29
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31006560732860050800000000000000
+      internalID: 5766439545735610387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_74
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 205
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b825fa38c9f2ff0800000000000000
+      internalID: -58656180736455863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gluttony_tutorial_75
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 175
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65877cd6d0c443130800000000000000
+      internalID: 3545542427207497814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -265,21 +265,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 266320423996126179, guid: af1cc2c75634f054fbb7f774001ef04f, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 266320423996126179, guid: af1cc2c75634f054fbb7f774001ef04f, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 266320423996126179, guid: af1cc2c75634f054fbb7f774001ef04f, type: 3}
       propertyPath: m_TargetCamera
       value: 
       objectReference: {fileID: 2021259641}
-    - target: {fileID: 266320423996126179, guid: af1cc2c75634f054fbb7f774001ef04f, type: 3}
-      propertyPath: m_WaitForFirstFrame
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1169512705096727605, guid: af1cc2c75634f054fbb7f774001ef04f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -323,10 +311,6 @@ PrefabInstance:
     - target: {fileID: 6329514085021530089, guid: af1cc2c75634f054fbb7f774001ef04f, type: 3}
       propertyPath: m_Name
       value: Intro Animation Prefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 6329514085021530089, guid: af1cc2c75634f054fbb7f774001ef04f, type: 3}
-      propertyPath: m_Layer
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

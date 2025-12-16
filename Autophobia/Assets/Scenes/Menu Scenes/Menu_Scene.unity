@@ -728,11 +728,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &185415635 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6329514085021530089, guid: af1cc2c75634f054fbb7f774001ef04f, type: 3}
-  m_PrefabInstance: {fileID: 2043332311}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &205365234
 GameObject:
   m_ObjectHideFlags: 0
@@ -6571,22 +6566,10 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8883908571496352142, guid: af1cc2c75634f054fbb7f774001ef04f, type: 3}
   m_PrefabInstance: {fileID: 2043332311}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185415635}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa7029fdcba407e4bb6cd1dffd615b4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1185164839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185415635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98b98700a0b44ee4ab57d3e0e431c550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1188287935
@@ -10904,14 +10887,12 @@ PrefabInstance:
     - target: {fileID: 8883908571496352142, guid: af1cc2c75634f054fbb7f774001ef04f, type: 3}
       propertyPath: level
       value: 
-      objectReference: {fileID: 1185164839}
-    m_RemovedComponents: []
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3046255610414509155, guid: af1cc2c75634f054fbb7f774001ef04f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6329514085021530089, guid: af1cc2c75634f054fbb7f774001ef04f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1185164839}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af1cc2c75634f054fbb7f774001ef04f, type: 3}
 --- !u!1 &2050097898
 GameObject:

@@ -8,7 +8,6 @@ public class introAnimation : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] private VideoPlayer videoPlayer;
-    [SerializeField] private levelTracker level;
     private static bool played = false;
     private string sceneName;
 

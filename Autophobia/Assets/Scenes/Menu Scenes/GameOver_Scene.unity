@@ -314,7 +314,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1383482888}
         m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_MethodName: SceneSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -717,6 +717,7 @@ MonoBehaviour:
   displayTime: 1
   musicSource: {fileID: 0}
   health: {fileID: 0}
+  introAnim: {fileID: 0}
 --- !u!1 &1477657872
 GameObject:
   m_ObjectHideFlags: 0

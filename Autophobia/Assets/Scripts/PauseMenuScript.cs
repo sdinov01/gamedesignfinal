@@ -11,7 +11,7 @@ public class PauseMenuHandler : MonoBehaviour {
         public static bool GameisPaused = false;
         public GameObject pauseMenuUI;
         public AudioSource musicSource;
-        public float volumeLevel = 1.0f;
+        public static float volumeLevel = 1.0f;
         public Slider sliderVolumeCtrl;
         public GameObject pauseAnimObject;
         public GameObject image;
@@ -136,7 +136,7 @@ public class PauseMenuHandler : MonoBehaviour {
         public void SetVolume (float sliderValue){
                 if (musicSource != null) {
                         volumeLevel = sliderValue;
-                        musicSource.volume = sliderValue;
+                        musicSource.volume = volumeLevel;
                         //Debug.Log("audio changed");
                 }
                 //Debug.Log(sliderValue);

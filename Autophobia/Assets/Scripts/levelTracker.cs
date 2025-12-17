@@ -10,16 +10,20 @@ public class levelTracker : MonoBehaviour
     public static bool gluttonyComplete;
     public static bool lustComplete;
     private static bool introPlayed = false;
+    private static bool initialized = false;
 
-    void Start()
+    private void Awake()
     {
-        wrathComplete = false;
-        slothComplete = false;
-        envyComplete = false;
-        prideComplete = false;
-        greedComplete = false;
-        gluttonyComplete = false;
-        lustComplete = false;
+        if (!initialized) {
+            wrathComplete = false;
+            slothComplete = false;
+            envyComplete = false;
+            prideComplete = false;
+            greedComplete = false;
+            gluttonyComplete = false;
+            lustComplete = false;
+        }
+        initialized = true;
     }
     
 }

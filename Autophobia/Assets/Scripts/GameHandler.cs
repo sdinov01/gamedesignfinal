@@ -58,10 +58,12 @@ public class GameHandler : MonoBehaviour
     }
 
     public void PlayGame(){
-        //SceneManager.LoadScene("Level_Select_Scene");
+        //
         if (!introAnim.HasPlayed())
         {
             SceneManager.LoadScene("Intro_Animation");
+        } else {
+            SceneManager.LoadScene("Level_Select_Scene");
         }
         
         // Please also reset all static variables here, for new games!

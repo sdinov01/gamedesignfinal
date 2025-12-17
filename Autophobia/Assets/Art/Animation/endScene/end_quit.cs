@@ -1,21 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class end_quit : MonoBehaviour
 {
-    void Update()
+    public void GoToMenu()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            QuitGame();
-        }
-    }
+        Debug.Log("Go to Menu");
 
-    void QuitGame()
-    {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
+        SceneManager.LoadScene("Menu_Scene");
     }
 }

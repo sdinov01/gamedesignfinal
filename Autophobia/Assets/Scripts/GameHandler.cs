@@ -79,6 +79,14 @@ public class GameHandler : MonoBehaviour
         // Please also reset all static variables here, for new games!
     }
 
+    public void LevelSelect() {
+        SceneManager.LoadScene("Level_Select_Scene");
+    }
+
+    public void HandleSecretButton() {
+        levelTracker.enableAllLevels();
+    }
+
     public void QuitGame(){
             #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;

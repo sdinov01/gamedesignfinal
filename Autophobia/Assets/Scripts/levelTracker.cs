@@ -26,4 +26,13 @@ public class levelTracker : MonoBehaviour
         initialized = true;
     }
     
+    public static void enableAllLevels() {
+        wrathComplete = !wrathComplete;
+        slothComplete = !slothComplete;
+        envyComplete = !envyComplete;
+        prideComplete = !prideComplete;
+        greedComplete = !greedComplete;
+        gluttonyComplete = !gluttonyComplete;
+        lustComplete = !lustComplete;
+    }
 }

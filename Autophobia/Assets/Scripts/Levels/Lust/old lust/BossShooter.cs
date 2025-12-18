@@ -323,7 +323,12 @@ public class BossShooter : MonoBehaviour
         // Destroy the game object if it still exists
         if (proj != null)
         {
-            Destroy(proj.gameObject);
+            Collider2D myCollider = proj.GetComponent<Collider2D>();
+            if (myCollider != null)
+            {
+                myCollider.enabled = false;
+            }
+            Destroy(proj.gameObject, 0.1f);
         }
     }
 
@@ -343,7 +348,12 @@ public class BossShooter : MonoBehaviour
         {
             if (proj != null)
             {
-                Destroy(proj.gameObject);
+                Collider2D myCollider = proj.GetComponent<Collider2D>();
+                if (myCollider != null)
+                {
+                    myCollider.enabled = false;
+                }
+                Destroy(proj.gameObject, 0.1f);
             }
         }
         list.Clear();

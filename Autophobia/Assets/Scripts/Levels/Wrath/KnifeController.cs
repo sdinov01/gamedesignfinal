@@ -23,6 +23,9 @@ public class KnifeController : MonoBehaviour
     public Light2D knifeLight;
     private Renderer knifeRenderer;
 
+    /* Implement camera shake when player is damaged */
+    [SerializeField] private cameraShake cam;
+
     void Awake()
     {
         knifeRenderer = GetComponent<Renderer>();
@@ -70,6 +73,8 @@ public class KnifeController : MonoBehaviour
         if (Time.time - lastHitTime < 0.6f) return;
         lastHitTime = Time.time;
         //Debug.Log("take damage"); 
+        cam.SetDuration(0.5f);
+        cam.SetShake(true);
         health.takeDamage(currentDamage);
     }
 

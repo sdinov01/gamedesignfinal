@@ -13,9 +13,9 @@ public class introAnimation : MonoBehaviour
     private string sceneName;
     [SerializeField] private TMP_Text skip;
     private float duration = 203f;
-    private bool finished = false;
 
     private FadeTextOrImage fadeFunction;
+    [SerializeField] private PauseMenuHandler pause;
 
 
     void Awake()
@@ -24,7 +24,6 @@ public class introAnimation : MonoBehaviour
         {
             /* Retrieve .mp4 for intro animation and play it through URL */
             videoPlayer.playOnAwake = false;
-            finished = true;
 
             string path = Path.Combine(Application.streamingAssetsPath, "animation.mp4");
             videoPlayer.url = path;
@@ -41,7 +40,8 @@ public class introAnimation : MonoBehaviour
 
     void Start()
     {
-        fadeFunction = new FadeTextOrImage();
+        //fadeFunction = new FadeTextOrImage();
+        fadeFunction = GetComponent<FadeTextOrImage>();
         if (skip != null)
         {
             StartCoroutine(Delay());
@@ -50,16 +50,26 @@ public class introAnimation : MonoBehaviour
     }
     void Update()
     {
+        /* If the game is paused, pause the animation */
+        
         if (SceneManager.GetActiveScene().name != "Intro_Animation")
         {
             return;   
         }
+        Debug.Log("PAUSED? " + pause.IsPaused());
+        if (pause != null && pause.IsPaused())
+        {
+            videoPlayer.Pause();
+        }
+        else if (pause != null && !pause.IsPaused()) {
+            videoPlayer.Play();
+        }
 
         /* If the video has finished playing, load level select scene */
-        if (videoPlayer.frame >= (long)videoPlayer.frameCount - 1 && finished)
+        if (videoPlayer.frame >= (long)videoPlayer.frameCount - 1 && videoPlayer.frame > 0)
         {
+            Debug.Log(videoPlayer.frame + " " + (videoPlayer.frameCount - 1));
             Debug.Log("Finished animation!");
-            finished = false;
             StartCoroutine(FinishScene());
         }
 

@@ -205,4 +205,9 @@ public class PauseMenuHandler : MonoBehaviour {
                 }
         }
 
+        public bool IsPaused()
+        {
+                return GameisPaused;
+        }
+
 }

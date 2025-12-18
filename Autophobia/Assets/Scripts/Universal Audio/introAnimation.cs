@@ -12,6 +12,8 @@ public class introAnimation : MonoBehaviour
     private static bool played = false;
     private string sceneName;
     [SerializeField] private TMP_Text skip;
+    private float duration = 203f;
+    private bool finished = false;
 
     private FadeTextOrImage fadeFunction;
 
@@ -20,10 +22,11 @@ public class introAnimation : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Intro_Animation")
         {
-            /* Retrieve .mp4 for intro animation and play it */
+            /* Retrieve .mp4 for intro animation and play it through URL */
             videoPlayer.playOnAwake = false;
+            finished = true;
 
-            string path = Path.Combine(Application.streamingAssetsPath, "output.mp4");
+            string path = Path.Combine(Application.streamingAssetsPath, "animation.mp4");
             videoPlayer.url = path;
 
             videoPlayer.errorReceived += (player, msg) => Debug.LogError("VideoPlayer error: " + msg);
@@ -39,15 +42,28 @@ public class introAnimation : MonoBehaviour
     void Start()
     {
         fadeFunction = new FadeTextOrImage();
-        StartCoroutine(Delay());
+        if (skip != null)
+        {
+            StartCoroutine(Delay());
+        }
 
     }
     void Update()
     {
-        if (videoPlayer.isPlaying && !played)
+        if (SceneManager.GetActiveScene().name != "Intro_Animation")
         {
-            played = true;
+            return;   
         }
+
+        /* If the video has finished playing, load level select scene */
+        if (videoPlayer.frame >= (long)videoPlayer.frameCount - 1 && finished)
+        {
+            Debug.Log("Finished animation!");
+            finished = false;
+            StartCoroutine(FinishScene());
+        }
+
+        /* Allows player to skip cutscene */
         if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
         {
             SceneManager.LoadScene("Level_Select_Scene");
@@ -63,6 +79,12 @@ public class introAnimation : MonoBehaviour
     {
         yield return new WaitForSeconds(5f);
         StartCoroutine(fadeFunction.fadeText(skip, 2f));
+    }
+
+    private IEnumerator FinishScene()
+    {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("Level_Select_Scene");
     }
 
 }

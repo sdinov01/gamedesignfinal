@@ -22,7 +22,13 @@ public class levelHandler : MonoBehaviour
 
     void Start()
     {
+        /* If levels have been initialized already, return */
+        if (levelTracker.IsEnabled())
+        {
+            return;
+        }
         /* For now, keep all levels interactable */
+
         prideButton.interactable = false;
         slothButton.interactable = false;
         envyButton.interactable = false;

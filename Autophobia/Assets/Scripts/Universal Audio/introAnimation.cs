@@ -56,7 +56,6 @@ public class introAnimation : MonoBehaviour
         {
             return;   
         }
-        Debug.Log("PAUSED? " + pause.IsPaused());
         if (pause != null && pause.IsPaused())
         {
             videoPlayer.Pause();

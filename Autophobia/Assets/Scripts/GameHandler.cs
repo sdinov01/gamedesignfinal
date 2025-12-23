@@ -33,6 +33,10 @@ public class GameHandler : MonoBehaviour
     }
     void Update()
     {
+        if (SceneManager.GetActiveScene().name == "Credits_Scene")
+        {
+            return;
+        }
         checkMusicEnd();
     }  
     
@@ -75,6 +79,7 @@ public class GameHandler : MonoBehaviour
     }
 
     public void HandleSecretButton() {
+        Debug.Log("Handling secret button!");
         levelTracker.enableAllLevels();
     }
 

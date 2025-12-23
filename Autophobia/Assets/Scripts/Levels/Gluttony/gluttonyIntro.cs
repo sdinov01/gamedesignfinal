@@ -198,6 +198,10 @@ public class gluttonyIntro : MonoBehaviour
 
     public IEnumerator startBar()
     {
+        if (audioSource == null)
+        {
+            yield break;
+        }
         /* Begin after tutorial/skip */
         yield return new WaitUntil(() => Time.timeSinceLevelLoad >= musicDelay);
 

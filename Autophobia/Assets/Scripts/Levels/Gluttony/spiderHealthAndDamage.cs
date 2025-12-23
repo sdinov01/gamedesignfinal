@@ -15,8 +15,11 @@ public class spiderHealthAndDmg : MonoBehaviour
     {
         renderer    = this.GetComponent<SpriteRenderer>();
         health      = GameObject.FindWithTag("HealthBar").GetComponent<healthBar>();
-        SFX         = GameObject.FindWithTag("SFX").GetComponent<AudioSource>();
         name = SceneManager.GetActiveScene().name;
+        if (name != "Envy_Level")
+        {
+            SFX = GameObject.FindWithTag("SFX").GetComponent<AudioSource>();
+        }
     }
 
 

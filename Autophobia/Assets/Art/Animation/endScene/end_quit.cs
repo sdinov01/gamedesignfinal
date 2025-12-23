@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class end_quit : MonoBehaviour
 {
-    public void GoToMenu()
+    public void QuitGame()
     {
         Debug.Log("Go to Menu");
 

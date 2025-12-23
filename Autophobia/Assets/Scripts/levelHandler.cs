@@ -20,6 +20,7 @@ public class levelHandler : MonoBehaviour
     [SerializeField] private SpriteRenderer gluttonySelect;
     [SerializeField] private SpriteRenderer lustSelect;
 
+
     void Start()
     {
         /* If levels have been initialized already, return */
